@@ -6,7 +6,7 @@ CollectionReference board = FirebaseFirestore.instance.collection('board');
 CollectionReference user = FirebaseFirestore.instance.collection('user');
 CollectionReference ydcourt = FirebaseFirestore.instance.collection('ydcourt');
 
-/* Create */
+// Create
 void createPost() {
   var doc1 = FirebaseFirestore.instance.collection('post');
   var doc2 = FirebaseFirestore.instance
