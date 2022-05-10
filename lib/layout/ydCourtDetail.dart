@@ -1,10 +1,10 @@
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:link_text/link_text.dart';
-import 'package:test1/layout/mapSample.dart';
+import 'package:test1/layout/ydmap.dart';
 
-class CourtDetail extends StatefulWidget {
-  const CourtDetail({
+class YDCourtDetail extends StatefulWidget {
+  const YDCourtDetail({
     Key? key,
     this.index,
     this.docs,
@@ -16,10 +16,10 @@ class CourtDetail extends StatefulWidget {
   final setYDCourtInfo;
   final townData;
   @override
-  State<CourtDetail> createState() => _CourtDetailState();
+  State<YDCourtDetail> createState() => _YDCourtDetailState();
 }
 
-class _CourtDetailState extends State<CourtDetail> {
+class _YDCourtDetailState extends State<YDCourtDetail> {
   String? _photoURL;
   @override
   Widget build(BuildContext context) {
@@ -89,7 +89,7 @@ class _CourtDetailState extends State<CourtDetail> {
                 width: double.infinity,
                 height: 200,
                 //
-                child: MapSample(docs: widget.docs, index: widget.index),
+                child: YDMap(docs: widget.docs, index: widget.index),
               ),
               ElevatedButton(
                 onPressed: () {

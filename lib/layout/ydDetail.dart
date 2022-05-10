@@ -7,7 +7,7 @@ import 'package:test1/layout/ydDday.dart';
 import 'package:test1/layout/ydPopButton.dart';
 import 'package:test1/layout/ydTurnByTurn.dart';
 import '../dbManager.dart' as firebase;
-import 'mapSample.dart';
+import 'ydmap.dart';
 
 class YDDetail extends StatefulWidget {
   const YDDetail(
@@ -234,7 +234,7 @@ class _YDDetailState extends State<YDDetail> {
                         width: double.infinity,
                         height: 200,
                         //
-                        child: MapSample(docs: _docs, index: widget.index),
+                        child: YDMap(docs: _docs, index: widget.index),
                       ),
                       YDTurnByTurn(docs: _docs, index: widget.index),
                     ],

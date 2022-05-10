@@ -1,18 +1,18 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
-import 'package:test1/layout/courtDetail.dart';
+import 'package:test1/layout/ydCourtDetail.dart';
 import 'package:test1/layout/renderTextFormField.dart';
-import 'dropdown.dart';
+import 'noyd/dropdown.dart';
 
-class CourtPage extends StatefulWidget {
-  const CourtPage({Key? key, this.setYDCourtInfo}) : super(key: key);
+class YDCourtPage extends StatefulWidget {
+  const YDCourtPage({Key? key, this.setYDCourtInfo}) : super(key: key);
   final setYDCourtInfo;
   @override
-  State<CourtPage> createState() => _CourtPageState();
+  State<YDCourtPage> createState() => _YDCourtPageState();
 }
 
-class _CourtPageState extends State<CourtPage> {
+class _YDCourtPageState extends State<YDCourtPage> {
   final RefreshController _refreshController =
       RefreshController(initialRefresh: false);
 
@@ -93,7 +93,7 @@ class _CourtPageState extends State<CourtPage> {
                                               context,
                                               MaterialPageRoute(
                                                 builder: (context) =>
-                                                    CourtDetail(
+                                                    YDCourtDetail(
                                                   index: index,
                                                   docs: _docs,
                                                   townData: _townData,

@@ -1,10 +1,10 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterfire_ui/auth.dart';
-import 'package:test1/layout/set_userInfo.dart';
-import '../dbManager.dart' as firebase;
+import 'package:test1/layout/noyd/set_userInfo.dart';
+import '../../dbManager.dart' as firebase;
 
-import '../main.dart';
+import '../../main.dart';
 
 class Authentication extends StatefulWidget {
   const Authentication({Key? key}) : super(key: key);

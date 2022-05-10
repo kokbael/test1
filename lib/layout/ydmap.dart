@@ -4,17 +4,17 @@ import 'package:flutter/material.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
-class MapSample extends StatefulWidget {
-  const MapSample({Key? key, this.docs, this.index}) : super(key: key);
+class YDMap extends StatefulWidget {
+  const YDMap({Key? key, this.docs, this.index}) : super(key: key);
   final docs;
   final index;
   @override
-  State<MapSample> createState() => MapSampleState();
+  State<YDMap> createState() => YDMapState();
 }
 
 final Completer<GoogleMapController> _controller = Completer();
 
-class MapSampleState extends State<MapSample> {
+class YDMapState extends State<YDMap> {
   LatLng? latLng;
   Future<LatLng> getAddress() async {
     final query = widget.docs[widget.index]['address'];

@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:test1/layout/searchResult.dart';
-import '../dbManager.dart' as firebase;
+import 'package:test1/layout/noyd/searchResult.dart';
+import '../../dbManager.dart' as firebase;
 import 'boardReadPage.dart';
 import 'package:intl/intl.dart';
 

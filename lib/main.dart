@@ -6,15 +6,15 @@ import 'package:flutter/services.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:io';
-import 'package:test1/layout/authentication.dart';
-import 'package:test1/layout/boardCreate.dart';
-import 'package:test1/layout/boardList.dart';
+import 'package:test1/layout/noyd/authentication.dart';
+import 'package:test1/layout/noyd/boardCreate.dart';
+import 'package:test1/layout/noyd/boardList.dart';
 import 'package:test1/layout/myAppBar.dart';
 import 'package:test1/layout/myBottomNavigator.dart';
 import 'package:test1/layout/myDialog.dart';
-import 'package:test1/layout/courtPage.dart';
+import 'package:test1/layout/ydCourtPage.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:test1/layout/userInfo.dart';
+import 'package:test1/layout/noyd/userInfo.dart';
 import 'package:test1/layout/ydCreate.dart';
 import 'package:test1/layout/ydList.dart';
 import 'firebase_options.dart';
@@ -28,9 +28,7 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   runApp(MaterialApp(
-      theme: style.theme,
-      debugShowCheckedModeBanner: false,
-      home: Authentication()));
+      theme: style.theme, debugShowCheckedModeBanner: false, home: MyApp()));
 }
 
 class MyApp extends StatefulWidget {
@@ -46,11 +44,32 @@ class _MyAppState extends State<MyApp> {
   //https://flutter-ko.dev/docs/development/data-and-backend/json
 
   Future<String> _loadCourtAsset() async {
-    return await rootBundle.loadString('assets/busan.json');
+    return await rootBundle.loadString('assets/seoul.json');
   }
 
+  // void _addCourt() async {
+  //   var ref = FirebaseFirestore.instance.collection('busan');
+  //   String jsonString = await _loadCourtAsset();
+  //   final jsonResponse = json.decode(jsonString);
+  //   CourtList courtsList = CourtList.fromJson(jsonResponse);
+  //   for (var list in courtsList.courts!) {
+  //     ref.doc(list.courtName).set({
+  //       // if( data != null )
+  //       'city': list.city,
+  //       'courtName': list.courtName,
+  //       'courtEA': list.courtEA,
+  //       'contact': list.contact,
+  //       'chargeInfo': list.chargeInfo,
+  //       'reservation': list.reservation,
+  //       'address': list.address,
+  //     });
+  //   }
+  // }
   void _addCourt() async {
-    var ref = FirebaseFirestore.instance.collection('busan');
+    var ref = FirebaseFirestore.instance
+        .collection('court')
+        .doc('seoul')
+        .collection('seoulCourt');
     String jsonString = await _loadCourtAsset();
     final jsonResponse = json.decode(jsonString);
     CourtList courtsList = CourtList.fromJson(jsonResponse);
@@ -67,24 +86,6 @@ class _MyAppState extends State<MyApp> {
       });
     }
   }
-  // void _addCourt() async {
-  //   var ref = FirebaseFirestore.instance.collection('court');
-  //   String jsonString = await _loadCourtAsset();
-  //   final jsonResponse = json.decode(jsonString);
-  //   CourtList courtsList = CourtList.fromJson(jsonResponse);
-  //   for (var list in courtsList.courts!) {
-  //     ref.doc('busan').collection(list.courtName).doc('Info').set({
-  //       // if( data != null )
-  //       'city': list.city,
-  //       'courtName': list.courtName,
-  //       'courtEA': list.courtEA,
-  //       'contact': list.contact,
-  //       'chargeInfo': list.chargeInfo,
-  //       'reservation': list.reservation,
-  //       'address': list.address,
-  //     });
-  //   }
-  // }
 
   //File
   //https://flutter-ko.dev/docs/cookbook/persistence/reading-writing-files
@@ -307,6 +308,22 @@ class _MyAppState extends State<MyApp> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
+                      Text('LOGIN '),
+                      IconButton(
+                        splashRadius: 15,
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Authentication()));
+                        },
+                        icon: Icon(Icons.login),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
                       Text('LOGOUT '),
                       IconButton(
                         splashRadius: 15,
@@ -416,7 +433,7 @@ class _MyAppState extends State<MyApp> {
             // ),
             YDCreate(setTab: setTab),
             YDList(),
-            CourtPage(),
+            YDCourtPage(),
           ][tab],
           bottomNavigationBar:
               MyBottomNavigationBar(setMainTab: setTab, mainTab: tab)),

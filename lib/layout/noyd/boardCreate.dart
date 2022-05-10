@@ -2,10 +2,10 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:test1/layout/courtPage.dart';
+import 'package:test1/layout/ydCourtPage.dart';
 import 'package:test1/layout/myDialog.dart';
 import 'package:test1/layout/renderTextFormField.dart';
-import '../dbManager.dart' as firebase;
+import '../../dbManager.dart' as firebase;
 
 class BoardCreate extends StatefulWidget {
   const BoardCreate(
@@ -110,7 +110,7 @@ class _BoardCreateState extends State<BoardCreate> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => CourtPage()));
+                                  builder: (context) => YDCourtPage()));
                         },
                         child: Text('목록'),
                       ),

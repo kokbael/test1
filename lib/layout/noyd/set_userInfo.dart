@@ -4,9 +4,9 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:test1/layout/myDialog.dart';
 import 'package:test1/layout/renderTextFormField.dart';
-import '../main.dart';
+import '../../main.dart';
 import 'package:image_picker/image_picker.dart';
-import '../dbManager.dart' as firebase;
+import '../../dbManager.dart' as firebase;
 
 class SetUserInfo extends StatefulWidget {
   const SetUserInfo({
