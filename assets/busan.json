@@ -1,0 +1,1145 @@
+[
+  {
+    "city": "강서구",
+    "courtName": "강서체육공원",
+    "courtEA": 4,
+    "contact": "051-970-1200",
+    "chargeInfo": "이용시간 : 09:00 ~ 22:00 (입장권발매 20:00까지, 무료개방은 06:00 ~ 09:00) \n※ 매주 월요일 휴장\n이용요금(1코트당 1회 2시간 기준)\n개인 : 8,000원\n단체 : 동일 소속 30인 이상은 사용료의 30% 감면\n테니스장 조명시설 이용료 : 1시간당(1코트) 10,000원",
+    "reservation": "https://www.busan.go.kr/stadium/sfstadiumgstennis",
+    "address": "부산광역시 강서구 체육공원로 43"
+  },
+  {
+    "city": "강서구",
+    "courtName": "대저차량사업소",
+    "courtEA": 3,
+    "contact": "051-979-0120",
+    "chargeInfo": "09:00~일몰 : 무료\n이용일 전월 20일까지 신청",
+    "reservation": "https://www.humetro.busan.kr/homepage/default/member/ipin.do?menu_no=1001020702",
+    "address": "부산광역시 강서구 낙동북로 236"
+  },
+  {
+    "city": "강서구",
+    "courtName": "덕두테니스장",
+    "courtEA": 5,
+    "contact": "0507-1329-2094",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 강서구 공항로 721"
+  },
+  {
+    "city": "강서구",
+    "courtName": "렛츠런파크",
+    "courtEA": 3,
+    "contact": "051-901-7128",
+    "chargeInfo": "12인 이하 무료",
+    "reservation": "https://park.kra.co.kr/parkuserbusan/facilitiesList.do",
+    "address": "부산 강서구 가락대로 929"
+  },
+  {
+    "city": "강서구",
+    "courtName": "맥도생태공원",
+    "courtEA": 6,
+    "contact": "051-941-9728",
+    "chargeInfo": "08:00~17:00(동절기) / 07:00~18:00(하절기)\n주중: 6,000\n주말: 9,000",
+    "reservation": "https://reserve.busan.go.kr/rent/view",
+    "address": "부산 강서구 공항로 500강서구 대저2동"
+  },
+  {
+    "city": "강서구",
+    "courtName": "부산지방중소벤처기업청테니스장",
+    "courtEA": 1,
+    "contact": "051-601-5107",
+    "chargeInfo": "무료",
+    "reservation": "https://www.eshare.go.kr/UserPortal/adv/resources/AdvEsSearchResourcesMainView.do?rsrcClsCd=010503&sido=26",
+    "address": "부산 강서구 녹산산단335로 8"
+  },
+  {
+    "city": "강서구",
+    "courtName": "부산환경공단서부사업소",
+    "courtEA": 1,
+    "contact": "051-760-3385",
+    "chargeInfo": "무료",
+    "reservation": "https://www.eshare.go.kr/UserPortal/adv/resources/AdvEsSearchResourcesMainView.do?rsrcClsCd=010503&sido=26",
+    "address": "부산 강서구 강동신덕1길 13 (강동동) 부산환경공단 서부사업소"
+  },
+  {
+    "city": "금정구",
+    "courtName": "동현초등학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "2시간 이하 5,000\n2시간 초과 4시간 이하 15,000 \n4시간 초과 8시간 이하 25,000",
+    "reservation": "https://home.pen.go.kr/sisuluser/fa/view/facilityList.do",
+    "address": "부산광역시 금정구 동현로 36"
+  },
+  {
+    "city": "금정구",
+    "courtName": "부산과학기술대학교",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산광역시 금정구 부곡동 8-11"
+  },
+  {
+    "city": "금정구",
+    "courtName": "부산대학교1",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 금정구 부산대학로63번길 2-1 달마사"
+  },
+  {
+    "city": "금정구",
+    "courtName": "부산대학교2",
+    "courtEA": 8,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 금정구 부산대학로63번길 2"
+  },
+  {
+    "city": "금정구",
+    "courtName": "스포원_실내",
+    "courtEA": 16,
+    "contact": "051-550-1775",
+    "chargeInfo": "06:00~10:00 \n주중 : 40,000~50,000\n주말 : 50,000~60,000원",
+    "reservation": "https://nrsv.spo1.or.kr/rent/application/index/2022/03/02/1/SPOONE/11",
+    "address": "부산광역시 금정구 체육공원로 399번길 324"
+  },
+  {
+    "city": "금정구",
+    "courtName": "스포원_실외",
+    "courtEA": 11,
+    "contact": "051-550-1775",
+    "chargeInfo": "8,000원, 조명비 10,000원",
+    "reservation": "https://nrsv.spo1.or.kr/rent/reservation/index/2022/03/02/1/SPOONE/15",
+    "address": "부산광역시 금정구 체육공원로 399번길 324"
+  },
+  {
+    "city": "금정구",
+    "courtName": "신천테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "`",
+    "address": "부산 금정구 체육공원로447번길 60"
+  },
+  {
+    "city": "금정구",
+    "courtName": "구서롯데아파트테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 금정구 금강로 503"
+  },
+  {
+    "city": "기장군",
+    "courtName": "고원2단지아파트테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 기장군 장안읍 길천리 422-20"
+  },
+  {
+    "city": "기장군",
+    "courtName": "기장고등학교",
+    "courtEA": 2,
+    "contact": "051-750-8200",
+    "chargeInfo": "2시간 이하 20,000\n2시간 초과 4시간 이하 30,000\n4시간 초과 8시간 이하 50,000",
+    "reservation": "https://home.pen.go.kr/sisuluser/main.do",
+    "address": "부산광역시 기장군 기장읍 차성서로 77"
+  },
+  {
+    "city": "기장군",
+    "courtName": "월드컵빌리지",
+    "courtEA": 6,
+    "contact": "051-792-4780",
+    "chargeInfo": "1시간 5,000원",
+    "reservation": "https://lims.gijangcmc.or.kr/fmcs/49",
+    "address": "부산광역시 기장군 체육공원1로 29"
+  },
+  {
+    "city": "기장군",
+    "courtName": "정관실내테니스장",
+    "courtEA": 1,
+    "contact": "010-2583-8582",
+    "chargeInfo": "주중:25,000~30,000 / 주말:30,000",
+    "reservation": "",
+    "address": "부산광역시 기장군 정관읍 산단4로 2-72"
+  },
+  {
+    "city": "기장군",
+    "courtName": "정관체육시설",
+    "courtEA": 4,
+    "contact": "051-792-4840",
+    "chargeInfo": "1시간 5,000원",
+    "reservation": "https://lims.gijangcmc.or.kr/fmcs/49",
+    "address": "부산 기장군 정관읍 정관중앙로 138-11"
+  },
+  {
+    "city": "기장군",
+    "courtName": "철마생활체육시설",
+    "courtEA": 2,
+    "contact": "051-792-4820",
+    "chargeInfo": "1시간 5,000원",
+    "reservation": "https://lims.gijangcmc.or.kr/fmcs/49",
+    "address": "부산광역시 기장군 철마면 철마로 543"
+  },
+  {
+    "city": "김해시",
+    "courtName": "금병공원테니스장",
+    "courtEA": 4,
+    "contact": "055-330-4411",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 김해시 진영읍 여래리 286"
+  },
+  {
+    "city": "김해시",
+    "courtName": "능동공원테니스장",
+    "courtEA": 8,
+    "contact": "055-331-1098",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 김해시 삼문동 1257"
+  },
+  {
+    "city": "김해시",
+    "courtName": "동부테니스장",
+    "courtEA": 8,
+    "contact": "055-331-1098",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 김해시 삼방동 838-1"
+  },
+  {
+    "city": "김해시",
+    "courtName": "어방테니스장",
+    "courtEA": 4,
+    "contact": "055-331-1098",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 김해시 어방동 1045-4"
+  },
+  {
+    "city": "김해시",
+    "courtName": "우리실내테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "이용요금 25,000원",
+    "reservation": "",
+    "address": "경남 김해시 주촌면 서부로 1434-1"
+  },
+  {
+    "city": "김해시",
+    "courtName": "삼계테니스장",
+    "courtEA": 14,
+    "contact": "055-323-7310",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 김해시 삼계동 30-4"
+  },
+  {
+    "city": "김해시",
+    "courtName": "인제대학교김해캠퍼스",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "1면 기준 1/2일 20,000원, 1일 30,000원",
+    "reservation": "https://www.inje.ac.kr/kor/campus-life/welfare-06.asp",
+    "address": "경남 김해시 인제로 197"
+  },
+  {
+    "city": "김해시",
+    "courtName": "장유능동국제테니스장",
+    "courtEA": 8,
+    "contact": "010-4583-0997",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 김해시 대청로 350"
+  },
+  {
+    "city": "김해시",
+    "courtName": "함박공원테니스장",
+    "courtEA": 2,
+    "contact": "055-330-4411",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 김해시 외동 1205"
+  },
+  {
+    "city": "남구",
+    "courtName": "경성대학교테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 남구 수영로 309"
+  },
+  {
+    "city": "남구",
+    "courtName": "동명대학교",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산광역시 남구 용당동 485"
+  },
+  {
+    "city": "남구",
+    "courtName": "백운포체육공원",
+    "courtEA": 8,
+    "contact": "051-607-6365",
+    "chargeInfo": "평일 1일 20,000원 / 1시간 2,000원\n토·일·공휴일 1일 30,000원 / 1시간 3,000원\n야간 시간당 6,000원\n월단위 150,000원",
+    "reservation": "https://www.namgusports.go.kr/rent/application/index/2022/03/02/1/NAMGUSPORTS02/11",
+    "address": "부산광역시 남구 백운포로 110(용호동)"
+  },
+  {
+    "city": "남구",
+    "courtName": "부경대학교대연캠퍼스",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 남구 용소로 45"
+  },
+  {
+    "city": "남구",
+    "courtName": "부경대학교용당캠퍼스",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 남구 신선로 365"
+  },
+  {
+    "city": "남구",
+    "courtName": "부산환경공단남부사업소",
+    "courtEA": 5,
+    "contact": "051-760-3385",
+    "chargeInfo": "무료",
+    "reservation": "https://www.eshare.go.kr/UserPortal/adv/resources/AdvEsSearchResourcesMainView.do?rsrcClsCd=010503&sido=26",
+    "address": "부산 남구 이기대공원로 11 (용호동) 남부사업소"
+  },
+  {
+    "city": "남구",
+    "courtName": "테니스랜드부산대연점",
+    "courtEA": 1,
+    "contact": "0507-1326-3705",
+    "chargeInfo": "그룹수업 130,000원~ / 개인수업 220,000원~",
+    "reservation": "",
+    "address": "부산 남구 유엔평화로 36 지하1층"
+  },
+  {
+    "city": "동래구",
+    "courtName": "동래실내테니스장",
+    "courtEA": 3,
+    "contact": "010-4044-4609",
+    "chargeInfo": "코트대여료 : 30,000원",
+    "reservation": "",
+    "address": "부산광역시 동래구 명장동 267-18 4층 테니스장"
+  },
+  {
+    "city": "동래구",
+    "courtName": "동래중학교테니스장",
+    "courtEA": 2,
+    "contact": "051-790-0804",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산광역시 동래구 충렬대로181번길 109"
+  },
+  {
+    "city": "동래구",
+    "courtName": "부산종합실내테니스장",
+    "courtEA": 10,
+    "contact": "051-714-7330",
+    "chargeInfo": "주중/조조\t06시 ~ 09시\t20,000\n주중/주간\t09시 ~ 18시\t40,000\n주중/야간\t18시 ~ 22시\t50,000\n주말·공휴일/주간\t06시 ~ 18시\t50,000\n주말/야간\t18시 ~ 20시\t60,000\n공휴일/야간\t18시 ~ 22시\t60,000",
+    "reservation": "https://sajiktennis.kr/html/",
+    "address": "부산광역시 동래구 사직로 55-32"
+  },
+  {
+    "city": "동래구",
+    "courtName": "오렌지실내테니스장",
+    "courtEA": 2,
+    "contact": "0507-1448-3734",
+    "chargeInfo": "코트 임대 1시간\n30,000원\n장기코트임대 1시간\n25,000원",
+    "reservation": "",
+    "address": "부산 동래구 연안로58번길 38 오렌지실내테니스장"
+  },
+  {
+    "city": "부산진구",
+    "courtName": "동의공업고등학교테니스장",
+    "courtEA": 1,
+    "contact": "051-811-7584",
+    "chargeInfo": "2시간 이하 5,000\n2시간 초과 4시간 이하 15,000 \n4시간 초과 8시간 이하 25,000",
+    "reservation": "https://home.pen.go.kr/sisuluser/fa/view/facilityList.do",
+    "address": "부산광역시 부산진구 양지로 50 동의공업고등학교"
+  },
+  {
+    "city": "부산진구",
+    "courtName": "부산진고등학교테니스장",
+    "courtEA": 1,
+    "contact": "051-810-0506",
+    "chargeInfo": "2시간 이하 10,000 \n2시간 초과 4시간 이하 20,000 \n4시간 초과 8시간 이하 40,000",
+    "reservation": "https://home.pen.go.kr/sisuluser/fa/view/facilityList.do",
+    "address": "부산광역시 부산진구 성지로94번길 54"
+  },
+  {
+    "city": "부산진구",
+    "courtName": "가야아름테니스장",
+    "courtEA": 3,
+    "contact": "010-7736-6866",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 부산진구 엄광로134번길 9-1"
+  },
+  {
+    "city": "부산진구",
+    "courtName": "국제백양아파트",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 부산진구 백양관문로 112 국제백양아파트"
+  },
+  {
+    "city": "부산진구",
+    "courtName": "동의대학교양정캠퍼스",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 부산진구 양정로 52-57"
+  },
+  {
+    "city": "부산진구",
+    "courtName": "애니타임실내테니스연습장",
+    "courtEA": 1,
+    "contact": "051-863-7759",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 부산진구 연수로 47-2"
+  },
+  {
+    "city": "부산진구",
+    "courtName": "황령산레포츠공원테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 부산진구 진남로328번길 99"
+  },
+  {
+    "city": "북구",
+    "courtName": "백양고등학교테니스장",
+    "courtEA": 2,
+    "contact": "051-600-6506",
+    "chargeInfo": "2시간 이하 5,000\n2시간 초과 4시간 이하 15,000 \n4시간 초과 8시간 이하 25,000",
+    "reservation": "https://home.pen.go.kr/sisuluser/fa/view/facilityList.do",
+    "address": "부산광역시 북구 백양대로1016번길 64"
+  },
+  {
+    "city": "북구",
+    "courtName": "대저생태공원",
+    "courtEA": 8,
+    "contact": "051-310-6028",
+    "chargeInfo": "07:00~18:00(하) /08:00~17:00(동)\n주중:6,000원 / 주말: 9,000원, 조명 만원",
+    "reservation": "https://reserve.busan.go.kr/rent/view",
+    "address": "부산 북구 낙동대로1739번길 7"
+  },
+  {
+    "city": "북구",
+    "courtName": "덕천주공2단지아파트",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 북구 덕천로 74"
+  },
+  {
+    "city": "북구",
+    "courtName": "부상광역시인재개발원",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 북구 효열로 256"
+  },
+  {
+    "city": "북구",
+    "courtName": "화명생태공원(무료)",
+    "courtEA": 4,
+    "contact": "010-5877-4503",
+    "chargeInfo": "무료",
+    "reservation": "",
+    "address": "부산광역시 북구 화명동 1718-23"
+  },
+  {
+    "city": "사상구",
+    "courtName": "서부산공업고등학교테니스장",
+    "courtEA": 1,
+    "contact": "051-309-3164",
+    "chargeInfo": "2시간 이하 6,000\n2시간 초과 4시간 이하 12,000 \n4시간 초과 8시간 이하 24,000",
+    "reservation": "https://home.pen.go.kr/sisuluser/fa/view/facilityList.do",
+    "address": "부산광역시 사상구 백양대로768길 115"
+  },
+  {
+    "city": "사상구",
+    "courtName": "동서대학교",
+    "courtEA": 4,
+    "contact": "051-320-2059",
+    "chargeInfo": "1개월 이내에 신청, 유선상 협의",
+    "reservation": "",
+    "address": "부산 사상구 가야대로366번길 166"
+  },
+  {
+    "city": "사상구",
+    "courtName": "신라대학교대학원테니스장",
+    "courtEA": 3,
+    "contact": "051-999-5421",
+    "chargeInfo": "사용시간 : 09:00 ~ 22:00 / 1시간 5만원 \n1일 1회 최대 2시간까지 사용 가능",
+    "reservation": "https://www.silla.ac.kr/ko/index.php?pCode=fcappguide1",
+    "address": "부산 사상구 괘법동 82"
+  },
+  {
+    "city": "사상구",
+    "courtName": "삼락생태공원테니스장",
+    "courtEA": 12,
+    "contact": "051-303-0048",
+    "chargeInfo": "07:00~18:00(하) /08:00~17:00(동)\n주중:6,000원 / 주말: 9,000원, 조명 만원",
+    "reservation": "https://reserve.busan.go.kr/rent/view",
+    "address": "부산 사상구 삼락동 29-57"
+  },
+  {
+    "city": "사하구",
+    "courtName": "을숙도문화회관테니스장",
+    "courtEA": 8,
+    "contact": "051-271-1441",
+    "chargeInfo": "2시간 기준 (1면)\n일반 평일 10,000원 / 주말(공휴일) 15,000원\n사하구민 평일 8,000원 / 주말(공휴일) 12,000원\n월 사용료 면당 250,000원 (1일 3시간, 주말제외)\n야간 사용 시 조명 사용료 1시간당 7,000원 추가",
+    "reservation": "https://www.saha.go.kr/portal/contents.do?mId=0407010106",
+    "address": "부산 사하구 낙동남로1233번길 25"
+  },
+  {
+    "city": "사하구",
+    "courtName": "신평레포츠공원",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "http://www.sahasports.or.kr/shop/item.php?it_id=1649836041",
+    "address": "부산광역시 사하구 신평동 651-9"
+  },
+  {
+    "city": "서구",
+    "courtName": "부산시민체육공원테니스장",
+    "courtEA": 3,
+    "contact": "051-602-2215",
+    "chargeInfo": "주중/주말: 8,000원, 조명 10,000원",
+    "reservation": "https://reserve.busan.go.kr/rent/view",
+    "address": "부산 서구 망양로 57"
+  },
+  {
+    "city": "수영구",
+    "courtName": "맨투맨테니스광안점",
+    "courtEA": 1,
+    "contact": "0507-1396-1224",
+    "chargeInfo": "개인레슨 240,000~440,000\n주말 개인 레슨 260,000원",
+    "reservation": "",
+    "address": "부산 수영구 수영로 636 맨투맨테니스 B1"
+  },
+  {
+    "city": "수영구",
+    "courtName": "코트퍼플테니스장",
+    "courtEA": 1,
+    "contact": "010-6772-5319",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 수영구 광안해변로 95"
+  },
+  {
+    "city": "수영구",
+    "courtName": "삼익비치타운아파트",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산광역시 수영구 광안해변로 95"
+  },
+  {
+    "city": "양산시",
+    "courtName": "동원과학기술대학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 양산시 명곡동 산116-3"
+  },
+  {
+    "city": "양산시",
+    "courtName": "부산대학교양산캠퍼스",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 양산시 물금읍 부산대학로 49"
+  },
+  {
+    "city": "양산시",
+    "courtName": "삼수권체육공원테니스장",
+    "courtEA": 3,
+    "contact": "055-392-7256",
+    "chargeInfo": "",
+    "reservation": "https://www.yssisul.or.kr/rent/#/sisulSearch/2",
+    "address": "경남 양산시 하북면 충렬로 1699"
+  },
+  {
+    "city": "양산시",
+    "courtName": "삽량체육공원테니스장",
+    "courtEA": 8,
+    "contact": "055-392-7104",
+    "chargeInfo": "",
+    "reservation": "https://www.yssisul.or.kr/rent/#/sisulSearch/2",
+    "address": "경남 양산시 동면 내송리 산69-5"
+  },
+  {
+    "city": "양산시",
+    "courtName": "상북면주민자치센터테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 양산시 상북면 석계리 산25-9"
+  },
+  {
+    "city": "양산시",
+    "courtName": "서창운동장테니스장",
+    "courtEA": 3,
+    "contact": "055-379-8574",
+    "chargeInfo": "",
+    "reservation": "https://www.yssisul.or.kr/rent/#/sisulSearch/2",
+    "address": "경남 양산시 대운9길 16-85"
+  },
+  {
+    "city": "양산시",
+    "courtName": "양산실내테니스아카데미",
+    "courtEA": 1,
+    "contact": "010-9354-1942",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 양산시 물금읍 야리로 5 스타빌딩 5층 501호"
+  },
+  {
+    "city": "양산시",
+    "courtName": "양산실내테니스장",
+    "courtEA": 1,
+    "contact": "0507-1333-5395",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 양산시 물금읍 황산로 647 301호"
+  },
+  {
+    "city": "양산시",
+    "courtName": "올테니스아카데미",
+    "courtEA": 2,
+    "contact": "010-9250-3830",
+    "chargeInfo": "개인 레슨 120,000원~",
+    "reservation": "",
+    "address": "경남 양산시 물금읍 범구로 15 희윤스마티움 3층"
+  },
+  {
+    "city": "양산시",
+    "courtName": "웅상체육공원테니스장",
+    "courtEA": 4,
+    "contact": "055-379-8574",
+    "chargeInfo": "",
+    "reservation": "https://www.yssisul.or.kr/rent/#/sisulSearch/2",
+    "address": "경남 양산시 배움터길 60-19"
+  },
+  {
+    "city": "양산시",
+    "courtName": "이테니스테니스장",
+    "courtEA": 2,
+    "contact": "070-4113-8800",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 양산시 물금읍 신주로 69 지하 1층 1호"
+  },
+  {
+    "city": "양산시",
+    "courtName": "제26호완충녹지(남부공원테니스장)",
+    "courtEA": 4,
+    "contact": "055-392-3403",
+    "chargeInfo": "",
+    "reservation": "https://www.yssisul.or.kr/rent/#/sisulSearch/2",
+    "address": "경남 양산시 남부동 888"
+  },
+  {
+    "city": "양산시",
+    "courtName": "천성리버타운아파트테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 양산시 소주동 156"
+  },
+  {
+    "city": "양산시",
+    "courtName": "천성산체육공원테니스장",
+    "courtEA": 3,
+    "contact": "055-392-7203",
+    "chargeInfo": "",
+    "reservation": "https://www.yssisul.or.kr/rent/#/sisulSearch/2",
+    "address": "경남 양산시 상북면 봉수대길 29-10"
+  },
+  {
+    "city": "양산시",
+    "courtName": "양산시립테니스장",
+    "courtEA": 5,
+    "contact": "055-392-7015",
+    "chargeInfo": "",
+    "reservation": "https://www.yssisul.or.kr/rent/#/sisulSearch/2",
+    "address": "경남 양산시 물금읍 범어리 2822"
+  },
+  {
+    "city": "양산시",
+    "courtName": "양산종합운동장테니스장",
+    "courtEA": 8,
+    "contact": "055-379-8535",
+    "chargeInfo": "",
+    "reservation": "https://www.yssisul.or.kr/rent/#/sisulSearch/2",
+    "address": "경남 양산시 양산대로 849"
+  },
+  {
+    "city": "연제구",
+    "courtName": "망미주공테니스장",
+    "courtEA": 2,
+    "contact": "051-754-8080",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산광역시 연제구 연산9동 2220"
+  },
+  {
+    "city": "연제구",
+    "courtName": "부산고등법원",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 연제구 법원로 15"
+  },
+  {
+    "city": "연제구",
+    "courtName": "부산교육대학교1",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 연제구 교대로 24"
+  },
+  {
+    "city": "연제구",
+    "courtName": "부산교육대학교2",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 연제구 거제동 298-5"
+  },
+  {
+    "city": "영도구",
+    "courtName": "구민테니스장",
+    "courtEA": 2,
+    "contact": "051-419-4151",
+    "chargeInfo": "무료",
+    "reservation": "https://www.eshare.go.kr/UserPortal/adv/resources/AdvEsSearchResourcesMainView.do?rsrcClsCd=010503&sido=26",
+    "address": "부산광역시 영도구 해양로 293 구민테니스장"
+  },
+  {
+    "city": "영도구",
+    "courtName": "국립해양조사원",
+    "courtEA": 2,
+    "contact": "051-400-4400",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 영도구 해양로 351"
+  },
+  {
+    "city": "영도구",
+    "courtName": "부산해양경찰서",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 영도구 해양로 293"
+  },
+  {
+    "city": "영도구",
+    "courtName": "영도다목적구장",
+    "courtEA": 1,
+    "contact": "051-419-4151",
+    "chargeInfo": "2시간 기준 평일 주간 15,000원, 야간 20,000원 / 주말,공휴일 20,000원\n단체 20% 할인, 어린이/청소년/장애인/노인등 50% 할인\n조명 5,000원",
+    "reservation": "https://www.yeongdo.go.kr/reserve/01786/01804/01806.web?&cmonth=2022-03",
+    "address": "부산 영도구 함지로79번길 6"
+  },
+  {
+    "city": "영도구",
+    "courtName": "한국해양수산연수원테니스장",
+    "courtEA": 2,
+    "contact": "051-620-5573",
+    "chargeInfo": "무료",
+    "reservation": "https://www.eshare.go.kr/UserPortal/adv/resources/AdvEsSearchResourcesMainView.do?rsrcClsCd=010503&sido=26",
+    "address": "부산 영도구 해양로 367 (동삼동) 테니스장"
+  },
+  {
+    "city": "영도구",
+    "courtName": "한국해양대학교",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 영도구 태종로 727"
+  },
+  {
+    "city": "해운대구",
+    "courtName": "꽃다래공원",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산광역시 해운대구 반송동 산51-101"
+  },
+  {
+    "city": "해운대구",
+    "courtName": "반송테니스장",
+    "courtEA": 2,
+    "contact": "051-749-4124",
+    "chargeInfo": "기본요금 3,000원",
+    "reservation": "https://www.eshare.go.kr/UserPortal/adv/resources/AdvEsSearchResourcesMainView.do?rsrcClsCd=010503&sido=26",
+    "address": "부산 해운대구 반송동 49-3 반송동 산51-10"
+  },
+  {
+    "city": "해운대구",
+    "courtName": "센텀테니스장",
+    "courtEA": 3,
+    "contact": "051-749-4124",
+    "chargeInfo": "기본요금 3,000원",
+    "reservation": "https://www.eshare.go.kr/UserPortal/adv/resources/AdvEsSearchResourcesMainView.do?rsrcClsCd=010503&sido=26",
+    "address": "부산 해운대구 재송동 1206 재송동1207(센텀테니스장)"
+  },
+  {
+    "city": "해운대구",
+    "courtName": "송정테니스파크",
+    "courtEA": 6,
+    "contact": "051-749-4124",
+    "chargeInfo": "기본요금 3,000원",
+    "reservation": "https://www.eshare.go.kr/UserPortal/adv/resources/AdvEsSearchResourcesMainView.do?rsrcClsCd=010503&sido=26",
+    "address": "부산 해운대구 해운대로 1183 (송정동)"
+  },
+  {
+    "city": "해운대구",
+    "courtName": "좌동1배수지",
+    "courtEA": 3,
+    "contact": "051-749-4124",
+    "chargeInfo": "기본요금 3,000원",
+    "reservation": "https://www.eshare.go.kr/UserPortal/adv/resources/AdvEsSearchResourcesMainView.do?rsrcClsCd=010503&sido=26",
+    "address": "부산 해운대구 좌동 1371-1"
+  },
+  {
+    "city": "해운대구",
+    "courtName": "좌동테니스장",
+    "courtEA": 5,
+    "contact": "051-749-4124",
+    "chargeInfo": "기본요금 3,000원",
+    "reservation": "https://www.eshare.go.kr/UserPortal/adv/resources/AdvEsSearchResourcesMainView.do?rsrcClsCd=010503&sido=26",
+    "address": "부산 해운대구 좌동 1340-1 ."
+  },
+  {
+    "city": "해운대구",
+    "courtName": "테니스핏해운대점",
+    "courtEA": 2,
+    "contact": "0507-1428-1917",
+    "chargeInfo": "주중개인 쿠폰(6회권구입 후 사용)40,000원\n주중2인 쿠폰(6회권구입 후 사용)30,000원\n주말개인 쿠폰(6회권구입 후 사용)50,000원\n주말2인 쿠폰(6회권구입 후 사용)35,000원",
+    "reservation": "",
+    "address": "부산 해운대구 세실로27번길 17 3층"
+  },
+  {
+    "city": "해운대구",
+    "courtName": "아시아선수촌아파트",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 해운대구 선수촌로 122"
+  },
+  {
+    "city": "해운대구",
+    "courtName": "장산마을테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산광역시 해운대구 좌동 1363"
+  },
+  {
+    "city": "해운대구",
+    "courtName": "해운대구테니스장",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 해운대구 좌동순환로402번길 16"
+  },
+  {
+    "city": "강서구",
+    "courtName": "부산환경공단자원순환사업단",
+    "courtEA": 1,
+    "contact": "051-760-3385",
+    "chargeInfo": "무료",
+    "reservation": "https://www.eshare.go.kr/UserPortal/adv/resources/AdvEsSearchResourcesMainView.do?rsrcClsCd=010503&sido=26",
+    "address": "부산 강서구 생곡산단로 88 (생곡동) 부산환경공단 생곡사업소"
+  },
+  {
+    "city": "금정구",
+    "courtName": "경남한신아파트",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 금정구 중앙대로1685번길 24"
+  },
+  {
+    "city": "금정구",
+    "courtName": "금정구청",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 금정구 체육공원로447번길 100"
+  },
+  {
+    "city": "금정구",
+    "courtName": "부곡동SK아파트",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 금정구 수림로 12"
+  },
+  {
+    "city": "기장군",
+    "courtName": "국립수산과학원",
+    "courtEA": 2,
+    "contact": "051-720-2114",
+    "chargeInfo": "",
+    "reservation": "국민소통>자유의견방>체육시설 사용신청 (nifs.go.kr)",
+    "address": "부산 기장군 기장읍 기장해안로 216"
+  },
+  {
+    "city": "기장군",
+    "courtName": "한국폴리텍대학동부산캠퍼스",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 기장군 정관읍 산단4로 2-69"
+  },
+  {
+    "city": "김해시",
+    "courtName": "국립김해박물관테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 김해시 가야의길 190"
+  },
+  {
+    "city": "김해시",
+    "courtName": "어방체육공원",
+    "courtEA": 1,
+    "contact": "055-323-7313",
+    "chargeInfo": "",
+    "reservation": "https://www.gimhae.go.kr/yes/05561/05804/05857.web",
+    "address": "경남 김해시 어방동 657"
+  },
+  {
+    "city": "김해시",
+    "courtName": "원도심테니스장",
+    "courtEA": 4,
+    "contact": "055-331-1098",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 김해시 부원동 217-12번길 (김해시 차량등록사업소 뒷편)"
+  },
+  {
+    "city": "김해시",
+    "courtName": "진영공설운동장",
+    "courtEA": 4,
+    "contact": "055-336-2400",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 김해시 진영읍 김해대로 257"
+  },
+  {
+    "city": "김해시",
+    "courtName": "한림테니스장",
+    "courtEA": 2,
+    "contact": "010-8787-8585",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 김해시 한림면 시산리 122-6"
+  },
+  {
+    "city": "동구",
+    "courtName": "수정5동테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 동구 수정동 589-14"
+  },
+  {
+    "city": "동래구",
+    "courtName": "낙민공원테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 동래구 낙민동 91-10"
+  },
+  {
+    "city": "동래구",
+    "courtName": "동래럭키아파트테니스장",
+    "courtEA": 2,
+    "contact": "051-553-4609",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산광역시 동래구 온천동 707"
+  },
+  {
+    "city": "부산진구",
+    "courtName": "동의과학대학교",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 부산진구 전포동 12-1"
+  },
+  {
+    "city": "부산진구",
+    "courtName": "신개금LG1차아파트",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 부산진구 백양대로300번길 30"
+  },
+  {
+    "city": "북구",
+    "courtName": "수정강변타운아파트",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 북구 학사로17번길 27 수정강변타운"
+  },
+  {
+    "city": "북구",
+    "courtName": "화명롯데캐슬카이저아파트",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 북구 금곡대로 166"
+  },
+  {
+    "city": "북구",
+    "courtName": "화명생태공원",
+    "courtEA": 10,
+    "contact": "051-364-4127",
+    "chargeInfo": "07:00~18:00(하) /08:00~17:00(동)\n주중:6,000원 / 주말: 9,000원, 조명 만원",
+    "reservation": "https://reserve.busan.go.kr/rent/view",
+    "address": "부산광역시 북구 덕천동 736-27"
+  },
+  {
+    "city": "사하구",
+    "courtName": "가락타운",
+    "courtEA": 3,
+    "contact": "051-206-5710",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산광역시 사하구 하단1동 1176"
+  },
+  {
+    "city": "사하구",
+    "courtName": "다대롯데캐슬블루아파트",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 사하구 다송로 23"
+  },
+  {
+    "city": "사하구",
+    "courtName": "신평차량사업소",
+    "courtEA": 4,
+    "contact": "051-200-5125",
+    "chargeInfo": "09:00~일몰 : 무료\n이용일 전월 20일까지 신청",
+    "reservation": "https://www.humetro.busan.kr/homepage/default/member/ipin.do?menu_no=1001020702",
+    "address": "부산광역시 사하구 하신번영로 379"
+  },
+  {
+    "city": "양산시",
+    "courtName": "양산수질정화공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 양산시 동면 금산리 1501"
+  },
+  {
+    "city": "양산시",
+    "courtName": "영산대학교양산캠퍼스",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 양산시 주남로 288"
+  },
+  {
+    "city": "연제구",
+    "courtName": "연산LG아파트",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 연제구 고분로 200"
+  },
+  {
+    "city": "중구",
+    "courtName": "용두산공원",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 중구 대청로116번길 3"
+  },
+  {
+    "city": "해운대구",
+    "courtName": "부산지방검찰청동부지청",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 해운대구 재반로112번길 20"
+  },
+  {
+    "city": "해운대구",
+    "courtName": "올림픽기념국민생활관",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "부산 해운대구 APEC로 68"
+  }
+]

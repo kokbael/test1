@@ -15,6 +15,6 @@ class MyAppBar extends StatefulWidget implements PreferredSizeWidget {
 class _MyAppBarState extends State<MyAppBar> {
   @override
   Widget build(BuildContext context) {
-    return AppBar(title: Text("Test"));
+    return AppBar(title: Text('Test'));
   }
 }

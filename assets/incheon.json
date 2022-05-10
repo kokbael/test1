@@ -1,0 +1,398 @@
+[
+  {
+    "city": "인천",
+    "courtName": "강서테니스장(길상공설운동장)",
+    "courtEA": 2,
+    "contact": "032-930-7080",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "인천 강화군 길상면 길상로 244"
+  },
+  {
+    "city": "인천",
+    "courtName": "강화실내테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "강화군 동호인 1면 10,000원\n강화외 동호인 1면 20,000원",
+    "reservation": "",
+    "address": "인천 강화군 선원면 고식이길 177"
+  },
+  {
+    "city": "인천",
+    "courtName": "강화클럽테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "인천 강화군 강화읍 해안북로 113"
+  },
+  {
+    "city": "인천",
+    "courtName": "검단복지회관야외테니스장",
+    "courtEA": 3,
+    "contact": "032-561-4115",
+    "chargeInfo": "무료",
+    "reservation": "https://www.eshare.go.kr/UserPortal/adv/resources/AdvEsSearchResourcesMainView.do?rsrcClsCd=010503&sido=28",
+    "address": "인천 서구 완정로92번길 18"
+  },
+  {
+    "city": "인천",
+    "courtName": "계양테니스장(서운테니스장)",
+    "courtEA": 6,
+    "contact": "032-715-5484",
+    "chargeInfo": "1시간 기준 (인당)\n실내 일반 5,000, 군인/청소년 4,000, 어린이 2,800\n실외 일반 2,500, 군인/청소년 2,000, 어린이 1,400\n2시간 기준 (면당)\n실내 평일 20,000원, 공휴일 30,000원\n실외 평일 10,000원, 공휴일 15,000원",
+    "reservation": "",
+    "address": "인천 계양구 봉오대로 855"
+  },
+  {
+    "city": "인천",
+    "courtName": "고인돌클럽테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "인천 강화군 강화읍 해안북로 155"
+  },
+  {
+    "city": "인천",
+    "courtName": "공촌유수지테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "기본요금 10,000원",
+    "reservation": "https://www.eshare.go.kr/UserPortal/adv/resources/AdvEsSearchResourcesMainView.do?rsrcClsCd=010503&sido=28",
+    "address": "인천 서구 첨단서로 130"
+  },
+  {
+    "city": "인천",
+    "courtName": "남동공단근린공원테니스장",
+    "courtEA": 6,
+    "contact": "032-453-6283",
+    "chargeInfo": "무료",
+    "reservation": "https://www.eshare.go.kr/UserPortal/adv/resources/AdvEsSearchResourcesMainView.do?rsrcClsCd=010503&sido=28",
+    "address": "인천 남동구 논현동 445"
+  },
+  {
+    "city": "인천",
+    "courtName": "남동종합문화체육광장테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "인천 남동구 만수동 834-10"
+  },
+  {
+    "city": "인천",
+    "courtName": "논현포대근린공원테니스장",
+    "courtEA": 2,
+    "contact": "032-453-6283",
+    "chargeInfo": "무료",
+    "reservation": "https://www.eshare.go.kr/UserPortal/adv/resources/AdvEsSearchResourcesMainView.do?rsrcClsCd=010503&sido=28",
+    "address": "인천 남동구 논현동 578-1"
+  },
+  {
+    "city": "인천",
+    "courtName": "늘솔길근린공원테니스장",
+    "courtEA": 2,
+    "contact": "032-453-6283",
+    "chargeInfo": "무료",
+    "reservation": "https://www.eshare.go.kr/UserPortal/adv/resources/AdvEsSearchResourcesMainView.do?rsrcClsCd=010503&sido=28",
+    "address": "인천 남동구 에코중앙로 91"
+  },
+  {
+    "city": "인천",
+    "courtName": "덕적면사무소테니스장",
+    "courtEA": 2,
+    "contact": "032-899-3716",
+    "chargeInfo": "무료",
+    "reservation": "https://www.eshare.go.kr/UserPortal/adv/resources/AdvEsSearchResourcesMainView.do?rsrcClsCd=010503&sido=28",
+    "address": "인천 옹진군 덕적면 덕적남로 572"
+  },
+  {
+    "city": "인천",
+    "courtName": "만석동테니스장",
+    "courtEA": 2,
+    "contact": "032-999-0006",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "인천 동구 제물량로341번길 55"
+  },
+  {
+    "city": "인천",
+    "courtName": "문화공원테니스장",
+    "courtEA": 3,
+    "contact": "010-7112-8561",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "인천 연수구 새말로 120"
+  },
+  {
+    "city": "인천",
+    "courtName": "삼산건강공원테니스장",
+    "courtEA": 4,
+    "contact": "010-8996-5900",
+    "chargeInfo": "코트 사용료 : 5,000원(2시간 기준)\n조명 사용료 : 2,500원(2시간 기준)",
+    "reservation": "",
+    "address": "인천 부평구 삼산동 518"
+  },
+  {
+    "city": "인천",
+    "courtName": "삼산체육공원테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "인천 부평구 체육관로 163"
+  },
+  {
+    "city": "인천",
+    "courtName": "서구청역1번출구테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "인천 서구 심곡동 280"
+  },
+  {
+    "city": "인천",
+    "courtName": "소래샛길체육시설테니스장",
+    "courtEA": 2,
+    "contact": "032-453-6283",
+    "chargeInfo": "무료",
+    "reservation": "https://www.eshare.go.kr/UserPortal/adv/resources/AdvEsSearchResourcesMainView.do?rsrcClsCd=010503&sido=28",
+    "address": "인천 남동구 수산동 8-1"
+  },
+  {
+    "city": "인천",
+    "courtName": "송도공원사업단새아침테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "기본요금 5,000원",
+    "reservation": "https://www.eshare.go.kr/UserPortal/adv/resources/AdvEsSearchResourcesMainView.do?rsrcClsCd=010503&sido=28",
+    "address": "인천 연수구 신송로6번길 56"
+  },
+  {
+    "city": "인천",
+    "courtName": "승기근린공원테니스장",
+    "courtEA": 2,
+    "contact": "032-453-6283",
+    "chargeInfo": "무료",
+    "reservation": "https://www.eshare.go.kr/UserPortal/adv/resources/AdvEsSearchResourcesMainView.do?rsrcClsCd=010503&sido=28",
+    "address": "인천 남동구 남촌동 605"
+  },
+  {
+    "city": "인천",
+    "courtName": "시도리종합운동장테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "인천 옹진군 북도면 시도로86번길 78"
+  },
+  {
+    "city": "인천",
+    "courtName": "신동아테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "인천 계양구 황어로115번길 12"
+  },
+  {
+    "city": "인천",
+    "courtName": "신트리공원테니스장",
+    "courtEA": 5,
+    "contact": "010-3324-8526",
+    "chargeInfo": "코트 사용료 : 5,000원(2시간 기준)\n조명 사용료 : 2,500원(2시간 기준)",
+    "reservation": "",
+    "address": "인천 부평구 신트리로 21"
+  },
+  {
+    "city": "인천",
+    "courtName": "십정근린공원테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "인천 부평구 십정동 산37"
+  },
+  {
+    "city": "인천",
+    "courtName": "아시아드주경기장테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "2시간 기준 평일 10,000원 공휴일 15,000원",
+    "reservation": "",
+    "address": "인천 서구 봉수대로 806"
+  },
+  {
+    "city": "인천",
+    "courtName": "열우물테니스장",
+    "courtEA": 20,
+    "contact": "032-715-6216",
+    "chargeInfo": "1시간 기준\n실외 성인 10,000원, 청소년 8,000원, 어린이 5,600원\n실내 성인 24,000원, 청소년 20,000원, 어린이 12,000원\n조명 1시간 10,000원",
+    "reservation": "https://www.icsports.or.kr/fmcs/55",
+    "address": "인천 부평구 열우물로 164"
+  },
+  {
+    "city": "인천",
+    "courtName": "옥골테니스장",
+    "courtEA": 2,
+    "contact": "032-880-4307",
+    "chargeInfo": "무료",
+    "reservation": "https://www.eshare.go.kr/UserPortal/adv/resources/AdvEsSearchResourcesMainView.do?rsrcClsCd=010503&sido=28",
+    "address": "인천 미추홀구 독배로 167"
+  },
+  {
+    "city": "인천",
+    "courtName": "옹진군청테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "인천 남구 용현동 627-608"
+  },
+  {
+    "city": "인천",
+    "courtName": "원신근린공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "인천 서구 석남동 산117-16"
+  },
+  {
+    "city": "인천",
+    "courtName": "원적산체육공원테니스장",
+    "courtEA": 3,
+    "contact": "010-2839-1974",
+    "chargeInfo": "2시간/1일/1회 2,000(개인) 조명사용시 1코트당 1시간/12,000",
+    "reservation": "",
+    "address": "인천 부평구 산곡동 산 179-140"
+  },
+  {
+    "city": "인천",
+    "courtName": "인천가좌테니스장",
+    "courtEA": 13,
+    "contact": "032-574-7979",
+    "chargeInfo": "1시간 기준\n실외 성인 10,000원, 군인/청소년 8,000원, 어린이 5,600원 조명 10,000원\n실내 성인 20,000원, 군인/청소년 16,000원, 어린이 11,200원 조명 5,000원",
+    "reservation": "https://www.icsports.or.kr/fmcs/103",
+    "address": "인천 서구 가좌로 11번길 7"
+  },
+  {
+    "city": "인천",
+    "courtName": "인천가톨릭대학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "인천 강화군 양도면 고려왕릉로 53-1"
+  },
+  {
+    "city": "인천",
+    "courtName": "인천인재개발원테니스장",
+    "courtEA": 2,
+    "contact": "032-440-7633",
+    "chargeInfo": "",
+    "reservation": "https://www.incheon.go.kr/res/RE020101/rentList?useAt=&resveProgrmSeCode=&resveGroupSn=&appTp=REQST&beginDt=&endDt=&sortType=&resveInsttCode=41&srchKeyword=",
+    "address": "인천 서구 심곡로 98"
+  },
+  {
+    "city": "인천",
+    "courtName": "인천지방해양수산청테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "인천 중구 서해대로 365-1"
+  },
+  {
+    "city": "인천",
+    "courtName": "인천환경공단가좌사업소테니스장",
+    "courtEA": 2,
+    "contact": "032-899-0139",
+    "chargeInfo": "무료",
+    "reservation": "https://www.eco-i.or.kr/eco_reserve/reservation/information.asp",
+    "address": "인천 서구 중봉대로 211"
+  },
+  {
+    "city": "인천",
+    "courtName": "인천환경공단송도지소테니스장",
+    "courtEA": 1,
+    "contact": "032-899-0263",
+    "chargeInfo": "무료",
+    "reservation": "https://www.eco-i.or.kr/eco_reserve/reservation/information.asp",
+    "address": "인천 연수구 송도 국제대로 372번길 6"
+  },
+  {
+    "city": "인천",
+    "courtName": "인천환경공단승기사업소테니스장",
+    "courtEA": 3,
+    "contact": "032-899-0200",
+    "chargeInfo": "무료",
+    "reservation": "https://www.eco-i.or.kr/eco_reserve/reservation/information.asp",
+    "address": "인천 연수구 능허대로 484"
+  },
+  {
+    "city": "인천",
+    "courtName": "인천환경공단운북사업소테니스장",
+    "courtEA": 2,
+    "contact": "032-899-4760",
+    "chargeInfo": "무료",
+    "reservation": "https://www.eco-i.or.kr/eco_reserve/reservation/information.asp",
+    "address": "인천 중구 영종해안북로 1204번길 105"
+  },
+  {
+    "city": "인천",
+    "courtName": "인하대학교테니스장",
+    "courtEA": 8,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "인천 남구 용현동 253"
+  },
+  {
+    "city": "인천",
+    "courtName": "자월분교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "무료",
+    "reservation": "https://www.eshare.go.kr/UserPortal/adv/resources/AdvEsSearchResourcesMainView.do?rsrcClsCd=010503&sido=28",
+    "address": "인천 옹진군 자월면 자월서로 177"
+  },
+  {
+    "city": "인천",
+    "courtName": "제물포고등학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "인천 중구 자유공원로 58-9"
+  },
+  {
+    "city": "인천",
+    "courtName": "주적체육공원테니스장",
+    "courtEA": 2,
+    "contact": "032-453-6283",
+    "chargeInfo": "무료",
+    "reservation": "https://www.eshare.go.kr/UserPortal/adv/resources/AdvEsSearchResourcesMainView.do?rsrcClsCd=010503&sido=28",
+    "address": "인천 남동구 논고개로 229"
+  },
+  {
+    "city": "인천",
+    "courtName": "청라생태공원테니스장",
+    "courtEA": 2,
+    "contact": "032-899-0415",
+    "chargeInfo": "무료",
+    "reservation": "https://www.eshare.go.kr/UserPortal/adv/resources/AdvEsSearchResourcesMainView.do?rsrcClsCd=010503&sido=28",
+    "address": "인천 서구 로봇랜드로249번길 38"
+  },
+  {
+    "city": "인천",
+    "courtName": "하늘문화센터테니스장",
+    "courtEA": 2,
+    "contact": "032-456-2956",
+    "chargeInfo": "무료",
+    "reservation": "https://www.eshare.go.kr/UserPortal/adv/resources/AdvEsSearchResourcesMainView.do?rsrcClsCd=010503&sido=28",
+    "address": "인천 중구 영종해안북로 1000-26"
+  }
+]

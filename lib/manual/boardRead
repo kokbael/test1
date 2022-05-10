@@ -1,0 +1,9 @@
+BoardRead(index: index, docs: docs)
+: BoardList 에서 선택한 Container 의 index 와 BoardList 에서의 docs 을 전달 받음.
+
+MaterialPageRoute 로 push 하였으므로 Scaffold 로 화면 구성.
+
+Text(widget.docs[widget.index]['title']     //  BoardTitle 을 Text 위젯으로 출력
+
+
+Idea #1

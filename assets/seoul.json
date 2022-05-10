@@ -1,0 +1,3386 @@
+[
+  {
+    "city": "강남구",
+    "courtName": "강남삼성동위드실내테니스장",
+    "courtEA": 2,
+    "contact": "0507-1304-1959",
+    "chargeInfo": "개인레슨 월 250,000원 ~",
+    "reservation": "http://withtennis.com/default/",
+    "address": "서울 강남구 삼성로 566 빌딩엠 지하 1층"
+  },
+  {
+    "city": "강남구",
+    "courtName": "강남테니스아카데미",
+    "courtEA": 2,
+    "contact": "0507-1413-5990",
+    "chargeInfo": "개인레슨 월 209,000원 ~",
+    "reservation": "https://gangnamtennis.modoo.at/",
+    "address": "서울 강남구 선릉로 319 지하1층"
+  },
+  {
+    "city": "강남구",
+    "courtName": "개포5단지주공아파트테니스장",
+    "courtEA": 2,
+    "contact": "02-3411-0252",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 강남구 삼성로4길 17"
+  },
+  {
+    "city": "강남구",
+    "courtName": "건설회관테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 강남구 언주로 711"
+  },
+  {
+    "city": "강남구",
+    "courtName": "경기고등학교테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 강남구 영동대로 643"
+  },
+  {
+    "city": "강남구",
+    "courtName": "그랜드슬램실내테니스",
+    "courtEA": 3,
+    "contact": "0507-1305-6432",
+    "chargeInfo": "개인레슨 월 200,000원 ~",
+    "reservation": "https://grandslam.kr/",
+    "address": "서울 강남구 역삼로38길 6"
+  },
+  {
+    "city": "강남구",
+    "courtName": "뉴현대테니스클럽",
+    "courtEA": 2,
+    "contact": "0507-1419-1391",
+    "chargeInfo": "시간 당 35,000원",
+    "reservation": "",
+    "address": "서울 강남구 압구정로 201"
+  },
+  {
+    "city": "강남구",
+    "courtName": "대모초등학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 강남구 일원동 737"
+  },
+  {
+    "city": "강남구",
+    "courtName": "대치미도2차아파트테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 강남구 삼성로 150"
+  },
+  {
+    "city": "강남구",
+    "courtName": "락테니스강남점(스크린)",
+    "courtEA": 1,
+    "contact": "0507-1436-6599",
+    "chargeInfo": "1회 자동 볼 머신 50번 (3분) 3,000원",
+    "reservation": "",
+    "address": "서울 강남구 도곡로 112 지하 1층 락테니스"
+  },
+  {
+    "city": "강남구",
+    "courtName": "래미안대치팰리스1단지아파트테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 강남구 삼성로51길 37"
+  },
+  {
+    "city": "강남구",
+    "courtName": "마루공원테니스장",
+    "courtEA": 3,
+    "contact": "02-445-9705",
+    "chargeInfo": "무료",
+    "reservation": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210205141719898815&code=T100&dCode=T108&sch_order=1&sch_choose_list=&sch_type=&sch_text=%EB%A7%88%EB%A3%A8%EA%B3%B5%EC%9B%90&sch_recpt_begin_dt=&sch_recpt_end_dt=&sch_use_begin_dt=&sch_use_end_dt=&sch_reqst_value=",
+    "address": "서울 강남구 일원로8길 37"
+  },
+  {
+    "city": "강남구",
+    "courtName": "마마테니스",
+    "courtEA": 1,
+    "contact": "02-571-0541",
+    "chargeInfo": "개인 레슨 월 209,000원 ~ / 볼 머신 1시간 40,000원",
+    "reservation": "",
+    "address": "서울 강남구 개포로22길 46 지하1층"
+  },
+  {
+    "city": "강남구",
+    "courtName": "모던테니스",
+    "courtEA": 1,
+    "contact": "010-6687-2218",
+    "chargeInfo": "",
+    "reservation": "https://moderntennis.co.kr/",
+    "address": "서울 강남구 논현로175길 40 서운빌딩 B1층"
+  },
+  {
+    "city": "강남구",
+    "courtName": "봉은테니스장",
+    "courtEA": 4,
+    "contact": "02-2176-0890",
+    "chargeInfo": "1시간 기준 평일 6,000원, 주말 7,000원 (야간 +10,000원)",
+    "reservation": "https://life.gangnam.go.kr/fmcs/54?facilities_type=C&base_date=20220301&rent_type=1001&center=GNCC05&part=&place=",
+    "address": "서울 강남구 삼성동 75"
+  },
+  {
+    "city": "강남구",
+    "courtName": "빅토리테니스아카데미압구정본점",
+    "courtEA": 2,
+    "contact": "010-4512-3743",
+    "chargeInfo": "개인레슨 월 200,000원 ~ / 코트대여 60분 33,000원",
+    "reservation": "https://victorytennis.modoo.at/",
+    "address": "서울 강남구 논현로163길 10"
+  },
+  {
+    "city": "강남구",
+    "courtName": "수도전기공업고등학교테니스장",
+    "courtEA": 7,
+    "contact": "070-4673-9800",
+    "chargeInfo": "시간당 30,000원",
+    "reservation": "",
+    "address": "서울 강남구 개포로 410"
+  },
+  {
+    "city": "강남구",
+    "courtName": "숙명여자고등학교테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 강남구 남부순환로 2807 숙명여자고등학교"
+  },
+  {
+    "city": "강남구",
+    "courtName": "숙명테니스아카데미",
+    "courtEA": 4,
+    "contact": "02-3462-6621",
+    "chargeInfo": "평일 1시간 20,000원",
+    "reservation": "https://pcmap.place.naver.com/place/1738530428/ticket",
+    "address": "서울 강남구 남부순환로 2807 숙명여고 테니스장"
+  },
+  {
+    "city": "강남구",
+    "courtName": "어반테니스선릉역점",
+    "courtEA": 1,
+    "contact": "0507-1406-9846",
+    "chargeInfo": "개인레슨 월 180,000원 ~",
+    "reservation": "http://www.urbantennis.co.kr/",
+    "address": "서울 강남구 선릉로93길 56"
+  },
+  {
+    "city": "강남구",
+    "courtName": "어반테니스역삼점",
+    "courtEA": 2,
+    "contact": "02-558-9846",
+    "chargeInfo": "개인레슨 월 180,000원 ~",
+    "reservation": "http://www.urbantennis.co.kr/",
+    "address": "서울 강남구 논현로85길 46 B2층"
+  },
+  {
+    "city": "강남구",
+    "courtName": "에이원테니스청담점",
+    "courtEA": 2,
+    "contact": "010-6428-1661",
+    "chargeInfo": "개인레슨 월 180,000원 ~",
+    "reservation": "",
+    "address": "서울 강남구 선릉로 754 서진빌딩 B1"
+  },
+  {
+    "city": "강남구",
+    "courtName": "오토테니스논현점",
+    "courtEA": 2,
+    "contact": "0507-1393-6669",
+    "chargeInfo": "1인 25,000원",
+    "reservation": "https://pcmap.place.naver.com/place/1671144287/ticket?entry=pll&from=map&fromPanelNum=2&ts=1647399387098",
+    "address": "서울 강남구 학동로 118 성도빌딩 B1층"
+  },
+  {
+    "city": "강남구",
+    "courtName": "오토테니스삼성코엑스점",
+    "courtEA": 2,
+    "contact": "0507-1309-6669",
+    "chargeInfo": "개인레슨 월 200,000원 ~",
+    "reservation": "",
+    "address": "서울 강남구 삼성로108길 5"
+  },
+  {
+    "city": "강남구",
+    "courtName": "왓어샷테니스장",
+    "courtEA": 2,
+    "contact": "0507-1363-1115",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 강남구 언주로 805 준빌딩 지하 1층"
+  },
+  {
+    "city": "강남구",
+    "courtName": "이지테니스신사점",
+    "courtEA": 1,
+    "contact": "0507-1445-1563",
+    "chargeInfo": "",
+    "reservation": "https://pf.kakao.com/_ERFlxb",
+    "address": "서울 강남구 논현로149길 67-5 B1층"
+  },
+  {
+    "city": "강남구",
+    "courtName": "이지테니스언주점",
+    "courtEA": 1,
+    "contact": "0507-1360-1430",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 강남구 논현로 609 지하2층"
+  },
+  {
+    "city": "강남구",
+    "courtName": "중동고등학교테니스장",
+    "courtEA": 1,
+    "contact": "02-3411-0100",
+    "chargeInfo": "30,000원/시간당",
+    "reservation": "https://www.joongdong.hs.kr/?c=F01/F12/318",
+    "address": "서울 강남구 일원로 7"
+  },
+  {
+    "city": "강남구",
+    "courtName": "중동중학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 강남구 일원로8길 37"
+  },
+  {
+    "city": "강남구",
+    "courtName": "진선여자중학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 강남구 선릉로85길 27"
+  },
+  {
+    "city": "강남구",
+    "courtName": "찰스테니스아카데미선릉점",
+    "courtEA": 1,
+    "contact": "0507-1418-2850",
+    "chargeInfo": "개인레슨 월 176,000원 ~",
+    "reservation": "",
+    "address": "서울 강남구 테헤란로77길 23 케이엠빌딩 지하1층"
+  },
+  {
+    "city": "강남구",
+    "courtName": "코인테니스24 1호점",
+    "courtEA": 2,
+    "contact": "0507-1347-0389",
+    "chargeInfo": "테니스 게임 3,000원",
+    "reservation": "https://pcmap.place.naver.com/place/1537308926/ticket?entry=pll&from=map&fromPanelNum=2&ts=1647399261781",
+    "address": "서울 강남구 강남대로124길 3-6 B1층"
+  },
+  {
+    "city": "강남구",
+    "courtName": "탄천물재생센터테니스장",
+    "courtEA": 2,
+    "contact": "02-3410-9861",
+    "chargeInfo": "무료",
+    "reservation": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S211206151052647141",
+    "address": "서울특별시 강남구 개포로 625"
+  },
+  {
+    "city": "강남구",
+    "courtName": "테니스마스터",
+    "courtEA": 2,
+    "contact": "0507-1377-2683",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 강남구 논현로30길 32 지하1층, 논현로30길32 지하1층"
+  },
+  {
+    "city": "강남구",
+    "courtName": "테니스매틱스",
+    "courtEA": 1,
+    "contact": "02-557-1540",
+    "chargeInfo": "",
+    "reservation": "https://tennismatics.modoo.at/",
+    "address": "서울 강남구 선릉로 305 B1층"
+  },
+  {
+    "city": "강남구",
+    "courtName": "테니스비트삼성청담점",
+    "courtEA": 1,
+    "contact": "0507-1336-0924",
+    "chargeInfo": "개인레슨 월 180,000원 ~",
+    "reservation": "https://tennisbeats.com/",
+    "address": "서울 강남구 선릉로112길 85"
+  },
+  {
+    "city": "강남구",
+    "courtName": "테니스파크역삼점",
+    "courtEA": 3,
+    "contact": "02-555-5981",
+    "chargeInfo": "개인레슨 월 170,000원 ~",
+    "reservation": "https://tennispark2021.modoo.at/",
+    "address": "서울 강남구 도곡로3길 13 르메이에르 타운 지하1층"
+  },
+  {
+    "city": "강남구",
+    "courtName": "테니스핏논현점",
+    "courtEA": 2,
+    "contact": "010-6478-6081",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 강남구 강남대로 584 테니스핏 지하 1층"
+  },
+  {
+    "city": "강남구",
+    "courtName": "테크닉스",
+    "courtEA": 1,
+    "contact": "02-6673-1987",
+    "chargeInfo": "",
+    "reservation": "https://www.instagram.com/technical.tennis.studio/",
+    "address": "서울 강남구 개포로 233 지하1층"
+  },
+  {
+    "city": "강남구",
+    "courtName": "포이테니스장",
+    "courtEA": 3,
+    "contact": "02-2176-0876",
+    "chargeInfo": "",
+    "reservation": "https://life.gangnam.go.kr/fmcs/54?facilities_type=C&base_date=20220301&rent_type=1001&center=GNCC06&part=02&place=1",
+    "address": "서울 강남구 개포로28길 47"
+  },
+  {
+    "city": "강동구",
+    "courtName": "JS실내테니스",
+    "courtEA": 3,
+    "contact": "010-4825-0652",
+    "chargeInfo": "개인레슨 월 160,000원 ~ / 코트대여 1회 3만원",
+    "reservation": "https://suntennis3.modoo.at/",
+    "address": "서울 강동구 올림픽로 845 소은빌딩 B1"
+  },
+  {
+    "city": "강동구",
+    "courtName": "강동소방서테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 강동구 성내로 39"
+  },
+  {
+    "city": "강동구",
+    "courtName": "강일테니스장",
+    "courtEA": 10,
+    "contact": "02-2045-7872",
+    "chargeInfo": "8,800원(코트당) 2시간 기준",
+    "reservation": "https://www.igangdong.or.kr/online/",
+    "address": "서울 강동구 아리수로93가길 314"
+  },
+  {
+    "city": "강동구",
+    "courtName": "거배테니스아카데미",
+    "courtEA": 2,
+    "contact": "010-2264-0068",
+    "chargeInfo": "개인레슨 월 140,000원 ~",
+    "reservation": "",
+    "address": "서울 강동구 고덕로 399 고덕센트럴푸르지오상가"
+  },
+  {
+    "city": "강동구",
+    "courtName": "광나루한강공원테니스장",
+    "courtEA": 8,
+    "contact": "010-9652-8179",
+    "chargeInfo": "",
+    "reservation": "http://www.xn--939a20k9zoo0e61ni2f.com/bbs/board.php?bo_table=table24",
+    "address": "서울특별시 강동구 선사로 83-66"
+  },
+  {
+    "city": "강동구",
+    "courtName": "더블유테니스아카데미",
+    "courtEA": 2,
+    "contact": "0507-1304-4584",
+    "chargeInfo": "개인레슨 월 150,000원 ~",
+    "reservation": "http://wtennis.co.kr",
+    "address": "서울 강동구 고덕로 104 육대쌈 건물 지하1층"
+  },
+  {
+    "city": "강동구",
+    "courtName": "매치포인트실내테니스",
+    "courtEA": 2,
+    "contact": "0507-1397-8013",
+    "chargeInfo": "개인레슨 월 160,000원 ~ / 스크린테니스 2,000원",
+    "reservation": "https://www.instagram.com/matchpoint__official/",
+    "address": "서울 강동구 성안로 172 B2"
+  },
+  {
+    "city": "강동구",
+    "courtName": "명일중학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 강동구 양재대로156길 57"
+  },
+  {
+    "city": "강동구",
+    "courtName": "명일테니스장",
+    "courtEA": 5,
+    "contact": "02-2045-7870",
+    "chargeInfo": "(1코트 2시간) 평일, 주간 월~금 8,800원\n주말, 공휴일 토, 일, 공휴일 11,400원",
+    "reservation": "https://www.igangdong.or.kr/online/",
+    "address": "서울 강동구 동남로 785"
+  },
+  {
+    "city": "강동구",
+    "courtName": "바비테니스",
+    "courtEA": 4,
+    "contact": "0507-1369-9894",
+    "chargeInfo": "개인레슨 월 160,000원 ~",
+    "reservation": "http://www.bobbytennis.co.kr/",
+    "address": "서울 강동구 올림픽로 630 양성빌딩 4층"
+  },
+  {
+    "city": "강동구",
+    "courtName": "선경석테니스천호점",
+    "courtEA": 2,
+    "contact": "010-4101-0655",
+    "chargeInfo": "개인레슨 월 160,000원 ~",
+    "reservation": "https://suntennis2.modoo.at/",
+    "address": "서울 강동구 구천면로 165 광진타워빌딩 지하 2층"
+  },
+  {
+    "city": "강동구",
+    "courtName": "성지실내테니스장",
+    "courtEA": 1,
+    "contact": "0507-1330-3430",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 강동구 동남로 783 원진빌딩"
+  },
+  {
+    "city": "강동구",
+    "courtName": "송림근린공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 강동구 고덕로 253"
+  },
+  {
+    "city": "강동구",
+    "courtName": "테니스하우스",
+    "courtEA": 2,
+    "contact": "0507-1389-7664",
+    "chargeInfo": "개인레슨 월 150,000원 ~",
+    "reservation": "https://tennishaus.modoo.at/",
+    "address": "서울 강동구 양재대로 1486 지하1층"
+  },
+  {
+    "city": "강동구",
+    "courtName": "프라임테니스",
+    "courtEA": 2,
+    "contact": "0507-1362-9042",
+    "chargeInfo": "개인레슨 월 180,000원 ~",
+    "reservation": "https://primetennis.modoo.at/",
+    "address": "서울 강동구 양재대로 1392 진산빌딩 2층"
+  },
+  {
+    "city": "강동구",
+    "courtName": "한영고등학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 강동구 동남로 832"
+  },
+  {
+    "city": "강북구",
+    "courtName": "번동중학교테니스장",
+    "courtEA": 1,
+    "contact": "02-985-3479",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000893&codeId=SEN006",
+    "address": "서울 강북구 오현로35길 87"
+  },
+  {
+    "city": "강북구",
+    "courtName": "서라벌중학교테니스장",
+    "courtEA": 3,
+    "contact": "0507-1347-9362",
+    "chargeInfo": "개인레슨 월 120,000원 ~",
+    "reservation": "",
+    "address": "서울 강북구 삼양로155길 37-9"
+  },
+  {
+    "city": "강북구",
+    "courtName": "오동근린공원테니스장",
+    "courtEA": 3,
+    "contact": "010-9976-3143",
+    "chargeInfo": "",
+    "reservation": "https://blog.naver.com/nscout/222519740543",
+    "address": "서울 강북구 월계로 191-40"
+  },
+  {
+    "city": "강서구",
+    "courtName": "강서구립테니스장",
+    "courtEA": 6,
+    "contact": "02-2600-6412",
+    "chargeInfo": "",
+    "reservation": "https://sports.gangseo.seoul.kr/fmcs/28?facilities_type=T&base_date=&rent_type=1001&center=GANGSEO03&part=02&place=3",
+    "address": "서울 강서구 방화동 41-4"
+  },
+  {
+    "city": "강서구",
+    "courtName": "국립항공박물관테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 강서구 하늘길 185"
+  },
+  {
+    "city": "강서구",
+    "courtName": "농림축산검역본부서울지역본부",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 강서구 등촌로39가길 46"
+  },
+  {
+    "city": "강서구",
+    "courtName": "더스타프리테니스아카데미",
+    "courtEA": 1,
+    "contact": "0507-1388-5442",
+    "chargeInfo": "개인레슨 월 180,000원 ~",
+    "reservation": "",
+    "address": "서울 강서구 가로공원로76가길 2 지하1층"
+  },
+  {
+    "city": "강서구",
+    "courtName": "더에이스테니스아카데미",
+    "courtEA": 1,
+    "contact": "0507-1326-9405",
+    "chargeInfo": "개인레슨 월 140,000원 ~",
+    "reservation": "https://joyta.modoo.at/",
+    "address": "서울 강서구 마곡중앙4로 22 A동 지하1층"
+  },
+  {
+    "city": "강서구",
+    "courtName": "더테니스럭스아카데미",
+    "courtEA": 1,
+    "contact": "02-3664-3690",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 강서구 마곡중앙6로 65 6층"
+  },
+  {
+    "city": "강서구",
+    "courtName": "마포고등학교테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 강서구 화곡로 403"
+  },
+  {
+    "city": "강서구",
+    "courtName": "발산초등학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000308&codeId=SEN006",
+    "address": "서울 강서구 강서로45길 113"
+  },
+  {
+    "city": "강서구",
+    "courtName": "방화중학교테니스장",
+    "courtEA": 1,
+    "contact": "02-2664-8952",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000320&codeId=SEN006",
+    "address": "서울 강서구 개화동로27길 9 방화중학교"
+  },
+  {
+    "city": "강서구",
+    "courtName": "방화초등학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 강서구 개화동로 495"
+  },
+  {
+    "city": "강서구",
+    "courtName": "서남물재생센터공원테니스장",
+    "courtEA": 14,
+    "contact": "",
+    "chargeInfo": "사용료(기본 1시간)\n- 평일 : 5,000원\n- 주말, 공휴일 : 6,500원\n- 라이트 비용 :5,000원",
+    "reservation": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210330150834331881&code=T100&dCode=T108&sch_order=1&sch_choose_list=&sch_type=&sch_text=%EB%AC%BC%EC%9E%AC%EC%83%9D&sch_recpt_begin_dt=&sch_recpt_end_dt=&sch_use_begin_dt=&sch_use_end_dt=&sch_reqst_value=",
+    "address": "서울특별시 강서구 양천로 201(마곡동)"
+  },
+  {
+    "city": "강서구",
+    "courtName": "송정초등학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000280&codeId=SEN006",
+    "address": "서울 강서구 공항대로3길 18"
+  },
+  {
+    "city": "강서구",
+    "courtName": "수명산근린공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 강서구 강서로45길 131-11 공중화장실"
+  },
+  {
+    "city": "강서구",
+    "courtName": "우장산테니스장",
+    "courtEA": 4,
+    "contact": "02-2600-4195",
+    "chargeInfo": "2시간 기준 평일 60,500 / 주말 78,650 (4월~8월 06시 50%)",
+    "reservation": "https://sports.gangseo.seoul.kr/fmcs/28?facilities_type=T&base_date=20220310&rent_type=1001&center=GANGSEO02&part=03&place=2#type_calendar",
+    "address": "서울시 강서구 우장산로10길 우장테니스장"
+  },
+  {
+    "city": "강서구",
+    "courtName": "유석초등학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 강서구 화곡로69길 9"
+  },
+  {
+    "city": "강서구",
+    "courtName": "조이테니스아카테미마곡점",
+    "courtEA": 1,
+    "contact": "010-3017-5212",
+    "chargeInfo": "개인레슨 월 121,000원 ~",
+    "reservation": "https://theace.modoo.at/",
+    "address": "서울 강서구 마곡중앙6로 45 6층"
+  },
+  {
+    "city": "강서구",
+    "courtName": "테니스101",
+    "courtEA": 1,
+    "contact": "010-9356-0898",
+    "chargeInfo": "개인레슨 월 187,000원 ~",
+    "reservation": "https://www.instagram.com/tennis101_indoor",
+    "address": "서울 강서구 강서로 402 지하1층"
+  },
+  {
+    "city": "강서구",
+    "courtName": "테니스비트가양마곡점",
+    "courtEA": 1,
+    "contact": "0507-1484-1466",
+    "chargeInfo": "",
+    "reservation": "https://tennisbeats.com/",
+    "address": "서울 강서구 양천로 461 주영빌딩 B1층"
+  },
+  {
+    "city": "강서구",
+    "courtName": "황금내근린공원테니스장",
+    "courtEA": 1,
+    "contact": "02-2600-4186",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울특별시 강서구 허준로 221-40"
+  },
+  {
+    "city": "관악구",
+    "courtName": "JTA TENNIS ACADEMY",
+    "courtEA": 2,
+    "contact": "0507-1337-4116",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 관악구 법원단지5나길 77"
+  },
+  {
+    "city": "관악구",
+    "courtName": "관악구민운동장테니스장",
+    "courtEA": 4,
+    "contact": "02-2081-2660",
+    "chargeInfo": "평일 주간: 5,500원 주말 주간: 7,700원\n평일 및 주말 야간: 11,000원",
+    "reservation": "https://www.gwanakgongdan.or.kr/fmcs/116?facilities_type=C&base_date=20220315&center=KWAN_AK03&type=1002&part=02",
+    "address": "서울 관악구 낙성대로 40"
+  },
+  {
+    "city": "관악구",
+    "courtName": "관악산생태공원테니스장(선우테니스장)",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "개인레슨 주 4회 월 200,000원 ~",
+    "reservation": "",
+    "address": "서울 관악구 신림동 산117-20"
+  },
+  {
+    "city": "관악구",
+    "courtName": "남강고등학교테니스장",
+    "courtEA": 8,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 관악구 난곡로34길 80"
+  },
+  {
+    "city": "관악구",
+    "courtName": "당곡고등학교테니스장",
+    "courtEA": 1,
+    "contact": "02-6717-5105",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000542&codeId=SEN006",
+    "address": "서울 관악구 봉천로21길 108"
+  },
+  {
+    "city": "관악구",
+    "courtName": "봉원중학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 관악구 관악로24가길 15"
+  },
+  {
+    "city": "관악구",
+    "courtName": "서울관광고등학교테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 관악구 은천로15길 25"
+  },
+  {
+    "city": "관악구",
+    "courtName": "서울대학교관악캠퍼스테니스장1",
+    "courtEA": 14,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://athletics.snu.ac.kr/",
+    "address": "서울 관악구 관악로 1"
+  },
+  {
+    "city": "관악구",
+    "courtName": "서울대학교관악캠퍼스테니스장2",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://athletics.snu.ac.kr/",
+    "address": "서울 관악구 관악로 1"
+  },
+  {
+    "city": "관악구",
+    "courtName": "써티올테니스서울대입구점",
+    "courtEA": 1,
+    "contact": "0507-1311-8351",
+    "chargeInfo": "",
+    "reservation": "http://3030tennis.quv.kr/",
+    "address": "서울 관악구 남부순환로 1874 지하1층"
+  },
+  {
+    "city": "관악구",
+    "courtName": "테니스플러스관악점",
+    "courtEA": 1,
+    "contact": "0507-1350-9594",
+    "chargeInfo": "개인레슨 월 160,000원",
+    "reservation": "",
+    "address": "서울 관악구 신림로3길 40 건영3차아파트 상가"
+  },
+  {
+    "city": "광진구",
+    "courtName": "k2실내테니스",
+    "courtEA": 1,
+    "contact": "0507-1342-0813",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 광진구 아차산로 345"
+  },
+  {
+    "city": "광진구",
+    "courtName": "건국대학교서울캠퍼스테니스장1",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 광진구 능동로 120 (건국대학교 행정관 앞)"
+  },
+  {
+    "city": "광진구",
+    "courtName": "건국대학교서울캠퍼스테니스장2",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 광진구 능동로 120 (건국대학교 일우헌 앞)"
+  },
+  {
+    "city": "광진구",
+    "courtName": "건대부중테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 광진구 자양로 145-1"
+  },
+  {
+    "city": "광진구",
+    "courtName": "광장드림테니스",
+    "courtEA": 3,
+    "contact": "02-455-7727",
+    "chargeInfo": "볼 머신기 10분 3,000원 / 개인레슨 월",
+    "reservation": "http://www.gjtennis.com/",
+    "address": "서울 광진구 광나루로 527 2층 광장드림테니스"
+  },
+  {
+    "city": "광진구",
+    "courtName": "광장테니스아카데미",
+    "courtEA": 1,
+    "contact": "02-456-7727",
+    "chargeInfo": "개인레슨 월 150,000원 ~",
+    "reservation": "http://www.gjtennis.com/",
+    "address": "서울 광진구 광나루로 603 광장빌딩 지하1층"
+  },
+  {
+    "city": "광진구",
+    "courtName": "그랜드워커힐서울호텔테니스장",
+    "courtEA": 2,
+    "contact": "02-450-4607",
+    "chargeInfo": "투숙객 전용, 평일 30,000원 / 주말 40,000원",
+    "reservation": "",
+    "address": "서울 광진구 워커힐로 177"
+  },
+  {
+    "city": "광진구",
+    "courtName": "뚝섬한강공원테니스장",
+    "courtEA": 4,
+    "contact": "010-7736-5477",
+    "chargeInfo": "",
+    "reservation": "http://www.xn--939a20k9zoo0e61ni2f.com/bbs/board.php?bo_table=table22",
+    "address": "서울 광진구 자양동 410-1"
+  },
+  {
+    "city": "광진구",
+    "courtName": "백스테니스아카데미",
+    "courtEA": 1,
+    "contact": "0507-1329-5495",
+    "chargeInfo": "(주 2회) 개인레슨 월 220,000원 ~",
+    "reservation": "",
+    "address": "서울 광진구 아차산로 453"
+  },
+  {
+    "city": "광진구",
+    "courtName": "볼랩테니스장",
+    "courtEA": 1,
+    "contact": "0507-1321-3653",
+    "chargeInfo": "풀코트 1시간 이용료 40,000원\n코트 30분 이용료 10,000원",
+    "reservation": "https://balllab.co.kr/idlee/Balllab-Inc-73bd6db3e505499dbc27e66f27756169",
+    "address": "서울 광진구 광나루로 358 지하1층"
+  },
+  {
+    "city": "광진구",
+    "courtName": "서울구의초등학교테니스장",
+    "courtEA": 1,
+    "contact": "02-447-4110",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000834&codeId=SEN006",
+    "address": "서울 광진구 광나루로30길 49"
+  },
+  {
+    "city": "광진구",
+    "courtName": "서울어린이대공원테니스장",
+    "courtEA": 2,
+    "contact": "010-3466-7426",
+    "chargeInfo": "시간당 4,000원, 17:00 이후, 주말 및 휴일은 할증",
+    "reservation": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S211228114140285936&code=T100&dCode=T108&sch_order=1&sch_choose_list=&sch_type=&sch_text=%EC%96%B4%EB%A6%B0%EC%9D%B4&sch_recpt_begin_dt=&sch_recpt_end_dt=&sch_use_begin_dt=&sch_use_end_dt=&sch_reqst_value=",
+    "address": "서울 광진구 능동로 216 어린이대공원"
+  },
+  {
+    "city": "광진구",
+    "courtName": "세종대학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 광진구 능동로 209"
+  },
+  {
+    "city": "광진구",
+    "courtName": "신양중학교테니스장",
+    "courtEA": 1,
+    "contact": "02-461-1066",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000842&codeId=SEN006",
+    "address": "서울 광진구 자양강변길 73 서울신양중학교"
+  },
+  {
+    "city": "광진구",
+    "courtName": "아차산배수지체육공원테니스장",
+    "courtEA": 4,
+    "contact": "02-450-1779",
+    "chargeInfo": "2시간 기준 평일 8,000원 / 야간,주말,공휴일 10,400원",
+    "reservation": "https://booking.gwangjin.or.kr/rent/application/index/2022/03/25/1/GWANGJIN04/05",
+    "address": "서울 광진구 천호대로 731"
+  },
+  {
+    "city": "광진구",
+    "courtName": "자양고등학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 광진구 뚝섬로41길 33"
+  },
+  {
+    "city": "광진구",
+    "courtName": "장로회신학대학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 광진구 광장로5길 25-1"
+  },
+  {
+    "city": "광진구",
+    "courtName": "찰스테니스아카데미구의점",
+    "courtEA": 2,
+    "contact": "0507-1424-1920",
+    "chargeInfo": "개인레슨 월 150,000원 ~",
+    "reservation": "http://ctguui.alltheway.kr/",
+    "address": "서울 광진구 자양로18길 33"
+  },
+  {
+    "city": "광진구",
+    "courtName": "테니스UP24광나루점",
+    "courtEA": 4,
+    "contact": "0507-1484-0049",
+    "chargeInfo": "(볼 머신기)코트1 30분 6,500원 코트2 30분 6,500원\n코트3 30분 9,000원 자이언트 코트(코트1+코트2) 30분 13,000원",
+    "reservation": "https://www.tennisup24.kr/",
+    "address": "서울 광진구 아차산로76길 19 지하1층"
+  },
+  {
+    "city": "광진구",
+    "courtName": "테니스UP24군자점",
+    "courtEA": 4,
+    "contact": "070-7954-1224",
+    "chargeInfo": "(볼 머신기) 코트A 7,500원 코트B 7,500원\n코트C 8,000원 코트D 15,000원",
+    "reservation": "https://www.tennisup24.kr/",
+    "address": "서울 광진구 능동로37길 11 지하 1층"
+  },
+  {
+    "city": "구로구",
+    "courtName": "개봉테니스장",
+    "courtEA": 4,
+    "contact": "010-8264-0143",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 구로구 남부순환로 946 구로평생학습관"
+  },
+  {
+    "city": "구로구",
+    "courtName": "경인중학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 구로구 경인로 301"
+  },
+  {
+    "city": "구로구",
+    "courtName": "계남테니스장",
+    "courtEA": 4,
+    "contact": "02-2611-9007",
+    "chargeInfo": "실내코트 30,000원 39,000원 야외코트 10,000원 13,000원",
+    "reservation": "https://www.gurosisul.or.kr/mod.asp?m=business&s=b11-1&t=2",
+    "address": "서울 구로구 중앙로17길 10"
+  },
+  {
+    "city": "구로구",
+    "courtName": "고척고등학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000516&codeId=SEN006",
+    "address": "서울 구로구 중앙로15길 162 고척고등학교"
+  },
+  {
+    "city": "구로구",
+    "courtName": "고척근린공원테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 구로구 고척로45길 39 구로구민체육센터"
+  },
+  {
+    "city": "구로구",
+    "courtName": "귀뚜라미크린테니스코트",
+    "courtEA": 6,
+    "contact": "0507-1430-8212",
+    "chargeInfo": "실내코트 06:00~22:00 평일 40,000원 주말/공휴일 55,000원\n야외코트 06:00~21:00 평일 15,000원 주말/공휴일 25,000원",
+    "reservation": "https://kitutennis.co.kr/",
+    "address": "서울 구로구 고척동 66-30"
+  },
+  {
+    "city": "구로구",
+    "courtName": "그린빌라테니스장",
+    "courtEA": 3,
+    "contact": "010-8284-5021",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 구로구 항동 3-2"
+  },
+  {
+    "city": "구로구",
+    "courtName": "동구로초등학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 구로구 구로중앙로14길 43"
+  },
+  {
+    "city": "구로구",
+    "courtName": "비거테니스",
+    "courtEA": 2,
+    "contact": "0507-1311-9693",
+    "chargeInfo": "개인레슨 월 160,000원 ~",
+    "reservation": "",
+    "address": "서울 구로구 개봉로3길 87 1층 101호"
+  },
+  {
+    "city": "구로구",
+    "courtName": "신도림테니스장",
+    "courtEA": 4,
+    "contact": "1899-9912",
+    "chargeInfo": "야외코트 월 ~ 일  평일주간 10,000원 주말/야간 13,000원",
+    "reservation": "https://www.gurosisul.or.kr/mod.asp?m=business&s=b11-2",
+    "address": "서울 구로구 신도림동 276-4"
+  },
+  {
+    "city": "구로구",
+    "courtName": "우신고등학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 구로구 부일로 917"
+  },
+  {
+    "city": "구로구",
+    "courtName": "유한대학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 구로구 오류동 108-18"
+  },
+  {
+    "city": "금천구",
+    "courtName": "가산윔블던실내테니스아카데미",
+    "courtEA": 2,
+    "contact": "010-9770-3266",
+    "chargeInfo": "개인레슨 월 110,000원 ~",
+    "reservation": "https://gwta.modoo.at/",
+    "address": "서울 금천구 가산로 89 지층"
+  },
+  {
+    "city": "금천구",
+    "courtName": "금산초등학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 금천구 시흥대로24길 57-10"
+  },
+  {
+    "city": "금천구",
+    "courtName": "금천체육공원테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 금천구 독산로54길 102-27"
+  },
+  {
+    "city": "금천구",
+    "courtName": "독산자연공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 금천구 독산동 산10-1"
+  },
+  {
+    "city": "금천구",
+    "courtName": "독산테니스장",
+    "courtEA": 6,
+    "contact": "02-2627-1465",
+    "chargeInfo": "1시간 주간 2,000원 / 야간 4,000원 (주말/공휴일 +3,000원)",
+    "reservation": "https://www.geumcheon.go.kr/portal/contents.do?key=985",
+    "address": "서울 금천구 독산로54길 288"
+  },
+  {
+    "city": "금천구",
+    "courtName": "문성중학교테니스장",
+    "courtEA": 1,
+    "contact": "02-868-4052",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000037&codeId=SEN006",
+    "address": "서울 금천구 독산로102길 78 문성중학교"
+  },
+  {
+    "city": "금천구",
+    "courtName": "조이테니스아카데미가산점",
+    "courtEA": 2,
+    "contact": "0507-1469-3888",
+    "chargeInfo": "개인레슨 월 170,000원 ~",
+    "reservation": "https://joygasan.modoo.at/",
+    "address": "서울 금천구 가산디지털1로 168 우림라이온스밸리B동 지하 1층 126-1호"
+  },
+  {
+    "city": "금천구",
+    "courtName": "프로원테니스",
+    "courtEA": 1,
+    "contact": "02-808-9808",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 금천구 시흥대로 143 지하5호"
+  },
+  {
+    "city": "금천구",
+    "courtName": "하안주공12단지아파트테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 금천구 독산동 1086-2"
+  },
+  {
+    "city": "노원구",
+    "courtName": "경기기계공업고등학교테니스장",
+    "courtEA": 6,
+    "contact": "02-2289-1600",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000563&codeId=SEN006",
+    "address": "서울 노원구 공릉로 264"
+  },
+  {
+    "city": "노원구",
+    "courtName": "데일리테니스(무인)",
+    "courtEA": 2,
+    "contact": "0502-1933-2965",
+    "chargeInfo": "코트(60분)_1인 15,000원\n(전체공간대여) 30,000원",
+    "reservation": "https://m.booking.naver.com/booking/10/bizes/652365?area=bmp&service-target=map-pc",
+    "address": "서울 노원구 동일로242나길 8 지하1층"
+  },
+  {
+    "city": "노원구",
+    "courtName": "마들스포츠타운테니스장",
+    "courtEA": 9,
+    "contact": "02-2289-6854",
+    "chargeInfo": "1시간 기준\n평일 주간 4,000원, 야간 5,200원\n주말/공휴일 5,200원 , 조명 사용료 3,000원",
+    "reservation": "https://reservation.nowonsc.kr/sports/tennis_list",
+    "address": "서울 노원구 덕릉로 450"
+  },
+  {
+    "city": "노원구",
+    "courtName": "바나나실내테니스장",
+    "courtEA": 2,
+    "contact": "0507-1318-1783",
+    "chargeInfo": "볼머신기 이용료 30분 10,000원\n원포인트 레슨 50,000원",
+    "reservation": "https://pcmap.place.naver.com/place/1926983961/home",
+    "address": "서울 노원구 중계로16길 10"
+  },
+  {
+    "city": "노원구",
+    "courtName": "불암산스포츠타운테니스장",
+    "courtEA": 3,
+    "contact": "02-2289-6854",
+    "chargeInfo": "1시간 기준\n평일 주간 4,000원, 야간 5,200원\n주말/공휴일 5,200원 , 조명 사용료 3,000원",
+    "reservation": "https://reservation.nowonsc.kr/sports/tennis_list",
+    "address": "서울 노원구 중계로 36 불암산 종합스타디움"
+  },
+  {
+    "city": "노원구",
+    "courtName": "삼육대학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 노원구 화랑로 815"
+  },
+  {
+    "city": "노원구",
+    "courtName": "상계고등학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 노원구 노해로 432"
+  },
+  {
+    "city": "노원구",
+    "courtName": "상계제일중학교테니스장",
+    "courtEA": 2,
+    "contact": "02-930-3542",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000641&codeId=SEN006",
+    "address": "서울 노원구 덕릉로86길 29-15"
+  },
+  {
+    "city": "노원구",
+    "courtName": "상계주공12단지아파트(햇빛공원)테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 노원구 한글비석로 530"
+  },
+  {
+    "city": "노원구",
+    "courtName": "상계중학교테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 노원구 노원로 398"
+  },
+  {
+    "city": "노원구",
+    "courtName": "서울과학기술대학교테니스장",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 노원구 노원로 75"
+  },
+  {
+    "city": "노원구",
+    "courtName": "서울여자대학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 노원구 화랑로 653"
+  },
+  {
+    "city": "노원구",
+    "courtName": "수락산당고개지구공원테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 노원구 상계로 273"
+  },
+  {
+    "city": "노원구",
+    "courtName": "연세탑테니스",
+    "courtEA": 2,
+    "contact": "02-935-1170",
+    "chargeInfo": "개인레슨 월 140,000원 ~",
+    "reservation": "",
+    "address": "서울 노원구 한글비석로 325 B03호"
+  },
+  {
+    "city": "노원구",
+    "courtName": "올웨더테니스",
+    "courtEA": 2,
+    "contact": "010-2178-0706",
+    "chargeInfo": "개인레슨 월 165,000원 ~",
+    "reservation": "http://allwt.co.kr/",
+    "address": "서울 노원구 노원로22길 77"
+  },
+  {
+    "city": "노원구",
+    "courtName": "월계중학교테니스장",
+    "courtEA": 1,
+    "contact": "02-993-3114",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schMain/index.do?schoolId=SCHOOL-00000000637&bbsId=BBSMSTR_000000000142",
+    "address": "서울 노원구 월계로45가길 54"
+  },
+  {
+    "city": "노원구",
+    "courtName": "은빛테니스장",
+    "courtEA": 1,
+    "contact": "0507-1406-6312",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 노원구 동일로245길 162 은빛1단지아파트"
+  },
+  {
+    "city": "노원구",
+    "courtName": "이봉연의테니스교실",
+    "courtEA": 2,
+    "contact": "0507-1405-2499",
+    "chargeInfo": "개인레슨 월 150,000원 ~",
+    "reservation": "",
+    "address": "서울 노원구 노원로 462"
+  },
+  {
+    "city": "노원구",
+    "courtName": "초안산스포츠타운테니스장",
+    "courtEA": 4,
+    "contact": "02-2289-6854",
+    "chargeInfo": "1시간 기준\n평일 주간 4,000원, 야간 5,200원\n주말/공휴일 5,200원 , 조명 사용료 3,000원",
+    "reservation": "https://reservation.nowonsc.kr/sports/tennis_list",
+    "address": "서울 노원구 마들로 5가길 113"
+  },
+  {
+    "city": "노원구",
+    "courtName": "한국성서대학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 노원구 동일로214길 32"
+  },
+  {
+    "city": "도봉구",
+    "courtName": "김봉주테니스아카데미",
+    "courtEA": 2,
+    "contact": "010-7145-9092",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 도봉구 마들로 567"
+  },
+  {
+    "city": "도봉구",
+    "courtName": "다락원체육공원테니스장",
+    "courtEA": 8,
+    "contact": "02-901-5199",
+    "chargeInfo": "2시간 기준 실내(3면) 평일 25,000원, 야간/주말/공휴일 32,500원\n실외(5면) 평일 8,000원 , 야간/주말/공휴일 10,400원 조명료 3,000원",
+    "reservation": "https://yeyak.dobongsiseol.or.kr/rent/index.php?c_id=05&year=2022&month=03&day=25&n_type=rent&place_code=019&event_code=039&play_code=01",
+    "address": "서울특별시 도봉구 창포원로 45 다락원체육공원"
+  },
+  {
+    "city": "도봉구",
+    "courtName": "덕성여자대학교테니스장",
+    "courtEA": 4,
+    "contact": "010-8782-7914",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 도봉구 삼양로144길 33"
+  },
+  {
+    "city": "도봉구",
+    "courtName": "서울문화고등학교테니스장",
+    "courtEA": 4,
+    "contact": "010-8778-8277",
+    "chargeInfo": "전화 레슨 문의",
+    "reservation": "",
+    "address": "서울 도봉구 마들로 598"
+  },
+  {
+    "city": "도봉구",
+    "courtName": "서울북부지방법원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 도봉구 마들로 747"
+  },
+  {
+    "city": "도봉구",
+    "courtName": "서울신화초등학교테니스장",
+    "courtEA": 1,
+    "contact": "02-992-9017",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000712&codeId=SEN006",
+    "address": "서울 도봉구 우이천로 120"
+  },
+  {
+    "city": "도봉구",
+    "courtName": "성균관대학교도봉선수촌테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 도봉구 도봉로168길 30"
+  },
+  {
+    "city": "도봉구",
+    "courtName": "신방학중학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 도봉구 시루봉로 156"
+  },
+  {
+    "city": "도봉구",
+    "courtName": "창동주공3단지아파트테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 도봉구 해등로 50"
+  },
+  {
+    "city": "도봉구",
+    "courtName": "초안산근린공원테니스장(창골테니스장)",
+    "courtEA": 6,
+    "contact": "010-8776-7333",
+    "chargeInfo": "무료 (최대 2시간)",
+    "reservation": "http://dbgta.or.kr/m/sub01_07_01.html",
+    "address": "서울 도봉구 창동 산48-3"
+  },
+  {
+    "city": "도봉구",
+    "courtName": "힐사이드테니스장",
+    "courtEA": 3,
+    "contact": "0507-1446-2989",
+    "chargeInfo": "1시간 기준 12,000원",
+    "reservation": "",
+    "address": "서울 도봉구 도봉동 산98-17"
+  },
+  {
+    "city": "동대문구",
+    "courtName": "KAIST서울캠퍼스테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 동대문구 회기로 85"
+  },
+  {
+    "city": "동대문구",
+    "courtName": "국립산림과학원테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 동대문구 회기로 57"
+  },
+  {
+    "city": "동대문구",
+    "courtName": "삼육테니스장",
+    "courtEA": 2,
+    "contact": "02-2210-3654",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 동대문구 휘경동 20"
+  },
+  {
+    "city": "동대문구",
+    "courtName": "서울배봉초등학교테니스장",
+    "courtEA": 2,
+    "contact": "02-2245-8951",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000401&codeId=SEN006",
+    "address": "서울 동대문구 사가정로 193"
+  },
+  {
+    "city": "동대문구",
+    "courtName": "서울시립대학교테니스장(실내)",
+    "courtEA": 3,
+    "contact": "02-6490-5175",
+    "chargeInfo": "(실내) 1시간 기준 평일 22,000원 / 주말,공휴일 26,400원 (실외)",
+    "reservation": "https://physical.uos.ac.kr/physical/reservation/tennisindoor.do?epTicket=LOG",
+    "address": "서울 동대문구 서울시립대로 163 90 서울시립대학교"
+  },
+  {
+    "city": "동대문구",
+    "courtName": "서울시립대학교테니스장(실외)",
+    "courtEA": 3,
+    "contact": "02-6490-5175",
+    "chargeInfo": "1시간 10,000원 / 조명 시간 당 3,000원",
+    "reservation": "https://physical.uos.ac.kr/physical/reservation/tennisoutdoor.do?epTicket=LOG#",
+    "address": "서울 동대문구 서울시립대로 163 90 서울시립대학교"
+  },
+  {
+    "city": "동대문구",
+    "courtName": "업테니스장안점",
+    "courtEA": 2,
+    "contact": "0507-1383-7264",
+    "chargeInfo": "개인레슨 월 154,000원 ~",
+    "reservation": "",
+    "address": "서울 동대문구 한천로 128 지하1층"
+  },
+  {
+    "city": "동대문구",
+    "courtName": "장평근린공원테니스장",
+    "courtEA": 3,
+    "contact": "02-2247-9115",
+    "chargeInfo": "2시간 기준 평일 8,000원 / 주말,공휴일 18,000원",
+    "reservation": "https://www.dfmc.kr:8443/course/sports/fmcs/14?facilities_type=C&base_date=20220324&center=DFMC07&type=&part=&place=3",
+    "address": "서울특별시 동대문구 장안벚꽃로 67(장안동) 장평근린공원"
+  },
+  {
+    "city": "동대문구",
+    "courtName": "전농중학교테니스장",
+    "courtEA": 1,
+    "contact": "02-224-40947",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000378&codeId=SEN006",
+    "address": "서울 동대문구 사가정로13길 71"
+  },
+  {
+    "city": "동대문구",
+    "courtName": "전일중학교테니스장",
+    "courtEA": 1,
+    "contact": "02-2245-9361",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000379&codeId=SEN006",
+    "address": "서울 동대문구 사가정로13길 67"
+  },
+  {
+    "city": "동대문구",
+    "courtName": "제이테니스아카데미",
+    "courtEA": 2,
+    "contact": "010-8876-0783",
+    "chargeInfo": "개인레슨 월 150,000원 ~",
+    "reservation": "http://jtennis.ad-media.kr/main",
+    "address": "서울 동대문구 망우로 123 휘경메티컬프라자 702호"
+  },
+  {
+    "city": "동대문구",
+    "courtName": "중랑천체육시설테니스장",
+    "courtEA": 2,
+    "contact": "02-2247-9611",
+    "chargeInfo": "평일 6,600원 / 주말,공휴일 8,580원",
+    "reservation": "https://www.dfmc.kr:8443/course/sports/fmcs/14?facilities_type=C&base_date=20220324&center=DFMC09&type=&part=03&place",
+    "address": "서울 동대문구 장안동 204-19"
+  },
+  {
+    "city": "동대문구",
+    "courtName": "휘경여자중학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 동대문구 전농동 1-188"
+  },
+  {
+    "city": "동작구",
+    "courtName": "강현중학교테니스장",
+    "courtEA": 1,
+    "contact": "02-815-3939",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000453&codeId=SEN006",
+    "address": "서울 동작구 상도로13라길 22"
+  },
+  {
+    "city": "동작구",
+    "courtName": "국립서울현충원테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 동작구 현충로 210"
+  },
+  {
+    "city": "동작구",
+    "courtName": "기상청테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 동작구 여의대방로16길 61 기상청"
+  },
+  {
+    "city": "동작구",
+    "courtName": "대방대림아파트테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 동작구 여의대방로44길 10"
+  },
+  {
+    "city": "동작구",
+    "courtName": "대방중학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 동작구 여의대방로10길 24"
+  },
+  {
+    "city": "동작구",
+    "courtName": "대방테니스장",
+    "courtEA": 5,
+    "contact": "02-816-1020",
+    "chargeInfo": "",
+    "reservation": "https://daebangtennis.modoo.at/",
+    "address": "서울 동작구 여의대방로36길 71"
+  },
+  {
+    "city": "동작구",
+    "courtName": "도깨비테니스아카데미",
+    "courtEA": 1,
+    "contact": "0507-1392-3493",
+    "chargeInfo": "개인레슨 월 130,000원 ~",
+    "reservation": "",
+    "address": "서울 동작구 여의대방로36길 36 지하1층"
+  },
+  {
+    "city": "동작구",
+    "courtName": "레벨업테니스",
+    "courtEA": 1,
+    "contact": "0507-1399-4907",
+    "chargeInfo": "개인레슨 월 140,000원 ~",
+    "reservation": "",
+    "address": "서울 동작구 보라매로5길 23 삼성옴니타워지하106호"
+  },
+  {
+    "city": "동작구",
+    "courtName": "메트로테니스아카데미",
+    "courtEA": 1,
+    "contact": "0507-1314-0998",
+    "chargeInfo": "개인레슨 월 121,000원 ~",
+    "reservation": "https://blog.naver.com/amazonprimer",
+    "address": "서울 동작구 노들로2길 7 드림스퀘어 2층 D204"
+  },
+  {
+    "city": "동작구",
+    "courtName": "보라매공원테니스장",
+    "courtEA": 7,
+    "contact": "02-841-8808",
+    "chargeInfo": "2시간 기준 평일 8,000원 / 야간, 주말 10,400원",
+    "reservation": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S200903171905941615&code=T100&dCode=T108&sch_order=1&sch_choose_list=&sch_type=&sch_text=%EB%B3%B4%EB%9D%BC%EB%A7%A4&sch_recpt_begin_dt=&sch_recpt_end_dt=&sch_use_begin_dt=&sch_use_end_dt=&sch_reqst_value=",
+    "address": "서울 동작구 여의대방로20길 33 보라매공원테니스장"
+  },
+  {
+    "city": "동작구",
+    "courtName": "보라매실내테니스아카데미",
+    "courtEA": 1,
+    "contact": "02-841-8809",
+    "chargeInfo": "스크린테니스 연습 1타임(30분) 15,000원 / 랠리 및 게임 1타임(30분) 15,000원 / 개인레슨 월 140,000원 ~",
+    "reservation": "",
+    "address": "서울 동작구 보라매로5가길 16 보라매아카데미타워 지하 2층"
+  },
+  {
+    "city": "동작구",
+    "courtName": "서울공업고등학교테니스장",
+    "courtEA": 3,
+    "contact": "0507-1372-6674",
+    "chargeInfo": "평일(18시 이전) 10,000원 / 야갼,주말 20,000",
+    "reservation": "https://seoultennisclup.modoo.at/",
+    "address": "서울 동작구 대방동1길 46 테니스장"
+  },
+  {
+    "city": "동작구",
+    "courtName": "서울용마테니스장",
+    "courtEA": 6,
+    "contact": "02-821-6610",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 동작구 대방동길 74"
+  },
+  {
+    "city": "동작구",
+    "courtName": "스포원테니스아카데미사당점",
+    "courtEA": 2,
+    "contact": "0507-1485-9963",
+    "chargeInfo": "개인레슨 월 140,000원 ~",
+    "reservation": "http://inthemaster.co.kr/",
+    "address": "서울 동작구 동작대로29길 69 7층"
+  },
+  {
+    "city": "동작구",
+    "courtName": "중앙대학교서울캠퍼스사범대학부속중학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 동작구 서달로 124"
+  },
+  {
+    "city": "동작구",
+    "courtName": "중앙대학교서울캠퍼스테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 동작구 흑석로 84 중앙대학교"
+  },
+  {
+    "city": "마포구",
+    "courtName": "서강대학교테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 마포구 백범로 35"
+  },
+  {
+    "city": "마포구",
+    "courtName": "서울여자중학교테니스장",
+    "courtEA": 2,
+    "contact": "02-703-2216",
+    "chargeInfo": "1시간 40,000원",
+    "reservation": "https://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000576&codeId=SEN006",
+    "address": "서울 마포구 백범로25길 34"
+  },
+  {
+    "city": "마포구",
+    "courtName": "성산중학교테니스장",
+    "courtEA": 1,
+    "contact": "02-332-0306",
+    "chargeInfo": "",
+    "reservation": "https://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000775&codeId=SEN006",
+    "address": "서울 마포구 성지1길 32-13"
+  },
+  {
+    "city": "마포구",
+    "courtName": "숭문고등학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 마포구 숭문길 99"
+  },
+  {
+    "city": "마포구",
+    "courtName": "스포원테니스아카데미",
+    "courtEA": 2,
+    "contact": "0507-1423-9993",
+    "chargeInfo": "개인레슨 월 140,000원 ~",
+    "reservation": "http://inthemaster.co.kr/",
+    "address": "서울 마포구 만리재옛길 22"
+  },
+  {
+    "city": "마포구",
+    "courtName": "에이원테니스마포점",
+    "courtEA": 2,
+    "contact": "010-3651-0357",
+    "chargeInfo": "개인레슨 월 180,000원 ~",
+    "reservation": "https://www.smkt.co.kr/ad/?cc=aone_tennis",
+    "address": "서울 마포구 동교로23길 32-22 JC동교빌딩 B1"
+  },
+  {
+    "city": "마포구",
+    "courtName": "월드컵공원테니스장",
+    "courtEA": 2,
+    "contact": "02-300-5576",
+    "chargeInfo": "평일 주간: 1시간당 4,000원, 2시간 8,000원\n야간, 공휴일, 토요일, 일요일: 1시간당 5,200원, 2시간 10,400원\n2시간 초과 시 시간당 이용금액의 50% 할인",
+    "reservation": "http://parks.seoul.go.kr/reserve/list.do?searchWd",
+    "address": "서울 마포구 월드컵로 243-60 월드컵공원 테니스장"
+  },
+  {
+    "city": "마포구",
+    "courtName": "탑테니스마포점",
+    "courtEA": 2,
+    "contact": "010-2150-7242",
+    "chargeInfo": "개인레슨 월 180,000원 ~",
+    "reservation": "https://toptennismapo.modoo.at/",
+    "address": "서울 마포구 큰우물로 64 지하 1층 탑테니스 마포점"
+  },
+  {
+    "city": "마포구",
+    "courtName": "탑테니스서강점",
+    "courtEA": 2,
+    "contact": "0507-1419-7242",
+    "chargeInfo": "개인레슨 월 180,000원 ~",
+    "reservation": "https://toptennis.modoo.at/",
+    "address": "서울 마포구 창전로 70 화수목빌딩 지하1층"
+  },
+  {
+    "city": "마포구",
+    "courtName": "탑테니스이대점",
+    "courtEA": 1,
+    "contact": "0507-1389-4286",
+    "chargeInfo": "개인레슨 월 180,000원 ~",
+    "reservation": "https://toptennisewha.modoo.at/",
+    "address": "서울 마포구 신촌로 162 지하1층 탑테니스"
+  },
+  {
+    "city": "마포구",
+    "courtName": "테니스라운지광흥창역점(4월오픈)",
+    "courtEA": 1,
+    "contact": "0507-1476-0233",
+    "chargeInfo": "(4월 오픈예정) 개인레슨 월 170,000원 ~",
+    "reservation": "https://tennislounge2.modoo.at/",
+    "address": "서울 마포구 신수로 56 지하2층"
+  },
+  {
+    "city": "마포구",
+    "courtName": "테니스라운지마포공덕점",
+    "courtEA": 3,
+    "contact": "0507-1387-0235",
+    "chargeInfo": "개인레슨 월 170,000원 ~",
+    "reservation": "https://tennislounge.modoo.at/",
+    "address": "서울 마포구 독막로 288 지하 1층 테니스라운지"
+  },
+  {
+    "city": "마포구",
+    "courtName": "테니스판타지상암DMC점",
+    "courtEA": 1,
+    "contact": "0507-1496-0330",
+    "chargeInfo": "개인레슨 월 140,000원 ~",
+    "reservation": "",
+    "address": "서울 마포구 성암로 330 A동 지하109호"
+  },
+  {
+    "city": "마포구",
+    "courtName": "테니스핏망원한강점",
+    "courtEA": 4,
+    "contact": "010-5337-8417",
+    "chargeInfo": "2시간 5,000원",
+    "reservation": "https://m.booking.naver.com/booking/10/bizes/617053?area=pll&service-target=map-pc",
+    "address": "서울 마포구 마포나루길 407"
+  },
+  {
+    "city": "마포구",
+    "courtName": "하이테니스아카데미",
+    "courtEA": 2,
+    "contact": "02-324-3666",
+    "chargeInfo": "개인레슨 월 180,000원 ~",
+    "reservation": "https://hightennis.modoo.at/",
+    "address": "서울 마포구 홍익로5길 30 지하1층"
+  },
+  {
+    "city": "서대문구",
+    "courtName": "Y테니스아카데미무인볼머신장",
+    "courtEA": 1,
+    "contact": "010-2229-1716",
+    "chargeInfo": "볼머신장 이용 12,000원",
+    "reservation": "https://m.booking.naver.com/booking/13/bizes/277374/items/3827370?area=pll&service-target=map-pc",
+    "address": "서울 서대문구 연희로 119 B1"
+  },
+  {
+    "city": "서대문구",
+    "courtName": "Y테니스아카데미연희점",
+    "courtEA": 2,
+    "contact": "0507-1361-1716",
+    "chargeInfo": "개인레슨 월 160,000원 ~",
+    "reservation": "https://ytennistrainingbox.modoo.at/",
+    "address": "서울 서대문구 연희로 77-12 지하1층"
+  },
+  {
+    "city": "서대문구",
+    "courtName": "가좌테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 서대문구 홍은동 산26-170"
+  },
+  {
+    "city": "서대문구",
+    "courtName": "다이나믹테니스남가좌점",
+    "courtEA": 1,
+    "contact": "0507-1362-0838",
+    "chargeInfo": "개인레슨 월 160,000원 ~",
+    "reservation": "http://instagram.com/dynamic_tennis",
+    "address": "서울 서대문구 증가로 191 DMC래미안클라시스 상가 지하1층"
+  },
+  {
+    "city": "서대문구",
+    "courtName": "다이나믹테니스북가좌점",
+    "courtEA": 1,
+    "contact": "0507-1365-0838",
+    "chargeInfo": "개인레슨 월 160,000원 ~",
+    "reservation": "",
+    "address": "서울 서대문구 증가로12가길 78 지하1층"
+  },
+  {
+    "city": "서대문구",
+    "courtName": "락테니스연희점(스크린)",
+    "courtEA": 1,
+    "contact": "0507-1386-1816",
+    "chargeInfo": "스크린테니스이용 3,000원",
+    "reservation": "https://www.instagram.com/club_rocktennis_Yeonhui/",
+    "address": "서울 서대문구 연희로 102 지하1층"
+  },
+  {
+    "city": "서대문구",
+    "courtName": "마스터즈실내테니스장",
+    "courtEA": 2,
+    "contact": "0507-1445-3931",
+    "chargeInfo": "개인레슨 월 140,000원 ~",
+    "reservation": "https://masterstennis.modoo.at/",
+    "address": "서울 서대문구 독립문로14길 3 3층"
+  },
+  {
+    "city": "서대문구",
+    "courtName": "서울중앙여자고등학교테니스장",
+    "courtEA": 3,
+    "contact": "02-329-5126",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 서대문구 북아현로11가길 7"
+  },
+  {
+    "city": "서대문구",
+    "courtName": "현저(독립문)테니스장",
+    "courtEA": 2,
+    "contact": "010-9071-6895",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 서대문구 현저동 101-313"
+  },
+  {
+    "city": "서대문구",
+    "courtName": "홍연초등학교테니스장",
+    "courtEA": 2,
+    "contact": "02-394-1802",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 서대문구 백련사길 55"
+  },
+  {
+    "city": "서대문구",
+    "courtName": "홍은테니스장",
+    "courtEA": 2,
+    "contact": "010-9271-1036",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 서대문구 통일로48나길 32"
+  },
+  {
+    "city": "서초구",
+    "courtName": "KT우면연구센터테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 서초구 태봉로 151"
+  },
+  {
+    "city": "서초구",
+    "courtName": "가톨릭대학교성의교정테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 서초구 반포대로 222"
+  },
+  {
+    "city": "서초구",
+    "courtName": "국립외교원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 서초구 남부순환로 2558"
+  },
+  {
+    "city": "서초구",
+    "courtName": "그린테니스",
+    "courtEA": 5,
+    "contact": "02-445-3165",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 서초구 내곡동 1-1613"
+  },
+  {
+    "city": "서초구",
+    "courtName": "나혼자테니스랩",
+    "courtEA": 3,
+    "contact": "0507-1456-7819",
+    "chargeInfo": "1회 이용 : 2,000 원",
+    "reservation": "https://pcmap.place.naver.com/place/1927417380/ticket",
+    "address": "서울 서초구 효령로74길 13 동국빌딩 B1"
+  },
+  {
+    "city": "서초구",
+    "courtName": "내곡테니스장",
+    "courtEA": 6,
+    "contact": "0507-1392-4777",
+    "chargeInfo": "1시간 평일 7,000원, 주말/공휴일 9천원",
+    "reservation": "https://m.booking.naver.com/booking/10/bizes/217811/items/4305059?area=pll&service-target=map-pc",
+    "address": "서울 서초구 신흥말길 23-5"
+  },
+  {
+    "city": "서초구",
+    "courtName": "반포실내테니스",
+    "courtEA": 1,
+    "contact": "0507-1487-0881",
+    "chargeInfo": "",
+    "reservation": "https://banpoindoortennis.modoo.at/",
+    "address": "서울 서초구 사평대로 112 광천빌딩 4,5층"
+  },
+  {
+    "city": "서초구",
+    "courtName": "반포종합운동장테니스장",
+    "courtEA": 12,
+    "contact": "02-536-0555",
+    "chargeInfo": "평일 7,000원 / 주말/공휴일 9,000원",
+    "reservation": "https://www.seocho.go.kr/site/seocho/04/10407023100002019092709.jsp",
+    "address": "서울 서초구 신반포로16길 30"
+  },
+  {
+    "city": "서초구",
+    "courtName": "상문고등학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 서초구 명달로 45"
+  },
+  {
+    "city": "서초구",
+    "courtName": "서울고등학교테니스장",
+    "courtEA": 4,
+    "contact": "02-582-8151",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000582&codeId=SEN006",
+    "address": "서울 서초구 서초동 1526-2"
+  },
+  {
+    "city": "서초구",
+    "courtName": "서울교육대학교테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 서초구 서초중앙로 96"
+  },
+  {
+    "city": "서초구",
+    "courtName": "서울지방조달청테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 서초구 반포대로 217"
+  },
+  {
+    "city": "서초구",
+    "courtName": "서울특별시인재개발원테니스장",
+    "courtEA": 2,
+    "contact": "02-3488-2039",
+    "chargeInfo": "2시간 20,000원",
+    "reservation": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S190502151751379566",
+    "address": "서울 서초구 남부순환로340길 49 서울특별시데이터센터"
+  },
+  {
+    "city": "서초구",
+    "courtName": "서이초등학교테니스장",
+    "courtEA": 2,
+    "contact": "02-3474-7025",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000137&codeId=SEN006",
+    "address": "서울 서초구 서운로 35"
+  },
+  {
+    "city": "서초구",
+    "courtName": "세화고등학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 서초구 반포동 753"
+  },
+  {
+    "city": "서초구",
+    "courtName": "세화여자고등학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 서초구 반포동 13"
+  },
+  {
+    "city": "서초구",
+    "courtName": "스포원테니스아카데미방배점",
+    "courtEA": 2,
+    "contact": "0507-1422-0805",
+    "chargeInfo": "개인레슨 월 140,000원 ~",
+    "reservation": "http://inthemaster.co.kr/",
+    "address": "서울 서초구 방배천로24길 11 명림빌딩 지하"
+  },
+  {
+    "city": "서초구",
+    "courtName": "스포원테니스아카데미서초교대점",
+    "courtEA": 1,
+    "contact": "02-3471-1002",
+    "chargeInfo": "개인레슨 월 160,000원 ~",
+    "reservation": "",
+    "address": "서울시 서초동 반포대로 30길 44-5"
+  },
+  {
+    "city": "서초구",
+    "courtName": "스포타임테니스장",
+    "courtEA": 3,
+    "contact": "02-526-0400",
+    "chargeInfo": "",
+    "reservation": "http://sportime.co.kr/",
+    "address": "서울 서초구 강남대로 213"
+  },
+  {
+    "city": "서초구",
+    "courtName": "신반포한신1차테니스장",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 서초구 신반포로 45"
+  },
+  {
+    "city": "서초구",
+    "courtName": "신중초등학교테니스장",
+    "courtEA": 3,
+    "contact": "02-521-2815",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000141&codeId=SEN006",
+    "address": "서울 서초구 남부순환로317길 15"
+  },
+  {
+    "city": "서초구",
+    "courtName": "써티올테니스사당역점",
+    "courtEA": 3,
+    "contact": "0507-1426-8351",
+    "chargeInfo": "개인레슨 180,000원 ~",
+    "reservation": "https://thirtyalltennis2.modoo.at/",
+    "address": "서울 서초구 동작대로 24 지하1층"
+  },
+  {
+    "city": "서초구",
+    "courtName": "아트오브테니스",
+    "courtEA": 2,
+    "contact": "0507-1332-6188",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 서초구 강남대로53길 7 애니타워 B2"
+  },
+  {
+    "city": "서초구",
+    "courtName": "양재시민의숲테니스장",
+    "courtEA": 11,
+    "contact": "02-575-4777",
+    "chargeInfo": "실내 평일 26,000원/주말,공휴일 30,000원, 실외코트 평일 8,000원/주말,공휴일 10,000원 조명(실외) 2,000원",
+    "reservation": "https://pcmap.place.naver.com/place/18754970/ticket?entry=pll&from=map&fromPanelNum=2&ts=1647331458028",
+    "address": "서울 서초구 매헌로 99"
+  },
+  {
+    "city": "서초구",
+    "courtName": "업스트림스포츠",
+    "courtEA": 2,
+    "contact": "02-561-0955",
+    "chargeInfo": "개인레슨 월 160,000원 ~",
+    "reservation": "",
+    "address": "서울 서초구 태봉로 114 한국교총 내 업스트림스포츠 테니스장"
+  },
+  {
+    "city": "서초구",
+    "courtName": "에이원테니스서초점",
+    "courtEA": 1,
+    "contact": "010-8814-1780",
+    "chargeInfo": "개인레슨 월 180,000원 ~",
+    "reservation": "http://www.aonetennisseocho.com/index.php",
+    "address": "서울 서초구 반포대로 94"
+  },
+  {
+    "city": "서초구",
+    "courtName": "제이앤제이테니스",
+    "courtEA": 1,
+    "contact": "0507-1317-0347",
+    "chargeInfo": "",
+    "reservation": "https://jandjtennis.modoo.at/",
+    "address": "서울 서초구 고무래로8길 4 지하1층"
+  },
+  {
+    "city": "서초구",
+    "courtName": "제이앤제이테니스2호점",
+    "courtEA": 2,
+    "contact": "0507-1387-1704",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 서초구 서초중앙로31길 14-13 지하1층"
+  },
+  {
+    "city": "서초구",
+    "courtName": "지스타스포츠그룹",
+    "courtEA": 7,
+    "contact": "1644-6171",
+    "chargeInfo": "",
+    "reservation": "http://www.gstartennis.co.kr/",
+    "address": "서울 서초구 논현로 79 B1층 지스타스포츠그룹"
+  },
+  {
+    "city": "서초구",
+    "courtName": "코오롱스포렉스테니스장",
+    "courtEA": 2,
+    "contact": "02-580-8314",
+    "chargeInfo": "코트대여 월 ~ 금 / 60분 ₩ 48,000 / 1일 (주말,공휴일 +10,000)",
+    "reservation": "https://seocho.sporex.com/main/index.php",
+    "address": "서울 서초구 서초대로70길 32"
+  },
+  {
+    "city": "서초구",
+    "courtName": "테니스판타지반포점",
+    "courtEA": 1,
+    "contact": "0507-1377-1821",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 서초구 고무래로10길 17 동호빌딩 지하2층"
+  },
+  {
+    "city": "서초구",
+    "courtName": "테니스판타지방배점",
+    "courtEA": 1,
+    "contact": "0507-1310-5420",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 서초구 방배로 118 지하1층"
+  },
+  {
+    "city": "서초구",
+    "courtName": "테니스핏잠원한강점",
+    "courtEA": 3,
+    "contact": "010-9265-9697",
+    "chargeInfo": "1시간 2,500원 ~",
+    "reservation": "https://booking.naver.com/booking/10/bizes/617066",
+    "address": "서울 서초구 잠원로 221-124"
+  },
+  {
+    "city": "성동구",
+    "courtName": "대현산배수지공원(응봉근린공원)",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "평일 8,000원/2시간\n휴일 14,400원/2시간",
+    "reservation": "https://yeyak.seoul.go.kr/web/search/selectPageListDetailSearchImg.do?code=T100&dCode=T108",
+    "address": "서울 성동구 난계로 61-46"
+  },
+  {
+    "city": "성동구",
+    "courtName": "덕수고등학교",
+    "courtEA": 3,
+    "contact": "02-2292-5707",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000586&codeId=SEN006",
+    "address": "서울 성동구 왕십리로 199"
+  },
+  {
+    "city": "성동구",
+    "courtName": "무학여자고등학교테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 성동구 고산자로 197"
+  },
+  {
+    "city": "성동구",
+    "courtName": "서울방송고등학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 성동구 동호로5길 131"
+  },
+  {
+    "city": "성동구",
+    "courtName": "서울숲테니스장",
+    "courtEA": 5,
+    "contact": "02-460-2974",
+    "chargeInfo": "평일 : 1시간 4,000원 (2시간 초과 시 추가 1시간당 2,000원)\n주말, 공휴일 : 1시간 5,200원 (2시간 초과 시 추가 1시간당 2,600원)",
+    "reservation": "https://yeyak.seoul.go.kr/web/search/selectPageListDetailSearchImg.do?code=T100&dCode=T108",
+    "address": "서울 성동구 성수동1가 685-164"
+  },
+  {
+    "city": "성동구",
+    "courtName": "스타테니스클럽",
+    "courtEA": 2,
+    "contact": "0507-1318-5927",
+    "chargeInfo": "개인레슨 월 160,000원 ~",
+    "reservation": "https://startennisclub.modoo.at/",
+    "address": "서울 성동구 왕십리로 38 홍성빌딩 지하1층"
+  },
+  {
+    "city": "성동구",
+    "courtName": "아인테니스클럽",
+    "courtEA": 3,
+    "contact": "0507-1325-6061",
+    "chargeInfo": "개인레슨 월 176,000원 ~",
+    "reservation": "",
+    "address": "서울 성동구 광나루로 286 3층"
+  },
+  {
+    "city": "성동구",
+    "courtName": "어반테니스상왕십리점",
+    "courtEA": 2,
+    "contact": "0507-1383-2067",
+    "chargeInfo": "개인레슨 월 180,000원 ~",
+    "reservation": "http://www.urbantennis.co.kr/",
+    "address": "서울 성동구 왕십리로 410"
+  },
+  {
+    "city": "성동구",
+    "courtName": "응봉테니스장",
+    "courtEA": 5,
+    "contact": "02-2282-7600",
+    "chargeInfo": "2시간 기준 평일 10,000원/ 주말 13,000원 / 조명비 1,500원(1시간)",
+    "reservation": "https://sports.happysd.or.kr/fmcs/192?facilities_type=C&base_date=20220324&rent_type=1001&center=SUNGDONG10&part=02&place=1",
+    "address": "서울 성동구 응봉동 240-1"
+  },
+  {
+    "city": "성동구",
+    "courtName": "중랑물재생센터테니스장",
+    "courtEA": 2,
+    "contact": "02-2211-2568",
+    "chargeInfo": "무료",
+    "reservation": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S211202155733683081",
+    "address": "서울특별시 성동구 자동차시장3길 64"
+  },
+  {
+    "city": "성동구",
+    "courtName": "탑테니스옥수점",
+    "courtEA": 3,
+    "contact": "0507-1338-0467",
+    "chargeInfo": "개인레슨 월 180,000원 ~",
+    "reservation": "https://toptennisoksu.modoo.at/",
+    "address": "서울 성동구 독서당로 270 대우월드타운상가 지하1층"
+  },
+  {
+    "city": "성동구",
+    "courtName": "한양대학교서울캠퍼스테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 성동구 왕십리로 220"
+  },
+  {
+    "city": "성동구",
+    "courtName": "한양사대부고테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 성동구 행당동 11-1"
+  },
+  {
+    "city": "성북구",
+    "courtName": "J&J아카데미(정릉테니스장)",
+    "courtEA": 3,
+    "contact": "0507-1388-7804",
+    "chargeInfo": "평일 주간(2시간) 8,000원 평일 야간(2시간) 10,400원\n주말 주간(2시간) 10,400원 주말 야간(2시간) 10,400원\n조명사용료 10,000원",
+    "reservation": "",
+    "address": "서울 성북구 정릉동 산87-357"
+  },
+  {
+    "city": "성북구",
+    "courtName": "경동고등학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 성북구 보문로29길 49"
+  },
+  {
+    "city": "성북구",
+    "courtName": "고려대학교서울캠퍼스테니스장1",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 성북구 개운사2길 48"
+  },
+  {
+    "city": "성북구",
+    "courtName": "고려대학교서울캠퍼스테니스장2",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 성북구 개운사길 86-5"
+  },
+  {
+    "city": "성북구",
+    "courtName": "광운초등학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 성북구 한천로 693"
+  },
+  {
+    "city": "성북구",
+    "courtName": "국민대학교테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 성북구 정릉로 77"
+  },
+  {
+    "city": "성북구",
+    "courtName": "서울사대부고테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 성북구 인촌로17가길 46"
+  },
+  {
+    "city": "성북구",
+    "courtName": "석관중학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 성북구 한천로 526"
+  },
+  {
+    "city": "성북구",
+    "courtName": "용문고등학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 성북구 한천로 693"
+  },
+  {
+    "city": "성북구",
+    "courtName": "월곡테니스장",
+    "courtEA": 4,
+    "contact": "010-7482-2772",
+    "chargeInfo": "1시간 기준 평일 5,000원 / 주말 10,000원",
+    "reservation": "",
+    "address": "서울 성북구 화랑로13길 144"
+  },
+  {
+    "city": "성북구",
+    "courtName": "준테니스아카데미",
+    "courtEA": 1,
+    "contact": "0507-1489-1032",
+    "chargeInfo": "개인레슨 월 170,000원 ~",
+    "reservation": "",
+    "address": "서울 성북구 화랑로 299 석계역 한일노벨리아시티 2층"
+  },
+  {
+    "city": "성북구",
+    "courtName": "탑테니스성신점",
+    "courtEA": 3,
+    "contact": "010-7621-3137",
+    "chargeInfo": "개인레슨 월 180,000원 ~",
+    "reservation": "https://toptennissungshin.modoo.at/",
+    "address": "서울 성북구 동소문로 89"
+  },
+  {
+    "city": "성북구",
+    "courtName": "한국산업은행안암정구장테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 성북구 안암로7길 7"
+  },
+  {
+    "city": "송파구",
+    "courtName": "SITA서울실내테니스아카데미",
+    "courtEA": 2,
+    "contact": "0507-1442-7783",
+    "chargeInfo": "개인레슨 월 170,000원 ~",
+    "reservation": "https://sita.modoo.at/",
+    "address": "서울 송파구 백제고분로 503 유정빌딩 B1"
+  },
+  {
+    "city": "송파구",
+    "courtName": "더테니스존석촌역점",
+    "courtEA": 3,
+    "contact": "0507-1394-0701",
+    "chargeInfo": "(머신볼) 공 50개 2,000원",
+    "reservation": "https://www.instagram.com/thetenniszone_seokchon/",
+    "address": "서울 송파구 백제고분로 379 B1F"
+  },
+  {
+    "city": "송파구",
+    "courtName": "드림테니스아카데미",
+    "courtEA": 1,
+    "contact": "010-7217-0816",
+    "chargeInfo": "개인레슨 월 170,000원 ~ / 코트 1시간 대여 35,000원",
+    "reservation": "https://dreamtennisacademy1.modoo.at/",
+    "address": "서울 송파구 오금로44가길 9"
+  },
+  {
+    "city": "송파구",
+    "courtName": "메가실내테니스장문정점",
+    "courtEA": 2,
+    "contact": "0507-1412-4961",
+    "chargeInfo": "개인레슨 월 160,000원 ~",
+    "reservation": "https://m.booking.naver.com/booking/5/bizes/659684/items/4315799?area=pll&service-target=map-pc&theme=place",
+    "address": "서울 송파구 동남로 108 3층"
+  },
+  {
+    "city": "송파구",
+    "courtName": "메가실내테니스장잠실새내점",
+    "courtEA": 2,
+    "contact": "02-422-4771",
+    "chargeInfo": "개인레슨 월 180,000원 ~",
+    "reservation": "",
+    "address": "서울 송파구 백제고분로7길 57 B1층, 2층"
+  },
+  {
+    "city": "송파구",
+    "courtName": "방이중학교테니스장",
+    "courtEA": 1,
+    "contact": "02-215-27103",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000263&codeId=SEN006",
+    "address": "서울 송파구 오금로11길 64 방이중학교"
+  },
+  {
+    "city": "송파구",
+    "courtName": "배명고등학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 송파구 석촌동 220"
+  },
+  {
+    "city": "송파구",
+    "courtName": "보성고등학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 송파구 양재대로 1278"
+  },
+  {
+    "city": "송파구",
+    "courtName": "비전테니스",
+    "courtEA": 1,
+    "contact": "0507-1414-8063",
+    "chargeInfo": "개인레슨 월 160,000원 ~",
+    "reservation": "https://visiontennis.modoo.at/",
+    "address": "서울 송파구 송파대로 473 지하2층"
+  },
+  {
+    "city": "송파구",
+    "courtName": "서울동부지방검찰청테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 송파구 문정동 369-1"
+  },
+  {
+    "city": "송파구",
+    "courtName": "서울동부지방법원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 송파구 법원로 101"
+  },
+  {
+    "city": "송파구",
+    "courtName": "서울테니스클럽",
+    "courtEA": 6,
+    "contact": "02-2202-4383",
+    "chargeInfo": "1시간 기준\n평일\n주간 실내 30,000원 / 야외 20,000원\n야간 실내 35,000원 / 야외 25,000원\n주말,공휴일\n주간 실내 40,000원 / 야외 20,000원\n야간 실내 45,000원 / 야외 25,000원",
+    "reservation": "",
+    "address": "서울 송파구 동남로 455-6"
+  },
+  {
+    "city": "송파구",
+    "courtName": "서울토성초등학교테니스장",
+    "courtEA": 2,
+    "contact": "02-475-5039",
+    "chargeInfo": "단기사용료 20,000원",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000241&codeId=SEN006",
+    "address": "서울 송파구 풍성로20길 44"
+  },
+  {
+    "city": "송파구",
+    "courtName": "서울풍납초등학교테니스장",
+    "courtEA": 2,
+    "contact": "02-477-9121",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000243&codeId=SEN006",
+    "address": "서울 송파구 풍성로 43"
+  },
+  {
+    "city": "송파구",
+    "courtName": "성내천테니스장",
+    "courtEA": 3,
+    "contact": "02-410-3695",
+    "chargeInfo": "평일 6,000원 7,800원\n토·일요일 7,800원 10,000원",
+    "reservation": "https://www.songpa.go.kr/culture/contents.do?key=5406",
+    "address": "서울 송파구 풍납동 471"
+  },
+  {
+    "city": "송파구",
+    "courtName": "송파테니스장",
+    "courtEA": 2,
+    "contact": "010-3726-6886",
+    "chargeInfo": "평일 6,000원 7,800원\n토·일요일 7,800원 10,000원",
+    "reservation": "https://www.songpa.go.kr/culture/contents.do?key=5405&",
+    "address": "서울 송파구 송파동 106"
+  },
+  {
+    "city": "송파구",
+    "courtName": "신태진테니스아카데미",
+    "courtEA": 1,
+    "contact": "010-3254-5212",
+    "chargeInfo": "개인레슨 월 150,000원 ~",
+    "reservation": "https://easytennis.modoo.at/",
+    "address": "서울 송파구 양재대로62길 6 을지빌딩 2층, B1"
+  },
+  {
+    "city": "송파구",
+    "courtName": "알파실내테니스잠실점",
+    "courtEA": 1,
+    "contact": "0507-1338-0543",
+    "chargeInfo": "개인레슨 월 176,000원 ~",
+    "reservation": "https://alphatennis.modoo.at/",
+    "address": "서울 송파구 삼전로 84 CK빌딩 지하1층, 지하2층"
+  },
+  {
+    "city": "송파구",
+    "courtName": "어반테니스송파문정점",
+    "courtEA": 2,
+    "contact": "0507-1315-9844",
+    "chargeInfo": "개인레슨 월 180,000원 ~",
+    "reservation": "http://urbantennis.co.kr/index.html",
+    "address": "서울 송파구 송파대로 111 지하1층 B105호"
+  },
+  {
+    "city": "송파구",
+    "courtName": "영파여자고등학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 송파구 올림픽로 565"
+  },
+  {
+    "city": "송파구",
+    "courtName": "오금공원테니스장",
+    "courtEA": 2,
+    "contact": "02-402-3700",
+    "chargeInfo": "평일 (코트면당/1시간)\n4,000원\n주말(토/일) , 공휴일(코트면당/1시간당)\n5,200원",
+    "reservation": "https://www.songpagongdan.or.kr/sports/sports05.asp",
+    "address": "서울 송파구 오금로 363"
+  },
+  {
+    "city": "송파구",
+    "courtName": "오륜테니스장",
+    "courtEA": 6,
+    "contact": "010-7116-2489",
+    "chargeInfo": "평일 6,000원 7,800원\n토·일요일 7,800원 10,000원",
+    "reservation": "https://www.songpa.go.kr/culture/contents.do?key=5404",
+    "address": "서울 송파구 동남로 417"
+  },
+  {
+    "city": "송파구",
+    "courtName": "올림픽공원실내테니스장",
+    "courtEA": 19,
+    "contact": "02-2180-3778",
+    "chargeInfo": "실외코트 \n평일 주간 7,000(1시간) 야간 10,000(1시간)\n주말/공휴일 주간 10,000(1시간) 야간 13,000(1시간)\n실내코트 평일 22,000(1시간) 주말/공휴일 25,000(1시간)\n센터코트 주말/공휴일 45,000(1시간)",
+    "reservation": "https://online.ksponco.or.kr/tennis/tennis_info.do",
+    "address": "서울 송파구 올림픽로 424"
+  },
+  {
+    "city": "송파구",
+    "courtName": "올림픽선수기자촌테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 송파구 양재대로 1218"
+  },
+  {
+    "city": "송파구",
+    "courtName": "위테니스",
+    "courtEA": 1,
+    "contact": "02-431-3332",
+    "chargeInfo": "개인레슨 월 130,000원 ~",
+    "reservation": "",
+    "address": "서울 송파구 새말로 144 그린빌딩 위테니스"
+  },
+  {
+    "city": "송파구",
+    "courtName": "잠신고등학교테니스장",
+    "courtEA": 1,
+    "contact": "02-417-8770",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000597&codeId=SEN006",
+    "address": "서울 송파구 잠실로 24 잠신고등학교"
+  },
+  {
+    "city": "송파구",
+    "courtName": "잠실6동공원테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 송파구 올림픽로35길 104"
+  },
+  {
+    "city": "송파구",
+    "courtName": "잠실유수지테니스장",
+    "courtEA": 1,
+    "contact": "02-448-7330",
+    "chargeInfo": "평일 06:00 ~ 18:00 = (시간당 6,000원) 2시간 12,000원\n평일 18:00 ~ 22:00, 주말 06:00 ~ 18:00 (시간당 7,800원) 2시간 15,600원\n토, 일 및 공휴일 야간 18:00~22:00 (시간당 10,140원) 2시간 20,280원",
+    "reservation": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S220318141606983028",
+    "address": "서울특별시 송파구 탄천동로 211"
+  },
+  {
+    "city": "송파구",
+    "courtName": "잠실테니스코트",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 송파구 도곡로62길 45"
+  },
+  {
+    "city": "송파구",
+    "courtName": "잠실트리지움테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 송파구 잠실로 62"
+  },
+  {
+    "city": "송파구",
+    "courtName": "창덕여자고등학교테니스장",
+    "courtEA": 2,
+    "contact": "02-401-4924",
+    "chargeInfo": "사용요금 (1시간 1면 사용 기준) : 15,000원 - 6개월 이상 장기사용(지역주민) : 60%감면 - 토.일요일만 개방",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000591&codeId=SEN006",
+    "address": "서울 송파구 양재대로 1240"
+  },
+  {
+    "city": "송파구",
+    "courtName": "테니스파크위례점",
+    "courtEA": 1,
+    "contact": "010-6412-0775",
+    "chargeInfo": "개인레슨 월 140,000원 ~",
+    "reservation": "https://tennispark.modoo.at/",
+    "address": "서울 송파구 위례광장로 136 위례아이파크"
+  },
+  {
+    "city": "송파구",
+    "courtName": "페이코트",
+    "courtEA": 1,
+    "contact": "010-6838-2384",
+    "chargeInfo": "볼 120개당(5분) 3,000원",
+    "reservation": "https://m.booking.naver.com/booking/6/bizes/562320/items/4030482?area=bmp&service-target=map-pc",
+    "address": "서울 송파구 법원로4길 6 문정아이파크 지하1층 119호"
+  },
+  {
+    "city": "송파구",
+    "courtName": "한국체육대학교실내테니스",
+    "courtEA": 2,
+    "contact": "010-8480-8481",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 송파구 양재대로 1239"
+  },
+  {
+    "city": "양천구",
+    "courtName": "계남1근린공원테니스장",
+    "courtEA": 14,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 양천구 신정로13가길 36"
+  },
+  {
+    "city": "양천구",
+    "courtName": "금옥여자고등학교테니스장",
+    "courtEA": 2,
+    "contact": "0507-1315-5212",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000601&codeId=SEN006",
+    "address": "서울 양천구 신정로 213"
+  },
+  {
+    "city": "양천구",
+    "courtName": "네오테니스신정점",
+    "courtEA": 1,
+    "contact": "0507-1408-1665",
+    "chargeInfo": "개인레슨 월 150,000원 ~",
+    "reservation": "https://neotennis2.modoo.at/",
+    "address": "서울 양천구 신월로 134 오영빌딩 2층"
+  },
+  {
+    "city": "양천구",
+    "courtName": "노바테니스",
+    "courtEA": 1,
+    "contact": "0507-1302-4892",
+    "chargeInfo": "개인레슨 월 180,000원 ~",
+    "reservation": "https://nuttennis.modoo.at/",
+    "address": "서울 양천구 목동동로 233-3 삼성화재서비스빌딩 5층"
+  },
+  {
+    "city": "양천구",
+    "courtName": "목동14단지테니스장",
+    "courtEA": 3,
+    "contact": "02-2648-7932",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 양천구 목동동로 130"
+  },
+  {
+    "city": "양천구",
+    "courtName": "목동테니스장",
+    "courtEA": 18,
+    "contact": "02-2643-0686",
+    "chargeInfo": "정기회원(월~토) 하절기 165,000원 동절기 210,000원 / 일반회원 평일(주간 9,900원 야간 19,800원) 주말,공휴일(주간 12,800원, 야간 25,600원)",
+    "reservation": "https://www.ycs.or.kr/yeyak/fmcs/43?facilities_type=C&base_date=20220310&rent_type=1001&center=YCS04&part=02&place=1",
+    "address": "서울특별시 양천구 목동동로 298"
+  },
+  {
+    "city": "양천구",
+    "courtName": "서울금융고등학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000600&codeId=SEN006",
+    "address": "서울 양천구 가로공원로61길 19"
+  },
+  {
+    "city": "양천구",
+    "courtName": "양강중학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000351&codeId=SEN006",
+    "address": "서울 양천구 중앙로 319 양강중학교"
+  },
+  {
+    "city": "양천구",
+    "courtName": "양정고등학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 양천구 안양천로 1039"
+  },
+  {
+    "city": "양천구",
+    "courtName": "양천아파트테니스장",
+    "courtEA": 4,
+    "contact": "0507-1354-3565",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 양천구 목동로3길 57"
+  },
+  {
+    "city": "양천구",
+    "courtName": "탑테니스목동점",
+    "courtEA": 1,
+    "contact": "0507-1352-8157",
+    "chargeInfo": "개인레슨 월 160,000원 ~",
+    "reservation": "https://toptennismokdong.modoo.at/",
+    "address": "서울 양천구 목동로 201 지하1층"
+  },
+  {
+    "city": "영등포구",
+    "courtName": "VTG여의도실내테니스장",
+    "courtEA": 2,
+    "contact": "0507-1324-2615",
+    "chargeInfo": "",
+    "reservation": "https://vtgtennis.modoo.at/",
+    "address": "서울 영등포구 여의나루로 42 여의도종합상가 4층"
+  },
+  {
+    "city": "영등포구",
+    "courtName": "관악고등학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000604&codeId=SEN006",
+    "address": "서울 영등포구 영등포로6길 26"
+  },
+  {
+    "city": "영등포구",
+    "courtName": "국회의사당테니스장",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 영등포구 의사당대로 1"
+  },
+  {
+    "city": "영등포구",
+    "courtName": "네오테니스문래점",
+    "courtEA": 2,
+    "contact": "0507-1371-3372",
+    "chargeInfo": "개인레슨 월 110,000원 ~",
+    "reservation": "https://neotennis.modoo.at/",
+    "address": "서울 영등포구 문래로 79-4"
+  },
+  {
+    "city": "영등포구",
+    "courtName": "대림운동장테니스장",
+    "courtEA": 3,
+    "contact": "02-2670-4096",
+    "chargeInfo": "",
+    "reservation": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S211118101259955716&code=T100&dCode=T108&sch_order=1&sch_choose_list=&sch_type=&sch_text=%EB%8C%80%EB%A6%BC&sch_recpt_begin_dt=&sch_recpt_end_dt=&sch_use_begin_dt=&sch_use_end_dt=&sch_reqst_value=",
+    "address": "서울 영등포구 가마산로31길 16"
+  },
+  {
+    "city": "영등포구",
+    "courtName": "대영고등학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 영등포구 도림로86길 16"
+  },
+  {
+    "city": "영등포구",
+    "courtName": "락테니스여의도점(스크린)",
+    "courtEA": 1,
+    "contact": "0507-1304-0390",
+    "chargeInfo": "1회(공50개,3분) 3,000원 20회(1시간) 50,000원\n40회(2시간)96,000원 100회(5시간)225,000원",
+    "reservation": "",
+    "address": "서울 영등포구 여의대방로69길 28 3층"
+  },
+  {
+    "city": "영등포구",
+    "courtName": "서울지방병무청테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 영등포구 여의대방로43길 13"
+  },
+  {
+    "city": "영등포구",
+    "courtName": "손오공테니스아카데미",
+    "courtEA": 2,
+    "contact": "0507-1465-2801",
+    "chargeInfo": "개인레슨 월 130,000원 ~",
+    "reservation": "",
+    "address": "서울 영등포구 가마산로 540 바다마을상가"
+  },
+  {
+    "city": "영등포구",
+    "courtName": "여의도고등학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 영등포구 국제금융로7길 37"
+  },
+  {
+    "city": "영등포구",
+    "courtName": "올테니스아카데미",
+    "courtEA": 2,
+    "contact": "010-9715-0212",
+    "chargeInfo": "개인레슨 월 190,000원 ~",
+    "reservation": "https://alltennis.modoo.at/",
+    "address": "서울 영등포구 국제금융로 72 호정빌딩 5층"
+  },
+  {
+    "city": "영등포구",
+    "courtName": "하이테니스",
+    "courtEA": 2,
+    "contact": "010-3363-0987",
+    "chargeInfo": "개인레슨 월 110,000원 ~",
+    "reservation": "",
+    "address": "서울 영등포구 시흥대로 675 지하1층 101호 (삼성YJ그랜드빌딩)"
+  },
+  {
+    "city": "영등포구",
+    "courtName": "한신테니스클럽",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 영등포구 양평동5가 78"
+  },
+  {
+    "city": "영등포구",
+    "courtName": "할로테니스양평점",
+    "courtEA": 1,
+    "contact": "0507-1311-9964",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 영등포구 양산로 43 우림ebiz센터2차 1F 103호"
+  },
+  {
+    "city": "용산구",
+    "courtName": "그랜드하얏트서울테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "1시간 40,000원",
+    "reservation": "",
+    "address": "서울 용산구 소월로 322"
+  },
+  {
+    "city": "용산구",
+    "courtName": "스포원올댓테니스",
+    "courtEA": 1,
+    "contact": "0507-1440-9177",
+    "chargeInfo": "",
+    "reservation": "https://spo1allthattennis.modoo.at/",
+    "address": "서울 용산구 한강대로57길 4 지하1층"
+  },
+  {
+    "city": "용산구",
+    "courtName": "에이원테니스한남점",
+    "courtEA": 2,
+    "contact": "010-4350-1331",
+    "chargeInfo": "개인레슨 월 180,000원 ~",
+    "reservation": "https://www.smkt.co.kr/ad/?cc=aone_tennis",
+    "address": "서울 용산구 독서당로 22 동원베네스트 B1층"
+  },
+  {
+    "city": "용산구",
+    "courtName": "올댓테니스",
+    "courtEA": 1,
+    "contact": "0507-1397-9177",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 용산구 한강대로48길 9 보원빌딩 지하1층"
+  },
+  {
+    "city": "용산구",
+    "courtName": "용산고등학교테니스장",
+    "courtEA": 2,
+    "contact": "02-3706-6862",
+    "chargeInfo": "",
+    "reservation": "https://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000609&codeId=SEN006",
+    "address": "서울 용산구 두텁바위로 60"
+  },
+  {
+    "city": "용산구",
+    "courtName": "용산공업고등학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 용산구 서빙고로 24"
+  },
+  {
+    "city": "용산구",
+    "courtName": "유엔테니스클럽",
+    "courtEA": 2,
+    "contact": "0507-1343-5288",
+    "chargeInfo": "개인레슨 월 180,000원 ~",
+    "reservation": "",
+    "address": "서울 용산구 독서당로 98 1층"
+  },
+  {
+    "city": "용산구",
+    "courtName": "이촌한강공원테니스장",
+    "courtEA": 8,
+    "contact": "010-5495-0798",
+    "chargeInfo": "2시간 5,000원",
+    "reservation": "http://www.xn--939a20k9zoo0e61ni2f.com/bbs/board.php?bo_table=table26",
+    "address": "서울 용산구 용산동6가 450-1"
+  },
+  {
+    "city": "용산구",
+    "courtName": "하나테니스아카데미",
+    "courtEA": 2,
+    "contact": "010-5458-0626",
+    "chargeInfo": "개인레슨 월 150,000원 ~",
+    "reservation": "https://hanatennis.modoo.at/",
+    "address": "서울 용산구 효창원로70길 14"
+  },
+  {
+    "city": "용산구",
+    "courtName": "한강중학교테니스장",
+    "courtEA": 2,
+    "contact": "02-794-1792",
+    "chargeInfo": "",
+    "reservation": "https://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000938&codeId=SEN006",
+    "address": "서울 용산구 녹사평대로 73"
+  },
+  {
+    "city": "용산구",
+    "courtName": "한남테니스코트",
+    "courtEA": 12,
+    "contact": "02-797-1016",
+    "chargeInfo": "2시간 기준 평일 주간 8,000원 주말/공휴일/야간 10,400원",
+    "reservation": "",
+    "address": "서울 용산구 한남동 726-181"
+  },
+  {
+    "city": "은평구",
+    "courtName": "JTA정진화테니스아카데미",
+    "courtEA": 3,
+    "contact": "0507-1364-2134",
+    "chargeInfo": "개인레슨 월 140,000원 ~",
+    "reservation": "",
+    "address": "서울 은평구 응암로 310 지하1층"
+  },
+  {
+    "city": "은평구",
+    "courtName": "그랜드슬램테니스장",
+    "courtEA": 6,
+    "contact": "02-388-3070",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 은평구 불광동 43-2"
+  },
+  {
+    "city": "은평구",
+    "courtName": "북한산푸르지오아파트테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 은평구 통일로 660"
+  },
+  {
+    "city": "은평구",
+    "courtName": "선정테니스장",
+    "courtEA": 5,
+    "contact": "010-6257-2993",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 은평구 갈현로27길 45-4"
+  },
+  {
+    "city": "은평구",
+    "courtName": "은평구민체육센터테니스장",
+    "courtEA": 3,
+    "contact": "02-350-5393",
+    "chargeInfo": "1시간 14,300원",
+    "reservation": "https://www.efmc.or.kr/fmcs/32",
+    "address": "서울 은평구 진관1로 40"
+  },
+  {
+    "city": "은평구",
+    "courtName": "장미테니스코트",
+    "courtEA": 2,
+    "contact": "010-4751-4560",
+    "chargeInfo": "1시간 11,000원",
+    "reservation": "https://www.efmc.or.kr/fmcs/32",
+    "address": "서울 은평구 통일로 684"
+  },
+  {
+    "city": "은평구",
+    "courtName": "테니스닥터",
+    "courtEA": 2,
+    "contact": "0507-1487-1079",
+    "chargeInfo": "개인레슨 월 150,000원 ~ / 볼 머신기 3,000원",
+    "reservation": "",
+    "address": "서울 은평구 은평로11길 9 제3층"
+  },
+  {
+    "city": "은평구",
+    "courtName": "테니스써밋응암점",
+    "courtEA": 2,
+    "contact": "010-4948-3550",
+    "chargeInfo": "개인레슨 월 160,000원 ~",
+    "reservation": "https://blog.naver.com/tennissummit",
+    "address": "서울 은평구 응암로 304 발명문화빌딩 5층"
+  },
+  {
+    "city": "종로구",
+    "courtName": "J테니스아카데미",
+    "courtEA": 1,
+    "contact": "0507-1312-4720",
+    "chargeInfo": "개인레슨 월 150,000원 ~",
+    "reservation": "http://jtennisin.ad-media.kr/",
+    "address": "서울 종로구 사직로 97 7층"
+  },
+  {
+    "city": "종로구",
+    "courtName": "경복고등학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 종로구 자하문로28가길 9"
+  },
+  {
+    "city": "종로구",
+    "courtName": "배화여자대학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 종로구 필운대로1길 34"
+  },
+  {
+    "city": "종로구",
+    "courtName": "삼청테니스장",
+    "courtEA": 4,
+    "contact": "02-2148-4068",
+    "chargeInfo": "1시간 기준 평일주간 6,600원 / 주말,공휴일,야간 8,800원",
+    "reservation": "https://yeyak.seoul.go.kr/web/search/selectPageListDetailSearchImg.do?code=T100&dCode=T108",
+    "address": "서울 종로구 삼청로 156"
+  },
+  {
+    "city": "종로구",
+    "courtName": "서울대학교연건캠퍼스테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 종로구 대학로 101"
+  },
+  {
+    "city": "종로구",
+    "courtName": "청운중학교테니스장",
+    "courtEA": 2,
+    "contact": "02-737-0581",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000954&codeId=SEN006",
+    "address": "서울 종로구 청운동 89-6"
+  },
+  {
+    "city": "종로구",
+    "courtName": "테니스패밀리",
+    "courtEA": 1,
+    "contact": "0507-1477-7985",
+    "chargeInfo": "개인레슨 월 150,000원 ~",
+    "reservation": "",
+    "address": "서울 종로구 자하문로 21 B1 지층"
+  },
+  {
+    "city": "종로구",
+    "courtName": "한국방송통신대학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 종로구 이화장길 71"
+  },
+  {
+    "city": "중구",
+    "courtName": "반얀트리클럽&스파서울테니스장",
+    "courtEA": 2,
+    "contact": "02-2250-8118",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 중구 장충단로 60"
+  },
+  {
+    "city": "중구",
+    "courtName": "봉테니스아카데미",
+    "courtEA": 2,
+    "contact": "0507-1321-5505",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 중구 청구로6길 32"
+  },
+  {
+    "city": "중구",
+    "courtName": "손기정체육공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 중구 손기정로 101-4"
+  },
+  {
+    "city": "중구",
+    "courtName": "에이원테니스동대문점",
+    "courtEA": 2,
+    "contact": "010-8266-0974",
+    "chargeInfo": "개인레슨 월 180,000원 ~",
+    "reservation": "https://www.smkt.co.kr/ad/?cc=aone_tennis",
+    "address": "서울 중구 퇴계로51길 20 넥서스타워 B1"
+  },
+  {
+    "city": "중구",
+    "courtName": "장충테니스장",
+    "courtEA": 9,
+    "contact": "02-2234-2844",
+    "chargeInfo": "2시간 기준 평일 주간 8,000원 주말/공휴일/야간 10,400원",
+    "reservation": "http://www.jc-tennis.com/",
+    "address": "서울 중구 장충동2가 산14-68 장충테니스장"
+  },
+  {
+    "city": "중랑구",
+    "courtName": "금성초등학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 중랑구 신내로21길 55"
+  },
+  {
+    "city": "중랑구",
+    "courtName": "면목고등학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 중랑구 면목동 510"
+  },
+  {
+    "city": "중랑구",
+    "courtName": "봉화중학교테니스장",
+    "courtEA": 1,
+    "contact": "02-433-3180",
+    "chargeInfo": "",
+    "reservation": "http://crs.sen.go.kr/school/schFacilityIntro/facilityInfoList.do?schoolId=SCHOOL-00000000414&codeId=SEN006",
+    "address": "서울 중랑구 망우로70길 89"
+  },
+  {
+    "city": "중랑구",
+    "courtName": "아이러브테니스존",
+    "courtEA": 1,
+    "contact": "0507-1467-8444",
+    "chargeInfo": "개인레슨 월 154,000원 ~",
+    "reservation": "https://ilovetenniszone.modoo.at/",
+    "address": "서울 중랑구 망우로 328 시네마시티빌딩 5층"
+  },
+  {
+    "city": "중랑구",
+    "courtName": "용마실내테니스장",
+    "courtEA": 18,
+    "contact": "02-432-6695",
+    "chargeInfo": "1시간 기준 실내(3면) 평일 25,000원 / 주말 30,000원\n실외(15면) 평일주간 8,000원, 평일야간 15,000원\n주말주간 15,000원, 주말야간 20,000원",
+    "reservation": "",
+    "address": "서울 중랑구 망우본동 산69-1"
+  },
+  {
+    "city": "중랑구",
+    "courtName": "용마폭포공원테니스장",
+    "courtEA": 3,
+    "contact": "02-6952-2949",
+    "chargeInfo": "평일 주간 : 10,000원 / 야간: 13,000원 \n주말,공휴일 주간 : 13,000원 / 야간:13,000원",
+    "reservation": "https://www.jungnangimc.or.kr/rentlist",
+    "address": "서울 중랑구 용마산로 250-12"
+  },
+  {
+    "city": "중랑구",
+    "courtName": "원묵고등학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 중랑구 숙선옹주로 82"
+  },
+  {
+    "city": "중랑구",
+    "courtName": "원묵중학교테니스장",
+    "courtEA": 1,
+    "contact": "02-2094-9808",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 중랑구 신내로23길 57 원묵중학교"
+  },
+  {
+    "city": "중랑구",
+    "courtName": "중랑구립테니스장",
+    "courtEA": 8,
+    "contact": "02-6952-2949",
+    "chargeInfo": "2시간 기준 평일 8,000원 / 야간,주말,공휴일 10,400원",
+    "reservation": "https://www.jungnangimc.or.kr/rentlist",
+    "address": "서울 중랑구 신내동 1-3"
+  },
+  {
+    "city": "중랑구",
+    "courtName": "태릉고등학교테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "서울 중랑구 신내로23길 36"
+  }
+]

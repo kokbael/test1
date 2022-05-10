@@ -1,0 +1,29 @@
+BoardList()     // 저장한 data 를 get 하여 ListView 로 출력하는 Class
+
+StreamBuilder(
+        stream: FirebaseFirestore.instance.collection('board').snapshots(),  // board 컬렉션에 저장된 값들을 인스턴스화 해서 snapshot 으로 변환
+        builder: (BuildContext context, AsyncSnapshot snapshot) {
+          if (!snapshot.hasData) {                                           //  snapshot 이 async/await 과정을 거치는 중이거나
+            return Center(child: CircularProgressIndicator());               //  비어있으면 CircularProgressIndicator(); 를 출력
+          } else {
+            final docs = snapshot.data!.docs;                                //  docs 변수 선언 : snapshot 에 담긴 데이터를 document 화
+            return Scrollbar(
+              child: ListView.builder(                                       //  ListView.builder 위젯으로 화면 구성
+                    itemCount: docs.length,
+                    itemBuilder: (context, index)
+                    return GestureDetector(                                  //  GestureDetector 위젯으로 Container 에 onTap() 부여
+                    onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    BoardRead(index: index, snapshot: snapshot)));  //  Container 를 클릭하면 BoardRead 클래스로
+                                        },                                          //  해당하는 내용을 출력하는 페이지로 이동
+                    child: Container( ...
+
+
+Idea #1
+로그인 기능 구현 후 삭제/수정 추가
+
+Idea #2
+처음부터 모든 게시물을 보여주지 않고, 스크롤을 내리면 로딩 후 추가로 보여주기.

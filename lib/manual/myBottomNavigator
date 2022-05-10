@@ -1,0 +1,25 @@
+bottomNavigationBar: MyBottomNavigationBar(setTab: setTab)
+: main.dart 에서 tab 으로 페이지 라우팅하므로 bottomNavigationBar 의 onTap 함수에서 setTab(a)을 호출
+
+// main.dart
+  setTab(a) {
+    setState(() {
+      tab = a;
+    });
+  }
+
+// myBottomNavigator.dart
+  var tab = 0;
+  @override
+  Widget build(BuildContext context) {
+    return BottomNavigationBar(
+      currentIndex: tab,
+      onTap: (i) {
+        setState(() {
+          tab = i;
+          widget.setTab(tab);
+        });
+      },
+      ...
+
+Idea #1

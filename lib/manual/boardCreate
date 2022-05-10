@@ -1,0 +1,63 @@
+// data 를 TextFormField 에 입력받은 후 Firebase 에 add 하는 Class
+BoardCreate(
+    setUser: setUser,
+    setDate: setDate,
+    setTitle: setTitle,
+    setContents: setContents,
+    inputData: inputData)
+
+: main.dart 에 Firebase 저장 할 데이터들을 전역변수로 선언 후 setter 를 boardCreate 에 전달.
+
+// main.dart Firebase inputData(add) 함수
+inputData() async {
+  try {
+    await firestore.collection('board').add({
+      'title': boardTitle,
+      'contents': boardContents,
+      'date': boardDate,
+      'userName': boardUser
+    });
+  } catch (e) {
+    print(e);
+  }
+}
+
+TextFormField 로 화면을 구성.
+: renderTextFormField 라는 함수를 따로 만들어서 더 직관적으로 사용.
+
+// boardCreate.dart 구조
+final formKey = GlobalKey<FormState>();  // Form 위젯에 사용되는 글로벌 key
+Form( key : formKey,
+    child : Column(
+        children : [
+           renderTextFormField(
+             label: 'Name',
+             onSaved: (val) {
+               setState(() {
+                 widget.setUser(val);
+               });
+             },
+             validator: (val) {
+               if (val == null || val.isEmpty) {                    //  입력 칸이 비어있는 경우 방지
+                 return '이름을 입력하세요.';
+               }
+             },
+           ),
+           ...
+           ,  renderTextFormField (...) ,
+           ElevatedButton(
+            onPressed: () {
+            if (formKey.currentState!.validate()) {                 // 설정한 validator 가 true 일 때
+                formKey.currentState?.save();                       // Field 에 작성된 data 를 저장 (각각의 onSaved 함수를 실행시키는 것임)
+                                                                        Ex>> setState( widget.setTitle(val) )
+                widget.inputData();))                               // 저장된 data 를 Firebase 에 add
+        ...
+
+
+
+Idea #1
+필요한 만큼의 텍스트 필드의 갯수를 정수나 List 로 전달 받은 후 생성
+
+Idea #2
+setter 함수들과 inputData() 함수를 dbManager.dart 에 따로 빼서 main.dart 정리
+=> boardCreate 로 이동

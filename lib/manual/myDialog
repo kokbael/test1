@@ -1,0 +1,26 @@
+
+MyDialog( dialogTitle : , buttonText : )
+
+SimpleDialog 위젯으로 구성
+
+// showDialog 의 builder : 로 호출
+showDialog(
+context: context,
+builder: (context) => MyDialog(dialogTitle : '...' , buttonText : [ '...' , '...' ] )
+
+// buttonText 는 List 로 구성
+List buttonText = ['취소', '확인'];
+
+Idea #1
+buttonText 에 특정 텍스트('등록', '취소', '확인' 등)을 if로 처리
+
+              if (widget.buttonText[i] == '등록')
+                Container(
+                  padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
+                  child: TextButton(
+                      onPressed: () {
+                        // 입력한 데이터 저장
+                      },
+                      child: Text(
+                        widget.buttonText[i]))
+
