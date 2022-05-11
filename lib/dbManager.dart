@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:intl/intl.dart';
 
 CollectionReference board = FirebaseFirestore.instance.collection('board');
@@ -145,51 +146,11 @@ void updateYDCourt(
 
 void updateDday(docs) {
   for (var doc in docs) {
+    // 오름차순 : 1, 2, 마감(32), 완료(33)
     String eightDate = DateFormat('yyyyMMdd').format(doc['date'].toDate());
     int days = DateTime.now().difference(DateTime.parse(eightDate)).inDays;
     int hours = DateTime.now().difference(DateTime.parse(eightDate)).inHours;
-    // 오름차순 : 1, 2, 마감(32), 완료(33)
-    if (days == 0) {
-      String dateHH = DateFormat('HH').format(doc['date'].toDate());
-      String nowHH = DateFormat('HH').format(DateTime.now());
-      int diffHH = int.parse(dateHH) - int.parse(nowHH);
-      if (diffHH > 0) {
-        try {
-          ydcourt.doc(doc['id']).update({
-            'Dday': 0,
-          });
-        } catch (e) {
-          print(e);
-        }
-      } else {
-        try {
-          ydcourt.doc(doc['id']()).update({
-            // 마감 D-day
-            'Dday': 32,
-          });
-        } catch (e) {
-          print(e);
-        }
-      }
-    } else if (days < 0 && doc['confirm'] == false) {
-      // 현역
-      try {
-        ydcourt.doc(doc['id']).update({
-          'Dday': (-hours / 24).round(),
-        });
-      } catch (e) {
-        print(e);
-      }
-    } else if (days > 0 && doc['confirm'] == false) {
-      // 마감
-      try {
-        ydcourt.doc(doc['id']).update({
-          'Dday': 32,
-        });
-      } catch (e) {
-        print(e);
-      }
-    } else if (doc['confirm'] == true) {
+    if (doc['confirm'] == true) {
       // 완료
       try {
         ydcourt.doc(doc['id']).update({
@@ -197,6 +158,50 @@ void updateDday(docs) {
         });
       } catch (e) {
         print(e);
+      }
+    } else {
+      if (days == 0) {
+        // Dday == 0 일 경우 2 가지 경우 따로 처리.
+        // 같은 날 시간이 지났으면 마감(32), 아니면 Dday = 0 (D-day)
+        String dateHH = DateFormat('HH').format(doc['date'].toDate());
+        String nowHH = DateFormat('HH').format(DateTime.now());
+        int diffHH = int.parse(dateHH) - int.parse(nowHH);
+        if (diffHH > 0) {
+          try {
+            ydcourt.doc(doc['id']).update({
+              'Dday': 0,
+            });
+          } catch (e) {
+            print(e);
+          }
+        } else {
+          try {
+            ydcourt.doc(doc['id']).update({
+              // 마감 D-day
+              'Dday': 32,
+            });
+          } catch (e) {
+            print(e);
+          }
+        }
+      } else if (days < 0) {
+        // 현역
+        try {
+          ydcourt.doc(doc['id']).update({
+            'Dday': (-hours / 24).round(),
+          });
+        } catch (e) {
+          print(e);
+        }
+      } else if (days > 0) {
+        // 마감
+        try {
+          ydcourt.doc(doc['id']).update({
+            'Dday': 32,
+          });
+        } catch (e) {
+          print(e);
+        }
       }
     }
   }

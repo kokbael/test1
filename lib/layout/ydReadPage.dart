@@ -11,12 +11,14 @@ class YDReadPage extends StatefulWidget {
       this.index,
       this.docs,
       this.sortField,
-      this.selectedSearchData})
+      this.selectedSearchData,
+      this.changeCourtList})
       : super(key: key);
   final index;
   final docs;
   final sortField;
   final selectedSearchData;
+  final changeCourtList;
   @override
   State<YDReadPage> createState() => _YDReadPageState();
 }

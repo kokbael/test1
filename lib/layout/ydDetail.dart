@@ -10,15 +10,15 @@ import '../dbManager.dart' as firebase;
 import 'ydmap.dart';
 
 class YDDetail extends StatefulWidget {
-  const YDDetail(
-      {Key? key,
-      this.docs,
-      this.index,
-      this.uid,
-      this.setListTab,
-      this.sortField,
-      this.selectedSearchData})
-      : super(key: key);
+  const YDDetail({
+    Key? key,
+    this.docs,
+    this.index,
+    this.uid,
+    this.setListTab,
+    this.sortField,
+    this.selectedSearchData,
+  }) : super(key: key);
   final docs;
   final index;
   final setListTab;

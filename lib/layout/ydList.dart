@@ -177,12 +177,12 @@ class _YDListState extends State<YDList> {
                                                 MaterialPageRoute(
                                                     builder: (context) =>
                                                         YDReadPage(
-                                                            index: index,
-                                                            docs: _docs,
-                                                            sortField:
-                                                                _sortField,
-                                                            selectedSearchData:
-                                                                _selectedSearchData)));
+                                                          index: index,
+                                                          docs: _docs,
+                                                          sortField: _sortField,
+                                                          selectedSearchData:
+                                                              _selectedSearchData,
+                                                        )));
                                           },
                                           child: Container(
                                             padding: EdgeInsets.all(8.0),
