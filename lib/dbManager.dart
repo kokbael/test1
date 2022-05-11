@@ -109,7 +109,7 @@ void createYDCourt(address, contents, cost, courtName, date, photoURL, title) {
 
 void confirmYDCourt(docs, index) {
   try {
-    ydcourt.doc(docs[index].id.toString()).update({
+    ydcourt.doc(docs[index]['id']).update({
       'confirm': !docs[index]['confirm'],
     });
   } catch (e) {
@@ -120,8 +120,9 @@ void confirmYDCourt(docs, index) {
 void updateYDCourt(
     docs, index, address, contents, cost, courtName, date, photoURL, title) {
   List<String> _townList = ['서울', '경기', '인천', '부산'];
+  print(docs[index]['id']);
   try {
-    ydcourt.doc(docs[index].id.toString()).update({
+    ydcourt.doc(docs[index]['id']).update({
       'address': address,
       'contents': contents,
       'cost': cost,
@@ -154,7 +155,7 @@ void updateDday(docs) {
       int diffHH = int.parse(dateHH) - int.parse(nowHH);
       if (diffHH > 0) {
         try {
-          ydcourt.doc(doc.id.toString()).update({
+          ydcourt.doc(doc['id']).update({
             'Dday': 0,
           });
         } catch (e) {
@@ -162,7 +163,7 @@ void updateDday(docs) {
         }
       } else {
         try {
-          ydcourt.doc(doc.id.toString()).update({
+          ydcourt.doc(doc['id']()).update({
             // 마감 D-day
             'Dday': 32,
           });
@@ -173,7 +174,7 @@ void updateDday(docs) {
     } else if (days < 0 && doc['confirm'] == false) {
       // 현역
       try {
-        ydcourt.doc(doc.id.toString()).update({
+        ydcourt.doc(doc['id']).update({
           'Dday': (-hours / 24).round(),
         });
       } catch (e) {
@@ -182,7 +183,7 @@ void updateDday(docs) {
     } else if (days > 0 && doc['confirm'] == false) {
       // 마감
       try {
-        ydcourt.doc(doc.id.toString()).update({
+        ydcourt.doc(doc['id']).update({
           'Dday': 32,
         });
       } catch (e) {
@@ -191,7 +192,7 @@ void updateDday(docs) {
     } else if (doc['confirm'] == true) {
       // 완료
       try {
-        ydcourt.doc(doc.id.toString()).update({
+        ydcourt.doc(doc['id']).update({
           'Dday': 33,
         });
       } catch (e) {

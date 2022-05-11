@@ -31,21 +31,7 @@ class _MyDialogState extends State<MyDialog> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             for (int i = 0; i < widget.buttonText.length; i++)
-              if (widget.buttonText[i] == '완료')
-                Container(
-                  padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
-                  child: TextButton(
-                    onPressed: () {
-                      firebase.confirmYDCourt(widget.docs, widget.index);
-                      Navigator.pop(context);
-                    },
-                    child: Text(
-                      widget.buttonText[i],
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                )
-              else if (widget.buttonText[i] == '삭제')
+              if (widget.buttonText[i] == '삭제')
                 Container(
                   padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
                   child: TextButton(

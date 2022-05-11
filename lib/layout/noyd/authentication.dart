@@ -49,7 +49,7 @@ class _AuthenticationState extends State<Authentication> {
               return FutureBuilder(
                   future: firebase.user.get(),
                   builder: (context, AsyncSnapshot snapshot) {
-                    final docs = snapshot.data._docs;
+                    final docs = snapshot.data.docs;
                     if (snapshot.hasData == false && docs != null) {
                       return Center(child: CircularProgressIndicator());
                     }

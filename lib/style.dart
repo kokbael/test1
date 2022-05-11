@@ -34,7 +34,7 @@ AppBarTheme _appBarTheme() {
 
 BottomNavigationBarThemeData _bottomNavigationBarThemeData() {
   return BottomNavigationBarThemeData(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
 
       //selected
       selectedIconTheme: IconThemeData(size: 25), // Icon Size

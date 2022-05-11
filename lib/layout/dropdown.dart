@@ -55,17 +55,19 @@ class _DropDownState extends State<DropDown> {
             }
           }
         });
-        List? flag = await townList(_townData!);
-        widget.setDocs(flag);
+        widget.setDocs(await courtList(_townData!));
       },
     );
   }
 
-  Future<List?> townList(String townData) async {
+  Future<List?> courtList(String townData) async {
     List list = [];
-    var first =
-        FirebaseFirestore.instance.collection(townData).orderBy('courtName');
-    await first.get().then((QuerySnapshot querySnapshot) =>
+    var ref = FirebaseFirestore.instance
+        .collection('court')
+        .doc(townData)
+        .collection(townData + 'Court')
+        .orderBy('courtName');
+    await ref.get().then((QuerySnapshot querySnapshot) =>
         {for (var doc in querySnapshot.docs) list.add(doc.data())});
     return list;
   }

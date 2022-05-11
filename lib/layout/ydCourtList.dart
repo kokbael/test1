@@ -3,20 +3,19 @@ import 'package:flutter/material.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'package:test1/layout/ydCourtDetail.dart';
 import 'package:test1/layout/renderTextFormField.dart';
-import 'noyd/dropdown.dart';
+import 'dropdown.dart';
 
-class YDCourtPage extends StatefulWidget {
-  const YDCourtPage({Key? key, this.setYDCourtInfo}) : super(key: key);
-  final setYDCourtInfo;
+class YDCourtList extends StatefulWidget {
+  const YDCourtList({Key? key, this.setYDCourtInfoList}) : super(key: key);
+  final setYDCourtInfoList;
   @override
-  State<YDCourtPage> createState() => _YDCourtPageState();
+  State<YDCourtList> createState() => _YDCourtListState();
 }
 
-class _YDCourtPageState extends State<YDCourtPage> {
+class _YDCourtListState extends State<YDCourtList> {
+  int _itemCount = 20;
   final RefreshController _refreshController =
       RefreshController(initialRefresh: false);
-
-  int _itemCount = 20;
 
   final formKey = GlobalKey<FormState>();
 
@@ -34,13 +33,13 @@ class _YDCourtPageState extends State<YDCourtPage> {
     });
   }
 
-  final List<String> _searchList = [
+  final List<String> _searchTypeList = [
     '선택',
     '코트명',
     '구/군',
   ];
-  String _selectedSearchData = '선택';
-  String? _searchData;
+  String _selectedSearchType = '선택';
+  String? _searchType;
   String? _searchString;
 
   @override
@@ -98,7 +97,7 @@ class _YDCourtPageState extends State<YDCourtPage> {
                                                   docs: _docs,
                                                   townData: _townData,
                                                   setYDCourtInfo:
-                                                      widget.setYDCourtInfo,
+                                                      widget.setYDCourtInfoList,
                                                 ),
                                               ),
                                             );
@@ -170,8 +169,8 @@ class _YDCourtPageState extends State<YDCourtPage> {
                             children: [
                               Row(children: [
                                 DropdownButton(
-                                  value: _selectedSearchData,
-                                  items: _searchList.map((value) {
+                                  value: _selectedSearchType,
+                                  items: _searchTypeList.map((value) {
                                     return DropdownMenuItem(
                                       value: value,
                                       child: Text(value),
@@ -179,13 +178,13 @@ class _YDCourtPageState extends State<YDCourtPage> {
                                   }).toList(),
                                   onChanged: (value) {
                                     setState(() {
-                                      _selectedSearchData = value.toString();
+                                      _selectedSearchType = value.toString();
                                       if (value != '선택') {
                                         if (value == '코트명') {
-                                          _searchData = 'courtName';
+                                          _searchType = 'courtName';
                                         }
                                         if (value == '구/군') {
-                                          _searchData = 'city';
+                                          _searchType = 'city';
                                         }
                                       }
                                     });
@@ -212,7 +211,7 @@ class _YDCourtPageState extends State<YDCourtPage> {
                                     ),
                                   ),
                                 ),
-                                _searchData == null
+                                _searchType == null
                                     ? ElevatedButton(
                                         onPressed: () {},
                                         child: Text('검색'),
@@ -228,7 +227,7 @@ class _YDCourtPageState extends State<YDCourtPage> {
                                             }
                                           });
                                           List? flag = await searchQuery(
-                                              _searchData!,
+                                              _searchType!,
                                               _searchString!,
                                               _townData!);
                                           setState(() {
@@ -250,16 +249,16 @@ class _YDCourtPageState extends State<YDCourtPage> {
   }
 
   Future<List?> searchQuery(
-      String searchData, String searchString, String selectedTown) async {
+      String searchType, String searchString, String selectedTown) async {
     List resultList = [];
     CollectionReference court =
         FirebaseFirestore.instance.collection(selectedTown);
     await court
-        .orderBy(searchData)
+        .orderBy(searchType)
         .get()
         .then((QuerySnapshot querySnapshot) => {
               for (var doc in querySnapshot.docs)
-                if (doc.get(searchData).contains(searchString))
+                if (doc.get(searchType).contains(searchString))
                   resultList.add(doc.data())
             });
     return resultList;

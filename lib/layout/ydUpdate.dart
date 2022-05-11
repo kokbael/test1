@@ -6,7 +6,7 @@ import 'package:test1/layout/renderTextFormField.dart';
 import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:intl/intl.dart';
 import '../dbManager.dart' as firebase;
-import 'ydCourtPage.dart';
+import 'ydCourtList.dart';
 import 'myDialog.dart';
 
 class YDUpdate extends StatefulWidget {
@@ -219,8 +219,9 @@ class _YDUpdateState extends State<YDUpdate> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => YDCourtPage(
-                                          setYDCourtInfo: _setYDCourtInfo)));
+                                      builder: (context) => YDCourtList(
+                                          setYDCourtInfoList:
+                                              _setYDCourtInfo)));
                             },
                             child: Text('목록'),
                           ),

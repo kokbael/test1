@@ -6,7 +6,7 @@ import 'package:test1/layout/renderTextFormField.dart';
 import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:intl/intl.dart';
 import '../dbManager.dart' as firebase;
-import 'ydCourtPage.dart';
+import 'ydCourtList.dart';
 import 'myDialog.dart';
 
 class YDCreate extends StatefulWidget {
@@ -37,7 +37,7 @@ class _YDCreateState extends State<YDCreate> {
 
   // [courtName,address,photoURL]
   List<String> _selectedCourtInfo = [];
-  void _setYDCourtInfo(List<String> courtInfo) {
+  void _setYDCourtInfoList(List<String> courtInfo) {
     setState(() {
       _selectedCourtInfo = courtInfo;
     });
@@ -174,8 +174,9 @@ class _YDCreateState extends State<YDCreate> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => YDCourtPage(
-                                          setYDCourtInfo: _setYDCourtInfo)));
+                                      builder: (context) => YDCourtList(
+                                          setYDCourtInfoList:
+                                              _setYDCourtInfoList)));
                             },
                             child: Text('목록'),
                           ),
@@ -185,7 +186,8 @@ class _YDCreateState extends State<YDCreate> {
                                   context,
                                   MaterialPageRoute(
                                       builder: (context) => YDMakeCourt(
-                                          setYDCourtInfo: _setYDCourtInfo)));
+                                          setYDCourtInfo:
+                                              _setYDCourtInfoList)));
                             },
                             child: Text('직접 입력'),
                           ),

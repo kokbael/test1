@@ -42,12 +42,6 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
             Icons.list,
           ),
         ),
-        BottomNavigationBarItem(
-          label: 'court',
-          icon: Icon(
-            Icons.map,
-          ),
-        ),
       ],
     );
   }

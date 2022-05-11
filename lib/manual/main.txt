@@ -1,0 +1,159 @@
+
+  //File
+  //https://flutter-ko.dev/docs/cookbook/persistence/reading-writing-files
+  //https://pub.dev/packages/path_provider
+
+
+ _write(String text) async {
+    final Directory directory = await getApplicationDocumentsDirectory();
+    print(directory.path);
+    final File file = File('${directory.path}/busan.txt');
+    await file.writeAsString(text);
+  }
+
+  Future<List?> _read() async {
+    List? text;
+    try {
+      final Directory directory = await getApplicationDocumentsDirectory();
+      final File file = File('${directory.path}/busan.txt');
+      return text;
+    } catch (e) {
+      print(e);
+      return [];
+    }
+  }
+  //File
+
+  //SharedPreferences
+  //https://pub.dev/packages/shared_preferences
+  //https://flutter-ko.dev/docs/cookbook/persistence/key-value
+  //시작할 때 counter 값을 불러옵니다.
+  int _counter = 0;
+  _loadCounter() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    setState(() {
+      _counter = (prefs.getInt('counter') ?? 0);
+    });
+  }
+
+  //클릭하면 counter 를 증가시킵니다.
+  _incrementCounter() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    setState(() {
+      _counter = (prefs.getInt('counter') ?? 0) + 1;
+      prefs.setInt('counter', _counter);
+    });
+  }
+
+  //SharedPreferences
+
+    void setDB() async {
+      var citiesRef = FirebaseFirestore.instance.collection('cities');
+      await citiesRef.doc('SF').set({
+        'name': 'San Francisco',
+        'state': 'CA',
+        'country': 'USA',
+        'capital': false,
+        'population': 860000,
+        'regions': ['west_coast', 'norcal']
+      });
+      await citiesRef.doc('LA').set({
+        'name': 'Los Angeles',
+        'state': 'CA',
+        'country': 'USA',
+        'capital': false,
+        'population': 3900000,
+        'regions': ['west_coast', 'socal']
+      });
+      await citiesRef.doc('DC').set({
+        'name': 'Washington, D.C.',
+        'state': null,
+        'country': 'USA',
+        'capital': true,
+        'population': 680000,
+        'regions': ['east_coast']
+      });
+      await citiesRef.doc('TOK').set({
+        'name': 'Tokyo',
+        'state': null,
+        'country': 'Japan',
+        'capital': true,
+        'population': 9000000,
+        'regions': ['kanto', 'honshu']
+      });
+      await citiesRef.doc('BJ').set({
+        'name': 'Beijing',
+        'state': null,
+        'country': 'China',
+        'capital': true,
+        'population': 21500000,
+        'regions': ['jingjinji', 'hebei']
+      });
+      await citiesRef.doc('SSN').set({
+        'name': 'Seoul',
+        'state': null,
+        'country': 'Korea',
+        'capital': true,
+        'population': 980000,
+        'regions': ['asia-northeast3']
+      });
+      await citiesRef.doc('PSN').set({
+        'name': 'Pusan',
+        'state': null,
+        'country': 'Korea',
+        'capital': false,
+        'population': 350000,
+        'regions': ['asia-northeast3']
+      });
+    }
+
+    postQuery() async {
+      var postRef = FirebaseFirestore.instance.collection('post');
+
+      var query = await postRef.get().then((QuerySnapshot querySnapshot) => {
+            for (var doc in querySnapshot.docs)
+              print(doc.id + ' => ' + doc.data().toString())
+          });
+    }
+
+    citiesQuery() async {
+      var citiesRef = FirebaseFirestore.instance.collection("cities");
+
+      var query = await citiesRef.get().then((QuerySnapshot querySnapshot) => {
+            for (var doc in querySnapshot.docs)
+              print(doc.id + ' => ' + doc.data().toString())
+          });
+      print('1-----------------------------------------------------');
+      var query1 = await citiesRef
+          .where('country', whereIn: ['USA'])
+          .where('capital', isEqualTo: false)
+          .where('state', isEqualTo: 'CA')
+          .where('regions', arrayContains: 'socal')
+          .get()
+          .then((QuerySnapshot querySnapshot) => {
+                for (var doc in querySnapshot.docs)
+                  print(doc.id + ' => ' + doc.data().toString())
+              });
+      // capital 이 false 이고 인구가 1000000 초과 지역
+      print('2-----------------------------------------------------');
+      var query2 = await citiesRef
+          .where("state", isEqualTo: 'CA')
+          .where('population', isGreaterThan: 860000)
+          .get()
+          .then((QuerySnapshot querySnapshot) => {
+                for (var doc in querySnapshot.docs)
+                  print(doc.id + ' => ' + doc.data().toString())
+              });
+    }
+
+    citiesUpdate(String docID, String field, updateData) {
+      var doc = FirebaseFirestore.instance.collection('cities');
+
+      doc.doc(docID).update({field: updateData});
+    }
+
+    citiesDelete(String docID) {
+      var doc = FirebaseFirestore.instance.collection('cities');
+
+      doc.doc(docID).delete();
+    }

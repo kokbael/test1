@@ -19,7 +19,7 @@ class _InfoUserState extends State<InfoUser> {
             if (!snapshot.hasData) {
               return Center(child: CircularProgressIndicator());
             } else {
-              final docs = snapshot.data._docs;
+              final docs = snapshot.data.docs;
               for (int index = 0; index < docs.length; index++) {
                 if (docs[index]['uid'] == widget.uid) {
                   return Center(
