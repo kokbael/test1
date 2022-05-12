@@ -6,6 +6,7 @@ import 'package:jiffy/jiffy.dart';
 import 'package:test1/layout/ydPopButton.dart';
 import 'package:test1/layout/ydTurnByTurn.dart';
 import 'ydmap.dart';
+import 'package:test1/yd_dbManager.dart' as firebase;
 
 class YDDetail extends StatefulWidget {
   const YDDetail({
@@ -247,7 +248,8 @@ class _YDDetailState extends State<YDDetail> {
   }
 
   Container readPageDday() {
-    return _isConfirm == true || widget.docs[widget.index]['Dday'] >= 32
+    return _isConfirm == true ||
+            firebase.setDday(widget.docs[widget.index]['date']) >= 32
         ? Container(
             width: 45,
             decoration: BoxDecoration(
@@ -258,7 +260,7 @@ class _YDDetailState extends State<YDDetail> {
                 ),
                 borderRadius: BorderRadius.circular(8)),
             child: Text(
-              widget.docs[widget.index]['Dday'] == 32 ? '마감 ' : '완료',
+              _isConfirm == true ? '완료' : '마감',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 14,
