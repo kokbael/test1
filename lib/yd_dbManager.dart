@@ -79,7 +79,9 @@ int setDday(Timestamp date) {
   String eightDate = DateFormat('yyyyMMdd').format(date.toDate());
   int days = DateTime.now().difference(DateTime.parse(eightDate)).inDays;
   int hours = DateTime.now().difference(DateTime.parse(eightDate)).inHours;
-  if (days == 0) {
+
+  if (days == 0 && (-hours / 24).ceil() < 2) {
+    // 버그 : 5월 12일 5:55 에서 5우러 13일 00:00 분 마감으로 나옴.
     // days == 0 일 경우 2 가지 경우 따로 처리.
     // 같은 날 시간이 지났으면 마감(32), 아니면 0 (D-day)
     String dateHH = DateFormat('HH').format(date.toDate());
@@ -97,7 +99,7 @@ int setDday(Timestamp date) {
     return 32;
   } else {
     // D-n
-    return (-hours / 24).round();
+    return (-hours / 24).ceil();
   }
 }
 
@@ -117,7 +119,7 @@ void updateDday(docs) {
         print(e);
       }
     } else {
-      if (days == 0) {
+      if (days == 0 && (-hours / 24).ceil() < 2) {
         // days == 0 일 경우 2 가지 경우 따로 처리.
         // 같은 날 시간이 지났으면 마감(32), 아니면 0 (D-day)
         String dateHH = DateFormat('HH').format(doc['date'].toDate());

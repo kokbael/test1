@@ -279,7 +279,9 @@ class _YDDetailState extends State<YDDetail> {
                 ),
                 borderRadius: BorderRadius.circular(8)),
             child: Text(
-              'D-' + widget.docs[widget.index]['Dday'].toString(),
+              widget.docs[widget.index]['Dday'] == 0
+                  ? 'D-Day'
+                  : 'D-' + widget.docs[widget.index]['Dday'].toString(),
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 14,

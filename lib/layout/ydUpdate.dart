@@ -51,21 +51,17 @@ class _YDUpdateState extends State<YDUpdate> {
 
   String? _contents;
   int? _cost;
-  Timestamp? _date;
   String? _title;
-
-  final DateFormat _formatter = DateFormat('yyyy-MM-dd HH:mm');
-  DateTime? _dateTime;
-
   // [courtName,address,photoURL]
   List<String> _selectedCourtInfo = [];
-
   void _setYDCourtInfo(List<String> courtInfo) {
     setState(() {
       _selectedCourtInfo = courtInfo;
     });
   }
 
+  DateTime? _dateTime;
+  Timestamp? _date;
   @override
   void initState() {
     // TODO: implement initState
@@ -162,54 +158,84 @@ class _YDUpdateState extends State<YDUpdate> {
                           }
                         },
                       ),
-                      Text('날짜 / 시간'),
-                      Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            IconButton(
-                              onPressed: () {
-                                _unFocus();
-                                DatePicker.showDatePicker(
-                                  context,
-                                  theme: DatePickerTheme(
-                                    backgroundColor: Colors.white,
-                                  ),
-                                  showTitleActions: true,
-                                  minTime: DateTime.now(),
-                                  maxTime: DateTime(
-                                      DateTime.now().year,
-                                      DateTime.now().month + 1,
-                                      DateTime.now().day),
-                                  onConfirm: (date) {
-                                    setState(() {
-                                      _dateTime = date;
-                                    });
-                                    DatePicker.showTimePicker(
-                                      context,
-                                      currentTime: _dateTime,
-                                      locale: LocaleType.ko,
-                                      showSecondsColumn: false,
-                                      showTitleActions: true,
-                                      onConfirm: (time) {
-                                        setState(() {
-                                          _dateTime = time;
-                                          _date = Timestamp
-                                              .fromMicrosecondsSinceEpoch(
-                                                  time.microsecondsSinceEpoch);
-                                        });
-                                      },
-                                    );
-                                  },
-                                  locale: LocaleType.ko,
-                                );
-                              },
-                              icon: Icon(Icons.calendar_today_outlined),
+                      InkWell(
+                        onTap: () {
+                          _unFocus();
+                          DatePicker.showDatePicker(
+                            context,
+                            locale: LocaleType.ko,
+                            theme: DatePickerTheme(
+                              backgroundColor: Colors.white,
                             ),
-                            _dateTime == null
-                                ? Text('')
-                                : Text(_formatter.format(_dateTime!)),
-                          ]),
-                      Text('코트 선택'),
+                            showTitleActions: true,
+                            minTime: DateTime.now(),
+                            maxTime: DateTime(DateTime.now().year,
+                                DateTime.now().month + 1, DateTime.now().day),
+                            onConfirm: (date) {
+                              setState(() {
+                                _dateTime = date;
+                              });
+                              DatePicker.showTimePicker(
+                                context,
+                                currentTime: _dateTime,
+                                locale: LocaleType.ko,
+                                showSecondsColumn: false,
+                                showTitleActions: true,
+                                onConfirm: (time) {
+                                  print(time);
+                                  setState(() {
+                                    _dateTime = time;
+                                    _date =
+                                        Timestamp.fromMicrosecondsSinceEpoch(
+                                            time.microsecondsSinceEpoch);
+                                  });
+                                },
+                              );
+                            },
+                          );
+                        },
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              dateBox(
+                                  flex: 4,
+                                  dateType: ' 년 ',
+                                  dateFormat: 'yyyy',
+                                  fontSize: 16),
+                              SizedBox(width: 10),
+                              dateBox(
+                                  flex: 2,
+                                  dateType: ' 월 ',
+                                  dateFormat: 'MM',
+                                  fontSize: 16),
+                              SizedBox(width: 10),
+                              dateBox(
+                                  flex: 2,
+                                  dateType: ' 일 ',
+                                  dateFormat: 'dd',
+                                  fontSize: 16),
+                              Flexible(
+                                flex: 2,
+                                child: Container(
+                                  height: 30,
+                                  child: Align(
+                                    alignment: Alignment.center,
+                                    child: _date == null
+                                        ? Text(
+                                            '00:00',
+                                            style: TextStyle(fontSize: 16),
+                                          )
+                                        : Text(
+                                            DateFormat('HH:mm')
+                                                .format(_date!.toDate()),
+                                            style: TextStyle(fontSize: 16),
+                                            textAlign: TextAlign.center,
+                                          ),
+                                  ),
+                                ),
+                              )
+                            ]),
+                      ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
@@ -315,6 +341,46 @@ class _YDUpdateState extends State<YDUpdate> {
             ),
           ),
         ),
+      ),
+    );
+  }
+
+  Widget dateBox({
+    @required int? flex,
+    @required double? width,
+    @required String? dateType,
+    @required String? dateFormat,
+    @required double? fontSize,
+  }) {
+    assert(flex != 0);
+    assert(width != 0);
+    assert(dateType != null);
+    assert(dateFormat != null);
+    assert(fontSize != 0);
+
+    return Flexible(
+      flex: flex!,
+      child: Container(
+        width: width,
+        height: 30,
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(8)),
+            border: Border.all(color: Colors.grey.shade400)),
+        child: _date == null
+            ? Align(
+                alignment: Alignment.centerRight,
+                child: Text(
+                  dateType!,
+                  style: TextStyle(fontSize: fontSize),
+                ),
+              )
+            : Align(
+                alignment: Alignment.centerRight,
+                child: Text(
+                  DateFormat(dateFormat!).format(_date!.toDate()) + dateType!,
+                  style: TextStyle(fontSize: fontSize),
+                ),
+              ),
       ),
     );
   }
