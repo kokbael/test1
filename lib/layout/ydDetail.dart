@@ -6,7 +6,7 @@ import 'package:jiffy/jiffy.dart';
 import 'package:test1/layout/ydDday.dart';
 import 'package:test1/layout/ydPopButton.dart';
 import 'package:test1/layout/ydTurnByTurn.dart';
-import '../dbManager.dart' as firebase;
+import 'package:test1/yd_dbManager.dart' as firebase;
 import 'ydmap.dart';
 
 class YDDetail extends StatefulWidget {

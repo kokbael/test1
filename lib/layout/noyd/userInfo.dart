@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test1/layout/noyd/set_userInfo.dart';
-import '../../dbManager.dart' as firebase;
+import 'dbManager.dart' as firebase;
 
 class InfoUser extends StatefulWidget {
   const InfoUser({Key? key, this.uid}) : super(key: key);

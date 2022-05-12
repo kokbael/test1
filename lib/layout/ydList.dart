@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'package:test1/layout/ydDday.dart';
 import 'package:test1/layout/ydReadPage.dart';
-import '../dbManager.dart' as firebase;
+import 'package:test1/yd_dbManager.dart' as firebase;
 import 'package:intl/intl.dart';
 
 class YDList extends StatefulWidget {

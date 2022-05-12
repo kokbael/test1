@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../dbManager.dart' as firebase;
+import 'package:test1/yd_dbManager.dart' as firebase;
 
 class MyDialog extends StatefulWidget {
   const MyDialog({

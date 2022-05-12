@@ -3,16 +3,10 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:path_provider/path_provider.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'dart:io';
 import 'package:test1/layout/noyd/authentication.dart';
-import 'package:test1/layout/noyd/boardCreate.dart';
-import 'package:test1/layout/noyd/boardList.dart';
 import 'package:test1/layout/myAppBar.dart';
 import 'package:test1/layout/myBottomNavigator.dart';
 import 'package:test1/layout/myDialog.dart';
-import 'package:test1/layout/ydCourtList.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:test1/layout/noyd/userInfo.dart';
 import 'package:test1/layout/ydCreate.dart';
@@ -20,7 +14,6 @@ import 'package:test1/layout/ydList.dart';
 import 'firebase_options.dart';
 import 'style.dart' as style;
 import 'package:test1/jsonToCourtList.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

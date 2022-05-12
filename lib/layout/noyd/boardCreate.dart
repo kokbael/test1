@@ -5,7 +5,7 @@ import 'package:intl/intl.dart';
 import 'package:test1/layout/ydCourtList.dart';
 import 'package:test1/layout/myDialog.dart';
 import 'package:test1/layout/renderTextFormField.dart';
-import '../../dbManager.dart' as firebase;
+import 'dbManager.dart' as firebase;
 
 class BoardCreate extends StatefulWidget {
   const BoardCreate(
