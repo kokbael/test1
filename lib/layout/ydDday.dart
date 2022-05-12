@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test1/yd_dbManager.dart' as firebase;
 
 class YDDday extends StatefulWidget {
   const YDDday({Key? key, this.docs, this.index}) : super(key: key);
@@ -40,12 +41,13 @@ class _YDDdayState extends State<YDDday> {
                   color: Colors.deepPurple.shade300,
                 ),
                 borderRadius: BorderRadius.circular(8)),
-            child:
-                // getDdday(widget.docs[widget.index]['date']),
-                Text(
-              widget.docs[widget.index]['Dday'] == 0
+            child: Text(
+              firebase.setDday(widget.docs[widget.index]['date']) == 0
                   ? 'D-day'
-                  : 'D-' + widget.docs[widget.index]['Dday'].toString(),
+                  : 'D-' +
+                      firebase
+                          .setDday(widget.docs[widget.index]['date'])
+                          .toString(),
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 14,

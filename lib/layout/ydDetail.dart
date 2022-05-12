@@ -3,10 +3,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:jiffy/jiffy.dart';
-import 'package:test1/layout/ydDday.dart';
 import 'package:test1/layout/ydPopButton.dart';
 import 'package:test1/layout/ydTurnByTurn.dart';
-import 'package:test1/yd_dbManager.dart' as firebase;
 import 'ydmap.dart';
 
 class YDDetail extends StatefulWidget {
@@ -41,12 +39,13 @@ class _YDDetailState extends State<YDDetail> {
     '양도완료',
   ];
   String? _selectedState;
-
+  bool? _isConfirm;
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     _selectedState = widget.docs[widget.index]['confirm'] ? '양도완료' : '양도 중';
+    _isConfirm = widget.docs[widget.index]['confirm'] ? true : false;
   }
 
   @override
@@ -54,113 +53,128 @@ class _YDDetailState extends State<YDDetail> {
     return SingleChildScrollView(
       child: Column(
         children: [
-          Container(
-            padding: EdgeInsets.all(10.0),
-            child: Row(
-              children: [
-                Flexible(
-                  flex: 9,
-                  child: Row(
-                    children: [
-                      YDDday(docs: widget.docs, index: widget.index),
-                      SizedBox(width: 10),
-                      Text(widget.docs[widget.index]['title'],
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 18)),
-                    ],
-                  ),
-                ),
-                Row(
+          Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(10.0),
+                child: Row(
                   children: [
-                    FirebaseAuth.instance.currentUser!.uid ==
-                            widget.docs[widget.index]['uid']
-                        ? YDPopButton(
-                            index: widget.index,
-                            docs: widget.docs,
-                            uid: widget.uid,
-                            setListTab: widget.setListTab,
-                          )
-                        : Container()
+                    Flexible(
+                      flex: 9,
+                      child: Row(
+                        children: [
+                          readPageDday(),
+                          // YDDday(docs: widget.docs, index: widget.index),
+                          SizedBox(width: 10),
+                          Text(widget.docs[widget.index]['title'],
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 18)),
+                        ],
+                      ),
+                    ),
+                    Row(
+                      children: [
+                        FirebaseAuth.instance.currentUser!.uid ==
+                                widget.docs[widget.index]['uid']
+                            ? YDPopButton(
+                                index: widget.index,
+                                docs: widget.docs,
+                                uid: widget.uid,
+                                setListTab: widget.setListTab,
+                              )
+                            : Container()
+                      ],
+                    ),
                   ],
                 ),
-              ],
-            ),
-          ),
-          Container(
-            padding: EdgeInsets.fromLTRB(10, 0, 15, 12),
-            decoration: BoxDecoration(
-                border:
-                    Border(bottom: BorderSide(width: 0.2, color: Colors.grey))),
-            child: Row(
-              children: [
-                // Icon(Icons.account_circle),
-                Flexible(
-                  flex: 7,
-                  child: Row(
-                    children: [
-                      SizedBox(
-                        height: 20,
-                        width: 20,
-                        child: CircleAvatar(
-                          backgroundImage: NetworkImage(
-                            widget.docs[widget.index]['userPhoto'],
-                          ),
-                        ),
-                      ),
-                      Text('  '),
-                      Text(widget.docs[widget.index]['userName']),
-                      Text('  |  ', style: TextStyle(color: Colors.grey)),
-                      Text(
-                        getPostTime(widget.docs[widget.index]['postDate']),
-                        style: TextStyle(color: Colors.grey),
-                      ),
-                    ],
-                  ),
-                ),
-                Row(children: [
-                  FirebaseAuth.instance.currentUser!.uid ==
-                          widget.docs[widget.index]['uid']
-                      ? DropdownButton(
-                          value: _selectedState,
-                          items: _stateList.map((value) {
-                            return DropdownMenuItem(
-                              value: value,
-                              child: Text(
-                                value,
-                                textAlign: TextAlign.center,
+              ),
+              Container(
+                padding: EdgeInsets.fromLTRB(10, 0, 15, 12),
+                decoration: BoxDecoration(
+                    border: Border(
+                        bottom: BorderSide(width: 0.2, color: Colors.grey))),
+                child: Row(
+                  children: [
+                    // Icon(Icons.account_circle),
+                    Flexible(
+                      flex: 7,
+                      child: Row(
+                        children: [
+                          SizedBox(
+                            height: 20,
+                            width: 20,
+                            child: CircleAvatar(
+                              backgroundImage: NetworkImage(
+                                widget.docs[widget.index]['userPhoto'],
                               ),
-                            );
-                          }).toList(),
-                          onChanged: (value) {
-                            if (value == '양도완료' &&
-                                !widget.docs[widget.index]['confirm']) {
-                              setState(() {
-                                _selectedState = '양도완료';
-                              });
-                              firebase.confirmYDCourt(
-                                  widget.docs, widget.index);
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                  SnackBar(content: Text('[양도완료]로 변경하였습니다.')));
-                              firebase.confirmYDCourt(
-                                  widget.docs, widget.index);
-                            } else if (value == '양도 중' &&
-                                widget.docs[widget.index]['confirm']) {
-                              setState(() {
-                                _selectedState = '양도 중';
-                              });
-                              firebase.confirmYDCourt(
-                                  widget.docs, widget.index);
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                  SnackBar(content: Text('[양도 중]으로 변경하였습니다.')));
-                              firebase.confirmYDCourt(
-                                  widget.docs, widget.index);
-                            }
-                          },
-                        )
-                      : Container()
-                ]),
-              ],
-            ),
+                            ),
+                          ),
+                          Text('  '),
+                          Text(widget.docs[widget.index]['userName']),
+                          Text('  |  ', style: TextStyle(color: Colors.grey)),
+                          Text(
+                            getPostTime(widget.docs[widget.index]['postDate']),
+                            style: TextStyle(color: Colors.grey),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Row(children: [
+                      FirebaseAuth.instance.currentUser!.uid ==
+                              widget.docs[widget.index]['uid']
+                          ? DropdownButton(
+                              value: _selectedState,
+                              items: _stateList.map((value) {
+                                return DropdownMenuItem(
+                                  value: value,
+                                  child: Text(
+                                    value,
+                                    textAlign: TextAlign.center,
+                                  ),
+                                );
+                              }).toList(),
+                              onChanged: (value) {
+                                if (value == '양도완료') {
+                                  setState(() {
+                                    _selectedState = '양도완료';
+                                    _isConfirm = true;
+                                  });
+                                  try {
+                                    FirebaseFirestore.instance
+                                        .collection('ydcourt')
+                                        .doc(widget.docs[widget.index]['id'])
+                                        .update({'confirm': _isConfirm});
+                                  } catch (e) {
+                                    print(e);
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                        SnackBar(
+                                            content: Text('변경에 실패하였습니다.')));
+                                  }
+                                } else if (value == '양도 중') {
+                                  setState(() {
+                                    _selectedState = '양도 중';
+                                    _isConfirm = false;
+                                  });
+                                  try {
+                                    FirebaseFirestore.instance
+                                        .collection('ydcourt')
+                                        .doc(widget.docs[widget.index]['id'])
+                                        .update({'confirm': _isConfirm});
+                                  } catch (e) {
+                                    print(e);
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                        SnackBar(
+                                            content: Text('변경에 실패하였습니다.')));
+                                  }
+                                }
+                              },
+                            )
+                          : Container()
+                    ]),
+                  ],
+                ),
+              ),
+            ],
           ),
           Column(
             children: [
@@ -230,5 +244,47 @@ class _YDDetailState extends State<YDDetail> {
     } else {
       return Jiffy(_jiffyDate).fromNow(); // [몇 초 전, n분 전, n시간 전, n일 전]
     }
+  }
+
+  Container readPageDday() {
+    return _isConfirm == true || widget.docs[widget.index]['Dday'] >= 32
+        ? Container(
+            width: 45,
+            decoration: BoxDecoration(
+                color: Colors.grey,
+                border: Border.all(
+                  width: 1,
+                  color: Colors.grey,
+                ),
+                borderRadius: BorderRadius.circular(8)),
+            child: Text(
+              widget.docs[widget.index]['Dday'] == 32 ? '마감 ' : '완료',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 14,
+                color: Colors.white,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          )
+        : Container(
+            width: 45,
+            decoration: BoxDecoration(
+                color: Colors.deepPurple.shade300,
+                border: Border.all(
+                  width: 1,
+                  color: Colors.deepPurple.shade300,
+                ),
+                borderRadius: BorderRadius.circular(8)),
+            child: Text(
+              'D-' + widget.docs[widget.index]['Dday'].toString(),
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 14,
+                color: Colors.white,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          );
   }
 }

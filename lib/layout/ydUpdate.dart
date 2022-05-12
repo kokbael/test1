@@ -289,12 +289,12 @@ class _YDUpdateState extends State<YDUpdate> {
                             firebase.updateYDCourt(
                               widget.docs,
                               widget.index,
-                              _selectedCourtInfo.elementAt(1),
+                              _selectedCourtInfo.elementAt(1), //address
                               _contents,
                               _cost,
-                              _selectedCourtInfo.elementAt(0),
+                              _selectedCourtInfo.elementAt(0), //courtName
                               _date,
-                              _selectedCourtInfo.elementAt(2),
+                              _selectedCourtInfo.elementAt(2), //photoURL
                               _title,
                             );
                             widget.setListTab(0);
