@@ -30,16 +30,6 @@ void createYDCourt(address, contents, cost, courtName, date, photoURL, title) {
   }
 }
 
-void confirmYDCourt(docs, index) {
-  try {
-    ydcourt.doc(docs[index]['id']).update({
-      'confirm': !docs[index]['confirm'],
-    });
-  } catch (e) {
-    print(e);
-  }
-}
-
 void updateYDCourt(
     docs, index, address, contents, cost, courtName, date, photoURL, title) {
   try {
@@ -74,13 +64,26 @@ void updateYDCourt(
   }
 }
 
+void deleteYDCourt(docs, index) {
+  ydcourt.doc(docs[index]['id']).delete();
+}
+
+void confirmYDCourt(docs, index) {
+  try {
+    ydcourt.doc(docs[index]['id']).update({
+      'confirm': !docs[index]['confirm'],
+    });
+  } catch (e) {
+    print(e);
+  }
+}
+
 int setDday(Timestamp date) {
   // 오름차순 : 1, 2, ... , 31, 마감(32), 완료(33)
   String eightDate = DateFormat('yyyyMMdd').format(date.toDate());
   int days = DateTime.now().difference(DateTime.parse(eightDate)).inDays;
   int hours = DateTime.now().difference(DateTime.parse(eightDate)).inHours;
-
-  if (days == 0 && (-hours / 24).ceil() < 2) {
+  if (days == 0 && hours >= 0) {
     // 버그 : 5월 12일 5:55 에서 5우러 13일 00:00 분 마감으로 나옴.
     // days == 0 일 경우 2 가지 경우 따로 처리.
     // 같은 날 시간이 지났으면 마감(32), 아니면 0 (D-day)
@@ -104,13 +107,12 @@ int setDday(Timestamp date) {
 }
 
 void updateDday(docs) {
+  // setDday 와 같은 로직
   for (var doc in docs) {
-    // 오름차순 : 1, 2, 마감(32), 완료(33)
     String eightDate = DateFormat('yyyyMMdd').format(doc['date'].toDate());
     int days = DateTime.now().difference(DateTime.parse(eightDate)).inDays;
     int hours = DateTime.now().difference(DateTime.parse(eightDate)).inHours;
     if (doc['confirm'] == true) {
-      // 완료
       try {
         ydcourt.doc(doc['id']).update({
           'Dday': 33,
@@ -119,9 +121,7 @@ void updateDday(docs) {
         print(e);
       }
     } else {
-      if (days == 0 && (-hours / 24).ceil() < 2) {
-        // days == 0 일 경우 2 가지 경우 따로 처리.
-        // 같은 날 시간이 지났으면 마감(32), 아니면 0 (D-day)
+      if (days == 0 && hours >= 0) {
         String dateHH = DateFormat('HH').format(doc['date'].toDate());
         String nowHH = DateFormat('HH').format(DateTime.now());
         int diffHH = int.parse(dateHH) - int.parse(nowHH);
@@ -133,27 +133,16 @@ void updateDday(docs) {
           } catch (e) {
             print(e);
           }
-        } else {
+        } else if ((days > 0)) {
           try {
             ydcourt.doc(doc['id']).update({
-              // 마감 D-day
               'Dday': 32,
             });
           } catch (e) {
             print(e);
           }
         }
-      } else if (days < 0) {
-        // 현역
-        try {
-          ydcourt.doc(doc['id']).update({
-            'Dday': (-hours / 24).round(),
-          });
-        } catch (e) {
-          print(e);
-        }
       } else if (days > 0) {
-        // 마감
         try {
           ydcourt.doc(doc['id']).update({
             'Dday': 32,
@@ -161,11 +150,15 @@ void updateDday(docs) {
         } catch (e) {
           print(e);
         }
+      } else {
+        try {
+          ydcourt.doc(doc['id']).update({
+            'Dday': (-hours / 24).round(),
+          });
+        } catch (e) {
+          print(e);
+        }
       }
     }
   }
-}
-
-void deleteYDCourt(docs, index) {
-  ydcourt.doc(docs[index]['id']).delete();
 }

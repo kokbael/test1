@@ -41,6 +41,7 @@ class _YDDetailState extends State<YDDetail> {
   ];
   String? _selectedState;
   bool? _isConfirm;
+
   @override
   void initState() {
     // TODO: implement initState
@@ -64,7 +65,7 @@ class _YDDetailState extends State<YDDetail> {
                       flex: 9,
                       child: Row(
                         children: [
-                          readPageDday(),
+                          readPageDday(widget.docs[widget.index]['date']),
                           // YDDday(docs: widget.docs, index: widget.index),
                           SizedBox(width: 10),
                           Text(widget.docs[widget.index]['title'],
@@ -227,6 +228,11 @@ class _YDDetailState extends State<YDDetail> {
                 child: YDMap(docs: widget.docs, index: widget.index),
               ),
               YDTurnByTurn(docs: widget.docs, index: widget.index),
+              ElevatedButton(
+                  onPressed: () {
+                    print(firebase.setDday(widget.docs[widget.index]['date']));
+                  },
+                  child: Text('diff')),
             ],
           ),
         ],
@@ -247,48 +253,66 @@ class _YDDetailState extends State<YDDetail> {
     }
   }
 
-  Container readPageDday() {
-    return _isConfirm == true ||
-            firebase.setDday(widget.docs[widget.index]['date']) >= 32
-        ? Container(
-            width: 45,
-            decoration: BoxDecoration(
-                color: Colors.grey,
-                border: Border.all(
-                  width: 1,
-                  color: Colors.grey,
-                ),
-                borderRadius: BorderRadius.circular(8)),
-            child: Text(
-              _isConfirm == true ? '완료' : '마감',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 14,
-                color: Colors.white,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-          )
-        : Container(
-            width: 45,
-            decoration: BoxDecoration(
-                color: Colors.deepPurple.shade300,
-                border: Border.all(
-                  width: 1,
-                  color: Colors.deepPurple.shade300,
-                ),
-                borderRadius: BorderRadius.circular(8)),
-            child: Text(
-              widget.docs[widget.index]['Dday'] == 0
-                  ? 'D-Day'
-                  : 'D-' + widget.docs[widget.index]['Dday'].toString(),
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 14,
-                color: Colors.white,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-          );
+  // Detail 내에서 동작하기 위해 작성
+  Widget readPageDday(Timestamp date) {
+    String eightDate = DateFormat('yyyyMMdd').format(date.toDate());
+    int days = DateTime.now().difference(DateTime.parse(eightDate)).inDays;
+    int hours = DateTime.now().difference(DateTime.parse(eightDate)).inHours;
+    if (_isConfirm == true) {
+      return renderDday(Dday: 33, color: Colors.grey, confirm: true);
+    } else if (days == 0 && hours >= 0) {
+      String dateHH = DateFormat('HH').format(date.toDate());
+      String nowHH = DateFormat('HH').format(DateTime.now());
+      int diffHH = int.parse(dateHH) - int.parse(nowHH);
+      if (diffHH > 0) {
+        // D-day
+        return renderDday(
+            Dday: 0, color: Colors.deepPurple.shade400, confirm: false);
+      } else {
+        // D-day 에서 시간 지난 마감
+        return renderDday(Dday: 32, color: Colors.grey, confirm: false);
+      }
+    } else if (days > 0) {
+      // Day 넘어 간 마감
+      return renderDday(Dday: 32, color: Colors.grey, confirm: false);
+    } else {
+      // D-n
+      return renderDday(
+          Dday: (-hours / 24).ceil(),
+          color: Colors.deepPurple.shade400,
+          confirm: false);
+    }
+  }
+
+  Widget renderDday(
+      {@required int? Dday, @required Color? color, @required bool? confirm}) {
+    assert(Dday != null);
+    assert(color != null);
+    assert(confirm != null);
+    return Container(
+      width: 45,
+      decoration: BoxDecoration(
+          color: color!,
+          border: Border.all(
+            width: 1,
+            color: color,
+          ),
+          borderRadius: BorderRadius.circular(8)),
+      child: Text(
+        confirm == true
+            ? '완료'
+            : Dday == 32
+                ? '마감'
+                : Dday == 0
+                    ? 'D-day'
+                    : 'D-' + Dday!.toString(),
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          fontSize: 14,
+          color: Colors.white,
+          fontWeight: FontWeight.w600,
+        ),
+      ),
+    );
   }
 }
