@@ -14,6 +14,7 @@ import 'package:test1/layout/ydList.dart';
 import 'firebase_options.dart';
 import 'style.dart' as style;
 import 'package:test1/jsonToCourtList.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -38,6 +39,15 @@ class _MyAppState extends State<MyApp> {
   //https://oowgnoj.dev/post/flutter-json
   //https://flutter-ko.dev/docs/development/data-and-backend/json
 
+  Future<String> _courtPhotoURL(String imageName, String townData) async {
+    String png = imageName + '.png';
+    final refImage =
+        FirebaseStorage.instance.ref().child('court_image/$townData/$png');
+    String url = await refImage.getDownloadURL();
+    return url;
+    // print(url);
+  }
+
   Future<String> _loadCourtAsset() async {
     return await rootBundle.loadString('assets/seoul.json');
   }
@@ -60,6 +70,7 @@ class _MyAppState extends State<MyApp> {
         'chargeInfo': list.chargeInfo,
         'reservation': list.reservation,
         'address': list.address,
+        'photoURL': await _courtPhotoURL(list.courtName, 'seoul'),
       });
     }
   }
