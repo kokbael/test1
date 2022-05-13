@@ -54,8 +54,8 @@ Widget renderTextFormField({
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(5),
             borderSide: BorderSide(
-              style: BorderStyle.solid,
-              color: Colors.black,
+              // style: BorderStyle.solid,
+              color: Colors.grey,
               width: 1,
             ),
           ),

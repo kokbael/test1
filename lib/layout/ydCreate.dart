@@ -154,24 +154,24 @@ class _YDCreateState extends State<YDCreate> {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               dateBox(
-                                  flex: 4,
+                                  flex: 5,
                                   dateType: ' 년 ',
                                   dateFormat: 'yyyy',
                                   fontSize: 16),
                               SizedBox(width: 10),
                               dateBox(
-                                  flex: 2,
+                                  flex: 3,
                                   dateType: ' 월 ',
                                   dateFormat: 'MM',
                                   fontSize: 16),
                               SizedBox(width: 10),
                               dateBox(
-                                  flex: 2,
+                                  flex: 3,
                                   dateType: ' 일 ',
                                   dateFormat: 'dd',
                                   fontSize: 16),
                               Flexible(
-                                flex: 2,
+                                flex: 3,
                                 child: Container(
                                   height: 30,
                                   child: Align(
@@ -179,12 +179,16 @@ class _YDCreateState extends State<YDCreate> {
                                     child: _date == null
                                         ? Text(
                                             '00:00',
-                                            style: TextStyle(fontSize: 16),
+                                            style: TextStyle(
+                                                fontSize: 16,
+                                                fontWeight: FontWeight.bold),
                                           )
                                         : Text(
                                             DateFormat('HH:mm')
                                                 .format(_date!.toDate()),
-                                            style: TextStyle(fontSize: 16),
+                                            style: TextStyle(
+                                                fontSize: 16,
+                                                fontWeight: FontWeight.bold),
                                             textAlign: TextAlign.center,
                                           ),
                                   ),

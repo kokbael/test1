@@ -49,14 +49,16 @@ class _MyAppState extends State<MyApp> {
   }
 
   Future<String> _loadCourtAsset() async {
-    return await rootBundle.loadString('assets/seoul.json');
+    return await rootBundle.loadString('assets/kyungki.json');
   }
 
+  //부산기장사업소 삭제해야함.
+  //구서롯데 .PNG
   void _addCourt() async {
     var ref = FirebaseFirestore.instance
         .collection('court')
-        .doc('seoul')
-        .collection('seoulCourt');
+        .doc('kyungki')
+        .collection('kyungkiCourt');
     String jsonString = await _loadCourtAsset();
     final jsonResponse = json.decode(jsonString);
     CourtList courtsList = CourtList.fromJson(jsonResponse);
@@ -70,7 +72,7 @@ class _MyAppState extends State<MyApp> {
         'chargeInfo': list.chargeInfo,
         'reservation': list.reservation,
         'address': list.address,
-        'photoURL': await _courtPhotoURL(list.courtName, 'seoul'),
+        'photoURL': await _courtPhotoURL(list.courtName, 'kyungki'),
       });
     }
   }
@@ -166,19 +168,6 @@ class _MyAppState extends State<MyApp> {
                       },
                       icon: Icon(Icons.person),
                     ),
-                    // Text(userName == null
-                    //     ? ''
-                    //     : FirebaseAuth.instance.currentUser!.displayName!),
-                    // SizedBox(
-                    //   width: 80,
-                    //   height: 80,
-                    //   child: CircleAvatar(
-                    //     backgroundImage: userImage == null
-                    //         ? null
-                    //         : NetworkImage(
-                    //             FirebaseAuth.instance.currentUser!.photoURL!),
-                    //   ),
-                    // ),
                     ElevatedButton(
                       onPressed: () {
                         _addCourt();

@@ -38,6 +38,7 @@ class _MyDialogState extends State<MyDialog> {
                     onPressed: () {
                       firebase.deleteYDCourt(widget.docs, widget.index);
                       Navigator.pop(context);
+                      Navigator.pop(context);
                       showDialog(
                           context: context,
                           builder: (context) => MyDialog(

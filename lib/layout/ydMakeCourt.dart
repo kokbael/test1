@@ -189,10 +189,6 @@ class _YDMakeCourtState extends State<YDMakeCourt> {
                                 buttonText: const ['확인']));
                       } else if (formKey.currentState!.validate()) {
                         formKey.currentState?.save();
-                        print(_courtName.runtimeType);
-                        print(_address.runtimeType);
-                        print(_photoURL.runtimeType);
-
                         setState(() {
                           _makeCourtInfo = [_courtName!, _address!, _photoURL!];
                         });
