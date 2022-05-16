@@ -52,8 +52,6 @@ class _MyAppState extends State<MyApp> {
     return await rootBundle.loadString('assets/kyungki.json');
   }
 
-  //부산기장사업소 삭제해야함.
-  //구서롯데 .PNG
   void _addCourt() async {
     var ref = FirebaseFirestore.instance
         .collection('court')
@@ -170,7 +168,7 @@ class _MyAppState extends State<MyApp> {
                     ),
                     ElevatedButton(
                       onPressed: () {
-                        _addCourt();
+                        // _addCourt();
                       },
                       child: Text('court add'),
                     ),

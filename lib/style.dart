@@ -97,6 +97,7 @@ TextButtonThemeData _textButtonThemeData() {
       primary: Colors.deepPurpleAccent, // textColor
       textStyle: TextStyle(fontWeight: FontWeight.bold),
       padding: EdgeInsets.all(5),
+      // tapTargetSize: MaterialTapTargetSize.shrinkWrap
     ),
   );
 }

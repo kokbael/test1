@@ -17,7 +17,6 @@ class _DropDownState extends State<DropDown> {
     '부산',
   ];
   String _selectedTown = '지역 선택';
-  String? _townData; // courtList 로드에 필요.
 
   @override
   Widget build(BuildContext context) {
@@ -37,23 +36,18 @@ class _DropDownState extends State<DropDown> {
           _selectedTown = value.toString();
           if (value != '지역 선택') {
             if (value == '전체') {
-              _townData = '전체';
               widget.setTownData('전체');
             }
             if (value == '서울') {
-              _townData = 'seoul';
               widget.setTownData('seoul');
             }
             if (value == '경기') {
-              _townData = 'kyungki';
               widget.setTownData('kyungki');
             }
             if (value == '인천') {
-              _townData = 'incheon';
               widget.setTownData('incheon');
             }
             if (value == '부산') {
-              _townData = 'busan';
               widget.setTownData('busan');
             }
           }

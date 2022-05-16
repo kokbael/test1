@@ -32,14 +32,6 @@ void createYDCourt(address, contents, cost, courtName, date, photoURL, title) {
 
 void updateYDCourt(
     docs, index, address, contents, cost, courtName, date, photoURL, title) {
-  try {
-    ydcourt.doc(docs[index]['id']).update({
-      'id': docs[index]['id'],
-    });
-  } catch (e) {
-    print(e);
-  }
-
   List<String> _townList = ['서울', '경기', '인천', '부산'];
   try {
     ydcourt.doc(docs[index]['id']).update({
@@ -84,7 +76,6 @@ int setDday(Timestamp date) {
   int days = DateTime.now().difference(DateTime.parse(eightDate)).inDays;
   int hours = DateTime.now().difference(DateTime.parse(eightDate)).inHours;
   if (days == 0 && hours >= 0) {
-    // 버그 : 5월 12일 5:55 에서 5우러 13일 00:00 분 마감으로 나옴.
     // days == 0 일 경우 2 가지 경우 따로 처리.
     // 같은 날 시간이 지났으면 마감(32), 아니면 0 (D-day)
     String dateHH = DateFormat('HH').format(date.toDate());
@@ -92,7 +83,7 @@ int setDday(Timestamp date) {
     int diffHH = int.parse(dateHH) - int.parse(nowHH);
     if (diffHH > 0) {
       // D-day
-      return 0;
+      return -1;
     } else {
       // D-day 에서 시간 지난 마감
       return 32;
@@ -128,12 +119,12 @@ void updateDday(docs) {
         if (diffHH > 0) {
           try {
             ydcourt.doc(doc['id']).update({
-              'Dday': 0,
+              'Dday': -1,
             });
           } catch (e) {
             print(e);
           }
-        } else if ((days > 0)) {
+        } else {
           try {
             ydcourt.doc(doc['id']).update({
               'Dday': 32,

@@ -12,6 +12,7 @@ Widget renderTextFormField({
   @required TextInputAction? textInputAction,
   @required bool? enabled,
   @required hintText,
+  @required int? maxLines,
 }) {
   assert(onSaved != null);
   // assert(validator != null);
@@ -37,7 +38,7 @@ Widget renderTextFormField({
         validator: validator,
         minLines: minLines,
         textInputAction: textInputAction,
-        maxLines: null,
+        maxLines: maxLines,
         autofocus: false,
         keyboardType: label == '비용' ? TextInputType.number : null,
         inputFormatters: label == '비용'

@@ -180,15 +180,15 @@ class _YDCreateState extends State<YDCreate> {
                                         ? Text(
                                             '00:00',
                                             style: TextStyle(
-                                                fontSize: 16,
-                                                fontWeight: FontWeight.bold),
+                                              fontSize: 16,
+                                            ),
                                           )
                                         : Text(
                                             DateFormat('HH:mm')
                                                 .format(_date!.toDate()),
                                             style: TextStyle(
-                                                fontSize: 16,
-                                                fontWeight: FontWeight.bold),
+                                              fontSize: 16,
+                                            ),
                                             textAlign: TextAlign.center,
                                           ),
                                   ),

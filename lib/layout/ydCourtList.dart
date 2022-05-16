@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:test1/layout/ydCourtDetail.dart';
 import 'package:test1/layout/renderTextFormField.dart';
 import 'dropdown.dart';
@@ -14,6 +15,7 @@ class YDCourtList extends StatefulWidget {
 
 class _YDCourtListState extends State<YDCourtList> {
   int _itemCount = 20;
+
   final RefreshController _refreshController =
       RefreshController(initialRefresh: false);
 
@@ -30,6 +32,40 @@ class _YDCourtListState extends State<YDCourtList> {
 
   String? _searchString;
 
+  List<String> _searchedList = [];
+  _loadSearchedList() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    setState(() {
+      _searchedList = (prefs.getStringList('searchedList') ?? ['']);
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _loadSearchedList();
+  }
+
+  bool _isLoading = false;
+
+  _addSearchedList(String searchString) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    setState(() {
+      _searchedList = (prefs.getStringList('searchedList') ?? ['']);
+      _searchedList.add(searchString);
+      prefs.setStringList('searchedList', _searchedList);
+    });
+  }
+
+  _deleteSearchedList(index) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    setState(() {
+      _searchedList = (prefs.getStringList('searchedList') ?? ['']);
+      _searchedList.removeAt(index);
+      prefs.setStringList('searchedList', _searchedList);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,9 +79,7 @@ class _YDCourtListState extends State<YDCourtList> {
                   child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  DropDown(
-                    setTownData: setTownData,
-                  ),
+                  DropDown(setTownData: setTownData),
                   Form(
                     key: formKey,
                     child: Row(
@@ -57,7 +91,7 @@ class _YDCourtListState extends State<YDCourtList> {
                               child: Container(
                                 width: 150,
                                 child: renderTextFormField(
-                                  minLines: 1,
+                                  maxLines: 1,
                                   label: '',
                                   onSaved: (val) {
                                     setState(() {
@@ -75,6 +109,10 @@ class _YDCourtListState extends State<YDCourtList> {
                             ElevatedButton(
                               onPressed: () async {
                                 setState(() {
+                                  _isLoading = true;
+                                });
+                                _itemCount = 20;
+                                setState(() {
                                   if (formKey.currentState!.validate()) {
                                     formKey.currentState!.save();
                                   }
@@ -86,7 +124,11 @@ class _YDCourtListState extends State<YDCourtList> {
                                 setState(() {
                                   _docs = flag;
                                   _itemCount = flag!.length;
+                                  _isLoading = true;
                                 });
+                                if (_searchString != '') {
+                                  _addSearchedList(_searchString!);
+                                }
                               },
                               child: Text('검색'),
                             ),
@@ -96,7 +138,86 @@ class _YDCourtListState extends State<YDCourtList> {
                 ],
               )),
               _docs == null
-                  ? Container()
+                  ? _isLoading == false
+                      ? Container(
+                          height: 30,
+                          child: ListView.separated(
+                              physics: BouncingScrollPhysics(),
+                              scrollDirection: Axis.horizontal,
+                              itemCount: _searchedList.length,
+                              itemBuilder: (BuildContext context, index) {
+                                return Container(
+                                  padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey.shade200,
+                                    border:
+                                        Border.all(color: Colors.grey.shade300),
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  width: 140,
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Expanded(
+                                        flex: 3,
+                                        child: InkWell(
+                                          onTap: () async {
+                                            setState(() {
+                                              _isLoading = true;
+                                            });
+                                            List? flag = searchQuery(
+                                              _searchedList[
+                                                  _searchedList.length -
+                                                      1 -
+                                                      index],
+                                              await courtList('전체'),
+                                            );
+                                            setState(() {
+                                              _docs = flag;
+                                              _itemCount = flag!.length;
+                                            });
+                                          },
+                                          child: Container(
+                                            child: RichText(
+                                              overflow: TextOverflow.ellipsis,
+                                              text: TextSpan(
+                                                text: _searchedList[
+                                                    _searchedList.length -
+                                                        1 -
+                                                        index],
+                                                style: TextStyle(
+                                                    fontSize: 14,
+                                                    color: Colors.black),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                      Expanded(
+                                        flex: 1,
+                                        child: Container(
+                                          width: 20,
+                                          child: TextButton(
+                                            onPressed: () {
+                                              _deleteSearchedList(index);
+                                            },
+                                            child: Text(
+                                              'X',
+                                              style: TextStyle(fontSize: 12),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                );
+                              },
+                              separatorBuilder: (context, index) => SizedBox(
+                                    width: 10,
+                                  )),
+                        )
+                      : Center(
+                          child: Center(child: CircularProgressIndicator()))
                   : Column(children: [
                       Scrollbar(
                         child: Container(
@@ -241,7 +362,6 @@ class _YDCourtListState extends State<YDCourtList> {
     int _ydCount = _docs!.length;
     int _pageCount = 20;
     await Future.delayed(Duration(milliseconds: 500));
-    print(_ydCount);
     if (_itemCount + _pageCount <= _ydCount) {
       setState(() {
         _itemCount += _pageCount;
@@ -257,7 +377,6 @@ class _YDCourtListState extends State<YDCourtList> {
           });
         }
       }
-      setState(() {});
       _refreshController.refreshCompleted();
       _refreshController.loadNoData();
     }
