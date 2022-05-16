@@ -105,7 +105,7 @@ TextButtonThemeData _textButtonThemeData() {
 IconThemeData _iconThemeData() {
   return IconThemeData(
     color: Colors.deepPurple.shade300,
-    size: 28,
+    size: 18,
   );
 }
 

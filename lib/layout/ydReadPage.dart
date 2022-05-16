@@ -34,7 +34,7 @@ class _YDReadPageState extends State<YDReadPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: MyAppBar(),
+        appBar: AppBar(),
         body: [
           YDDetail(
             docs: widget.docs,
