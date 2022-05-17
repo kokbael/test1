@@ -6,6 +6,7 @@ import 'package:test1/layout/renderTextFormField.dart';
 import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:intl/intl.dart';
 import 'package:test1/yd_dbManager.dart' as firebase;
+import 'noyd/ydTimeDropDown.dart';
 import 'ydCourtList.dart';
 import 'myDialog.dart';
 
@@ -62,6 +63,13 @@ class _YDUpdateState extends State<YDUpdate> {
 
   DateTime? _dateTime;
   Timestamp? _date;
+  int? _howMuchTime;
+  void _setTime(int i) {
+    setState(() {
+      _howMuchTime = i;
+    });
+  }
+
   @override
   void initState() {
     // TODO: implement initState
@@ -77,6 +85,7 @@ class _YDUpdateState extends State<YDUpdate> {
     );
     _dateTime = widget.docs[widget.index]['date'].toDate();
     _date = widget.docs[widget.index]['date'];
+    _howMuchTime = widget.docs[widget.index]['howMuchTime'];
     _selectedCourtInfo = [
       widget.docs[widget.index]['courtName'],
       widget.docs[widget.index]['address'],
@@ -175,6 +184,7 @@ class _YDUpdateState extends State<YDUpdate> {
                               setState(() {
                                 _dateTime = date;
                               });
+
                               DatePicker.showTimePicker(
                                 context,
                                 currentTime: _dateTime,
@@ -201,21 +211,21 @@ class _YDUpdateState extends State<YDUpdate> {
                                   flex: 4,
                                   dateType: ' 년 ',
                                   dateFormat: 'yyyy',
-                                  fontSize: 16),
+                                  fontSize: 14),
                               SizedBox(width: 10),
                               dateBox(
-                                  flex: 2,
+                                  flex: 3,
                                   dateType: ' 월 ',
                                   dateFormat: 'MM',
-                                  fontSize: 16),
+                                  fontSize: 14),
                               SizedBox(width: 10),
                               dateBox(
-                                  flex: 2,
+                                  flex: 3,
                                   dateType: ' 일 ',
                                   dateFormat: 'dd',
-                                  fontSize: 16),
-                              Flexible(
-                                flex: 2,
+                                  fontSize: 14),
+                              Expanded(
+                                flex: 4,
                                 child: Container(
                                   height: 30,
                                   child: Align(
@@ -223,17 +233,26 @@ class _YDUpdateState extends State<YDUpdate> {
                                     child: _date == null
                                         ? Text(
                                             '00:00',
-                                            style: TextStyle(fontSize: 16),
+                                            style: TextStyle(
+                                              fontSize: 14,
+                                            ),
                                           )
                                         : Text(
                                             DateFormat('HH:mm')
                                                 .format(_date!.toDate()),
-                                            style: TextStyle(fontSize: 16),
+                                            style: TextStyle(
+                                              fontSize: 14,
+                                            ),
                                             textAlign: TextAlign.center,
                                           ),
                                   ),
                                 ),
-                              )
+                              ),
+                              Expanded(
+                                  flex: 5,
+                                  child: YDTimeDropDown(
+                                      setTime: _setTime,
+                                      selectedTimeForUpdate: _howMuchTime)),
                             ]),
                       ),
                       Row(
@@ -319,6 +338,7 @@ class _YDUpdateState extends State<YDUpdate> {
                               _selectedCourtInfo.elementAt(1), //address
                               _contents,
                               _cost,
+                              _howMuchTime,
                               _selectedCourtInfo.elementAt(0), //courtName
                               _date,
                               _selectedCourtInfo.elementAt(2), //photoURL

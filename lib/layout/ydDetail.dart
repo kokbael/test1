@@ -215,6 +215,7 @@ class _YDDetailState extends State<YDDetail> {
             ),
             //style: TextStyle(fontSize: 18),
           ),
+
           // Container(
           //   decoration: BoxDecoration(
           //       border: Border.all(
