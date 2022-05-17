@@ -74,7 +74,7 @@ class _YDDdayState extends State<YDDday> {
         Dday == 33
             ? '완료'
             : Dday == 32
-                ? '마감'
+                ? '만료'
                 : Dday == 0
                     ? 'D-day'
                     : 'D-' + Dday.toString(),

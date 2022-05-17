@@ -4,6 +4,7 @@ import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:test1/layout/ydCourtDetail.dart';
 import 'package:test1/layout/renderTextFormField.dart';
+import 'package:test1/layout/ydMakeCourt.dart';
 import 'dropdown.dart';
 
 class YDCourtList extends StatefulWidget {
@@ -47,6 +48,7 @@ class _YDCourtListState extends State<YDCourtList> {
   }
 
   bool _isLoading = false;
+  bool _isEmpty = false;
 
   _addSearchedList(String searchString) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
@@ -111,7 +113,6 @@ class _YDCourtListState extends State<YDCourtList> {
                                 setState(() {
                                   _isLoading = true;
                                 });
-                                _itemCount = 20;
                                 setState(() {
                                   if (formKey.currentState!.validate()) {
                                     formKey.currentState!.save();
@@ -121,9 +122,13 @@ class _YDCourtListState extends State<YDCourtList> {
                                   _searchString!,
                                   await courtList(_townData!),
                                 );
+
                                 setState(() {
+                                  if (flag!.isEmpty) {
+                                    _isEmpty = true;
+                                  }
                                   _docs = flag;
-                                  _itemCount = flag!.length;
+                                  _itemCount = flag.length;
                                   _isLoading = true;
                                 });
                                 if (_searchString != '') {
@@ -137,7 +142,7 @@ class _YDCourtListState extends State<YDCourtList> {
                   ),
                 ],
               )),
-              _docs == null
+              (_docs == null)
                   ? _isLoading == false
                       ? Container(
                           height: 30,
@@ -173,8 +178,11 @@ class _YDCourtListState extends State<YDCourtList> {
                                               await courtList('전체'),
                                             );
                                             setState(() {
+                                              if (flag!.isEmpty) {
+                                                _isEmpty = true;
+                                              }
                                               _docs = flag;
-                                              _itemCount = flag!.length;
+                                              _itemCount = flag.length;
                                             });
                                           },
                                           child: Container(
@@ -199,7 +207,10 @@ class _YDCourtListState extends State<YDCourtList> {
                                           width: 20,
                                           child: TextButton(
                                             onPressed: () {
-                                              _deleteSearchedList(index);
+                                              _deleteSearchedList(
+                                                  _searchedList.length -
+                                                      1 -
+                                                      index);
                                             },
                                             child: Text(
                                               'X',
@@ -310,10 +321,25 @@ class _YDCourtListState extends State<YDCourtList> {
                           ),
                         ),
                       ),
-                      TextButton(
-                        onPressed: () {},
-                        child: Text('코트 정보 직접 입력하기'),
-                      ),
+                      _isEmpty
+                          ? Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text('찾으시는 코트가 없으신가요? '),
+                                TextButton(
+                                  onPressed: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) => YDMakeCourt(
+                                                setYDCourtInfoList: widget
+                                                    .setYDCourtInfoList)));
+                                  },
+                                  child: Text('코트 정보 직접 입력하기'),
+                                ),
+                              ],
+                            )
+                          : Container(),
                     ]),
             ],
           ),

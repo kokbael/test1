@@ -10,9 +10,9 @@ import 'package:test1/layout/renderTextFormField.dart';
 import 'myDialog.dart';
 
 class YDMakeCourt extends StatefulWidget {
-  const YDMakeCourt({Key? key, this.setYDCourtInfo}) : super(key: key);
+  const YDMakeCourt({Key? key, this.setYDCourtInfoList}) : super(key: key);
   // [courtName,address,photoURL]
-  final setYDCourtInfo;
+  final setYDCourtInfoList;
   @override
   State<YDMakeCourt> createState() => _YDMakeCourtState();
 }
@@ -192,7 +192,8 @@ class _YDMakeCourtState extends State<YDMakeCourt> {
                         setState(() {
                           _makeCourtInfo = [_courtName!, _address!, _photoURL!];
                         });
-                        widget.setYDCourtInfo(_makeCourtInfo);
+                        widget.setYDCourtInfoList(_makeCourtInfo);
+                        Navigator.pop(context);
                         Navigator.pop(context);
                       }
                     },

@@ -251,7 +251,9 @@ class _YDDetailState extends State<YDDetail> {
     int days = DateTime.now().difference(DateTime.parse(eightDate)).inDays;
     int hours = DateTime.now().difference(DateTime.parse(eightDate)).inHours;
     if (_isConfirm == true) {
-      return renderDday(Dday: 33, color: Colors.grey, confirm: true);
+      return renderDday(
+        Dday: 33,
+      );
     } else if (days == 0 && hours >= 0) {
       String dateHH = DateFormat('HH').format(date.toDate());
       String nowHH = DateFormat('HH').format(DateTime.now());
@@ -259,48 +261,62 @@ class _YDDetailState extends State<YDDetail> {
       if (diffHH > 0) {
         // D-day
         return renderDday(
-            Dday: 0, color: Colors.deepPurple.shade400, confirm: false);
+          Dday: 0,
+        );
       } else {
         // D-day 에서 시간 지난 마감
-        return renderDday(Dday: 32, color: Colors.grey, confirm: false);
+        return renderDday(
+          Dday: 32,
+        );
       }
     } else if (days > 0) {
       // Day 넘어 간 마감
-      return renderDday(Dday: 32, color: Colors.grey, confirm: false);
+      return renderDday(
+        Dday: 32,
+      );
     } else {
       // D-n
       return renderDday(
-          Dday: (-hours / 24).ceil(),
-          color: Colors.deepPurple.shade400,
-          confirm: false);
+        Dday: (-hours / 24).ceil(),
+      );
     }
   }
 
-  Widget renderDday({
-    @required int? Dday,
-    @required Color? color,
-    @required bool? confirm,
-  }) {
+  Widget renderDday({@required int? Dday}) {
     assert(Dday != null);
-    assert(color != null);
-    assert(confirm != null);
     return Container(
       width: 45,
       decoration: BoxDecoration(
-          color: color!,
+          color: Dday! == 33
+              ? Colors.lightGreen
+              : Dday <= 7
+                  ? Colors.red
+                  : Dday <= 20
+                      ? Colors.orange
+                      : Dday <= 31
+                          ? Colors.lightBlueAccent
+                          : Colors.grey,
           border: Border.all(
             width: 1,
-            color: color,
+            color: Dday == 33
+                ? Colors.lightGreen
+                : Dday <= 7
+                    ? Colors.red
+                    : Dday <= 20
+                        ? Colors.orange
+                        : Dday <= 31
+                            ? Colors.lightBlueAccent
+                            : Colors.grey,
           ),
           borderRadius: BorderRadius.circular(8)),
       child: Text(
-        confirm == true
+        Dday == 33
             ? '완료'
             : Dday == 32
-                ? '마감'
+                ? '만료'
                 : Dday == 0
                     ? 'D-day'
-                    : 'D-' + Dday!.toString(),
+                    : 'D-' + Dday.toString(),
         textAlign: TextAlign.center,
         style: TextStyle(
           fontSize: 14,

@@ -258,7 +258,8 @@ class _YDUpdateState extends State<YDUpdate> {
                                   context,
                                   MaterialPageRoute(
                                       builder: (context) => YDMakeCourt(
-                                          setYDCourtInfo: _setYDCourtInfo)));
+                                          setYDCourtInfoList:
+                                              _setYDCourtInfo)));
                             },
                             child: Text('직접 입력'),
                           ),

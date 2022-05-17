@@ -1,7 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:test1/layout/ydMakeCourt.dart';
 import 'package:test1/layout/renderTextFormField.dart';
 import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:intl/intl.dart';
@@ -58,6 +57,8 @@ class _YDCreateState extends State<YDCreate> {
                 child: Form(
                   key: _formKey,
                   child: Column(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       renderTextFormField(
                         textInputAction: TextInputAction.next,
@@ -199,7 +200,7 @@ class _YDCreateState extends State<YDCreate> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          TextButton(
+                          ElevatedButton(
                             onPressed: () {
                               _unFocus();
                               Navigator.push(
@@ -209,19 +210,19 @@ class _YDCreateState extends State<YDCreate> {
                                           setYDCourtInfoList:
                                               _setYDCourtInfoList)));
                             },
-                            child: Text('목록'),
+                            child: Text('테니스장 선택'),
                           ),
-                          TextButton(
-                            onPressed: () {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => YDMakeCourt(
-                                          setYDCourtInfo:
-                                              _setYDCourtInfoList)));
-                            },
-                            child: Text('직접 입력'),
-                          ),
+                          // TextButton(
+                          //   onPressed: () {
+                          //     Navigator.push(
+                          //         context,
+                          //         MaterialPageRoute(
+                          //             builder: (context) => YDMakeCourt(
+                          //                 setYDCourtInfoList:
+                          //                     _setYDCourtInfoList)));
+                          //   },
+                          //   child: Text('직접 입력'),
+                          // ),
                         ],
                       ),
                       Column(
