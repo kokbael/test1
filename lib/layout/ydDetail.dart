@@ -3,10 +3,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:jiffy/jiffy.dart';
+import 'package:test1/layout/ydNaverMap.dart';
 import 'package:test1/layout/ydPopButton.dart';
 import 'package:test1/layout/ydTurnByTurn.dart';
-import 'ydmap.dart';
-import 'package:test1/yd_dbManager.dart' as firebase;
 
 class YDDetail extends StatefulWidget {
   const YDDetail({
@@ -216,17 +215,18 @@ class _YDDetailState extends State<YDDetail> {
             ),
             //style: TextStyle(fontSize: 18),
           ),
-          Container(
-            decoration: BoxDecoration(
-                border: Border.all(
-              color: Colors.black,
-            )),
-            width: double.infinity,
-            height: 200,
-            //
-            child: YDMap(docs: widget.docs, index: widget.index),
-          ),
+          // Container(
+          //   decoration: BoxDecoration(
+          //       border: Border.all(
+          //     color: Colors.black,
+          //   )),
+          //   width: double.infinity,
+          //   height: 200,
+          //   //
+          //   child: YDMap(docs: widget.docs, index: widget.index),
+          // ),
           YDTurnByTurn(docs: widget.docs, index: widget.index),
+          YDNaverMap(docs: widget.docs, index: widget.index),
         ],
       ),
     );

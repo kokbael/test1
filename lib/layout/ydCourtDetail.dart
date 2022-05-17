@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:link_text/link_text.dart';
+import 'package:test1/layout/ydNaverMap.dart';
 import 'package:test1/layout/ydmap.dart';
 
 class YDCourtDetail extends StatefulWidget {
@@ -74,6 +75,7 @@ class _YDCourtDetailState extends State<YDCourtDetail> {
                 //
                 child: YDMap(docs: widget.docs, index: widget.index),
               ),
+              YDNaverMap(docs: widget.docs, index: widget.index),
               ElevatedButton(
                 onPressed: () {
                   List<String> _courtInfo = [
