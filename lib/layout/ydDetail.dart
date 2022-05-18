@@ -28,11 +28,6 @@ class YDDetail extends StatefulWidget {
   State<YDDetail> createState() => _YDDetailState();
 }
 
-String timestamp2String(Timestamp timestamp) {
-  DateFormat formatter = DateFormat('yyyy년 MM월 dd일 HH시 mm분');
-  return formatter.format(timestamp.toDate());
-}
-
 class _YDDetailState extends State<YDDetail> {
   final List<String> _stateList = [
     '양도 중',
@@ -197,9 +192,6 @@ class _YDDetailState extends State<YDDetail> {
                 widget.docs[widget.index]['photoURL'],
                 fit: BoxFit.fill,
               )),
-          Text(
-            timestamp2String(widget.docs[widget.index]['date']),
-          ),
           Text(NumberFormat('###,###,###,###원')
               .format(widget.docs[widget.index]['cost'])),
           RichText(
@@ -215,7 +207,15 @@ class _YDDetailState extends State<YDDetail> {
             ),
             //style: TextStyle(fontSize: 18),
           ),
-
+          // 2022년 05월 20일 23:00 ~ 01:00 (2시간)
+          Text(DateFormat('yyyy년 MM월 dd일 HH:mm')
+                  .format(widget.docs[widget.index]['date'].toDate()) +
+              ' ~ ' +
+              DateFormat('HH:mm').format(widget.docs[widget.index]['date']
+                  .toDate()
+                  .add(Duration(
+                      hours: widget.docs[widget.index]['howMuchTime']))) +
+              ' (${widget.docs[widget.index]['howMuchTime']} 시간)'),
           // Container(
           //   decoration: BoxDecoration(
           //       border: Border.all(

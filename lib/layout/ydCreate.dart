@@ -51,7 +51,7 @@ class _YDCreateState extends State<YDCreate> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(10.0),
+      padding: const EdgeInsets.all(5),
       child: GestureDetector(
         onTap: () {
           _unFocus();
@@ -180,42 +180,44 @@ class _YDCreateState extends State<YDCreate> {
                             ),
                           ),
                           Flexible(
-                            flex: 3,
-                            child: InkWell(
-                              onTap: () {
-                                _date == null
-                                    ? showDialog(
-                                        context: context,
-                                        builder: (context) => MyDialog(
-                                            dialogTitle: '날짜를 먼저 선택해주세요.',
-                                            buttonText: const ['확인']))
-                                    : DatePicker.showTimePicker(
-                                        context,
-                                        currentTime: _dateTime,
-                                        locale: LocaleType.ko,
-                                        showSecondsColumn: false,
-                                        showTitleActions: true,
-                                        onConfirm: (time) {
-                                          print(time);
-                                          setState(() {
-                                            _time = Timestamp
-                                                .fromMicrosecondsSinceEpoch(time
-                                                    .microsecondsSinceEpoch);
-                                            _dateTime = time;
-                                          });
+                            flex: 5,
+                            child: Row(
+                              children: [
+                                Flexible(
+                                  flex: 2,
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      InkWell(
+                                        onTap: () {
+                                          _date == null
+                                              ? showDialog(
+                                                  context: context,
+                                                  builder: (context) =>
+                                                      MyDialog(
+                                                          dialogTitle:
+                                                              '날짜를 먼저 선택해주세요.',
+                                                          buttonText: const [
+                                                            '확인'
+                                                          ]))
+                                              : DatePicker.showTimePicker(
+                                                  context,
+                                                  currentTime: _dateTime,
+                                                  locale: LocaleType.ko,
+                                                  showSecondsColumn: false,
+                                                  showTitleActions: true,
+                                                  onConfirm: (time) {
+                                                    print(time);
+                                                    setState(() {
+                                                      _time = Timestamp
+                                                          .fromMicrosecondsSinceEpoch(
+                                                              time.microsecondsSinceEpoch);
+                                                      _dateTime = time;
+                                                    });
+                                                  },
+                                                );
                                         },
-                                      );
-                              },
-                              child: Row(
-                                children: [
-                                  Flexible(
-                                    flex: 1,
-                                    child: Row(
-                                      // 날짜 InkWell 과 간격을 위해 사용
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: [
-                                        Container(
+                                        child: Container(
                                           decoration: BoxDecoration(
                                               borderRadius: BorderRadius.all(
                                                   Radius.circular(8)),
@@ -226,7 +228,7 @@ class _YDCreateState extends State<YDCreate> {
                                               ? Align(
                                                   alignment: Alignment.center,
                                                   child: Text(
-                                                    '  00:00  ',
+                                                    ' 00:00 ',
                                                     style: TextStyle(
                                                       fontSize: 14,
                                                     ),
@@ -235,7 +237,7 @@ class _YDCreateState extends State<YDCreate> {
                                               : Align(
                                                   alignment: Alignment.center,
                                                   child: Text(
-                                                    DateFormat('HH:mm    ')
+                                                    DateFormat('HH:mm  ')
                                                         .format(
                                                             _time!.toDate()),
                                                     style: TextStyle(
@@ -245,58 +247,69 @@ class _YDCreateState extends State<YDCreate> {
                                                   ),
                                                 ),
                                         ),
-                                      ],
-                                    ),
+                                      ),
+                                    ],
                                   ),
-                                ],
-                              ),
-                            ),
-                          ),
-                          Flexible(
-                            // (05/18 수정) 날짜 picker Row 에 같이 있어야 함.
-                            flex: 3,
-                            child: InkWell(
-                              onTap: () {
-                                showModalBottomSheet(
-                                  context: context,
-                                  builder: (context) => SizedBox(
-                                    height: 250,
-                                    child: SingleChildScrollView(
-                                      // primary: true,
-                                      child: Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.center,
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        mainAxisSize: MainAxisSize.min,
-                                        children: <Widget>[
-                                          for (int i = 1; i <= 12; i++)
-                                            ListTile(
-                                                title: Text('$i 시간'),
-                                                onTap: () {
-                                                  _setTime(i);
-                                                  Navigator.pop(context);
-                                                }),
-                                        ],
+                                ),
+                                Flexible(
+                                  // (05/18 수정) Timepicker Row 에 같이 있어야 함.
+                                  flex: 2,
+                                  child: InkWell(
+                                    onTap: () {
+                                      showModalBottomSheet(
+                                        context: context,
+                                        builder: (context) => SizedBox(
+                                          height: 250,
+                                          child: SingleChildScrollView(
+                                            // primary: true,
+                                            child: Column(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.center,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.center,
+                                              mainAxisSize: MainAxisSize.min,
+                                              children: <Widget>[
+                                                for (int i = 1; i <= 12; i++)
+                                                  ListTile(
+                                                      title: Text('$i 시간'),
+                                                      onTap: () {
+                                                        _setTime(i);
+                                                        Navigator.pop(context);
+                                                      }),
+                                              ],
+                                            ),
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                    child: Container(
+                                      height: 30,
+                                      child: Align(
+                                        alignment: Alignment.center,
+                                        child: _howMuchTime == null
+                                            ? Row(
+                                                children: [
+                                                  Text('시간 선택',
+                                                      style: TextStyle(
+                                                          fontSize: 14)),
+                                                  Icon(Icons.arrow_drop_down),
+                                                ],
+                                              )
+                                            : Row(
+                                                children: [
+                                                  Text(_howMuchTime.toString() +
+                                                      ' 시간'),
+                                                  SizedBox(
+                                                    width: 10,
+                                                  ),
+                                                  Icon(Icons.arrow_drop_down),
+                                                ],
+                                              ),
                                       ),
                                     ),
                                   ),
-                                );
-                              },
-                              child: SizedBox(
-                                height: 30,
-                                child: Align(
-                                  alignment: Alignment.center,
-                                  child: _howMuchTime == null
-                                      ? Row(
-                                          children: [
-                                            Text('시간 선택'),
-                                            Icon(Icons.arrow_drop_down),
-                                          ],
-                                        )
-                                      : Text(_howMuchTime.toString() + ' 시간'),
                                 ),
-                              ),
+                              ],
                             ),
                           ),
                           // YDTimeDropDown(setTime: _setTime),
@@ -362,13 +375,13 @@ class _YDCreateState extends State<YDCreate> {
                             _formKey.currentState?.save();
                             firebase.createYDCourt(
                               _selectedCourtInfo.elementAt(1),
-                              _contents,
-                              _cost,
+                              _contents!,
+                              _cost!,
                               _selectedCourtInfo.elementAt(0),
-                              _time,
-                              _howMuchTime,
+                              _howMuchTime!,
+                              _time!,
                               _selectedCourtInfo.elementAt(2),
-                              _title,
+                              _title!,
                             );
                             widget.setTab(2);
                             showDialog(

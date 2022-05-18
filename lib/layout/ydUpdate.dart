@@ -336,13 +336,13 @@ class _YDUpdateState extends State<YDUpdate> {
                               widget.docs,
                               widget.index,
                               _selectedCourtInfo.elementAt(1), //address
-                              _contents,
-                              _cost,
-                              _howMuchTime,
+                              _contents!,
+                              _cost!,
                               _selectedCourtInfo.elementAt(0), //courtName
-                              _date,
+                              _howMuchTime!,
+                              _date!,
                               _selectedCourtInfo.elementAt(2), //photoURL
-                              _title,
+                              _title!,
                             );
                             widget.setListTab(0);
                             Navigator.pop(context);
