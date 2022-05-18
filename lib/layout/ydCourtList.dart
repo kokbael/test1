@@ -142,7 +142,7 @@ class _YDCourtListState extends State<YDCourtList> {
                   ),
                 ],
               )),
-              (_docs == null)
+              _docs == null
                   ? _isLoading == false
                       ? Container(
                           height: 30,
@@ -159,63 +159,55 @@ class _YDCourtListState extends State<YDCourtList> {
                                         Border.all(color: Colors.grey.shade300),
                                     borderRadius: BorderRadius.circular(8),
                                   ),
-                                  width: 140,
                                   child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
-                                      Expanded(
-                                        flex: 3,
-                                        child: InkWell(
-                                          onTap: () async {
-                                            setState(() {
-                                              _isLoading = true;
-                                            });
-                                            List? flag = searchQuery(
-                                              _searchedList[
-                                                  _searchedList.length -
-                                                      1 -
-                                                      index],
-                                              await courtList('전체'),
-                                            );
-                                            setState(() {
-                                              if (flag!.isEmpty) {
-                                                _isEmpty = true;
-                                              }
-                                              _docs = flag;
-                                              _itemCount = flag.length;
-                                            });
-                                          },
-                                          child: Container(
-                                            child: RichText(
-                                              overflow: TextOverflow.ellipsis,
-                                              text: TextSpan(
-                                                text: _searchedList[
-                                                    _searchedList.length -
-                                                        1 -
-                                                        index],
-                                                style: TextStyle(
-                                                    fontSize: 14,
-                                                    color: Colors.black),
-                                              ),
-                                            ),
+                                      InkWell(
+                                        onTap: () async {
+                                          setState(() {
+                                            _isLoading = true;
+                                          });
+                                          List? flag = searchQuery(
+                                            _searchedList[_searchedList.length -
+                                                1 -
+                                                index],
+                                            await courtList('전체'),
+                                          );
+                                          setState(() {
+                                            if (flag!.isEmpty) {
+                                              _isEmpty = true;
+                                            }
+                                            _docs = flag;
+                                            _itemCount = flag.length;
+                                          });
+                                        },
+                                        child: RichText(
+                                          overflow: TextOverflow.ellipsis,
+                                          text: TextSpan(
+                                            text: _searchedList[
+                                                _searchedList.length -
+                                                    1 -
+                                                    index],
+                                            style: TextStyle(
+                                                fontSize: 14,
+                                                color: Colors.black),
                                           ),
                                         ),
                                       ),
-                                      Expanded(
-                                        flex: 1,
-                                        child: Container(
-                                          width: 20,
-                                          child: TextButton(
-                                            onPressed: () {
-                                              _deleteSearchedList(
-                                                  _searchedList.length -
-                                                      1 -
-                                                      index);
-                                            },
-                                            child: Text(
-                                              'X',
-                                              style: TextStyle(fontSize: 12),
-                                            ),
+                                      SizedBox(
+                                        width: 15,
+                                      ),
+                                      Container(
+                                        width: 20,
+                                        child: TextButton(
+                                          onPressed: () {
+                                            _deleteSearchedList(
+                                                _searchedList.length -
+                                                    1 -
+                                                    index);
+                                          },
+                                          child: Text(
+                                            'X',
+                                            style: TextStyle(fontSize: 10),
                                           ),
                                         ),
                                       ),
