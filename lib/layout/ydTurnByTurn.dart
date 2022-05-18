@@ -59,9 +59,14 @@ class _YDTurnByTurnState extends State<YDTurnByTurn> {
                           final double _lag = _latlag.longitude;
                           final Uri _url = Uri.parse(
                               'https://map.kakao.com/link/to/$_address,$_lat,$_lag');
-                          if (!await launchUrl(_url,
-                              mode: LaunchMode.externalApplication)) {
-                            throw 'Could not launch $_url';
+                          try {
+                            if (!await launchUrl(_url,
+                                mode: LaunchMode.externalApplication)) {
+                              throw 'Could not launch $_url';
+                            }
+                          } catch (e) {
+                            launchUrl(Uri.parse(
+                                'market://details?id=com.net.daum.android.map'));
                           }
                         },
                         child: Text('[카카오 맵] 에서 길 찾기'),
@@ -76,9 +81,14 @@ class _YDTurnByTurnState extends State<YDTurnByTurn> {
                           final Uri _url = Uri.parse(
                             'nmap://route/car?slat=&slng=&sname=&dlat=$_lat&dlng=$_lag&dname=$_address&appname=com.epin.test1',
                           );
-                          if (!await launchUrl(_url,
-                              mode: LaunchMode.externalApplication)) {
-                            throw 'Could not launch $_url';
+                          try {
+                            if (!await launchUrl(_url,
+                                mode: LaunchMode.externalApplication)) {
+                              throw 'Could not launch $_url';
+                            }
+                          } catch (e) {
+                            launchUrl(Uri.parse(
+                                'market://details?id=com.nhn.android.nmap'));
                           }
                         },
                         child: Text('[네이버 지도] 에서 길 찾기'),
