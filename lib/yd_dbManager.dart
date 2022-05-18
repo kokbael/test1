@@ -92,7 +92,7 @@ void confirmYDCourt(docs, index) {
 }
 
 int setDday(Timestamp date) {
-  // 오름차순 : 1, 2, ... , 31, 마감(32), 완료(33)
+  // 오름차순 : 0, 1, 2, ... , 31, 마감(32), 완료(33)
   String eightDate = DateFormat('yyyyMMdd').format(date.toDate());
   int days = DateTime.now().difference(DateTime.parse(eightDate)).inDays;
   int hours = DateTime.now().difference(DateTime.parse(eightDate)).inHours;
@@ -120,6 +120,8 @@ int setDday(Timestamp date) {
 
 void updateDday(docs) {
   // setDday 와 같은 로직
+  // 현재 Dday 상태와 다른 지 먼저 검사한 후, 다를 때만 Update 시킬 수 있을까?
+  // => confirm 먼저 확인 후 시간 단위로 생각
   for (var doc in docs) {
     String eightDate = DateFormat('yyyyMMdd').format(doc['date'].toDate());
     int days = DateTime.now().difference(DateTime.parse(eightDate)).inDays;

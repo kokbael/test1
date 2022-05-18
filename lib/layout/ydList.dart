@@ -168,7 +168,8 @@ class _YDListState extends State<YDList> {
                                     enablePullDown: true,
                                     enablePullUp: false,
                                     onRefresh: () => _onRefresh(_docs),
-                                    header: ClassicHeader(),
+                                    header: MaterialClassicHeader(
+                                        color: Colors.deepPurple.shade300),
                                     child: ListView.builder(
                                       itemCount: _docs.length,
                                       itemBuilder:
