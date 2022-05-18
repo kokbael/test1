@@ -34,11 +34,12 @@ class _YDTurnByTurnState extends State<YDTurnByTurn> {
                           final double _lat = _latlag.latitude;
                           final double _lag = _latlag.longitude;
                           final Uri _url = Uri.parse(
-                            // driving, walking 경로 안뜸.
-                            // 'https://www.google.co.kr/maps/dir//$_address/'
-                            // 'google.navigation:q=$_address&mode=d'
-                            'geo:$_lat,$_lag?q=$_address',
-                          );
+                              // driving, walking 경로 안뜸. 한국 정책 상 불가능.
+                              'https://www.google.co.kr/maps/dir//$_address/'
+                              // 'google.navigation:q=$_address&mode=d',
+                              // 'geo:$_lat,$_lag?q=$_address',
+                              // "http://maps.google.com/maps?&daddr=+$_lat+,+$_lag+&mode=driving"
+                              );
                           if (!await
                               // launchUrl(_url)
                               launchUrl(
@@ -92,6 +93,27 @@ class _YDTurnByTurnState extends State<YDTurnByTurn> {
                           }
                         },
                         child: Text('[네이버 지도] 에서 길 찾기'),
+                      ),
+                      TextButton(
+                        onPressed: () async {
+                          final String _address =
+                              widget.docs[widget.index]['address'];
+                          final LatLng _latlag = await getAddress(_address);
+                          final double _lat = _latlag.latitude;
+                          final double _lag = _latlag.longitude;
+                          final Uri _url = Uri.parse(
+                              'tmap://search?name=$_address&rGox=$_lag&rGoY=$_lat');
+                          try {
+                            if (!await launchUrl(_url,
+                                mode: LaunchMode.externalApplication)) {
+                              throw 'Could not launch $_url';
+                            }
+                          } catch (e) {
+                            launchUrl(Uri.parse(
+                                'market://details?id=com.skt.tmap.ku'));
+                          }
+                        },
+                        child: Text('[티 맵] 에서 길 찾기'),
                       ),
                     ],
                   ),
