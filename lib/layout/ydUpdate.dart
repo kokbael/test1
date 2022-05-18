@@ -1,13 +1,10 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:test1/layout/ydMakeCourt.dart';
 import 'package:test1/layout/renderTextFormField.dart';
 import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:intl/intl.dart';
 import 'package:test1/yd_dbManager.dart' as firebase;
-import 'noyd/ydTimeDropDown.dart';
-import 'ydCourtList.dart';
 import 'myDialog.dart';
 
 class YDUpdate extends StatefulWidget {
@@ -46,23 +43,16 @@ class _YDUpdateState extends State<YDUpdate> {
     _costFocus.unfocus();
   }
 
-  TextEditingController? _lastTitle;
-  TextEditingController? _lastContents;
-  TextEditingController? _lastCost;
-
+  String? _title;
   String? _contents;
   int? _cost;
-  String? _title;
   // [courtName,address,photoURL]
   List<String> _selectedCourtInfo = [];
-  void _setYDCourtInfo(List<String> courtInfo) {
-    setState(() {
-      _selectedCourtInfo = courtInfo;
-    });
-  }
 
   DateTime? _dateTime;
   Timestamp? _date;
+  Timestamp? _time;
+
   int? _howMuchTime;
   void _setTime(int i) {
     setState(() {
@@ -70,6 +60,9 @@ class _YDUpdateState extends State<YDUpdate> {
     });
   }
 
+  TextEditingController? _lastTitle;
+  TextEditingController? _lastContents;
+  TextEditingController? _lastCost;
   @override
   void initState() {
     // TODO: implement initState
@@ -167,121 +160,196 @@ class _YDUpdateState extends State<YDUpdate> {
                           }
                         },
                       ),
-                      InkWell(
-                        onTap: () {
-                          _unFocus();
-                          DatePicker.showDatePicker(
-                            context,
-                            locale: LocaleType.ko,
-                            theme: DatePickerTheme(
-                              backgroundColor: Colors.white,
+                      Row(
+                        children: [
+                          Flexible(
+                            flex: 7,
+                            child: InkWell(
+                              onTap: () {
+                                _unFocus();
+                                DatePicker.showDatePicker(
+                                  context,
+                                  locale: LocaleType.ko,
+                                  theme: DatePickerTheme(
+                                    backgroundColor: Colors.white,
+                                  ),
+                                  showTitleActions: true,
+                                  minTime: DateTime.now(),
+                                  maxTime: DateTime(
+                                      DateTime.now().year,
+                                      DateTime.now().month + 1,
+                                      DateTime.now().day),
+                                  onConfirm: (date) {
+                                    setState(() {
+                                      _dateTime = DateTime(
+                                        date.year,
+                                        date.month,
+                                        date.day,
+                                      );
+                                      _date =
+                                          Timestamp.fromMicrosecondsSinceEpoch(
+                                              date.microsecondsSinceEpoch);
+                                    });
+                                  },
+                                );
+                              },
+                              child: Row(
+                                  // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                    dateBox(
+                                        flex: 4,
+                                        dateType: ' 년 ',
+                                        dateFormat: 'yyyy',
+                                        fontSize: 14),
+                                    SizedBox(width: 10),
+                                    dateBox(
+                                        flex: 3,
+                                        dateType: ' 월 ',
+                                        dateFormat: 'MM',
+                                        fontSize: 14),
+                                    SizedBox(width: 10),
+                                    dateBox(
+                                        flex: 3,
+                                        dateType: ' 일 ',
+                                        dateFormat: 'dd',
+                                        fontSize: 14),
+                                  ]),
                             ),
-                            showTitleActions: true,
-                            minTime: DateTime.now(),
-                            maxTime: DateTime(DateTime.now().year,
-                                DateTime.now().month + 1, DateTime.now().day),
-                            onConfirm: (date) {
-                              setState(() {
-                                _dateTime = date;
-                              });
-
-                              DatePicker.showTimePicker(
-                                context,
-                                currentTime: _dateTime,
-                                locale: LocaleType.ko,
-                                showSecondsColumn: false,
-                                showTitleActions: true,
-                                onConfirm: (time) {
-                                  print(time);
-                                  setState(() {
-                                    _dateTime = time;
-                                    _date =
-                                        Timestamp.fromMicrosecondsSinceEpoch(
-                                            time.microsecondsSinceEpoch);
-                                  });
-                                },
-                              );
-                            },
-                          );
-                        },
-                        child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              dateBox(
-                                  flex: 4,
-                                  dateType: ' 년 ',
-                                  dateFormat: 'yyyy',
-                                  fontSize: 14),
-                              SizedBox(width: 10),
-                              dateBox(
-                                  flex: 3,
-                                  dateType: ' 월 ',
-                                  dateFormat: 'MM',
-                                  fontSize: 14),
-                              SizedBox(width: 10),
-                              dateBox(
-                                  flex: 3,
-                                  dateType: ' 일 ',
-                                  dateFormat: 'dd',
-                                  fontSize: 14),
-                              Expanded(
-                                flex: 4,
-                                child: Container(
-                                  height: 30,
-                                  child: Align(
-                                    alignment: Alignment.center,
-                                    child: _date == null
-                                        ? Text(
-                                            '00:00',
-                                            style: TextStyle(
-                                              fontSize: 14,
-                                            ),
-                                          )
-                                        : Text(
-                                            DateFormat('HH:mm')
-                                                .format(_date!.toDate()),
-                                            style: TextStyle(
-                                              fontSize: 14,
-                                            ),
-                                            textAlign: TextAlign.center,
-                                          ),
+                          ),
+                          Flexible(
+                            flex: 5,
+                            child: Row(
+                              children: [
+                                Flexible(
+                                  flex: 2,
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      InkWell(
+                                        onTap: () {
+                                          _date == null
+                                              ? showDialog(
+                                                  context: context,
+                                                  builder: (context) =>
+                                                      MyDialog(
+                                                          dialogTitle:
+                                                              '날짜를 먼저 선택해주세요.',
+                                                          buttonText: const [
+                                                            '확인'
+                                                          ]))
+                                              : DatePicker.showTimePicker(
+                                                  context,
+                                                  currentTime: _dateTime,
+                                                  locale: LocaleType.ko,
+                                                  showSecondsColumn: false,
+                                                  showTitleActions: true,
+                                                  onConfirm: (time) {
+                                                    print(time);
+                                                    setState(() {
+                                                      _time = Timestamp
+                                                          .fromMicrosecondsSinceEpoch(
+                                                              time.microsecondsSinceEpoch);
+                                                      _dateTime = time;
+                                                    });
+                                                  },
+                                                );
+                                        },
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                              borderRadius: BorderRadius.all(
+                                                  Radius.circular(8)),
+                                              border: Border.all(
+                                                  color: Colors.grey.shade400)),
+                                          height: 30,
+                                          child: _time == null
+                                              ? Align(
+                                                  alignment: Alignment.center,
+                                                  child: Text(
+                                                    ' 00:00 ',
+                                                    style: TextStyle(
+                                                      fontSize: 14,
+                                                    ),
+                                                  ),
+                                                )
+                                              : Align(
+                                                  alignment: Alignment.center,
+                                                  child: Text(
+                                                    DateFormat('HH:mm  ')
+                                                        .format(
+                                                            _time!.toDate()),
+                                                    style: TextStyle(
+                                                      fontSize: 14,
+                                                    ),
+                                                    textAlign: TextAlign.center,
+                                                  ),
+                                                ),
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ),
-                              ),
-                              Expanded(
-                                  flex: 5,
-                                  child: YDTimeDropDown(
-                                      setTime: _setTime,
-                                      selectedTimeForUpdate: _howMuchTime)),
-                            ]),
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          TextButton(
-                            onPressed: () {
-                              _unFocus();
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => YDCourtList(
-                                          setYDCourtInfoList:
-                                              _setYDCourtInfo)));
-                            },
-                            child: Text('목록'),
+                                Flexible(
+                                  // (05/18 수정) Timepicker Row 에 같이 있어야 함.
+                                  flex: 2,
+                                  child: InkWell(
+                                    onTap: () {
+                                      showModalBottomSheet(
+                                        context: context,
+                                        builder: (context) => SizedBox(
+                                          height: 250,
+                                          child: SingleChildScrollView(
+                                            // primary: true,
+                                            child: Column(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.center,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.center,
+                                              mainAxisSize: MainAxisSize.min,
+                                              children: <Widget>[
+                                                for (int i = 1; i <= 12; i++)
+                                                  ListTile(
+                                                      title: Text('$i 시간'),
+                                                      onTap: () {
+                                                        _setTime(i);
+                                                        Navigator.pop(context);
+                                                      }),
+                                              ],
+                                            ),
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                    child: Container(
+                                      height: 30,
+                                      child: Align(
+                                        alignment: Alignment.center,
+                                        child: _howMuchTime == null
+                                            ? Row(
+                                                children: [
+                                                  Text('시간 선택',
+                                                      style: TextStyle(
+                                                          fontSize: 14)),
+                                                  Icon(Icons.arrow_drop_down),
+                                                ],
+                                              )
+                                            : Row(
+                                                children: [
+                                                  Text(_howMuchTime.toString() +
+                                                      ' 시간'),
+                                                  SizedBox(
+                                                    width: 10,
+                                                  ),
+                                                  Icon(Icons.arrow_drop_down),
+                                                ],
+                                              ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
-                          TextButton(
-                            onPressed: () {
-                              _unFocus();
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => YDMakeCourt(
-                                          setYDCourtInfoList:
-                                              _setYDCourtInfo)));
-                            },
-                            child: Text('직접 입력'),
-                          ),
+                          // YDTimeDropDown(setTime: _setTime),
                         ],
                       ),
                       Column(
