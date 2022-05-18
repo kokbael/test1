@@ -180,17 +180,12 @@ class _YDCourtListState extends State<YDCourtList> {
                                             _itemCount = flag.length;
                                           });
                                         },
-                                        child: RichText(
-                                          overflow: TextOverflow.ellipsis,
-                                          text: TextSpan(
-                                            text: _searchedList[
-                                                _searchedList.length -
-                                                    1 -
-                                                    index],
-                                            style: TextStyle(
-                                                fontSize: 14,
-                                                color: Colors.black),
-                                          ),
+                                        child: Text(
+                                          _searchedList[
+                                              _searchedList.length - 1 - index],
+                                          style: TextStyle(
+                                              fontSize: 14,
+                                              color: Colors.black),
                                         ),
                                       ),
                                       SizedBox(
