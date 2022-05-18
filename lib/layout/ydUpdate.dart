@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:test1/layout/renderTextFormField.dart';
 import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:intl/intl.dart';
+import 'package:test1/layout/ydCourtList.dart';
 import 'package:test1/yd_dbManager.dart' as firebase;
 import 'myDialog.dart';
 
@@ -48,6 +49,11 @@ class _YDUpdateState extends State<YDUpdate> {
   int? _cost;
   // [courtName,address,photoURL]
   List<String> _selectedCourtInfo = [];
+  void _setYDCourtInfoList(List<String> courtInfo) {
+    setState(() {
+      _selectedCourtInfo = courtInfo;
+    });
+  }
 
   DateTime? _dateTime;
   Timestamp? _date;
@@ -78,6 +84,7 @@ class _YDUpdateState extends State<YDUpdate> {
     );
     _dateTime = widget.docs[widget.index]['date'].toDate();
     _date = widget.docs[widget.index]['date'];
+    _time = widget.docs[widget.index]['date'];
     _howMuchTime = widget.docs[widget.index]['howMuchTime'];
     _selectedCourtInfo = [
       widget.docs[widget.index]['courtName'],
@@ -98,7 +105,7 @@ class _YDUpdateState extends State<YDUpdate> {
           resizeToAvoidBottomInset: false,
           body: SingleChildScrollView(
             child: Container(
-              margin: EdgeInsets.all(15),
+              margin: EdgeInsets.all(10),
               child: SingleChildScrollView(
                 child: Form(
                   key: _formKey,
@@ -171,6 +178,9 @@ class _YDUpdateState extends State<YDUpdate> {
                                   context,
                                   locale: LocaleType.ko,
                                   theme: DatePickerTheme(
+                                    doneStyle: TextStyle(
+                                      color: Colors.deepPurple.shade300,
+                                    ),
                                     backgroundColor: Colors.white,
                                   ),
                                   showTitleActions: true,
@@ -196,19 +206,19 @@ class _YDUpdateState extends State<YDUpdate> {
                               child: Row(
                                   // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                   children: [
-                                    dateBox(
+                                    _dateBox(
                                         flex: 4,
                                         dateType: ' 년 ',
                                         dateFormat: 'yyyy',
                                         fontSize: 14),
                                     SizedBox(width: 10),
-                                    dateBox(
+                                    _dateBox(
                                         flex: 3,
                                         dateType: ' 월 ',
                                         dateFormat: 'MM',
                                         fontSize: 14),
                                     SizedBox(width: 10),
-                                    dateBox(
+                                    _dateBox(
                                         flex: 3,
                                         dateType: ' 일 ',
                                         dateFormat: 'dd',
@@ -352,6 +362,9 @@ class _YDUpdateState extends State<YDUpdate> {
                           // YDTimeDropDown(setTime: _setTime),
                         ],
                       ),
+                      SizedBox(
+                        height: 10,
+                      ),
                       Column(
                         children: [
                           _selectedCourtInfo.isEmpty
@@ -384,6 +397,18 @@ class _YDUpdateState extends State<YDUpdate> {
                       ElevatedButton(
                         onPressed: () {
                           _unFocus();
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => YDCourtList(
+                                      setYDCourtInfoList:
+                                          _setYDCourtInfoList)));
+                        },
+                        child: Text('테니스장 선택'),
+                      ),
+                      ElevatedButton(
+                        onPressed: () {
+                          _unFocus();
                           _unFocus();
                           if (_date == null) {
                             showDialog(
@@ -408,7 +433,7 @@ class _YDUpdateState extends State<YDUpdate> {
                               _cost!,
                               _selectedCourtInfo.elementAt(0), //courtName
                               _howMuchTime!,
-                              _date!,
+                              _time!,
                               _selectedCourtInfo.elementAt(2), //photoURL
                               _title!,
                             );
@@ -434,7 +459,7 @@ class _YDUpdateState extends State<YDUpdate> {
     );
   }
 
-  Widget dateBox({
+  Widget _dateBox({
     @required int? flex,
     @required double? width,
     @required String? dateType,

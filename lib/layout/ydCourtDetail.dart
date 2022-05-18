@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:link_text/link_text.dart';
 import 'package:test1/layout/ydNaverMap.dart';
-import 'package:test1/layout/ydmap.dart';
 
 class YDCourtDetail extends StatefulWidget {
   const YDCourtDetail({
@@ -65,16 +64,16 @@ class _YDCourtDetailState extends State<YDCourtDetail> {
                           widget.docs[widget.index]['reservation']),
                 ],
               ),
-              Container(
-                decoration: BoxDecoration(
-                    border: Border.all(
-                  color: Colors.black,
-                )),
-                width: double.infinity,
-                height: 200,
-                //
-                child: YDMap(docs: widget.docs, index: widget.index),
-              ),
+              // Container(
+              //   decoration: BoxDecoration(
+              //       border: Border.all(
+              //     color: Colors.black,
+              //   )),
+              //   width: double.infinity,
+              //   height: 200,
+              //   //
+              //   child: YDMap(docs: widget.docs, index: widget.index),
+              // ),
               YDNaverMap(docs: widget.docs, index: widget.index),
               ElevatedButton(
                 onPressed: () {

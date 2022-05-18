@@ -134,6 +134,9 @@ class _YDCreateState extends State<YDCreate> {
                                   context,
                                   locale: LocaleType.ko,
                                   theme: DatePickerTheme(
+                                    doneStyle: TextStyle(
+                                      color: Colors.deepPurple.shade300,
+                                    ),
                                     backgroundColor: Colors.white,
                                   ),
                                   showTitleActions: true,
@@ -142,16 +145,16 @@ class _YDCreateState extends State<YDCreate> {
                                       DateTime.now().year,
                                       DateTime.now().month + 1,
                                       DateTime.now().day),
-                                  onConfirm: (date) {
+                                  onConfirm: (pickDate) {
                                     setState(() {
                                       _dateTime = DateTime(
-                                        date.year,
-                                        date.month,
-                                        date.day,
+                                        pickDate.year,
+                                        pickDate.month,
+                                        pickDate.day,
                                       );
                                       _date =
                                           Timestamp.fromMicrosecondsSinceEpoch(
-                                              date.microsecondsSinceEpoch);
+                                              pickDate.microsecondsSinceEpoch);
                                     });
                                   },
                                 );
@@ -159,19 +162,19 @@ class _YDCreateState extends State<YDCreate> {
                               child: Row(
                                   // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                   children: [
-                                    dateBox(
+                                    _dateBox(
                                         flex: 4,
                                         dateType: ' 년 ',
                                         dateFormat: 'yyyy',
                                         fontSize: 14),
                                     SizedBox(width: 10),
-                                    dateBox(
+                                    _dateBox(
                                         flex: 3,
                                         dateType: ' 월 ',
                                         dateFormat: 'MM',
                                         fontSize: 14),
                                     SizedBox(width: 10),
-                                    dateBox(
+                                    _dateBox(
                                         flex: 3,
                                         dateType: ' 일 ',
                                         dateFormat: 'dd',
@@ -206,13 +209,20 @@ class _YDCreateState extends State<YDCreate> {
                                                   locale: LocaleType.ko,
                                                   showSecondsColumn: false,
                                                   showTitleActions: true,
-                                                  onConfirm: (time) {
-                                                    print(time);
+                                                  theme: DatePickerTheme(
+                                                    doneStyle: TextStyle(
+                                                      color: Colors
+                                                          .deepPurple.shade300,
+                                                    ),
+                                                  ),
+                                                  onConfirm: (pickTime) {
+                                                    // print(time);
                                                     setState(() {
                                                       _time = Timestamp
                                                           .fromMicrosecondsSinceEpoch(
-                                                              time.microsecondsSinceEpoch);
-                                                      _dateTime = time;
+                                                              pickTime
+                                                                  .microsecondsSinceEpoch);
+                                                      _dateTime = pickTime;
                                                     });
                                                   },
                                                 );
@@ -252,7 +262,6 @@ class _YDCreateState extends State<YDCreate> {
                                   ),
                                 ),
                                 Flexible(
-                                  // (05/18 수정) Timepicker Row 에 같이 있어야 함.
                                   flex: 2,
                                   child: InkWell(
                                     onTap: () {
@@ -269,9 +278,36 @@ class _YDCreateState extends State<YDCreate> {
                                                   MainAxisAlignment.center,
                                               mainAxisSize: MainAxisSize.min,
                                               children: <Widget>[
+                                                Stack(children: [
+                                                  Container(
+                                                    width: double.infinity,
+                                                    height: 56.0,
+                                                    child: Center(
+                                                        child: Text(
+                                                      "시간 선택",
+                                                      style: TextStyle(
+                                                          fontSize: 16,
+                                                          fontWeight:
+                                                              FontWeight.w700),
+                                                    ) // Your desired title
+                                                        ),
+                                                  ),
+                                                  Positioned(
+                                                    left: 0.0,
+                                                    top: 0.0,
+                                                    child: IconButton(
+                                                        icon: Icon(Icons
+                                                            .arrow_back), // Your desired icon
+                                                        onPressed: () {
+                                                          Navigator.of(context)
+                                                              .pop();
+                                                        }),
+                                                  ),
+                                                ]),
                                                 for (int i = 1; i <= 12; i++)
                                                   ListTile(
-                                                      title: Text('$i 시간'),
+                                                      title: Center(
+                                                          child: Text('$i 시간')),
                                                       onTap: () {
                                                         _setTime(i);
                                                         Navigator.pop(context);
@@ -312,8 +348,10 @@ class _YDCreateState extends State<YDCreate> {
                               ],
                             ),
                           ),
-                          // YDTimeDropDown(setTime: _setTime),
                         ],
+                      ),
+                      SizedBox(
+                        height: 10,
                       ),
                       Column(
                         children: [
@@ -404,7 +442,7 @@ class _YDCreateState extends State<YDCreate> {
     );
   }
 
-  Widget dateBox({
+  Widget _dateBox({
     @required int? flex,
     @required String? dateType,
     @required String? dateFormat,

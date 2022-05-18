@@ -172,6 +172,9 @@ class _YDDetailState extends State<YDDetail> {
               ),
             ],
           ),
+          SizedBox(
+            height: 10,
+          ),
           Text(
             widget.docs[widget.index]['courtName'],
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),

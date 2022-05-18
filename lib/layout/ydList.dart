@@ -132,6 +132,9 @@ class _YDListState extends State<YDList> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             dropdownButton(),
+                            SizedBox(
+                              width: 15,
+                            ),
                             ElevatedButton(
                                 onPressed: () {
                                   setState(() {
@@ -170,7 +173,7 @@ class _YDListState extends State<YDList> {
                                       itemCount: _docs.length,
                                       itemBuilder:
                                           (BuildContext context, index) {
-                                        return GestureDetector(
+                                        return InkWell(
                                           onTap: () {
                                             Navigator.push(
                                                 context,
@@ -186,8 +189,8 @@ class _YDListState extends State<YDList> {
                                           },
                                           child: Container(
                                             padding: EdgeInsets.all(8.0),
-                                            margin:
-                                                EdgeInsets.fromLTRB(0, 3, 0, 3),
+                                            // margin:
+                                            //     EdgeInsets.fromLTRB(0, 3, 0, 3),
                                             decoration: BoxDecoration(
                                               border: Border(
                                                 bottom: BorderSide(
@@ -254,6 +257,9 @@ class _YDListState extends State<YDList> {
                                                             index: index)),
                                                   ],
                                                 ),
+                                                // SizedBox(
+                                                //   height: 8,
+                                                // ),
                                               ],
                                             ),
                                           ),
