@@ -196,8 +196,8 @@ class _YDListState extends State<YDList> {
                                               border: Border(
                                                 bottom: BorderSide(
                                                     width: 1.0,
-                                                    color: Colors
-                                                        .deepPurple.shade400),
+                                                    color:
+                                                        Colors.grey.shade300),
                                               ),
                                             ),
                                             child: Column(

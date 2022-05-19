@@ -21,19 +21,22 @@ class YDNaverMapState extends State<YDNaverMap> {
             return Center(
               child: CircularProgressIndicator(),
             );
+          } else {
+            return Container(
+              decoration: BoxDecoration(
+                  border: Border.all(
+                color: Colors.black,
+              )),
+              width: double.infinity,
+              height: 180,
+              child: NaverMap(
+                initialCameraPosition: CameraPosition(target: snapshot.data),
+                markers: [
+                  Marker(markerId: 'markerId', position: snapshot.data)
+                ],
+              ),
+            );
           }
-          return Container(
-            decoration: BoxDecoration(
-                border: Border.all(
-              color: Colors.black,
-            )),
-            width: double.infinity,
-            height: 180,
-            child: NaverMap(
-              initialCameraPosition: CameraPosition(target: snapshot.data),
-              markers: [Marker(markerId: 'markerId', position: snapshot.data)],
-            ),
-          );
         });
   }
 

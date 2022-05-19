@@ -199,6 +199,20 @@ class _YDUpdateState extends State<YDUpdate> {
                                       _date =
                                           Timestamp.fromMicrosecondsSinceEpoch(
                                               date.microsecondsSinceEpoch);
+                                      // 수정에서 날짜만 바꾸는 경우, 시간은 기존 DB 시간으로 유지한다.
+                                      _time =
+                                          Timestamp.fromMicrosecondsSinceEpoch(
+                                              DateTime(
+                                        date.year,
+                                        date.month,
+                                        date.day,
+                                        widget.docs[widget.index]['date']
+                                            .toDate()
+                                            .hour,
+                                        widget.docs[widget.index]['date']
+                                            .toDate()
+                                            .month,
+                                      ).microsecondsSinceEpoch);
                                     });
                                   },
                                 );
@@ -410,7 +424,7 @@ class _YDUpdateState extends State<YDUpdate> {
                         onPressed: () {
                           _unFocus();
                           _unFocus();
-                          if (_date == null) {
+                          if (_time == null) {
                             showDialog(
                                 context: context,
                                 builder: (context) => MyDialog(
@@ -424,6 +438,7 @@ class _YDUpdateState extends State<YDUpdate> {
                                     buttonText: const ['확인']));
                           }
                           if (_formKey.currentState!.validate()) {
+                            print(_time!.toDate());
                             _formKey.currentState?.save();
                             firebase.updateYDCourt(
                               widget.docs,

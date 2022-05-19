@@ -48,7 +48,6 @@ class _YDCourtListState extends State<YDCourtList> {
   }
 
   bool _isLoading = false;
-  bool _isEmpty = false;
 
   _addSearchedList(String searchString) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
@@ -124,10 +123,7 @@ class _YDCourtListState extends State<YDCourtList> {
                                 );
 
                                 setState(() {
-                                  if (flag!.isEmpty) {
-                                    _isEmpty = true;
-                                  }
-                                  _docs = flag;
+                                  _docs = flag!;
                                   _itemCount = flag.length;
                                   _isLoading = true;
                                 });
@@ -173,10 +169,7 @@ class _YDCourtListState extends State<YDCourtList> {
                                             await courtList('전체'),
                                           );
                                           setState(() {
-                                            if (flag!.isEmpty) {
-                                              _isEmpty = true;
-                                            }
-                                            _docs = flag;
+                                            _docs = flag!;
                                             _itemCount = flag.length;
                                           });
                                         },
@@ -238,7 +231,7 @@ class _YDCourtListState extends State<YDCourtList> {
                                 key: PageStorageKey<String>(_townData!),
                                 itemCount: _itemCount,
                                 itemBuilder: (BuildContext context, index) {
-                                  return GestureDetector(
+                                  return InkWell(
                                     onTap: () {
                                       Navigator.push(
                                         context,
@@ -308,25 +301,23 @@ class _YDCourtListState extends State<YDCourtList> {
                           ),
                         ),
                       ),
-                      _isEmpty
-                          ? Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text('찾으시는 코트가 없으신가요? '),
-                                TextButton(
-                                  onPressed: () {
-                                    Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                            builder: (context) => YDMakeCourt(
-                                                setYDCourtInfoList: widget
-                                                    .setYDCourtInfoList)));
-                                  },
-                                  child: Text('코트 정보 직접 입력하기'),
-                                ),
-                              ],
-                            )
-                          : Container(),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text('찾으시는 코트가 없으신가요? '),
+                          TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => YDMakeCourt(
+                                          setYDCourtInfoList:
+                                              widget.setYDCourtInfoList)));
+                            },
+                            child: Text('코트 정보 직접 입력하기'),
+                          ),
+                        ],
+                      )
                     ]),
             ],
           ),
