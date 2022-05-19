@@ -6,6 +6,7 @@ import 'package:jiffy/jiffy.dart';
 import 'package:test1/layout/ydNaverMap.dart';
 import 'package:test1/layout/ydPopButton.dart';
 import 'package:test1/layout/ydTurnByTurn.dart';
+import 'package:test1/layout/ydGoogleMap.dart';
 
 class YDDetail extends StatefulWidget {
   const YDDetail({
@@ -226,7 +227,8 @@ class _YDDetailState extends State<YDDetail> {
           //   child: YDMap(docs: widget.docs, index: widget.index),
           // ),
           YDTurnByTurn(docs: widget.docs, index: widget.index),
-          YDNaverMap(docs: widget.docs, index: widget.index),
+          // YDNaverMap(docs: widget.docs, index: widget.index),
+          YDGoogleMap(docs: widget.docs, index: widget.index),
         ],
       ),
     );

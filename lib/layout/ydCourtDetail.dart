@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:link_text/link_text.dart';
 import 'package:test1/layout/ydNaverMap.dart';
+import 'package:test1/layout/ydGoogleMap.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class YDCourtDetail extends StatefulWidget {
   const YDCourtDetail({
@@ -60,8 +62,8 @@ class _YDCourtDetailState extends State<YDCourtDetail> {
                   //https://pub.dev/packages/link_text
                   //https://pub.dev/packages/flutter_html#onlinktap
                   LinkText(widget.docs[widget.index]['reservation'],
-                      onLinkTap: (url) =>
-                          widget.docs[widget.index]['reservation']),
+                      onLinkTap: (url) => launchUrl(Uri.parse(url),
+                          mode: LaunchMode.externalApplication)),
                 ],
               ),
               // Container(
@@ -74,7 +76,8 @@ class _YDCourtDetailState extends State<YDCourtDetail> {
               //   //
               //   child: YDMap(docs: widget.docs, index: widget.index),
               // ),
-              YDNaverMap(docs: widget.docs, index: widget.index),
+              // YDNaverMap(docs: widget.docs, index: widget.index),
+              YDGoogleMap(docs: widget.docs, index: widget.index),
               ElevatedButton(
                 onPressed: () {
                   List<String> _courtInfo = [
