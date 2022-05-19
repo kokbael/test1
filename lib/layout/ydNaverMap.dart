@@ -17,6 +17,7 @@ class YDNaverMapState extends State<YDNaverMap> {
     return FutureBuilder(
         future: _getAddress(widget.docs, widget.index),
         builder: (BuildContext context, AsyncSnapshot snapshot) {
+          final _latLag = snapshot.data;
           if (snapshot.data == null) {
             return Center(
               child: CircularProgressIndicator(),
@@ -29,15 +30,32 @@ class YDNaverMapState extends State<YDNaverMap> {
               )),
               width: double.infinity,
               height: 180,
-              child: NaverMap(
-                initialCameraPosition: CameraPosition(target: snapshot.data),
-                markers: [
-                  Marker(markerId: 'markerId', position: snapshot.data)
-                ],
-              ),
+              child: FutureBuilder(
+                  future: getOverLayImage(),
+                  builder: (BuildContext context, AsyncSnapshot snapshot) {
+                    final _overlayImage = snapshot.data;
+                    return NaverMap(
+                      initialCameraPosition: CameraPosition(target: _latLag),
+                      markers: [
+                        Marker(
+                          markerId: 'markerId',
+                          position: _latLag,
+                          icon: _overlayImage,
+                          width: 60,
+                          height: 60,
+                        )
+                      ],
+                    );
+                  }),
             );
           }
         });
+  }
+
+  Future<OverlayImage> getOverLayImage() async {
+    return await OverlayImage.fromAssetImage(
+      assetName: 'assets/mapPin.png',
+    );
   }
 
   Future<LatLng> _getAddress(docs, index) async {
