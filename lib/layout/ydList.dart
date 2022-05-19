@@ -30,7 +30,7 @@ class _YDListState extends State<YDList> {
   String _selectedSearchData = '모든 지역';
   String? _sortField;
 
-  DropdownButton dropdownButton() {
+  DropdownButton _dropdownButton() {
     return DropdownButton(
       value: _selectedSearchData,
       items: _searchList.map((value) {
@@ -131,7 +131,7 @@ class _YDListState extends State<YDList> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            dropdownButton(),
+                            _dropdownButton(),
                             SizedBox(
                               width: 15,
                             ),
