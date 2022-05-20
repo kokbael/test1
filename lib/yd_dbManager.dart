@@ -14,7 +14,7 @@ void createYDCourt(
   String photoURL,
   String title,
 ) {
-  List<String> _townList = ['서울', '경기', '인천', '부산'];
+  List<String> _townList = ['서울', '경기', '인천', '부산', '경남'];
   try {
     ydcourt.add({
       'Dday': setDday(date),

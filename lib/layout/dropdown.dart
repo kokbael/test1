@@ -15,6 +15,7 @@ class _DropDownState extends State<DropDown> {
     '경기',
     '인천',
     '부산',
+    '경남',
   ];
   String _selectedTown = '지역 선택';
 
@@ -49,6 +50,9 @@ class _DropDownState extends State<DropDown> {
             }
             if (value == '부산') {
               widget.setTownData('busan');
+            }
+            if (value == '경남') {
+              widget.setTownData('kyungnam');
             }
           }
         });

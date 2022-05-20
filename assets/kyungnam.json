@@ -1,0 +1,749 @@
+[
+  {
+    "city": "거제시",
+    "courtName": "거제스포츠파크테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.geojesp.co.kr/_sub02/sub02_11.html",
+    "address": "경남 거제시 거제면 거제남서로 3485-17"
+  },
+  {
+    "city": "거제시",
+    "courtName": "거제시립테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.geojesp.co.kr/_sub02/sub02_17.html",
+    "address": "경남 거제시 고현동 551"
+  },
+  {
+    "city": "거제시",
+    "courtName": "능포테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.geojesp.co.kr/_sub02/sub02_20.html",
+    "address": "경남 거제시 능포동 472-2"
+  },
+  {
+    "city": "거제시",
+    "courtName": "둔덕가족체육공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.geojesp.co.kr/_sub02/sub02_21.html",
+    "address": "경남 거제시 둔덕면 거제남서로 4557"
+  },
+  {
+    "city": "거제시",
+    "courtName": "송정IC체육공원테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.geojesp.co.kr/_sub02/sub02_14.html",
+    "address": "경남 거제시 연초면 송정리 323"
+  },
+  {
+    "city": "거제시",
+    "courtName": "양정테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.geojesp.co.kr/_sub02/sub02_18.html",
+    "address": "경남 거제시 고현동 1053-2"
+  },
+  {
+    "city": "거제시",
+    "courtName": "옥포테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.geojesp.co.kr/_sub02/sub02_19.html",
+    "address": "경남 거제시 옥포로 296-8 시립테니스장"
+  },
+  {
+    "city": "거창군",
+    "courtName": "거창스포츠파크테니스장",
+    "courtEA": 12,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.geochang.go.kr/sports/Index.do?c=SP0201020500",
+    "address": "경남 거창군 거창읍 양평리 342"
+  },
+  {
+    "city": "고성군",
+    "courtName": "고성군스포츠파크테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 고성군 고성읍 교사리 507-1"
+  },
+  {
+    "city": "김해시",
+    "courtName": "국립김해박물관테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 김해시 가야의길 190"
+  },
+  {
+    "city": "김해시",
+    "courtName": "금병공원테니스장",
+    "courtEA": 4,
+    "contact": "055-330-4411",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 김해시 진영읍 여래리 286"
+  },
+  {
+    "city": "김해시",
+    "courtName": "능동공원테니스장",
+    "courtEA": 8,
+    "contact": "055-331-1098",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 김해시 삼문동 1257"
+  },
+  {
+    "city": "김해시",
+    "courtName": "동부테니스장",
+    "courtEA": 8,
+    "contact": "055-331-1098",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 김해시 삼방동 838-1"
+  },
+  {
+    "city": "김해시",
+    "courtName": "삼계테니스장",
+    "courtEA": 14,
+    "contact": "055-323-7310",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 김해시 삼계동 30-4"
+  },
+  {
+    "city": "김해시",
+    "courtName": "어방체육공원",
+    "courtEA": 1,
+    "contact": "055-323-7313",
+    "chargeInfo": "",
+    "reservation": "https://www.gimhae.go.kr/yes/05561/05804/05857.web",
+    "address": "경남 김해시 어방동 657"
+  },
+  {
+    "city": "김해시",
+    "courtName": "어방테니스장",
+    "courtEA": 4,
+    "contact": "055-331-1098",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 김해시 어방동 1045-4"
+  },
+  {
+    "city": "김해시",
+    "courtName": "우리실내테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "이용요금 25,000원",
+    "reservation": "",
+    "address": "경남 김해시 주촌면 서부로 1434-1"
+  },
+  {
+    "city": "김해시",
+    "courtName": "원도심테니스장",
+    "courtEA": 4,
+    "contact": "055-331-1098",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 김해시 부원동 217-12번길 (김해시 차량등록사업소 뒷편)"
+  },
+  {
+    "city": "김해시",
+    "courtName": "인제대학교김해캠퍼스",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "1면 기준 1/2일 20,000원, 1일 30,000원",
+    "reservation": "https://www.inje.ac.kr/kor/campus-life/welfare-06.asp",
+    "address": "경남 김해시 인제로 197"
+  },
+  {
+    "city": "김해시",
+    "courtName": "장유능동국제테니스장",
+    "courtEA": 8,
+    "contact": "010-4583-0997",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 김해시 대청로 350"
+  },
+  {
+    "city": "김해시",
+    "courtName": "진영공설운동장",
+    "courtEA": 4,
+    "contact": "055-336-2400",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 김해시 진영읍 김해대로 257"
+  },
+  {
+    "city": "김해시",
+    "courtName": "한림테니스장",
+    "courtEA": 2,
+    "contact": "010-8787-8585",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 김해시 한림면 시산리 122-6"
+  },
+  {
+    "city": "김해시",
+    "courtName": "함박공원테니스장",
+    "courtEA": 2,
+    "contact": "055-330-4411",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 김해시 외동 1205"
+  },
+  {
+    "city": "남해군",
+    "courtName": "남해공설테니스장",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 남해군 남해읍 차산리 700"
+  },
+  {
+    "city": "남해군",
+    "courtName": "남해스포츠파크테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 남해군 서면 스포츠파크길 74 스포츠파크"
+  },
+  {
+    "city": "남해군",
+    "courtName": "창선생활체육공원테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 남해군 창선면 상죽리 10-9"
+  },
+  {
+    "city": "밀양시",
+    "courtName": "밀양스포츠센터테니스장(클레이)",
+    "courtEA": 6,
+    "contact": "055-359-4635",
+    "chargeInfo": "",
+    "reservation": "https://www.myfmc.or.kr/sub/02_01_01.php",
+    "address": "경남 밀양시 시청로 28"
+  },
+  {
+    "city": "밀양시",
+    "courtName": "밀양스포츠센터테니스장(하드)",
+    "courtEA": 6,
+    "contact": "055-359-4635",
+    "chargeInfo": "",
+    "reservation": "https://www.myfmc.or.kr/sub/02_01_01.php",
+    "address": "경남 밀양시 시청로 28"
+  },
+  {
+    "city": "사천시",
+    "courtName": "사남공설테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 사천시 사남면 방지리 652"
+  },
+  {
+    "city": "사천시",
+    "courtName": "삼천포공설테니스장",
+    "courtEA": 8,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 사천시 벌리동 331"
+  },
+  {
+    "city": "산청군",
+    "courtName": "덕산체육공원테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 산청군 시천면 천평리 570-1"
+  },
+  {
+    "city": "산청군",
+    "courtName": "산청테니스장",
+    "courtEA": 8,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 산청군 금서면 친환경로2631번길 39"
+  },
+  {
+    "city": "산청군",
+    "courtName": "삼장체육공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 산청군 삼장면 덕교리 1041-17"
+  },
+  {
+    "city": "산청군",
+    "courtName": "생초체육공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 산청군 생초면 어서리 213"
+  },
+  {
+    "city": "산청군",
+    "courtName": "장승배기생태공원테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 산청군 신등면 신등가회로113번길 18"
+  },
+  {
+    "city": "양산시",
+    "courtName": "동원과학기술대학교테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 양산시 명곡동 산116-3"
+  },
+  {
+    "city": "양산시",
+    "courtName": "부산대학교양산캠퍼스",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 양산시 물금읍 부산대학로 49"
+  },
+  {
+    "city": "양산시",
+    "courtName": "삼수권체육공원테니스장",
+    "courtEA": 3,
+    "contact": "055-392-7256",
+    "chargeInfo": "",
+    "reservation": "https://www.yssisul.or.kr/rent/#/sisulSearch/2",
+    "address": "경남 양산시 하북면 충렬로 1699"
+  },
+  {
+    "city": "양산시",
+    "courtName": "삽량체육공원테니스장",
+    "courtEA": 8,
+    "contact": "055-392-7104",
+    "chargeInfo": "",
+    "reservation": "https://www.yssisul.or.kr/rent/#/sisulSearch/2",
+    "address": "경남 양산시 동면 내송리 산69-5"
+  },
+  {
+    "city": "양산시",
+    "courtName": "상북면주민자치센터테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 양산시 상북면 석계리 산25-9"
+  },
+  {
+    "city": "양산시",
+    "courtName": "서창운동장테니스장",
+    "courtEA": 3,
+    "contact": "055-379-8574",
+    "chargeInfo": "",
+    "reservation": "https://www.yssisul.or.kr/rent/#/sisulSearch/2",
+    "address": "경남 양산시 대운9길 16-85"
+  },
+  {
+    "city": "양산시",
+    "courtName": "양산수질정화공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 양산시 동면 금산리 1501"
+  },
+  {
+    "city": "양산시",
+    "courtName": "양산시립테니스장",
+    "courtEA": 5,
+    "contact": "055-392-7015",
+    "chargeInfo": "",
+    "reservation": "https://www.yssisul.or.kr/rent/#/sisulSearch/2",
+    "address": "경남 양산시 물금읍 범어리 2822"
+  },
+  {
+    "city": "양산시",
+    "courtName": "양산실내테니스아카데미",
+    "courtEA": 1,
+    "contact": "010-9354-1942",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 양산시 물금읍 야리로 5 스타빌딩 5층 501호"
+  },
+  {
+    "city": "양산시",
+    "courtName": "양산실내테니스장",
+    "courtEA": 1,
+    "contact": "0507-1333-5395",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 양산시 물금읍 황산로 647 301호"
+  },
+  {
+    "city": "양산시",
+    "courtName": "양산종합운동장테니스장",
+    "courtEA": 8,
+    "contact": "055-379-8535",
+    "chargeInfo": "",
+    "reservation": "https://www.yssisul.or.kr/rent/#/sisulSearch/2",
+    "address": "경남 양산시 양산대로 849"
+  },
+  {
+    "city": "양산시",
+    "courtName": "영산대학교양산캠퍼스",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 양산시 주남로 288"
+  },
+  {
+    "city": "양산시",
+    "courtName": "올테니스아카데미",
+    "courtEA": 2,
+    "contact": "010-9250-3830",
+    "chargeInfo": "개인 레슨 120,000원~",
+    "reservation": "",
+    "address": "경남 양산시 물금읍 범구로 15 희윤스마티움 3층"
+  },
+  {
+    "city": "양산시",
+    "courtName": "웅상체육공원테니스장",
+    "courtEA": 4,
+    "contact": "055-379-8574",
+    "chargeInfo": "",
+    "reservation": "https://www.yssisul.or.kr/rent/#/sisulSearch/2",
+    "address": "경남 양산시 배움터길 60-19"
+  },
+  {
+    "city": "양산시",
+    "courtName": "이테니스테니스장",
+    "courtEA": 2,
+    "contact": "070-4113-8800",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 양산시 물금읍 신주로 69 지하 1층 1호"
+  },
+  {
+    "city": "양산시",
+    "courtName": "제26호완충녹지(남부공원테니스장)",
+    "courtEA": 4,
+    "contact": "055-392-3403",
+    "chargeInfo": "",
+    "reservation": "https://www.yssisul.or.kr/rent/#/sisulSearch/2",
+    "address": "경남 양산시 남부동 888"
+  },
+  {
+    "city": "양산시",
+    "courtName": "천성리버타운아파트테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 양산시 소주동 156"
+  },
+  {
+    "city": "양산시",
+    "courtName": "천성산체육공원테니스장",
+    "courtEA": 3,
+    "contact": "055-392-7203",
+    "chargeInfo": "",
+    "reservation": "https://www.yssisul.or.kr/rent/#/sisulSearch/2",
+    "address": "경남 양산시 상북면 봉수대길 29-10"
+  },
+  {
+    "city": "의령군",
+    "courtName": "대의공설운동장테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 의령군 대의면 대의로 75-29"
+  },
+  {
+    "city": "의령군",
+    "courtName": "서동생활공원테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 의령군 의령읍 서동리 543"
+  },
+  {
+    "city": "의령군",
+    "courtName": "의령공설운동장테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 의령군 의령읍 구룡로3길 46-8"
+  },
+  {
+    "city": "진주시",
+    "courtName": "남가람테니스장",
+    "courtEA": 16,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 진주시 평거로 249-5"
+  },
+  {
+    "city": "진주시",
+    "courtName": "모덕생활테니스장",
+    "courtEA": 9,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 진주시 상대동 803-4"
+  },
+  {
+    "city": "진주시",
+    "courtName": "진주공설테니스장",
+    "courtEA": 10,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 진주시 신안로 137 진주공설운동장"
+  },
+  {
+    "city": "진주시",
+    "courtName": "진주종합경기장테니스장",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 진주시 동진로 415 진주종합경기장"
+  },
+  {
+    "city": "창녕군",
+    "courtName": "창녕공설테니스장",
+    "courtEA": 10,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://cfmc.kr/sub.html?code=03_08&Radd=03_08",
+    "address": "경남 창녕군 창녕읍 창녕대로 309"
+  },
+  {
+    "city": "창녕군",
+    "courtName": "창녕국민체육센터테니스장",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://cfmc.kr/sub.html?code=03_11&Radd=03_12",
+    "address": "경남 창녕군 부곡면 거문2길 33"
+  },
+  {
+    "city": "창원시",
+    "courtName": "도계체육공원테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 창원시 의창구 도계두리길 199"
+  },
+  {
+    "city": "창원시",
+    "courtName": "동읍운동장테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 창원시 의창구 동읍 용잠리 671"
+  },
+  {
+    "city": "창원시",
+    "courtName": "봉곡운동장테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 창원시 의창구 창이대로169번길 16-17"
+  },
+  {
+    "city": "창원시",
+    "courtName": "사림운동장테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 창원시 의창구 사림동 120"
+  },
+  {
+    "city": "창원시",
+    "courtName": "의창스포츠파크테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 창원시 의창구 천주로56번길 14"
+  },
+  {
+    "city": "창원시",
+    "courtName": "진해공설운동장테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 창원시 진해구 도만동 19"
+  },
+  {
+    "city": "창원시",
+    "courtName": "창원덕동시립테니스장",
+    "courtEA": 12,
+    "contact": "055-712-0865",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 창원시 마산합포구 가포로 789"
+  },
+  {
+    "city": "창원시",
+    "courtName": "창원종합테니스장",
+    "courtEA": 22,
+    "contact": "055-712-0855",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 창원시 성산구 비음로25번길 17"
+  },
+  {
+    "city": "창원시",
+    "courtName": "대방체육공원테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 창원시 성산구 대방동 267-1"
+  },
+  {
+    "city": "창원시",
+    "courtName": "웅남주민운동장테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 창원시 성산구 양곡동 451-1"
+  },
+  {
+    "city": "통영시",
+    "courtName": "통영생활체육공원(용남구장)",
+    "courtEA": 12,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://sportspark2015.ttdc.kr/sub/reserve_step1.asp?sis_up_idx=2",
+    "address": "경남 통영시 용남면 분덕길 214-48"
+  },
+  {
+    "city": "통영시",
+    "courtName": "통영공설테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 통영시 북문2길 43-14"
+  },
+  {
+    "city": "통영시",
+    "courtName": "통영산양스포츠파크테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://sportspark2015.ttdc.kr/sub/reserve_step1.asp?sis_up_idx=0",
+    "address": "경남 통영시 산양읍 산양중앙로 100"
+  },
+  {
+    "city": "통영시",
+    "courtName": "통영시립테니스장(용남생활체육곻원)",
+    "courtEA": 12,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://sportspark2015.ttdc.kr/sub/reserve_step1.asp?sis_up_idx=2",
+    "address": "경남 통영시 용남면 분덕길 214-48"
+  },
+  {
+    "city": "하동군",
+    "courtName": "수변공원(섬진강)테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 하동군 하동읍 광평리 53-3"
+  },
+  {
+    "city": "하동군",
+    "courtName": "하동생활테니스장",
+    "courtEA": 8,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 하동군 하동읍 광평리 64-1"
+  },
+  {
+    "city": "함안군",
+    "courtName": "함안군환경기초시설테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 함안군 가야읍 남경길 107-123"
+  },
+  {
+    "city": "함안군",
+    "courtName": "함안테니스장(함안공설운동장)",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 함안군 가야읍 도항리 263-6"
+  },
+  {
+    "city": "함양군",
+    "courtName": "함양생활체육공원테니스장",
+    "courtEA": 11,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.hygn.go.kr/04485/04487.web?amode=view&fcd=S052",
+    "address": "경남 함양군 함양읍 삼휴길 60-30"
+  },
+  {
+    "city": "합천군",
+    "courtName": "합천군민공설운동장테니스장",
+    "courtEA": 9,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 합천군 합천읍 장수로 1-3"
+  },
+  {
+    "city": "합천군",
+    "courtName": "황강군민체육공원테니스장(함벽루체육공원)",
+    "courtEA": 6,
+    "contact": "055-930-3734",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경남 합천군 합천읍 합천리 168-1"
+  }
+]

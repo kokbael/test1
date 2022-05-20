@@ -25,6 +25,7 @@ class _YDListState extends State<YDList> {
     '경기',
     '인천',
     '부산',
+    '경남',
     '기타 지역',
   ];
   String _selectedSearchData = '모든 지역';
@@ -56,6 +57,9 @@ class _YDListState extends State<YDList> {
           }
           if (value == '부산') {
             _selectedSearchData = '부산';
+          }
+          if (value == '경남') {
+            _selectedSearchData = '경남';
           }
           if (value == '기타 지역') {
             _selectedSearchData = '기타 지역';

@@ -49,14 +49,14 @@ class _MyAppState extends State<MyApp> {
   }
 
   Future<String> _loadCourtAsset() async {
-    return await rootBundle.loadString('assets/kyungki.json');
+    return await rootBundle.loadString('assets/busan.json');
   }
 
   void _addCourt() async {
     var ref = FirebaseFirestore.instance
         .collection('court')
-        .doc('kyungki')
-        .collection('kyungkiCourt');
+        .doc('busan')
+        .collection('busanCourt');
     String jsonString = await _loadCourtAsset();
     final jsonResponse = json.decode(jsonString);
     CourtList courtsList = CourtList.fromJson(jsonResponse);
@@ -70,7 +70,7 @@ class _MyAppState extends State<MyApp> {
         'chargeInfo': list.chargeInfo,
         'reservation': list.reservation,
         'address': list.address,
-        'photoURL': await _courtPhotoURL(list.courtName, 'kyungki'),
+        'photoURL': await _courtPhotoURL(list.courtName, 'busan'),
       });
     }
   }
@@ -168,7 +168,7 @@ class _MyAppState extends State<MyApp> {
                     ),
                     ElevatedButton(
                       onPressed: () {
-                        // _addCourt();
+                        _addCourt();
                       },
                       child: Text('court add'),
                     ),

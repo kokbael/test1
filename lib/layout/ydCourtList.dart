@@ -328,7 +328,7 @@ class _YDCourtListState extends State<YDCourtList> {
 
   Future<List> courtList(String townData) async {
     List list = [];
-    List _townList = ['seoul', 'kyungki', 'incheon', 'busan'];
+    List _townList = ['seoul', 'kyungki', 'incheon', 'busan', 'kyungnam'];
     if (townData == '전체') {
       for (var town in _townList) {
         var ref = FirebaseFirestore.instance
