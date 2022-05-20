@@ -39,8 +39,7 @@ class YDGoogleMapState extends State<YDGoogleMap> {
   }
 
   Future<BitmapDescriptor> _getBitmapDescriptor() async {
-    final Uint8List markerIcon =
-        await getBytesFromAsset('assets/mapPin.png', 150);
+    final Uint8List markerIcon = await getBytesFromAsset('assets/pin1.png', 60);
     return BitmapDescriptor.fromBytes(markerIcon);
   }
 
@@ -83,9 +82,9 @@ class YDGoogleMapState extends State<YDGoogleMap> {
                                 target: snapshot1.data,
                                 zoom: 15.2746,
                               ),
-                              // onMapCreated: (GoogleMapController controller) {
-                              //   _controller.complete(controller);
-                              // },
+                              onMapCreated: (GoogleMapController controller) {
+                                _controller.complete(controller);
+                              },
                             );
                     });
           }),
