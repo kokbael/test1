@@ -16,43 +16,77 @@ class _YDTurnByTurnState extends State<YDTurnByTurn> {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-        onPressed: () {
-          showModalBottomSheet(
-              context: context,
-              builder: (context) {
-                return SizedBox(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisSize: MainAxisSize.min,
+      child: Text('길찾기'),
+      onPressed: () {
+        showModalBottomSheet(
+            context: context,
+            builder: (context) {
+              return Column(mainAxisSize: MainAxisSize.min, children: [
+                Align(
+                  alignment: Alignment.topRight,
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 30, 30, 0),
+                    child: GestureDetector(
+                        child: Image(
+                          image: AssetImage('assets/popButton.png'),
+                          height: 30,
+                          width: 30,
+                        ), // Your desired icon
+                        onTap: () {
+                          Navigator.of(context).pop();
+                        }),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(20),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      // 어플 없을 시 메시지 처리 추가 필요
-                      TextButton(
-                        onPressed: () async {
+                      InkWell(
+                        onTap: () async {
                           final String _address =
                               widget.docs[widget.index]['address'];
-                          final LatLng _latlag = await getAddress(_address);
-                          final double _lat = _latlag.latitude;
-                          final double _lag = _latlag.longitude;
                           final Uri _url = Uri.parse(
                               // driving, walking 경로 안뜸. 한국 정책 상 불가능.
-                              'https://www.google.co.kr/maps/dir//$_address/'
-                              // 'google.navigation:q=$_address&mode=d',
-                              // 'geo:$_lat,$_lag?q=$_address',
-                              // "http://maps.google.com/maps?&daddr=+$_lat+,+$_lag+&mode=driving"
-                              );
-                          if (!await
-                              // launchUrl(_url)
-                              launchUrl(
+                              'https://www.google.co.kr/maps/dir//$_address/');
+                          if (!await launchUrl(
                             _url,
                             mode: LaunchMode.externalApplication,
                           )) {
                             throw 'Could not launch $_url';
                           }
                         },
-                        child: Text('[구글 맵] 에서 길 찾기'),
+                        child: Container(
+                          width: 70,
+                          height: 100,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: const [
+                              ClipRRect(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(100)),
+                                child: Image(
+                                  image:
+                                      AssetImage('assets/icon_Googlemap.png'),
+                                  width: 70,
+                                  height: 70,
+                                ),
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                '구글맵',
+                                style: TextStyle(
+                                  fontSize: 13,
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
                       ),
-                      TextButton(
-                        onPressed: () async {
+                      InkWell(
+                        onTap: () async {
                           final String _address =
                               widget.docs[widget.index]['address'];
                           final LatLng _latlag = await getAddress(_address);
@@ -70,10 +104,32 @@ class _YDTurnByTurnState extends State<YDTurnByTurn> {
                                 'market://details?id=com.net.daum.android.map'));
                           }
                         },
-                        child: Text('[카카오 맵] 에서 길 찾기'),
+                        child: Container(
+                          width: 70,
+                          height: 100,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: const [
+                              Image(
+                                image: AssetImage('assets/icon_Kakaomap.png'),
+                                width: 70,
+                                height: 70,
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                '카카오맵',
+                                style: TextStyle(
+                                  fontSize: 13,
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
                       ),
-                      TextButton(
-                        onPressed: () async {
+                      InkWell(
+                        onTap: () async {
                           final String _address =
                               widget.docs[widget.index]['address'];
                           final LatLng _latlag = await getAddress(_address);
@@ -92,10 +148,32 @@ class _YDTurnByTurnState extends State<YDTurnByTurn> {
                                 'market://details?id=com.nhn.android.nmap'));
                           }
                         },
-                        child: Text('[네이버 지도] 에서 길 찾기'),
+                        child: Container(
+                          width: 70,
+                          height: 100,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: const [
+                              Image(
+                                image: AssetImage('assets/icon_Navermap.png'),
+                                width: 70,
+                                height: 70,
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                '네이버지도',
+                                style: TextStyle(
+                                  fontSize: 13,
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
                       ),
-                      TextButton(
-                        onPressed: () async {
+                      InkWell(
+                        onTap: () async {
                           final String _address =
                               widget.docs[widget.index]['address'];
                           final LatLng _latlag = await getAddress(_address);
@@ -113,14 +191,37 @@ class _YDTurnByTurnState extends State<YDTurnByTurn> {
                                 'market://details?id=com.skt.tmap.ku'));
                           }
                         },
-                        child: Text('[티 맵] 에서 길 찾기'),
+                        child: Container(
+                          width: 70,
+                          height: 100,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: const [
+                              Image(
+                                image: AssetImage('assets/icon_Tmap.png'),
+                                width: 70,
+                                height: 70,
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                '티맵',
+                                style: TextStyle(
+                                  fontSize: 13,
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
                       ),
                     ],
                   ),
-                );
-              });
-        },
-        child: Text('길찾기'));
+                ),
+              ]);
+            });
+      },
+    );
   }
 
   Future<LatLng> getAddress(address) async {
