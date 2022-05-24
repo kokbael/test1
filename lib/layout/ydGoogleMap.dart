@@ -1,10 +1,12 @@
 import 'dart:async';
 import 'dart:typed_data';
 
+import 'package:flutter/foundation.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:geocoding/geocoding.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:geocoding/geocoding.dart';
 import 'dart:ui' as ui;
 
 class YDGoogleMap extends StatefulWidget {
@@ -39,7 +41,8 @@ class YDGoogleMapState extends State<YDGoogleMap> {
   }
 
   Future<BitmapDescriptor> _getBitmapDescriptor() async {
-    final Uint8List markerIcon = await getBytesFromAsset('assets/pin1.png', 60);
+    final Uint8List markerIcon =
+        await getBytesFromAsset('assets/marker_final.png', 60);
     return BitmapDescriptor.fromBytes(markerIcon);
   }
 
@@ -83,7 +86,13 @@ class YDGoogleMapState extends State<YDGoogleMap> {
                                 zoom: 15.2746,
                               ),
                               onMapCreated: (GoogleMapController controller) {
-                                _controller.complete(controller);
+                                // _controller.complete(controller);
+                              },
+                              gestureRecognizers: <
+                                  Factory<OneSequenceGestureRecognizer>>{
+                                Factory<OneSequenceGestureRecognizer>(
+                                  () => EagerGestureRecognizer(),
+                                ),
                               },
                             );
                     });
