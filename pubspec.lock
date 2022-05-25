@@ -462,6 +462,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.6.4"
+  kakaomap_webview:
+    dependency: "direct main"
+    description:
+      path: "C:\\kakaomap_webview"
+      relative: false
+    source: path
+    version: "0.6.0"
   kpostal:
     dependency: "direct main"
     description:

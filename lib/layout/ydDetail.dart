@@ -3,10 +3,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:jiffy/jiffy.dart';
-import 'package:test1/layout/ydNaverMap.dart';
+import 'package:test1/layout/ydKakaoMap.dart';
 import 'package:test1/layout/ydPopButton.dart';
 import 'package:test1/layout/ydTurnByTurn.dart';
-import 'package:test1/layout/ydGoogleMap.dart';
 
 class YDDetail extends StatefulWidget {
   const YDDetail({
@@ -216,19 +215,8 @@ class _YDDetailState extends State<YDDetail> {
             ydTime(widget.docs[widget.index]['date'],
                 widget.docs[widget.index]['howMuchTime']),
           ),
-          // Container(
-          //   decoration: BoxDecoration(
-          //       border: Border.all(
-          //     color: Colors.black,
-          //   )),
-          //   width: double.infinity,
-          //   height: 200,
-          //   //
-          //   child: YDMap(docs: widget.docs, index: widget.index),
-          // ),
           YDTurnByTurn(docs: widget.docs, index: widget.index),
-          // YDNaverMap(docs: widget.docs, index: widget.index),
-          YDGoogleMap(docs: widget.docs, index: widget.index),
+          YDKakaoMap(docs: widget.docs, index: widget.index),
         ],
       ),
     );

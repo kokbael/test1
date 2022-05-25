@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:link_text/link_text.dart';
-import 'package:test1/layout/ydNaverMap.dart';
-import 'package:test1/layout/ydGoogleMap.dart';
+import 'package:test1/layout/ydKakaoMap.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class YDCourtDetail extends StatefulWidget {
@@ -76,8 +75,7 @@ class _YDCourtDetailState extends State<YDCourtDetail> {
               //   //
               //   child: YDMap(docs: widget.docs, index: widget.index),
               // ),
-              // YDNaverMap(docs: widget.docs, index: widget.index),
-              YDGoogleMap(docs: widget.docs, index: widget.index),
+              YDKakaoMap(docs: widget.docs, index: widget.index),
               ElevatedButton(
                 onPressed: () {
                   List<String> _courtInfo = [
@@ -98,5 +96,8 @@ class _YDCourtDetailState extends State<YDCourtDetail> {
         ),
       ),
     );
+    // ,
+    // ),
+    // );
   }
 }

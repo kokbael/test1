@@ -57,6 +57,8 @@ dependencies:
   android_intent:
   naver_map_plugin:
     git: https://github.com/LBSTECH/naver_map_plugin.git
+  kakaomap_webview: #^0.6.0
+    path: C:\kakaomap_webview
 dev_dependencies:
   flutter_test:
     sdk: flutter
