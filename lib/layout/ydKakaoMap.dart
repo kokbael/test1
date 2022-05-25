@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:kakaomap_webview/kakaomap_webview.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart' as google;
 import 'package:geocoding/geocoding.dart';
 
 class YDKakaoMap extends StatefulWidget {
@@ -23,20 +22,10 @@ class _YDKakaoMapState extends State<YDKakaoMap> {
           if (snapshot.data == null) {
             return CircularProgressIndicator();
           } else {
-            final _lat = snapshot.data.latitude;
-            final _lng = snapshot.data.longitude;
+            final _lat = snapshot.data.lat;
+            final _lng = snapshot.data.lng;
             return KakaoMapView(
-                polyline: KakaoFigure(
-                  path: [
-                    KakaoLatLng(lat: _lat, lng: _lng),
-                  ],
-                ),
-                polygon: KakaoFigure(
-                  path: [
-                    KakaoLatLng(lat: _lat, lng: _lng),
-                  ],
-                ),
-                mapType: MapType.TRAFFIC,
+                mapType: MapType.TERRAIN,
                 width: size.width,
                 height: 200,
                 kakaoMapKey: kakaoMapKey,
@@ -53,12 +42,12 @@ class _YDKakaoMapState extends State<YDKakaoMap> {
         });
   }
 
-  Future<google.LatLng> _getAddress(docs, index) async {
+  Future<KakaoLatLng> _getAddress(docs, index) async {
     final query = docs[index]['address'];
     List<Location> geoAddress = await locationFromAddress(query);
     var first = geoAddress.first;
     var _lat = first.latitude;
     var _lng = first.longitude;
-    return google.LatLng(_lat, _lng);
+    return KakaoLatLng(lat: _lat, lng: _lng);
   }
 }
