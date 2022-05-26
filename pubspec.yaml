@@ -59,6 +59,13 @@ dependencies:
     git: https://github.com/LBSTECH/naver_map_plugin.git
   kakaomap_webview: #^0.6.0
     path: C:\kakaomap_webview
+
+dependency_overrides:
+  pull_to_refresh:
+    git:
+      url: https://github.com/miquelbeltran/flutter_pulltorefresh
+      ref: master
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

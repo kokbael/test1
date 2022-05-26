@@ -32,7 +32,6 @@ class _YDCourtListState extends State<YDCourtList> {
   }
 
   String? _searchString;
-
   List<String> _searchedList = [];
   _loadSearchedList() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
@@ -273,7 +272,8 @@ class _YDCourtListState extends State<YDCourtList> {
                                                 child: RichText(
                                                   // strutStyle: StrutStyle(
                                                   //     fontSize: 20),
-                                                  overflow: TextOverflow.fade,
+                                                  overflow:
+                                                      TextOverflow.ellipsis,
                                                   maxLines: 1,
                                                   text: TextSpan(
                                                     text: _docs![index]

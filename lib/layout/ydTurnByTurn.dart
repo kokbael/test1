@@ -44,45 +44,45 @@ class _YDTurnByTurnState extends State<YDTurnByTurn> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        InkWell(
-                          onTap: () async {
-                            final String _address =
-                                widget.docs[widget.index]['address'];
-                            final Uri _url = Uri.parse(
-                                // driving, walking 경로 안뜸. 한국 정책 상 불가능.
-                                'https://www.google.co.kr/maps/dir//$_address/');
-                            if (!await launchUrl(
-                              _url,
-                              mode: LaunchMode.externalApplication,
-                            )) {
-                              throw 'Could not launch $_url';
-                            }
-                          },
-                          child: Container(
-                            width: 70,
-                            height: 100,
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: const [
-                                Image(
-                                  image:
-                                      AssetImage('assets/icon_Googlemap.png'),
-                                  width: 70,
-                                  height: 70,
-                                ),
-                                SizedBox(
-                                  height: 10,
-                                ),
-                                Text(
-                                  '구글맵',
-                                  style: TextStyle(
-                                    fontSize: 13,
-                                  ),
-                                )
-                              ],
-                            ),
-                          ),
-                        ),
+                        // InkWell(
+                        //   onTap: () async {
+                        //     final String _address =
+                        //         widget.docs[widget.index]['address'];
+                        //     final Uri _url = Uri.parse(
+                        //         // driving, walking 경로 안뜸. 한국 정책 상 불가능.
+                        //         'https://www.google.co.kr/maps/dir//$_address/');
+                        //     if (!await launchUrl(
+                        //       _url,
+                        //       mode: LaunchMode.externalApplication,
+                        //     )) {
+                        //       throw 'Could not launch $_url';
+                        //     }
+                        //   },
+                        //   child: Container(
+                        //     width: 70,
+                        //     height: 100,
+                        //     child: Column(
+                        //       mainAxisAlignment: MainAxisAlignment.center,
+                        //       children: const [
+                        //         Image(
+                        //           image:
+                        //               AssetImage('assets/icon_Googlemap.png'),
+                        //           width: 70,
+                        //           height: 70,
+                        //         ),
+                        //         SizedBox(
+                        //           height: 10,
+                        //         ),
+                        //         Text(
+                        //           '구글맵',
+                        //           style: TextStyle(
+                        //             fontSize: 13,
+                        //           ),
+                        //         )
+                        //       ],
+                        //     ),
+                        //   ),
+                        // ),
                         InkWell(
                           onTap: () async {
                             final String _address =

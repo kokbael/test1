@@ -4,16 +4,16 @@ import 'package:intl/intl.dart';
 
 CollectionReference ydcourt = FirebaseFirestore.instance.collection('ydcourt');
 
-void createYDCourt(
-  String address,
-  String contents,
-  int cost,
-  String courtName,
-  int howMuchTime,
-  Timestamp date,
-  String photoURL,
-  String title,
-) {
+void createYDCourt({
+  required String address,
+  required String contents,
+  required int cost,
+  required String courtName,
+  required int howMuchTime,
+  required Timestamp date,
+  required String photoURL,
+  required String title,
+}) {
   List<String> _townList = ['서울', '경기', '인천', '부산', '경남'];
   try {
     ydcourt.add({
@@ -40,19 +40,19 @@ void createYDCourt(
   }
 }
 
-void updateYDCourt(
-  docs,
-  index,
-  String address,
-  String contents,
-  int cost,
-  String courtName,
-  int howMuchTime,
-  Timestamp date,
-  String photoURL,
-  String title,
-) {
-  List<String> _townList = ['서울', '경기', '인천', '부산'];
+void updateYDCourt({
+  required docs,
+  required index,
+  required String address,
+  required String contents,
+  required int cost,
+  required String courtName,
+  required int howMuchTime,
+  required Timestamp date,
+  required String photoURL,
+  required String title,
+}) {
+  List<String> _townList = ['서울', '경기', '인천', '부산', '경남'];
   try {
     ydcourt.doc(docs[index]['id']).update({
       'Dday': setDday(date),

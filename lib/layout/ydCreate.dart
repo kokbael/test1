@@ -412,14 +412,14 @@ class _YDCreateState extends State<YDCreate> {
                           } else if (_formKey.currentState!.validate()) {
                             _formKey.currentState?.save();
                             firebase.createYDCourt(
-                              _selectedCourtInfo.elementAt(1),
-                              _contents!,
-                              _cost!,
-                              _selectedCourtInfo.elementAt(0),
-                              _howMuchTime!,
-                              _time!,
-                              _selectedCourtInfo.elementAt(2),
-                              _title!,
+                              address: _selectedCourtInfo.elementAt(1),
+                              contents: _contents!,
+                              cost: _cost!,
+                              courtName: _selectedCourtInfo.elementAt(0),
+                              howMuchTime: _howMuchTime!,
+                              date: _time!,
+                              photoURL: _selectedCourtInfo.elementAt(2),
+                              title: _title!,
                             );
                             widget.setTab(2);
                             showDialog(

@@ -65,16 +65,6 @@ class _YDCourtDetailState extends State<YDCourtDetail> {
                           mode: LaunchMode.externalApplication)),
                 ],
               ),
-              // Container(
-              //   decoration: BoxDecoration(
-              //       border: Border.all(
-              //     color: Colors.black,
-              //   )),
-              //   width: double.infinity,
-              //   height: 200,
-              //   //
-              //   child: YDMap(docs: widget.docs, index: widget.index),
-              // ),
               YDKakaoMap(docs: widget.docs, index: widget.index),
               ElevatedButton(
                 onPressed: () {

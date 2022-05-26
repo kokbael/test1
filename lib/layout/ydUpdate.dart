@@ -441,16 +441,19 @@ class _YDUpdateState extends State<YDUpdate> {
                             print(_time!.toDate());
                             _formKey.currentState?.save();
                             firebase.updateYDCourt(
-                              widget.docs,
-                              widget.index,
-                              _selectedCourtInfo.elementAt(1), //address
-                              _contents!,
-                              _cost!,
-                              _selectedCourtInfo.elementAt(0), //courtName
-                              _howMuchTime!,
-                              _time!,
-                              _selectedCourtInfo.elementAt(2), //photoURL
-                              _title!,
+                              docs: widget.docs,
+                              index: widget.index,
+                              address:
+                                  _selectedCourtInfo.elementAt(1), //address
+                              contents: _contents!,
+                              cost: _cost!,
+                              courtName:
+                                  _selectedCourtInfo.elementAt(0), //courtName
+                              howMuchTime: _howMuchTime!,
+                              date: _time!,
+                              photoURL:
+                                  _selectedCourtInfo.elementAt(2), //photoURL
+                              title: _title!,
                             );
                             widget.setListTab(0);
                             Navigator.pop(context);
