@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:link_text/link_text.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:test1/layout/listData.dart';
 import 'package:test1/layout/ydKakaoMap.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -67,13 +69,20 @@ class _YDCourtDetailState extends State<YDCourtDetail> {
               ),
               YDKakaoMap(docs: widget.docs, index: widget.index),
               ElevatedButton(
-                onPressed: () {
+                onPressed: () async {
                   List<String> _courtInfo = [
                     widget.docs[widget.index]['courtName'],
                     widget.docs[widget.index]['address'],
                     widget.docs[widget.index]['photoURL'],
                   ];
                   widget.setYDCourtInfo(_courtInfo);
+
+                  ListData _listData = ListData(
+                    courtName: widget.docs[widget.index]['courtName'],
+                    address: widget.docs[widget.index]['address'],
+                    photoURL: widget.docs[widget.index]['photoURL'],
+                  );
+                  _saveListData(_listData.toString());
                   Navigator.pop(context);
                   Navigator.pop(context);
                   // pop(1) -> 코트 리스트 페이지
@@ -89,5 +98,12 @@ class _YDCourtDetailState extends State<YDCourtDetail> {
     // ,
     // ),
     // );
+  }
+
+  Future<void> _saveListData(String splitString) async {
+    final prefs = await SharedPreferences.getInstance();
+    List<String> _selectedCourtList = prefs.getStringList('SelectCourt') ?? [];
+    _selectedCourtList.add(splitString);
+    prefs.setStringList('SelectCourt', _selectedCourtList);
   }
 }
