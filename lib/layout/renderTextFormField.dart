@@ -2,18 +2,18 @@ import 'package:currency_text_input_formatter/currency_text_input_formatter.dart
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-Widget renderTextFormField({
-  @required String? label,
-  @required FormFieldSetter? onSaved,
-  @required FormFieldValidator? validator,
-  @required TextEditingController? controller,
-  @required int? minLines,
-  @required FocusNode? focusNode,
-  @required TextInputAction? textInputAction,
-  @required bool? enabled,
-  @required hintText,
-  @required int? maxLines,
-}) {
+Widget renderTextFormField(
+    {@required String? label,
+    @required FormFieldSetter? onSaved,
+    @required FormFieldValidator? validator,
+    @required TextEditingController? controller,
+    @required int? minLines,
+    @required FocusNode? focusNode,
+    @required TextInputAction? textInputAction,
+    @required bool? enabled,
+    @required hintText,
+    @required int? maxLines,
+    @required onEditingComplete}) {
   assert(onSaved != null);
   // assert(validator != null);
   assert(minLines != 0);
@@ -31,6 +31,7 @@ Widget renderTextFormField({
         ],
       ),
       TextFormField(
+        onEditingComplete: onEditingComplete,
         enabled: enabled,
         focusNode: focusNode,
         controller: controller,

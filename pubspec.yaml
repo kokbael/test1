@@ -58,7 +58,7 @@ dependencies:
   naver_map_plugin:
     git: https://github.com/LBSTECH/naver_map_plugin.git
   kakaomap_webview: #^0.6.0
-    path: C:\kakaomap_webview
+    path: C:/kakaomap_webview
 
 dependency_overrides:
   pull_to_refresh:

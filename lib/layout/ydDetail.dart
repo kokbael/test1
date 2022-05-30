@@ -40,6 +40,7 @@ class _YDDetailState extends State<YDDetail> {
   void initState() {
     // TODO: implement initState
     super.initState();
+    Jiffy.locale('ko');
     _selectedState = widget.docs[widget.index]['confirm'] ? '양도완료' : '양도 중';
     _isConfirm = widget.docs[widget.index]['confirm'] ? true : false;
   }

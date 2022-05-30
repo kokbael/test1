@@ -296,8 +296,8 @@ class _YDCreateState extends State<YDCreate> {
                                                     left: 0.0,
                                                     top: 0.0,
                                                     child: IconButton(
-                                                        icon: Icon(Icons
-                                                            .arrow_back), // Your desired icon
+                                                        icon: Icon(
+                                                            Icons.arrow_back),
                                                         onPressed: () {
                                                           Navigator.of(context)
                                                               .pop();
@@ -324,7 +324,7 @@ class _YDCreateState extends State<YDCreate> {
                                         alignment: Alignment.center,
                                         child: _howMuchTime == null
                                             ? Row(
-                                                children: [
+                                                children: const [
                                                   Text('시간 선택',
                                                       style: TextStyle(
                                                           fontSize: 14)),
@@ -333,8 +333,13 @@ class _YDCreateState extends State<YDCreate> {
                                               )
                                             : Row(
                                                 children: [
-                                                  Text(_howMuchTime.toString() +
-                                                      ' 시간'),
+                                                  _howMuchTime! < 10
+                                                      ? Text(_howMuchTime
+                                                              .toString() +
+                                                          '   시간')
+                                                      : Text(_howMuchTime
+                                                              .toString() +
+                                                          ' 시간'),
                                                   SizedBox(
                                                     width: 10,
                                                   ),
@@ -398,6 +403,12 @@ class _YDCreateState extends State<YDCreate> {
                         onPressed: () {
                           _unFocus();
                           if (_date == null) {
+                            showDialog(
+                                context: context,
+                                builder: (context) => MyDialog(
+                                    dialogTitle: '날짜를 선택해주세요.',
+                                    buttonText: const ['확인']));
+                          } else if (_time == null || _howMuchTime == null) {
                             showDialog(
                                 context: context,
                                 builder: (context) => MyDialog(

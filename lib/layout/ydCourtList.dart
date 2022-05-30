@@ -25,7 +25,7 @@ class _YDCourtListState extends State<YDCourtList> {
 
   List? _docs;
 
-  String? _townData = '전체';
+  String _townData = '전체';
   void setTownData(a) {
     setState(() {
       _townData = a;
@@ -134,6 +134,9 @@ class _YDCourtListState extends State<YDCourtList> {
                                   child: Container(
                                     width: 150,
                                     child: renderTextFormField(
+                                      // onEditingComplete: (){
+                                      //
+                                      // },
                                       maxLines: 1,
                                       label: '',
                                       onSaved: (val) {
@@ -161,7 +164,7 @@ class _YDCourtListState extends State<YDCourtList> {
                                     });
                                     List? flag = searchQuery(
                                       _searchString!,
-                                      await courtList(_townData!),
+                                      await courtList(_townData),
                                     );
 
                                     setState(() {
@@ -262,65 +265,33 @@ class _YDCourtListState extends State<YDCourtList> {
                                 SizedBox(
                                   height: 100,
                                 ),
-                                Container(
-                                  decoration: BoxDecoration(
-                                      border: Border.all(color: Colors.grey),
-                                      borderRadius: BorderRadius.circular(10)),
-                                  height: 250,
-                                  child: ListView.builder(
-                                      scrollDirection: Axis.horizontal,
-                                      itemCount: _listDates.length,
-                                      itemBuilder:
-                                          (BuildContext context, index) {
-                                        return Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          child: Container(
-                                            width: 250,
-                                            child: Column(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.center,
-                                              children: [
-                                                SizedBox(
-                                                  height: 100,
-                                                  //width: 180,
-                                                  child: Image.network(
-                                                    _listDates[
-                                                            _listDates.length -
-                                                                1 -
-                                                                index]
-                                                        .photoURL,
-                                                  ),
-                                                ),
-                                                Text(
-                                                  _listDates[_listDates.length -
-                                                          1 -
-                                                          index]
-                                                      .courtName,
-                                                  style: TextStyle(
-                                                      fontWeight:
-                                                          FontWeight.bold),
-                                                ),
-                                                Text(_listDates[
-                                                        _listDates.length -
-                                                            1 -
-                                                            index]
-                                                    .address),
-                                                Row(
+                                Column(
+                                  children: [
+                                    Text('최근 선택한 코트'),
+                                    Container(
+                                      decoration: BoxDecoration(
+                                          border:
+                                              Border.all(color: Colors.grey),
+                                          borderRadius:
+                                              BorderRadius.circular(10)),
+                                      height: 250,
+                                      child: ListView.builder(
+                                          physics: BouncingScrollPhysics(),
+                                          scrollDirection: Axis.horizontal,
+                                          itemCount: _listDates.length,
+                                          itemBuilder:
+                                              (BuildContext context, index) {
+                                            return Padding(
+                                              padding:
+                                                  const EdgeInsets.all(8.0),
+                                              child: SizedBox(
+                                                width: 250,
+                                                child: Column(
                                                   mainAxisAlignment:
                                                       MainAxisAlignment.center,
                                                   children: [
-                                                    ElevatedButton(
-                                                      onPressed: () {
-                                                        _deleteSelectCourt(
-                                                            _listDates.length -
-                                                                1 -
-                                                                index);
-                                                      },
-                                                      child: Text('삭제'),
-                                                    ),
-                                                    SizedBox(width: 10),
-                                                    ElevatedButton(
-                                                      onPressed: () {
+                                                    InkWell(
+                                                      onTap: () {
                                                         widget
                                                             .setYDCourtInfoList([
                                                           _listDates[_listDates
@@ -341,15 +312,56 @@ class _YDCourtListState extends State<YDCourtList> {
                                                         ]);
                                                         Navigator.pop(context);
                                                       },
-                                                      child: Text('선택'),
+                                                      child: Column(
+                                                        children: [
+                                                          SizedBox(
+                                                            height: 100,
+                                                            //width: 180,
+                                                            child:
+                                                                Image.network(
+                                                              _listDates[_listDates
+                                                                          .length -
+                                                                      1 -
+                                                                      index]
+                                                                  .photoURL,
+                                                            ),
+                                                          ),
+                                                          Text(
+                                                            _listDates[_listDates
+                                                                        .length -
+                                                                    1 -
+                                                                    index]
+                                                                .courtName,
+                                                            style: TextStyle(
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold),
+                                                          ),
+                                                          Text(_listDates[
+                                                                  _listDates
+                                                                          .length -
+                                                                      1 -
+                                                                      index]
+                                                              .address),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                    ElevatedButton(
+                                                      onPressed: () {
+                                                        _deleteSelectCourt(
+                                                            _listDates.length -
+                                                                1 -
+                                                                index);
+                                                      },
+                                                      child: Text('삭제'),
                                                     ),
                                                   ],
                                                 ),
-                                              ],
-                                            ),
-                                          ),
-                                        );
-                                      }),
+                                              ),
+                                            );
+                                          }),
+                                    ),
+                                  ],
                                 ),
                               ],
                             )
@@ -375,7 +387,7 @@ class _YDCourtListState extends State<YDCourtList> {
                                   noDataText: "No More",
                                 ),
                                 child: ListView.builder(
-                                    key: PageStorageKey<String>(_townData!),
+                                    key: PageStorageKey<String>(_townData),
                                     itemCount: _itemCount,
                                     itemBuilder: (BuildContext context, index) {
                                       return InkWell(

@@ -330,9 +330,36 @@ class _YDUpdateState extends State<YDUpdate> {
                                                   MainAxisAlignment.center,
                                               mainAxisSize: MainAxisSize.min,
                                               children: <Widget>[
+                                                Stack(children: [
+                                                  Container(
+                                                    width: double.infinity,
+                                                    height: 56.0,
+                                                    child: Center(
+                                                        child: Text(
+                                                      "시간 선택",
+                                                      style: TextStyle(
+                                                          fontSize: 16,
+                                                          fontWeight:
+                                                              FontWeight.w700),
+                                                    ) // Your desired title
+                                                        ),
+                                                  ),
+                                                  Positioned(
+                                                    left: 0.0,
+                                                    top: 0.0,
+                                                    child: IconButton(
+                                                        icon: Icon(
+                                                            Icons.arrow_back),
+                                                        onPressed: () {
+                                                          Navigator.of(context)
+                                                              .pop();
+                                                        }),
+                                                  ),
+                                                ]),
                                                 for (int i = 1; i <= 12; i++)
                                                   ListTile(
-                                                      title: Text('$i 시간'),
+                                                      title: Center(
+                                                          child: Text('$i 시간')),
                                                       onTap: () {
                                                         _setTime(i);
                                                         Navigator.pop(context);
@@ -349,7 +376,7 @@ class _YDUpdateState extends State<YDUpdate> {
                                         alignment: Alignment.center,
                                         child: _howMuchTime == null
                                             ? Row(
-                                                children: [
+                                                children: const [
                                                   Text('시간 선택',
                                                       style: TextStyle(
                                                           fontSize: 14)),
@@ -358,8 +385,13 @@ class _YDUpdateState extends State<YDUpdate> {
                                               )
                                             : Row(
                                                 children: [
-                                                  Text(_howMuchTime.toString() +
-                                                      ' 시간'),
+                                                  _howMuchTime! < 10
+                                                      ? Text(_howMuchTime
+                                                              .toString() +
+                                                          '   시간')
+                                                      : Text(_howMuchTime
+                                                              .toString() +
+                                                          ' 시간'),
                                                   SizedBox(
                                                     width: 10,
                                                   ),
