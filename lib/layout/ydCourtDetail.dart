@@ -100,6 +100,7 @@ class _YDCourtDetailState extends State<YDCourtDetail> {
     // );
   }
 
+  // 선택되면 SharedPreferences 저장
   Future<void> _saveListData(String splitString) async {
     final prefs = await SharedPreferences.getInstance();
     List<String> _selectedCourtList = prefs.getStringList('SelectCourt') ?? [];

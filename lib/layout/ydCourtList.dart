@@ -46,17 +46,30 @@ class _YDCourtListState extends State<YDCourtList> {
   _loadListData() async {
     final prefs = await SharedPreferences.getInstance();
     final value = prefs.getStringList('SelectCourt');
-    value!.removeAt(0);
     List<String> list = [];
-    for (int i = 0; i < value.length; i++) {
+    for (int i = 0; i < value!.length; i++) {
       list = value[i].split('(split)');
-      final String _courtName = list[0];
-      final String _address = list[1];
-      final String _photoURL = list[2];
-      _listDates.add(ListData(
-          courtName: _courtName, address: _address, photoURL: _photoURL));
+      _listDates.add(
+          ListData(courtName: list[0], address: list[1], photoURL: list[2]));
     }
-    print(_listDates);
+  }
+
+  List<String> _toStringList(List<ListData> data) {
+    List<String> ret = [];
+    for (int i = 0; i < data.length; i++) {
+      ret.add(data[i].toString());
+    }
+    return ret;
+  }
+
+  List<ListData> _toListData(List<String> data) {
+    List<ListData> ret = [];
+    for (int i = 0; i < data.length; i++) {
+      var list = data[i].split('(split)');
+      ret.add(
+          ListData(courtName: list[0], address: list[1], photoURL: list[2]));
+    }
+    return ret;
   }
 
   @override
@@ -89,8 +102,9 @@ class _YDCourtListState extends State<YDCourtList> {
   _deleteSelectCourt(index) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     setState(() {
-      _searchedList = (prefs.getStringList('SelectCourt') ?? ['']);
-      _searchedList.removeAt(index);
+      _listDates = _toListData(prefs.getStringList('SelectCourt') ?? ['']);
+      _listDates.removeAt(index);
+      prefs.setStringList('SelectCourt', _toStringList(_listDates));
     });
   }
 
@@ -270,16 +284,27 @@ class _YDCourtListState extends State<YDCourtList> {
                                                   height: 100,
                                                   //width: 180,
                                                   child: Image.network(
-                                                    _listDates[index].photoURL,
+                                                    _listDates[
+                                                            _listDates.length -
+                                                                1 -
+                                                                index]
+                                                        .photoURL,
                                                   ),
                                                 ),
                                                 Text(
-                                                  _listDates[index].courtName,
+                                                  _listDates[_listDates.length -
+                                                          1 -
+                                                          index]
+                                                      .courtName,
                                                   style: TextStyle(
                                                       fontWeight:
                                                           FontWeight.bold),
                                                 ),
-                                                Text(_listDates[index].address),
+                                                Text(_listDates[
+                                                        _listDates.length -
+                                                            1 -
+                                                            index]
+                                                    .address),
                                                 Row(
                                                   mainAxisAlignment:
                                                       MainAxisAlignment.center,
@@ -287,7 +312,9 @@ class _YDCourtListState extends State<YDCourtList> {
                                                     ElevatedButton(
                                                       onPressed: () {
                                                         _deleteSelectCourt(
-                                                            index);
+                                                            _listDates.length -
+                                                                1 -
+                                                                index);
                                                       },
                                                       child: Text('삭제'),
                                                     ),
@@ -296,11 +323,20 @@ class _YDCourtListState extends State<YDCourtList> {
                                                       onPressed: () {
                                                         widget
                                                             .setYDCourtInfoList([
-                                                          _listDates[index]
+                                                          _listDates[_listDates
+                                                                      .length -
+                                                                  1 -
+                                                                  index]
                                                               .courtName,
-                                                          _listDates[index]
+                                                          _listDates[_listDates
+                                                                      .length -
+                                                                  1 -
+                                                                  index]
                                                               .address,
-                                                          _listDates[index]
+                                                          _listDates[_listDates
+                                                                      .length -
+                                                                  1 -
+                                                                  index]
                                                               .photoURL,
                                                         ]);
                                                         Navigator.pop(context);

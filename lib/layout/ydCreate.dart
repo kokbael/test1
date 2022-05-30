@@ -187,7 +187,7 @@ class _YDCreateState extends State<YDCreate> {
                             child: Row(
                               children: [
                                 Flexible(
-                                  flex: 2,
+                                  flex: 1,
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
@@ -262,7 +262,7 @@ class _YDCreateState extends State<YDCreate> {
                                   ),
                                 ),
                                 Flexible(
-                                  flex: 2,
+                                  flex: 1,
                                   child: InkWell(
                                     onTap: () {
                                       showModalBottomSheet(
