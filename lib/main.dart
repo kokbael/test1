@@ -9,9 +9,11 @@ import 'package:test1/layout/myBottomNavigator.dart';
 import 'package:test1/layout/myDialog.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:test1/layout/noyd/userInfo.dart';
+import 'package:test1/layout/sliverTest.dart';
 import 'package:test1/layout/ydCreate.dart';
 import 'package:test1/layout/ydList.dart';
 import 'firebase_options.dart';
+import 'layout/sliverTest.dart';
 import 'style.dart' as style;
 import 'package:test1/jsonToCourtList.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -120,7 +122,14 @@ class _MyAppState extends State<MyApp> {
                                   buttonText: const ['확인', '취소']));
                         },
                         child: Text("ElevatedButton - Dialog")),
-                    TextButton(onPressed: () {}, child: Text('TextButton')),
+                    TextButton(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => SliverTest()));
+                        },
+                        child: Text('TextButton')),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
