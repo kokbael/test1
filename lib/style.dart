@@ -24,7 +24,7 @@ AppBarTheme _appBarTheme() {
     titleTextStyle: TextStyle(
         color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
     systemOverlayStyle: SystemUiOverlayStyle(
-      statusBarColor: Color(0xFFD1C4E9),
+      statusBarColor: Color(0x5F5F5F5F),
     ),
     backgroundColor: primaryColor,
     //centerTitle: true,

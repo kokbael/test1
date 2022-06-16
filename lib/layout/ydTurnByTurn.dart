@@ -90,8 +90,8 @@ class _YDTurnByTurnState extends State<YDTurnByTurn> {
                             final LatLng _latlag = await getAddress(_address);
                             final double _lat = _latlag.latitude;
                             final double _lag = _latlag.longitude;
-                            final Uri _url = Uri.parse(
-                                'https://map.kakao.com/link/to/$_address,$_lat,$_lag');
+                            final Uri _url =
+                                Uri.parse('kakaomap://look?p=$_lat,$_lag');
                             try {
                               if (!await launchUrl(_url,
                                   mode: LaunchMode.externalApplication)) {
@@ -99,7 +99,7 @@ class _YDTurnByTurnState extends State<YDTurnByTurn> {
                               }
                             } catch (e) {
                               launchUrl(Uri.parse(
-                                  'market://details?id=com.net.daum.android.map'));
+                                  'market://details?id=net.daum.android.map'));
                             }
                           },
                           child: Container(

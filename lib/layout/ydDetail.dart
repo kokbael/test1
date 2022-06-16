@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:jiffy/jiffy.dart';
 import 'package:test1/layout/ydKakaoMap.dart';
+import 'package:test1/layout/ydNaverMap.dart';
 import 'package:test1/layout/ydPopButton.dart';
 import 'package:test1/layout/ydTurnByTurn.dart';
 
@@ -218,6 +219,7 @@ class _YDDetailState extends State<YDDetail> {
           ),
           YDTurnByTurn(docs: widget.docs, index: widget.index),
           YDKakaoMap(docs: widget.docs, index: widget.index),
+          YDNaverMap(docs: widget.docs, index: widget.index),
         ],
       ),
     );

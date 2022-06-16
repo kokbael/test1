@@ -111,381 +111,367 @@ class _YDCourtListState extends State<YDCourtList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(),
+        // appBar: AppBar(),
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: SingleChildScrollView(
-            child: Center(
-              child: Column(
+      padding: const EdgeInsets.all(8.0),
+      child: SingleChildScrollView(
+        child: Center(
+          child: Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      DropDown(setTownData: setTownData),
-                      Form(
-                        key: formKey,
-                        child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Row(children: [
-                                Padding(
-                                  padding:
-                                      const EdgeInsets.fromLTRB(5, 0, 10, 0),
-                                  child: Container(
-                                    width: 150,
-                                    child: renderTextFormField(
-                                      // onEditingComplete: (){
-                                      //
-                                      // },
-                                      maxLines: 1,
-                                      label: '',
-                                      onSaved: (val) {
-                                        setState(() {
-                                          _searchString = val;
-                                        });
-                                      },
-                                      // validator: (val) {
-                                      //   if (val == null || val.isEmpty) {
-                                      //     return '';
-                                      //   }
-                                      // },
-                                    ),
-                                  ),
-                                ),
-                                ElevatedButton(
-                                  onPressed: () async {
+                  DropDown(setTownData: setTownData),
+                  Form(
+                    key: formKey,
+                    child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Row(children: [
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(5, 0, 10, 0),
+                              child: Container(
+                                width: 150,
+                                child: renderTextFormField(
+                                  // onEditingComplete: (){
+                                  //
+                                  // },
+                                  maxLines: 1,
+                                  label: '',
+                                  onSaved: (val) {
                                     setState(() {
-                                      _isLoading = true;
+                                      _searchString = val;
                                     });
-                                    setState(() {
-                                      if (formKey.currentState!.validate()) {
-                                        formKey.currentState!.save();
-                                      }
-                                    });
-                                    List? flag = searchQuery(
-                                      _searchString!,
-                                      await courtList(_townData),
-                                    );
-
-                                    setState(() {
-                                      _docs = flag!;
-                                      _itemCount = flag.length;
-                                      _isLoading = true;
-                                    });
-                                    if (_searchString != '') {
-                                      _addSearchedList(_searchString!);
-                                    }
                                   },
-                                  child: Text('검색'),
+                                  // validator: (val) {
+                                  //   if (val == null || val.isEmpty) {
+                                  //     return '';
+                                  //   }
+                                  // },
                                 ),
-                              ]),
-                            ]),
-                      ),
-                    ],
+                              ),
+                            ),
+                            ElevatedButton(
+                              onPressed: () async {
+                                setState(() {
+                                  _isLoading = true;
+                                });
+                                setState(() {
+                                  if (formKey.currentState!.validate()) {
+                                    formKey.currentState!.save();
+                                  }
+                                });
+                                List? flag = searchQuery(
+                                  _searchString!,
+                                  await courtList(_townData),
+                                );
+
+                                setState(() {
+                                  _docs = flag!;
+                                  _itemCount = flag.length;
+                                  _isLoading = true;
+                                });
+                                if (_searchString != '') {
+                                  _addSearchedList(_searchString!);
+                                }
+                              },
+                              child: Text('검색'),
+                            ),
+                          ]),
+                        ]),
                   ),
-                  _docs == null
-                      ? _isLoading == false
-                          ? Column(
+                ],
+              ),
+              _docs == null
+                  ? _isLoading == false
+                      ? Column(
+                          children: [
+                            Container(
+                              height: 30,
+                              child: ListView.separated(
+                                  physics: BouncingScrollPhysics(),
+                                  scrollDirection: Axis.horizontal,
+                                  itemCount: _searchedList.length,
+                                  itemBuilder: (BuildContext context, index) {
+                                    return Container(
+                                      padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey.shade200,
+                                        border: Border.all(
+                                            color: Colors.grey.shade300),
+                                        borderRadius: BorderRadius.circular(8),
+                                      ),
+                                      child: Row(
+                                        children: [
+                                          InkWell(
+                                            onTap: () async {
+                                              setState(() {
+                                                _isLoading = true;
+                                              });
+                                              List? flag = searchQuery(
+                                                _searchedList[
+                                                    _searchedList.length -
+                                                        1 -
+                                                        index],
+                                                await courtList('전체'),
+                                              );
+                                              setState(() {
+                                                _docs = flag!;
+                                                _itemCount = flag.length;
+                                              });
+                                            },
+                                            child: Text(
+                                              _searchedList[
+                                                  _searchedList.length -
+                                                      1 -
+                                                      index],
+                                              style: TextStyle(
+                                                  fontSize: 14,
+                                                  color: Colors.black),
+                                            ),
+                                          ),
+                                          SizedBox(
+                                            width: 15,
+                                          ),
+                                          Container(
+                                            width: 20,
+                                            child: TextButton(
+                                              onPressed: () {
+                                                _deleteSearchedList(
+                                                    _searchedList.length -
+                                                        1 -
+                                                        index);
+                                              },
+                                              child: Text(
+                                                'X',
+                                                style: TextStyle(fontSize: 10),
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    );
+                                  },
+                                  separatorBuilder: (context, index) =>
+                                      SizedBox(
+                                        width: 10,
+                                      )),
+                            ),
+                            SizedBox(
+                              height: 60,
+                            ),
+                            Column(
                               children: [
+                                Text('최근 선택한 코트'),
                                 Container(
-                                  height: 30,
-                                  child: ListView.separated(
+                                  decoration: BoxDecoration(
+                                      border: Border.all(color: Colors.grey),
+                                      borderRadius: BorderRadius.circular(10)),
+                                  height: 250,
+                                  child: ListView.builder(
                                       physics: BouncingScrollPhysics(),
                                       scrollDirection: Axis.horizontal,
-                                      itemCount: _searchedList.length,
+                                      itemCount: _listDates.length,
                                       itemBuilder:
                                           (BuildContext context, index) {
-                                        return Container(
-                                          padding:
-                                              EdgeInsets.fromLTRB(5, 0, 0, 0),
-                                          decoration: BoxDecoration(
-                                            color: Colors.grey.shade200,
-                                            border: Border.all(
-                                                color: Colors.grey.shade300),
-                                            borderRadius:
-                                                BorderRadius.circular(8),
-                                          ),
-                                          child: Row(
-                                            children: [
-                                              InkWell(
-                                                onTap: () async {
-                                                  setState(() {
-                                                    _isLoading = true;
-                                                  });
-                                                  List? flag = searchQuery(
-                                                    _searchedList[
-                                                        _searchedList.length -
-                                                            1 -
-                                                            index],
-                                                    await courtList('전체'),
-                                                  );
-                                                  setState(() {
-                                                    _docs = flag!;
-                                                    _itemCount = flag.length;
-                                                  });
-                                                },
-                                                child: Text(
-                                                  _searchedList[
-                                                      _searchedList.length -
-                                                          1 -
-                                                          index],
-                                                  style: TextStyle(
-                                                      fontSize: 14,
-                                                      color: Colors.black),
-                                                ),
-                                              ),
-                                              SizedBox(
-                                                width: 15,
-                                              ),
-                                              Container(
-                                                width: 20,
-                                                child: TextButton(
-                                                  onPressed: () {
-                                                    _deleteSearchedList(
-                                                        _searchedList.length -
-                                                            1 -
-                                                            index);
+                                        return Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: SizedBox(
+                                            width: 250,
+                                            child: Column(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.center,
+                                              children: [
+                                                InkWell(
+                                                  onTap: () {
+                                                    widget.setYDCourtInfoList([
+                                                      _listDates[_listDates
+                                                                  .length -
+                                                              1 -
+                                                              index]
+                                                          .courtName,
+                                                      _listDates[_listDates
+                                                                  .length -
+                                                              1 -
+                                                              index]
+                                                          .address,
+                                                      _listDates[_listDates
+                                                                  .length -
+                                                              1 -
+                                                              index]
+                                                          .photoURL,
+                                                    ]);
+                                                    Navigator.pop(context);
                                                   },
-                                                  child: Text(
-                                                    'X',
-                                                    style:
-                                                        TextStyle(fontSize: 10),
-                                                  ),
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        );
-                                      },
-                                      separatorBuilder: (context, index) =>
-                                          SizedBox(
-                                            width: 10,
-                                          )),
-                                ),
-                                SizedBox(
-                                  height: 100,
-                                ),
-                                Column(
-                                  children: [
-                                    Text('최근 선택한 코트'),
-                                    Container(
-                                      decoration: BoxDecoration(
-                                          border:
-                                              Border.all(color: Colors.grey),
-                                          borderRadius:
-                                              BorderRadius.circular(10)),
-                                      height: 250,
-                                      child: ListView.builder(
-                                          physics: BouncingScrollPhysics(),
-                                          scrollDirection: Axis.horizontal,
-                                          itemCount: _listDates.length,
-                                          itemBuilder:
-                                              (BuildContext context, index) {
-                                            return Padding(
-                                              padding:
-                                                  const EdgeInsets.all(8.0),
-                                              child: SizedBox(
-                                                width: 250,
-                                                child: Column(
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.center,
-                                                  children: [
-                                                    InkWell(
-                                                      onTap: () {
-                                                        widget
-                                                            .setYDCourtInfoList([
-                                                          _listDates[_listDates
-                                                                      .length -
-                                                                  1 -
-                                                                  index]
-                                                              .courtName,
-                                                          _listDates[_listDates
-                                                                      .length -
-                                                                  1 -
-                                                                  index]
-                                                              .address,
+                                                  child: Column(
+                                                    children: [
+                                                      SizedBox(
+                                                        height: 100,
+                                                        //width: 180,
+                                                        child: Image.network(
                                                           _listDates[_listDates
                                                                       .length -
                                                                   1 -
                                                                   index]
                                                               .photoURL,
-                                                        ]);
-                                                        Navigator.pop(context);
-                                                      },
-                                                      child: Column(
-                                                        children: [
-                                                          SizedBox(
-                                                            height: 100,
-                                                            //width: 180,
-                                                            child:
-                                                                Image.network(
-                                                              _listDates[_listDates
-                                                                          .length -
-                                                                      1 -
-                                                                      index]
-                                                                  .photoURL,
-                                                            ),
-                                                          ),
-                                                          Text(
-                                                            _listDates[_listDates
-                                                                        .length -
-                                                                    1 -
-                                                                    index]
-                                                                .courtName,
-                                                            style: TextStyle(
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .bold),
-                                                          ),
-                                                          Text(_listDates[
-                                                                  _listDates
-                                                                          .length -
-                                                                      1 -
-                                                                      index]
-                                                              .address),
-                                                        ],
+                                                        ),
                                                       ),
-                                                    ),
-                                                    ElevatedButton(
-                                                      onPressed: () {
-                                                        _deleteSelectCourt(
-                                                            _listDates.length -
+                                                      Text(
+                                                        _listDates[_listDates
+                                                                    .length -
                                                                 1 -
-                                                                index);
-                                                      },
-                                                      child: Text('삭제'),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                            );
-                                          }),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            )
-                          : Center(
-                              child: Center(child: CircularProgressIndicator()))
-                      : Column(children: [
-                          Scrollbar(
-                            child: Container(
-                              decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  border: Border.all(
-                                      width: 2,
-                                      color: Colors.deepPurple.shade400),
-                                  borderRadius: BorderRadius.circular(8)),
-                              margin: EdgeInsets.all(10),
-                              height: 450,
-                              child: SmartRefresher(
-                                enablePullDown: false,
-                                enablePullUp: true,
-                                controller: _refreshController,
-                                onLoading: _onLoading,
-                                footer: ClassicFooter(
-                                  noDataText: "No More",
-                                ),
-                                child: ListView.builder(
-                                    key: PageStorageKey<String>(_townData),
-                                    itemCount: _itemCount,
-                                    itemBuilder: (BuildContext context, index) {
-                                      return InkWell(
-                                        onTap: () {
-                                          Navigator.push(
-                                            context,
-                                            MaterialPageRoute(
-                                              builder: (context) =>
-                                                  YDCourtDetail(
-                                                index: index,
-                                                docs: _docs,
-                                                townData: _townData,
-                                                setYDCourtInfo:
-                                                    widget.setYDCourtInfoList,
-                                              ),
-                                            ),
-                                          );
-                                        },
-                                        child: Container(
-                                          padding: EdgeInsets.all(8.0),
-                                          // margin: EdgeInsets.fromLTRB(0, 6, 0, 6),
-                                          decoration: BoxDecoration(
-                                            border: Border(
-                                              bottom: BorderSide(
-                                                  width: 1.0,
-                                                  color: Colors
-                                                      .deepPurple.shade400),
-                                            ),
-                                          ),
-                                          child: Column(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: [
-                                              Row(
-                                                children: [
-                                                  Text(
-                                                    _docs![index]['city'] + ' ',
-                                                    style: TextStyle(
-                                                        fontSize: 13,
-                                                        color: Colors.grey),
-                                                  ),
-                                                  Flexible(
-                                                    child: RichText(
-                                                      // strutStyle: StrutStyle(
-                                                      //     fontSize: 20),
-                                                      overflow:
-                                                          TextOverflow.ellipsis,
-                                                      maxLines: 1,
-                                                      text: TextSpan(
-                                                        text: _docs![index]
-                                                            ['courtName'],
+                                                                index]
+                                                            .courtName,
                                                         style: TextStyle(
-                                                            color: Colors.black,
-                                                            fontSize: 20,
                                                             fontWeight:
                                                                 FontWeight
                                                                     .bold),
                                                       ),
-                                                      //style: TextStyle(fontSize: 18),
-                                                    ),
+                                                      Text(_listDates[_listDates
+                                                                  .length -
+                                                              1 -
+                                                              index]
+                                                          .address),
+                                                    ],
                                                   ),
-                                                ],
-                                              ),
-                                              Text(
-                                                _docs![index]['address'],
-                                                style: TextStyle(fontSize: 13),
-                                              )
-                                            ],
+                                                ),
+                                                ElevatedButton(
+                                                  onPressed: () {
+                                                    _deleteSelectCourt(
+                                                        _listDates.length -
+                                                            1 -
+                                                            index);
+                                                  },
+                                                  child: Text('삭제'),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                        );
+                                      }),
+                                ),
+                              ],
+                            ),
+                          ],
+                        )
+                      : Center(
+                          child: Center(child: CircularProgressIndicator()))
+                  : Column(children: [
+                      Scrollbar(
+                        child: Container(
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              border: Border.all(
+                                  width: 2, color: Colors.deepPurple.shade400),
+                              borderRadius: BorderRadius.circular(8)),
+                          margin: EdgeInsets.all(10),
+                          height: 450,
+                          child: SmartRefresher(
+                            enablePullDown: false,
+                            enablePullUp: true,
+                            controller: _refreshController,
+                            onLoading: _onLoading,
+                            footer: ClassicFooter(
+                              noDataText: "No More",
+                            ),
+                            child: ListView.builder(
+                                key: PageStorageKey<String>(_townData),
+                                itemCount: _itemCount,
+                                itemBuilder: (BuildContext context, index) {
+                                  return InkWell(
+                                    onTap: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => YDCourtDetail(
+                                            index: index,
+                                            docs: _docs,
+                                            townData: _townData,
+                                            setYDCourtInfo:
+                                                widget.setYDCourtInfoList,
                                           ),
                                         ),
                                       );
-                                    }),
-                              ),
-                            ),
+                                    },
+                                    child: Container(
+                                      padding: EdgeInsets.all(8.0),
+                                      // margin: EdgeInsets.fromLTRB(0, 6, 0, 6),
+                                      decoration: BoxDecoration(
+                                        border: Border(
+                                          bottom: BorderSide(
+                                              width: 1.0,
+                                              color:
+                                                  Colors.deepPurple.shade400),
+                                        ),
+                                      ),
+                                      child: Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Row(
+                                            children: [
+                                              Text(
+                                                _docs![index]['city'] + ' ',
+                                                style: TextStyle(
+                                                    fontSize: 13,
+                                                    color: Colors.grey),
+                                              ),
+                                              Flexible(
+                                                child: RichText(
+                                                  // strutStyle: StrutStyle(
+                                                  //     fontSize: 20),
+                                                  overflow:
+                                                      TextOverflow.ellipsis,
+                                                  maxLines: 1,
+                                                  text: TextSpan(
+                                                    text: _docs![index]
+                                                        ['courtName'],
+                                                    style: TextStyle(
+                                                        color: Colors.black,
+                                                        fontSize: 20,
+                                                        fontWeight:
+                                                            FontWeight.bold),
+                                                  ),
+                                                  //style: TextStyle(fontSize: 18),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                          Text(
+                                            _docs![index]['address'],
+                                            style: TextStyle(fontSize: 13),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  );
+                                }),
                           ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text('찾으시는 코트가 없으신가요? '),
-                              TextButton(
-                                onPressed: () {
-                                  Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) => YDMakeCourt(
-                                              setYDCourtInfoList:
-                                                  widget.setYDCourtInfoList)));
-                                },
-                                child: Text('코트 정보 직접 입력하기'),
-                              ),
-                            ],
-                          )
-                        ]),
-                ],
-              ),
-            ),
+                        ),
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text('찾으시는 코트가 없으신가요? '),
+                          TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => YDMakeCourt(
+                                          setYDCourtInfoList:
+                                              widget.setYDCourtInfoList)));
+                            },
+                            child: Text('코트 정보 직접 입력하기'),
+                          ),
+                        ],
+                      )
+                    ]),
+            ],
           ),
-        ));
+        ),
+      ),
+    ));
   }
 
   Future<List> courtList(String townData) async {

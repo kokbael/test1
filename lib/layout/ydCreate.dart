@@ -50,6 +50,7 @@ class _YDCreateState extends State<YDCreate> {
 
   @override
   Widget build(BuildContext context) {
+    Size _size = MediaQuery.of(context).size;
     return Padding(
       padding: const EdgeInsets.all(5),
       child: GestureDetector(
@@ -123,237 +124,247 @@ class _YDCreateState extends State<YDCreate> {
                           }
                         },
                       ),
-                      Row(
-                        children: [
-                          Flexible(
-                            flex: 7,
-                            child: InkWell(
-                              onTap: () {
-                                _unFocus();
-                                DatePicker.showDatePicker(
-                                  context,
-                                  locale: LocaleType.ko,
-                                  theme: DatePickerTheme(
-                                    doneStyle: TextStyle(
-                                      color: Colors.deepPurple.shade300,
+                      SizedBox(
+                        width: _size.width,
+                        child: Row(
+                          children: [
+                            Flexible(
+                              flex: 6,
+                              child: InkWell(
+                                onTap: () {
+                                  _unFocus();
+                                  DatePicker.showDatePicker(
+                                    context,
+                                    locale: LocaleType.ko,
+                                    theme: DatePickerTheme(
+                                      doneStyle: TextStyle(
+                                        color: Colors.deepPurple.shade300,
+                                      ),
+                                      backgroundColor: Colors.white,
                                     ),
-                                    backgroundColor: Colors.white,
-                                  ),
-                                  showTitleActions: true,
-                                  minTime: DateTime.now(),
-                                  maxTime: DateTime(
-                                      DateTime.now().year,
-                                      DateTime.now().month + 1,
-                                      DateTime.now().day),
-                                  onConfirm: (pickDate) {
-                                    setState(() {
-                                      _dateTime = DateTime(
-                                        pickDate.year,
-                                        pickDate.month,
-                                        pickDate.day,
-                                      );
-                                      _date =
-                                          Timestamp.fromMicrosecondsSinceEpoch(
-                                              pickDate.microsecondsSinceEpoch);
-                                    });
-                                  },
-                                );
-                              },
-                              child: Row(
-                                  // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                  children: [
-                                    _dateBox(
-                                        flex: 4,
-                                        dateType: ' 년 ',
-                                        dateFormat: 'yyyy',
-                                        fontSize: 14),
-                                    SizedBox(width: 10),
-                                    _dateBox(
-                                        flex: 3,
-                                        dateType: ' 월 ',
-                                        dateFormat: 'MM',
-                                        fontSize: 14),
-                                    SizedBox(width: 10),
-                                    _dateBox(
-                                        flex: 3,
-                                        dateType: ' 일 ',
-                                        dateFormat: 'dd',
-                                        fontSize: 14),
-                                  ]),
-                            ),
-                          ),
-                          Flexible(
-                            flex: 5,
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  flex: 1,
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    showTitleActions: true,
+                                    minTime: DateTime.now(),
+                                    maxTime: DateTime(
+                                        DateTime.now().year,
+                                        DateTime.now().month + 1,
+                                        DateTime.now().day),
+                                    onConfirm: (pickDate) {
+                                      setState(() {
+                                        _dateTime = DateTime(
+                                          pickDate.year,
+                                          pickDate.month,
+                                          pickDate.day,
+                                        );
+                                        _date = Timestamp
+                                            .fromMicrosecondsSinceEpoch(pickDate
+                                                .microsecondsSinceEpoch);
+                                      });
+                                    },
+                                  );
+                                },
+                                child: Row(
+                                    // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                     children: [
-                                      InkWell(
-                                        onTap: () {
-                                          _date == null
-                                              ? showDialog(
-                                                  context: context,
-                                                  builder: (context) =>
-                                                      MyDialog(
-                                                          dialogTitle:
-                                                              '날짜를 먼저 선택해주세요.',
-                                                          buttonText: const [
-                                                            '확인'
-                                                          ]))
-                                              : DatePicker.showTimePicker(
-                                                  context,
-                                                  currentTime: _dateTime,
-                                                  locale: LocaleType.ko,
-                                                  showSecondsColumn: false,
-                                                  showTitleActions: true,
-                                                  theme: DatePickerTheme(
-                                                    doneStyle: TextStyle(
-                                                      color: Colors
-                                                          .deepPurple.shade300,
+                                      _dateBox(
+                                          flex: 4,
+                                          dateType: ' 년 ',
+                                          dateFormat: 'yyyy',
+                                          fontSize: 14),
+                                      SizedBox(width: 10),
+                                      _dateBox(
+                                          flex: 3,
+                                          dateType: ' 월 ',
+                                          dateFormat: 'MM',
+                                          fontSize: 14),
+                                      SizedBox(width: 10),
+                                      _dateBox(
+                                          flex: 3,
+                                          dateType: ' 일 ',
+                                          dateFormat: 'dd',
+                                          fontSize: 14),
+                                    ]),
+                              ),
+                            ),
+                            Flexible(
+                              flex: 5,
+                              child: Row(
+                                children: [
+                                  Flexible(
+                                    flex: 1,
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        InkWell(
+                                          onTap: () {
+                                            _date == null
+                                                ? showDialog(
+                                                    context: context,
+                                                    builder: (context) =>
+                                                        MyDialog(
+                                                            dialogTitle:
+                                                                '날짜를 먼저 선택해주세요.',
+                                                            buttonText: const [
+                                                              '확인'
+                                                            ]))
+                                                : DatePicker.showTimePicker(
+                                                    context,
+                                                    currentTime: _dateTime,
+                                                    locale: LocaleType.ko,
+                                                    showSecondsColumn: false,
+                                                    showTitleActions: true,
+                                                    theme: DatePickerTheme(
+                                                      doneStyle: TextStyle(
+                                                        color: Colors.deepPurple
+                                                            .shade300,
+                                                      ),
+                                                    ),
+                                                    onConfirm: (pickTime) {
+                                                      // print(time);
+                                                      setState(() {
+                                                        _time = Timestamp
+                                                            .fromMicrosecondsSinceEpoch(
+                                                                pickTime
+                                                                    .microsecondsSinceEpoch);
+                                                        _dateTime = pickTime;
+                                                      });
+                                                    },
+                                                  );
+                                          },
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                                borderRadius: BorderRadius.all(
+                                                    Radius.circular(8)),
+                                                border: Border.all(
+                                                    color:
+                                                        Colors.grey.shade400)),
+                                            height: 30,
+                                            child: _time == null
+                                                ? Align(
+                                                    alignment: Alignment.center,
+                                                    child: Text(
+                                                      '  00:00  ',
+                                                      style: TextStyle(
+                                                        fontSize: 14,
+                                                      ),
+                                                    ),
+                                                  )
+                                                : Align(
+                                                    alignment: Alignment.center,
+                                                    child: Text(
+                                                      DateFormat('HH:mm    ')
+                                                          .format(
+                                                              _time!.toDate()),
+                                                      style: TextStyle(
+                                                        fontSize: 14,
+                                                      ),
+                                                      textAlign:
+                                                          TextAlign.center,
                                                     ),
                                                   ),
-                                                  onConfirm: (pickTime) {
-                                                    // print(time);
-                                                    setState(() {
-                                                      _time = Timestamp
-                                                          .fromMicrosecondsSinceEpoch(
-                                                              pickTime
-                                                                  .microsecondsSinceEpoch);
-                                                      _dateTime = pickTime;
-                                                    });
-                                                  },
-                                                );
-                                        },
-                                        child: Container(
-                                          decoration: BoxDecoration(
-                                              borderRadius: BorderRadius.all(
-                                                  Radius.circular(8)),
-                                              border: Border.all(
-                                                  color: Colors.grey.shade400)),
-                                          height: 30,
-                                          child: _time == null
-                                              ? Align(
-                                                  alignment: Alignment.center,
-                                                  child: Text(
-                                                    ' 00:00 ',
-                                                    style: TextStyle(
-                                                      fontSize: 14,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Flexible(
+                                    flex: 1,
+                                    child: InkWell(
+                                      onTap: () {
+                                        showModalBottomSheet(
+                                          context: context,
+                                          builder: (context) => SizedBox(
+                                            height: 250,
+                                            child: SingleChildScrollView(
+                                              // primary: true,
+                                              child: Column(
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.center,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                mainAxisSize: MainAxisSize.min,
+                                                children: <Widget>[
+                                                  Stack(children: [
+                                                    Container(
+                                                      width: double.infinity,
+                                                      height: 56.0,
+                                                      child: Center(
+                                                          child: Text(
+                                                        "시간 선택",
+                                                        style: TextStyle(
+                                                            fontSize: 14,
+                                                            fontWeight:
+                                                                FontWeight
+                                                                    .w700),
+                                                      ) // Your desired title
+                                                          ),
                                                     ),
-                                                  ),
+                                                    Positioned(
+                                                      left: 0.0,
+                                                      top: 0.0,
+                                                      child: IconButton(
+                                                          icon: Icon(
+                                                              Icons.arrow_back),
+                                                          onPressed: () {
+                                                            Navigator.of(
+                                                                    context)
+                                                                .pop();
+                                                          }),
+                                                    ),
+                                                  ]),
+                                                  for (int i = 1; i <= 12; i++)
+                                                    ListTile(
+                                                        title: Center(
+                                                            child:
+                                                                Text('$i 시간')),
+                                                        onTap: () {
+                                                          _setTime(i);
+                                                          Navigator.pop(
+                                                              context);
+                                                        }),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                        );
+                                      },
+                                      child: Container(
+                                        height: 30,
+                                        child: Align(
+                                          alignment: Alignment.center,
+                                          child: _howMuchTime == null
+                                              ? Row(
+                                                  children: const [
+                                                    Text('시간 선택',
+                                                        style: TextStyle(
+                                                            fontSize: 14)),
+                                                    Icon(Icons.arrow_drop_down),
+                                                  ],
                                                 )
-                                              : Align(
-                                                  alignment: Alignment.center,
-                                                  child: Text(
-                                                    DateFormat('HH:mm  ')
-                                                        .format(
-                                                            _time!.toDate()),
-                                                    style: TextStyle(
-                                                      fontSize: 14,
+                                              : Row(
+                                                  children: [
+                                                    _howMuchTime! < 10
+                                                        ? Text(_howMuchTime
+                                                                .toString() +
+                                                            '   시간')
+                                                        : Text(_howMuchTime
+                                                                .toString() +
+                                                            ' 시간'),
+                                                    SizedBox(
+                                                      width: 10,
                                                     ),
-                                                    textAlign: TextAlign.center,
-                                                  ),
+                                                    Icon(Icons.arrow_drop_down),
+                                                  ],
                                                 ),
                                         ),
                                       ),
-                                    ],
-                                  ),
-                                ),
-                                Flexible(
-                                  flex: 1,
-                                  child: InkWell(
-                                    onTap: () {
-                                      showModalBottomSheet(
-                                        context: context,
-                                        builder: (context) => SizedBox(
-                                          height: 250,
-                                          child: SingleChildScrollView(
-                                            // primary: true,
-                                            child: Column(
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.center,
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.center,
-                                              mainAxisSize: MainAxisSize.min,
-                                              children: <Widget>[
-                                                Stack(children: [
-                                                  Container(
-                                                    width: double.infinity,
-                                                    height: 56.0,
-                                                    child: Center(
-                                                        child: Text(
-                                                      "시간 선택",
-                                                      style: TextStyle(
-                                                          fontSize: 16,
-                                                          fontWeight:
-                                                              FontWeight.w700),
-                                                    ) // Your desired title
-                                                        ),
-                                                  ),
-                                                  Positioned(
-                                                    left: 0.0,
-                                                    top: 0.0,
-                                                    child: IconButton(
-                                                        icon: Icon(
-                                                            Icons.arrow_back),
-                                                        onPressed: () {
-                                                          Navigator.of(context)
-                                                              .pop();
-                                                        }),
-                                                  ),
-                                                ]),
-                                                for (int i = 1; i <= 12; i++)
-                                                  ListTile(
-                                                      title: Center(
-                                                          child: Text('$i 시간')),
-                                                      onTap: () {
-                                                        _setTime(i);
-                                                        Navigator.pop(context);
-                                                      }),
-                                              ],
-                                            ),
-                                          ),
-                                        ),
-                                      );
-                                    },
-                                    child: Container(
-                                      height: 30,
-                                      child: Align(
-                                        alignment: Alignment.center,
-                                        child: _howMuchTime == null
-                                            ? Row(
-                                                children: const [
-                                                  Text('시간 선택',
-                                                      style: TextStyle(
-                                                          fontSize: 14)),
-                                                  Icon(Icons.arrow_drop_down),
-                                                ],
-                                              )
-                                            : Row(
-                                                children: [
-                                                  _howMuchTime! < 10
-                                                      ? Text(_howMuchTime
-                                                              .toString() +
-                                                          '   시간')
-                                                      : Text(_howMuchTime
-                                                              .toString() +
-                                                          ' 시간'),
-                                                  SizedBox(
-                                                    width: 10,
-                                                  ),
-                                                  Icon(Icons.arrow_drop_down),
-                                                ],
-                                              ),
-                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                       SizedBox(
                         height: 10,

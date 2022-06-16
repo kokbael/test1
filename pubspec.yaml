@@ -36,6 +36,8 @@ dependencies:
   path_provider: ^2.0.9
   shared_preferences: ^2.0.13
   link_text: ^0.2.0
+  video_player: ^2.4.4
+  camera: ^0.9.8+1
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -54,11 +56,13 @@ dependencies:
   pull_to_refresh: 2.0.0
   url_launcher: ^6.1.0
   webview_flutter: ^3.0.2
+  carousel_slider: ^4.1.1
   android_intent:
   naver_map_plugin:
     git: https://github.com/LBSTECH/naver_map_plugin.git
   kakaomap_webview: #^0.6.0
     path: C:/kakaomap_webview
+
 
 dependency_overrides:
   pull_to_refresh:
