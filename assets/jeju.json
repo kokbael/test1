@@ -1,0 +1,56 @@
+[
+  {
+    "city": "제주시",
+    "courtName": "한림종합운동장테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.jejusi.go.kr/sports/view/div.do?mode=detail&sports_fac_id=10000025",
+    "address": "제주 제주시 한림읍 한림중앙로 71-9"
+  },
+  {
+    "city": "제주시",
+    "courtName": "제주시생활체육공원테니스장",
+    "courtEA": 8,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.jejusi.go.kr/sports/view/div.do?mode=detail&sports_fac_id=10000022",
+    "address": "제주 제주시 회천동 3-21"
+  },
+  {
+    "city": "서귀포시",
+    "courtName": "서귀포테니스장",
+    "courtEA": 17,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "제주 서귀포시 동홍로99번길 36"
+  },
+  {
+    "city": "서귀포시",
+    "courtName": "제주공천포전지훈련센터테니스장",
+    "courtEA": 8,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "제주 서귀포시 남원읍 신례리 329-1"
+  },
+  {
+    "city": "서귀포시",
+    "courtName": "표선생활체육관테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "제주 서귀포시 표선면 하천리 1844"
+  },
+  {
+    "city": "서귀포시",
+    "courtName": "성산국민체육센터테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "제주 서귀포시 성산읍 오조리 1369"
+  }
+]

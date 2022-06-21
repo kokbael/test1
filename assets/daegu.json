@@ -1,0 +1,218 @@
+[
+  {
+    "city": "달성군",
+    "courtName": "가창체육공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.dssiseol.or.kr/pages/sisul/page.html?mc=0671",
+    "address": "대구 달성군 가창면 가창로 604"
+  },
+  {
+    "city": "서구",
+    "courtName": "감삼테니스장",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "대구 서구 서대구로3길 43"
+  },
+  {
+    "city": "북구",
+    "courtName": "구암테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "대구 북구 구암로60길 87"
+  },
+  {
+    "city": "남구",
+    "courtName": "남구종합스포츠타운테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "대구 남구 앞산순환로 686"
+  },
+  {
+    "city": "달성군",
+    "courtName": "다사매곡테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.dssiseol.or.kr/pages/yeyak_sports/page.html?mc=1260",
+    "address": "대구 달성군 다사읍 매곡리 842"
+  },
+  {
+    "city": "달성군",
+    "courtName": "다사체육공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.dssiseol.or.kr/pages/yeyak_sports/page.html?mc=0782",
+    "address": "대구 달성군 다사읍 달천리 6-2"
+  },
+  {
+    "city": "중구",
+    "courtName": "달성공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "대구 중구 달성동 294-1"
+  },
+  {
+    "city": "달성군",
+    "courtName": "달성군민운동장테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.dssiseol.or.kr/pages/yeyak_sports/page.html?mc=0892%29%EC%9D%84",
+    "address": "대구 달성군 논공읍 논공로 697-10"
+  },
+  {
+    "city": "달성군",
+    "courtName": "달성사업소테니스장",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "대구 달성군 현풍읍 현풍서로 147"
+  },
+  {
+    "city": "달성군",
+    "courtName": "달성종합스포츠파크테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.dssiseol.or.kr/pages/yeyak_sports/page.html?mc=0897",
+    "address": "대구 달성군 현풍읍 성하리 226-6"
+  },
+  {
+    "city": "달서구",
+    "courtName": "두류테니스장",
+    "courtEA": 9,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://xn--9i1b12ao4ibtl9igs7p.kr/",
+    "address": "대구 달서구 야외음악당로 194"
+  },
+  {
+    "city": "서구",
+    "courtName": "상리공원테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "대구 서구 중리동 산198-10"
+  },
+  {
+    "city": "달서구",
+    "courtName": "성서국민체육센터테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "대구 달서구 선원로 133"
+  },
+  {
+    "city": "달서구",
+    "courtName": "성서사업소테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "대구 달서구 성서공단로 257"
+  },
+  {
+    "city": "북구",
+    "courtName": "시민운동장테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://yeyak.daegu.go.kr/yeyak/facility/facilityListView.do?memId=B0000023",
+    "address": "대구 북구 고성로 191"
+  },
+  {
+    "city": "북구",
+    "courtName": "신천사업소테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.dgeic.or.kr/dgeic_facilities2.html?cid=142",
+    "address": "대구 북구 조야로2길 209"
+  },
+  {
+    "city": "북구",
+    "courtName": "연암테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "대구 북구 산격동 527"
+  },
+  {
+    "city": "달서구",
+    "courtName": "월배공원테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "대구 달서구 상인동 1421-22"
+  },
+  {
+    "city": "달서구",
+    "courtName": "유니버시아드테니스장",
+    "courtEA": 10,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "대구 달서구 두류공원로 161"
+  },
+  {
+    "city": "동구",
+    "courtName": "율하체육공원테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "대구 동구 율하동 1626"
+  },
+  {
+    "city": "북구",
+    "courtName": "태전공원테니스장",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "대구 북구 태전동 938"
+  },
+  {
+    "city": "달성군",
+    "courtName": "현풍테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.dssiseol.or.kr/pages/sisul/page.html?mc=0702",
+    "address": "대구 달성군 현풍읍 성하리 725-15"
+  },
+  {
+    "city": "수성구",
+    "courtName": "화랑공원테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "대구 수성구 만촌동 1423"
+  },
+  {
+    "city": "달성군",
+    "courtName": "화원명곡체육공원테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "대구 달성군 화원읍 인흥1길 55"
+  }
+]

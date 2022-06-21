@@ -1,0 +1,407 @@
+[
+  {
+    "city": "고창군",
+    "courtName": "고창공설운동장테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 고창군 고창읍 운동장길 36"
+  },
+  {
+    "city": "군산시",
+    "courtName": "군산국민체육센터테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 군산시 대야면 석화로 63-15"
+  },
+  {
+    "city": "군산시",
+    "courtName": "군산월명종합경기장테니스장",
+    "courtEA": 10,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 군산시 번영로 281"
+  },
+  {
+    "city": "익산시",
+    "courtName": "금마다목적체육관테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 익산시 금마면 동고도리 791-7"
+  },
+  {
+    "city": "김제시",
+    "courtName": "김제시민운동장테니스장(볏골테니스장)",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 김제시 검산동 443-19"
+  },
+  {
+    "city": "전주시",
+    "courtName": "덕진체련공원테니스장",
+    "courtEA": 10,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 전주시 덕진구 소리로 6"
+  },
+  {
+    "city": "무주군",
+    "courtName": "무주읍테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 무주군 무주읍 읍내리 436"
+  },
+  {
+    "city": "무주군",
+    "courtName": "무풍체육공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 무주군 무풍면 현내리 617"
+  },
+  {
+    "city": "익산시",
+    "courtName": "문화체육센터테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "http://www.icsc.or.kr/lend/lend02.asp?room=tennis",
+    "address": "전북 익산시 부송동 145-4"
+  },
+  {
+    "city": "무주군",
+    "courtName": "반딧불체육관테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 무주군 무주읍 한풍루로 326-28"
+  },
+  {
+    "city": "익산시",
+    "courtName": "배산체육공원테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 익산시 모현동2가 186"
+  },
+  {
+    "city": "장수군",
+    "courtName": "번암체육공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 장수군 번암면 노단리 436-2"
+  },
+  {
+    "city": "무주군",
+    "courtName": "부남면체육공원테니스장",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 무주군 부남면 대유리 797-3"
+  },
+  {
+    "city": "부안군",
+    "courtName": "부안공설테니스장",
+    "courtEA": 8,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 부안군 행안면 체육공원길 31"
+  },
+  {
+    "city": "정읍시",
+    "courtName": "상동테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 정읍시 상동 274-133"
+  },
+  {
+    "city": "군산시",
+    "courtName": "생말공원테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 군산시 오식도동 508"
+  },
+  {
+    "city": "무주군",
+    "courtName": "설천면체육공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 무주군 설천면 소천리 883-1"
+  },
+  {
+    "city": "순창군",
+    "courtName": "순창공설운동장테니스장(실내)",
+    "courtEA": 9,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 순창군 순창읍 장류로 180"
+  },
+  {
+    "city": "순창군",
+    "courtName": "순창공설운동장테니스장(실외)",
+    "courtEA": 14,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 순창군 순창읍 교성리 247-1"
+  },
+  {
+    "city": "정읍시",
+    "courtName": "신태인테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 정읍시 신태인읍 구석리 439-10"
+  },
+  {
+    "city": "무주군",
+    "courtName": "안성체육공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 무주군 안성면 장기리 1682-2"
+  },
+  {
+    "city": "전주시",
+    "courtName": "완산생활체육공원테니스장(실내)",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 전주시 완산구 중인동 362"
+  },
+  {
+    "city": "전주시",
+    "courtName": "완산생활체육공원테니스장(실외)",
+    "courtEA": 12,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 전주시 완산구 중인동 362"
+  },
+  {
+    "city": "완주군",
+    "courtName": "완주산업단지제2테니스장(매동공원)",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 완주군 봉동읍 용암리 766-1"
+  },
+  {
+    "city": "완주군",
+    "courtName": "완주산업단지테니스장(다복공원)",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 완주군 봉동읍 용암리 840"
+  },
+  {
+    "city": "완주군",
+    "courtName": "완주테니스장",
+    "courtEA": 16,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 완주군 용진읍 운곡리 908"
+  },
+  {
+    "city": "남원시",
+    "courtName": "운봉서림공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 남원시 운봉읍 서천리 42"
+  },
+  {
+    "city": "군산시",
+    "courtName": "월명공원테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 군산시 금동 9-1"
+  },
+  {
+    "city": "고창군",
+    "courtName": "월산테니스코트(실내)",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 고창군 고창읍 월산리 502"
+  },
+  {
+    "city": "고창군",
+    "courtName": "월산테니스코트(실외)",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 고창군 고창읍 월산리 502"
+  },
+  {
+    "city": "남원시",
+    "courtName": "육면테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 남원시 향교동 675"
+  },
+  {
+    "city": "임실군",
+    "courtName": "임실군공설운동장테니스장",
+    "courtEA": 8,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 임실군 임실읍 이도리 429-1"
+  },
+  {
+    "city": "장수군",
+    "courtName": "장계체육공원테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 장수군 장계면 체육공원길 40"
+  },
+  {
+    "city": "장수군",
+    "courtName": "장수군공설운동장테니스장",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 장수군 장수읍 장천로 250"
+  },
+  {
+    "city": "무주군",
+    "courtName": "적상체육공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 무주군 적상면 사천리 294-4"
+  },
+  {
+    "city": "정읍시",
+    "courtName": "정읍체육공원테니스장",
+    "courtEA": 8,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 정읍시 상평동 916-6"
+  },
+  {
+    "city": "익산시",
+    "courtName": "중앙체육공원테니스장",
+    "courtEA": 12,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 익산시 어양동 52"
+  },
+  {
+    "city": "김제시",
+    "courtName": "지평선테니스장(김제레포츠공원)",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 김제시 검산동 산55-4"
+  },
+  {
+    "city": "진안군",
+    "courtName": "진안공설운동장테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 진안군 진안읍 군상리 340-4"
+  },
+  {
+    "city": "장수군",
+    "courtName": "천천면전천후테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 장수군 천천면 고금길 3"
+  },
+  {
+    "city": "남원시",
+    "courtName": "춘향골다목적구장테니스장(실내)",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 남원시 충정로 341"
+  },
+  {
+    "city": "남원시",
+    "courtName": "춘향골다목적구장테니스장(실외)",
+    "courtEA": 8,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 남원시 충정로 341"
+  },
+  {
+    "city": "익산시",
+    "courtName": "팔봉3호근린공원테니스장(한솔공원)",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 익산시 팔봉동 883"
+  },
+  {
+    "city": "익산시",
+    "courtName": "함열올림픽스포츠센터테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 익산시 함열읍 와리 173-7"
+  },
+  {
+    "city": "익산시",
+    "courtName": "황등생활체육공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전북 익산시 황등면 황등리 650"
+  }
+]

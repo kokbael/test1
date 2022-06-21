@@ -1,0 +1,245 @@
+[
+  {
+    "city": "천안시",
+    "courtName": "천안종합운동장테니스장(실외)",
+    "courtEA": 12,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://sports.cfmc.or.kr/?fbclid=IwAR2V1dm0qUoPSdu7dihVS-t4PhY-dq83nTpveU0WGtgY7e93_wB4ItLPTW8",
+    "address": "충남 천안시 서북구 백석동 690-18"
+  },
+  {
+    "city": "천안시",
+    "courtName": "천안종합운동장테니스장(실내)",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://sports.cfmc.or.kr/?fbclid=IwAR2V1dm0qUoPSdu7dihVS-t4PhY-dq83nTpveU0WGtgY7e93_wB4ItLPTW8",
+    "address": "충남 천안시 서북구 번영로 208"
+  },
+  {
+    "city": "천안시",
+    "courtName": "병천체육시설테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충남 천안시 동남구 병천면 유관순길 51"
+  },
+  {
+    "city": "공주시",
+    "courtName": "공주시립테니스장",
+    "courtEA": 9,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충남 공주시 내산목천길 52-56"
+  },
+  {
+    "city": "보령시",
+    "courtName": "죽정동테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충남 보령시 죽정동 721"
+  },
+  {
+    "city": "아산시",
+    "courtName": "강변테니스장",
+    "courtEA": 10,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.asan.go.kr/sports/athletic/?m_mode=view&pds_no=2020092210351064563",
+    "address": "충남 아산시 염치읍 백암리 8-5"
+  },
+  {
+    "city": "아산시",
+    "courtName": "이순신테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충남 아산시 풍기동 323-1"
+  },
+  {
+    "city": "서산시",
+    "courtName": "서산종합운동장테니스장",
+    "courtEA": 8,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충남 서산시 안견로 661"
+  },
+  {
+    "city": "논산시",
+    "courtName": "논산시환경사업소테니스장",
+    "courtEA": 8,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충남 논산시 등화동 534-1"
+  },
+  {
+    "city": "논산시",
+    "courtName": "논산공설운동장테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충남 논산시 체육로 110"
+  },
+  {
+    "city": "논산시",
+    "courtName": "연무체육공원테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충남 논산시 연무읍 안심리 75"
+  },
+  {
+    "city": "논산시",
+    "courtName": "강경테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충남 논산시 강경읍 황산리 81-12"
+  },
+  {
+    "city": "계룡시",
+    "courtName": "계룡시종합운동장테니스장",
+    "courtEA": 8,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충남 계룡시 엄사면 유동리 산39-1"
+  },
+  {
+    "city": "당진시",
+    "courtName": "당진종합운동장테니스장",
+    "courtEA": 9,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충남 당진시 고대면 고대로 33"
+  },
+  {
+    "city": "당진시",
+    "courtName": "순성체육공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충남 당진시 순성면 봉소리 620-28"
+  },
+  {
+    "city": "당진시",
+    "courtName": "합덕산업단지테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충남 당진시 합덕읍 소소리 680"
+  },
+  {
+    "city": "금산군",
+    "courtName": "금산종합운동장테니스장(실외)",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충남 금산군 금산읍 금산로 1229-5"
+  },
+  {
+    "city": "금산군",
+    "courtName": "금산종합운동장테니스장(실내)",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충남 금산군 금산읍 금산로 1229-5"
+  },
+  {
+    "city": "부여군",
+    "courtName": "부여종합운동장테니스장",
+    "courtEA": 12,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충남 부여군 규암면 호수로 118-30"
+  },
+  {
+    "city": "서천군",
+    "courtName": "서천종합운동장테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충남 서천군 마서면 남전리 762"
+  },
+  {
+    "city": "서천군",
+    "courtName": "서천레포츠공원테니스장",
+    "courtEA": 7,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충남 서천군 서천읍 사곡리 378"
+  },
+  {
+    "city": "서천군",
+    "courtName": "장항테니스장",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충남 서천군 장항읍 성주길16번길 10-6"
+  },
+  {
+    "city": "청양군",
+    "courtName": "청양군테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충남 청양군 청양읍 누레기길 5-2"
+  },
+  {
+    "city": "홍성군",
+    "courtName": "홍주종합경기장테니스장",
+    "courtEA": 8,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충남 홍성군 홍성읍 홍덕서로 78"
+  },
+  {
+    "city": "홍성군",
+    "courtName": "광천생활체육공원테니스장",
+    "courtEA": 9,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충남 홍성군 광천읍 홍남로 764-42"
+  },
+  {
+    "city": "예산군",
+    "courtName": "예산종합운동장테니스장",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충남 예산군 예산읍 대회리 89-6"
+  },
+  {
+    "city": "태안군",
+    "courtName": "태안생활체육공원테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충남 태안군 태안읍 기업도시로 443"
+  }
+]

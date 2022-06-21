@@ -1,0 +1,83 @@
+[
+  {
+    "city": "세종시",
+    "courtName": "조치원체육공원테니스장",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://onestop.sejong.go.kr/Usr/resve/instList.do",
+    "address": "세종 조치원읍 허만석로 98"
+  },
+  {
+    "city": "세종시",
+    "courtName": "금남생활체육공원테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://onestop.sejong.go.kr/Usr/resve/instList.do",
+    "address": "세종 금남면 용포중앙1길 54"
+  },
+  {
+    "city": "세종시",
+    "courtName": "전의체육공원테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://onestop.sejong.go.kr/Usr/resve/instList.do",
+    "address": "세종 전의면 읍내리 5-1"
+  },
+  {
+    "city": "세종시",
+    "courtName": "소정테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "세종 소정면 소정리 476-4"
+  },
+  {
+    "city": "세종시",
+    "courtName": "수질복원센터A테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://onestop.sejong.go.kr/Usr/resve/instList.do",
+    "address": "세종 가람동 960"
+  },
+  {
+    "city": "세종시",
+    "courtName": "수질복원센터B테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://onestop.sejong.go.kr/Usr/resve/instList.do",
+    "address": "세종 대평동 646"
+  },
+  {
+    "city": "세종시",
+    "courtName": "다정동저류지테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://onestop.sejong.go.kr/Usr/resve/instList.do",
+    "address": "세종 다정동 640"
+  },
+  {
+    "city": "세종시",
+    "courtName": "전의하수처리시설테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://onestop.sejong.go.kr/Usr/resve/instList.do",
+    "address": "세종 전의면 동교리 3-2"
+  },
+  {
+    "city": "세종시",
+    "courtName": "중앙공원테니스장",
+    "courtEA": 10,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://onestop.sejong.go.kr/Usr/resve/instList.do",
+    "address": "세종 연기면 세종리 114-374"
+  }
+]

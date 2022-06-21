@@ -1,0 +1,128 @@
+[
+  {
+    "city": "동구",
+    "courtName": "용산생활체육공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "http://sharegj.kr/app/resource_share/view?md_id=resource_share&category_code=85&code=3955#",
+    "address": "광주 동구 화산로 318-26"
+  },
+  {
+    "city": "서구",
+    "courtName": "염주전천후테니스장",
+    "courtEA": 4,
+    "contact": "062-372-8145",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "광주 서구 금화로 278"
+  },
+  {
+    "city": "서구",
+    "courtName": "상무시민공원테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "광주 서구 치평동 1162"
+  },
+  {
+    "city": "서구",
+    "courtName": "신암근린공원테니스장(풍암테니스장)",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "http://sharegj.kr/app/resource_share/view?md_id=resource_share&category_code=85&keyword=%ED%85%8C%EB%8B%88%EC%8A%A4&code=1517&page=2#",
+    "address": "광주 서구 풍암2로 26"
+  },
+  {
+    "city": "남구",
+    "courtName": "봉선테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "http://www.sharegj.kr/app/resource_share/view?code=3882#",
+    "address": "광주 남구 대남대로117번길 40"
+  },
+  {
+    "city": "남구",
+    "courtName": "진월국제테니스장",
+    "courtEA": 16,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.gwangjusportsinfo.org/space/space_view/5",
+    "address": "광주 남구 화산로 30"
+  },
+  {
+    "city": "북구",
+    "courtName": "첨단체육공원테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://blog.naver.com/lmh1288/222604431220",
+    "address": "광주 북구 임방울대로 877"
+  },
+  {
+    "city": "북구",
+    "courtName": "우산체육공원테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "광주 북구 우산동 146"
+  },
+  {
+    "city": "북구",
+    "courtName": "중외공원테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "광주 북구 운암동 164-4"
+  },
+  {
+    "city": "광산구",
+    "courtName": "첨단테니스장",
+    "courtEA": 7,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "광주 광산구 첨단과기로 45-11"
+  },
+  {
+    "city": "광산구",
+    "courtName": "월곡공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "광주 광산구 월곡동 587"
+  },
+  {
+    "city": "광산구",
+    "courtName": "안청공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "광주 광산구 안청동 736-1"
+  },
+  {
+    "city": "광산구",
+    "courtName": "하남공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "광주 광산구 하남동 499-3"
+  },
+  {
+    "city": "광산구",
+    "courtName": "소촌구립테니스장",
+    "courtEA": 7,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "광주 광산구 소촌동 93-2"
+  }
+]

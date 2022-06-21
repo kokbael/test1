@@ -1,0 +1,146 @@
+[
+  {
+    "city": "중구",
+    "courtName": "성안생활체육공원테니스장",
+    "courtEA": 8,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "울산 중구 함월1길 145"
+  },
+  {
+    "city": "중구",
+    "courtName": "유곡테니스장",
+    "courtEA": 11,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.ujcmc.or.kr/PageLink.do?link=gym/gym3",
+    "address": "울산 중구 종가로 65"
+  },
+  {
+    "city": "중구",
+    "courtName": "중구테니스장(한국석유공사인근)",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "울산 중구 우정동 526"
+  },
+  {
+    "city": "남구",
+    "courtName": "문수테니스장",
+    "courtEA": 22,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://ims.uic.or.kr/fmcs/21?facilities_type=C&base_date=20220607&rent_type=1001&center=UIMC_MS03&part=06&place=3",
+    "address": "울산 울주군 청량읍 문죽리 산331-1"
+  },
+  {
+    "city": "남구",
+    "courtName": "온산하수처리장테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "울산 울주군 온산읍 당월로 118"
+  },
+  {
+    "city": "남구",
+    "courtName": "야음테니스장",
+    "courtEA": 10,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.uncmc.or.kr/portal/index.ulsan?menuCd=DOM_000000101002004000",
+    "address": "울산 남구 화합로 31번길 66"
+  },
+  {
+    "city": "남구",
+    "courtName": "두왕테니스장",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.uncmc.or.kr/portal/index.ulsan?menuCd=DOM_000000101002005000",
+    "address": "울산 남구 두왕동 430-7"
+  },
+  {
+    "city": "남구",
+    "courtName": "남산레포츠공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "울산 남구 은월로 74-21"
+  },
+  {
+    "city": "북구",
+    "courtName": "무룡테니스장",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "울산 북구 신현동 산210-3"
+  },
+  {
+    "city": "북구",
+    "courtName": "상안테니스장",
+    "courtEA": 8,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "울산 북구 상안동 1271"
+  },
+  {
+    "city": "울주군",
+    "courtName": "범서테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "울산 울주군 범서읍 당앞로 81"
+  },
+  {
+    "city": "울주군",
+    "courtName": "서생체육공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "울산 울주군 서생면 신암리 689"
+  },
+  {
+    "city": "울주군",
+    "courtName": "온산운동장테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "울산 울주군 온산읍 덕신로 180"
+  },
+  {
+    "city": "울주군",
+    "courtName": "청량동천테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "울산 울주군 청량읍 동천리"
+  },
+  {
+    "city": "울주군",
+    "courtName": "범서굴화테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "울산 울주군 범서읍 굴화리 19-25"
+  },
+  {
+    "city": "울주군",
+    "courtName": "언양어음테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "울산광역시 울주군 언양읍 어음리 500-15"
+  }
+]

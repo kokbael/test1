@@ -1,0 +1,506 @@
+[
+  {
+    "city": "포항시",
+    "courtName": "포항종합운동장테니스장",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.phsisul.org/home/5",
+    "address": "경북 포항시 남구 희망대로 810"
+  },
+  {
+    "city": "포항시",
+    "courtName": "문덕근린공원테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 포항시 남구 오천읍 문덕리 383-1"
+  },
+  {
+    "city": "포항시",
+    "courtName": "뱃머리테니스장",
+    "courtEA": 14,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 포항시 남구 뱃머리길 50"
+  },
+  {
+    "city": "포항시",
+    "courtName": "동해테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 포항시 남구 동해면 일월로71번길 15"
+  },
+  {
+    "city": "포항시",
+    "courtName": "청하테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 포항시 북구 청하면 용두리 498"
+  },
+  {
+    "city": "포항시",
+    "courtName": "장량테니스장(포항실내테니스장)",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 포항시 북구 장량로17번길 35-10"
+  },
+  {
+    "city": "포항시",
+    "courtName": "흥해옥성테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 포항시 북구 흥해읍 옥성리 376"
+  },
+  {
+    "city": "경주시",
+    "courtName": "강변테니스장",
+    "courtEA": 11,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://wel.gyeongju.go.kr/sports_facilities/facility_list.jsp?mem_id=B0000031",
+    "address": "경북 경주시 동천동 733-1"
+  },
+  {
+    "city": "경주시",
+    "courtName": "북천생활체육공원테니스장(시민테니스장)",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://wel.gyeongju.go.kr/sports_facilities/facility_list.jsp?mem_id=B0000031",
+    "address": "경북 경주시 동천동 723"
+  },
+  {
+    "city": "경주시",
+    "courtName": "건천생활체육공원테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://wel.gyeongju.go.kr/sports_facilities/facility_view.jsp?mem_id=B0000033&item_id=T0000280",
+    "address": "경북 경주시 건천읍 천포방내길 34"
+  },
+  {
+    "city": "김천시",
+    "courtName": "김천테니스장(실외)",
+    "courtEA": 20,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.gc.go.kr/sports/contents.do?mId=0204000000",
+    "address": "경북 김천시 삼락동 600"
+  },
+  {
+    "city": "김천시",
+    "courtName": "김천국제실내테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.gc.go.kr/sports/contents.do?mId=0204000000",
+    "address": "경북 김천시 삼락동 600"
+  },
+  {
+    "city": "안동시",
+    "courtName": "안동시민테니스장(실외)",
+    "courtEA": 10,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.andong.go.kr/portal/gym/apply/calendar.do?year=2022&month=06&date=14&fIdx=7&mIdx=10&applyDate=&applyTime=&mId=0612050200&searchGym=8&searchFacility=10",
+    "address": "경북 안동시 정하동 437-2"
+  },
+  {
+    "city": "안동시",
+    "courtName": "안동시민테니스장(실내)",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.andong.go.kr/portal/gym/apply/calendar.do?year=2022&month=06&date=14&fIdx=8&mIdx=13&applyDate=&applyTime=&mId=0612050200&searchGym=7&searchFacility=13",
+    "address": "경북 안동시 정하동 437-2"
+  },
+  {
+    "city": "구미시",
+    "courtName": "금오테니스장(실외)",
+    "courtEA": 10,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.ginco.or.kr/tennis/index.do",
+    "address": "경북 구미시 산책길 105"
+  },
+  {
+    "city": "구미시",
+    "courtName": "금오테니스장(실내)",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.ginco.or.kr/tennis/index.do",
+    "address": "경북 구미시 산책길 105"
+  },
+  {
+    "city": "구미시",
+    "courtName": "구포동생활체육공원테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.ginco.or.kr/gupo/page.do?mid=379",
+    "address": "경북 구미시 구포동 1185"
+  },
+  {
+    "city": "영주시",
+    "courtName": "영주시민운동장테니스장",
+    "courtEA": 10,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 영주시 가흥로 109"
+  },
+  {
+    "city": "영주시",
+    "courtName": "광복공원테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 영주시 풍기읍 산법리 산85-7"
+  },
+  {
+    "city": "영천시",
+    "courtName": "영천시민테니스장",
+    "courtEA": 8,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 영천시 교촌동 319-2"
+  },
+  {
+    "city": "상주시",
+    "courtName": "상주시민테니스장",
+    "courtEA": 9,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 상주시 계산동 468-4"
+  },
+  {
+    "city": "상주시",
+    "courtName": "상주시생활체육공원테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 상주시 복룡동 130"
+  },
+  {
+    "city": "문경시",
+    "courtName": "문경국제소프트테니스장",
+    "courtEA": 13,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 문경시 점고길 20"
+  },
+  {
+    "city": "문경시",
+    "courtName": "모전공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 문경시 모전동 635"
+  },
+  {
+    "city": "문경시",
+    "courtName": "영강체육공원테니스장",
+    "courtEA": 10,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 문경시 흥덕동 28-8"
+  },
+  {
+    "city": "경산시",
+    "courtName": "경산생활체육공원테니스장",
+    "courtEA": 7,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 경산시 상방동 45"
+  },
+  {
+    "city": "군위군",
+    "courtName": "군위종합테니스장(실내)",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 군위군 군위읍 군청로 158"
+  },
+  {
+    "city": "군위군",
+    "courtName": "군위종합테니스장(실외)",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 군위군 군위읍 군청로 158"
+  },
+  {
+    "city": "의성군",
+    "courtName": "의성군민테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.usc.go.kr/facility/page/2440/1654.tc",
+    "address": "경북 의성군 의성읍 중리리 516"
+  },
+  {
+    "city": "의성군",
+    "courtName": "봉양생활체육공원테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 의성군 봉양면 도리원4길 34"
+  },
+  {
+    "city": "의성군",
+    "courtName": "의성생활체육공원테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.usc.go.kr/facility/page/2437/1651.tc",
+    "address": "경북 의성군 단북면 노연리 391-3"
+  },
+  {
+    "city": "청송군",
+    "courtName": "청송군민운동장테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 청송군 청송읍 월막리 162"
+  },
+  {
+    "city": "청송군",
+    "courtName": "청송군민회관테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 청송군 청송읍 중앙로 299"
+  },
+  {
+    "city": "청송군",
+    "courtName": "청송생활체육공원테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.cs.go.kr/tour/00004558/00004587/00004628.web?amode=view&idx=235&",
+    "address": "경북 청송군 진보면 진안리 7"
+  },
+  {
+    "city": "영양군",
+    "courtName": "영양군민테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 영양군 영양읍 서부리 139"
+  },
+  {
+    "city": "영덕군",
+    "courtName": "영덕군민운동장테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 영덕군 영덕읍 경동로 8338"
+  },
+  {
+    "city": "청도군",
+    "courtName": "청도국민체육센터테니스장(실외)",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.cheongdo.go.kr/open.content/cs/health/life.gym/",
+    "address": "경북 청도군 화양읍 동천리 457"
+  },
+  {
+    "city": "청도군",
+    "courtName": "청도국민체육센터테니스장(실내)",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.cheongdo.go.kr/open.content/cs/health/tennis/",
+    "address": "경북 청도군 화양읍 동천리 457"
+  },
+  {
+    "city": "고령군",
+    "courtName": "고령테니스장",
+    "courtEA": 7,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 고령군 대가야읍 장기리 331-4"
+  },
+  {
+    "city": "성주군",
+    "courtName": "성주생활체육공원테니스장",
+    "courtEA": 9,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 성주군 성주읍 상성로 1399"
+  },
+  {
+    "city": "칠곡군",
+    "courtName": "칠곡종합운동장테니스장",
+    "courtEA": 8,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 칠곡군 왜관읍 호국로 203"
+  },
+  {
+    "city": "칠곡군",
+    "courtName": "석적체육공원테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 칠곡군 석적읍 남율리 790"
+  },
+  {
+    "city": "칠곡군",
+    "courtName": "가산면민운동장테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 칠곡군 가산면 송학리 271-2"
+  },
+  {
+    "city": "예천군",
+    "courtName": "예천공설테니스장(실외)",
+    "courtEA": 10,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.ycg.kr/open.content/culture/athletic/tennis/",
+    "address": "경북 예천군 예천읍 충효로 357"
+  },
+  {
+    "city": "예천군",
+    "courtName": "예천공설테니스장(실내)",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 예천군 예천읍 충효로 357"
+  },
+  {
+    "city": "봉화군",
+    "courtName": "춘양면생활체육회관테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 봉화군 춘양면 의양리 168-3"
+  },
+  {
+    "city": "봉화군",
+    "courtName": "소천테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "http://bonghwasports.co.kr/bbs/page.php?hid=sisul",
+    "address": "경북 봉화군 소천면 현동리 424-3"
+  },
+  {
+    "city": "봉화군",
+    "courtName": "석포테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "http://bonghwasports.co.kr/bbs/page.php?hid=sisul",
+    "address": "경북 봉화군 석포면 석포리 460"
+  },
+  {
+    "city": "봉화군",
+    "courtName": "상운테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 봉화군 상운면 가곡리 1193-14"
+  },
+  {
+    "city": "봉화군",
+    "courtName": "봉화체육공원테니스장",
+    "courtEA": 8,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 봉화군 봉화읍 내성리 412-3"
+  },
+  {
+    "city": "울진군",
+    "courtName": "울진종합운동장테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 울진군 근남면 수곡리 71"
+  },
+  {
+    "city": "울진군",
+    "courtName": "울진실내테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 울진군 근남면 수곡리 71"
+  },
+  {
+    "city": "울진군",
+    "courtName": "후포생활체육공원테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 울진군 후포면 후포리 187"
+  },
+  {
+    "city": "울진군",
+    "courtName": "죽변운동장테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 울진군 죽변면 봉평리 산9-6"
+  },
+  {
+    "city": "울진군",
+    "courtName": "평해생활체육공원테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 울진군 평해읍 평해리 398"
+  },
+  {
+    "city": "울진군",
+    "courtName": "연호체육공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "경북 울진군 울진읍 연지리 102-3"
+  }
+]

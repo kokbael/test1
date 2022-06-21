@@ -1,0 +1,344 @@
+[
+  {
+    "city": "목포시",
+    "courtName": "목포시립테니스장",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 목포시 용당로 101"
+  },
+  {
+    "city": "목포시",
+    "courtName": "부주산테니스장",
+    "courtEA": 12,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 목포시 옥암동 286"
+  },
+  {
+    "city": "여수시",
+    "courtName": "진남종합테니스장(실외)",
+    "courtEA": 10,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 여수시 진남체육관길 74"
+  },
+  {
+    "city": "여수시",
+    "courtName": "진남종합테니스장(실내)",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 여수시 진남체육관길 74"
+  },
+  {
+    "city": "여수시",
+    "courtName": "여천시립테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 여수시 학동 316"
+  },
+  {
+    "city": "여수시",
+    "courtName": "여문테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 여수시 문수동 169"
+  },
+  {
+    "city": "여수시",
+    "courtName": "웅천테니스장(이순신공원)",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 여수시 웅천동 1865-1"
+  },
+  {
+    "city": "순천시",
+    "courtName": "팔마테니스장(실외)",
+    "courtEA": 12,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 순천시 팔마로 333"
+  },
+  {
+    "city": "순천시",
+    "courtName": "팔마테니스장(실내)",
+    "courtEA": 9,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 순천시 팔마로 333"
+  },
+  {
+    "city": "나주시",
+    "courtName": "나주시립테니스장(남산공원)",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 나주시 죽림동 70-2"
+  },
+  {
+    "city": "광양시",
+    "courtName": "광양시립테니스장",
+    "courtEA": 8,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 광양시 봉강면 석사리 944-22"
+  },
+  {
+    "city": "담양군",
+    "courtName": "전남도립대학교테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 담양군 담양읍 향교리 397-8"
+  },
+  {
+    "city": "곡성군",
+    "courtName": "곡성군테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 곡성군 곡성읍 읍내리 776-2"
+  },
+  {
+    "city": "구례군",
+    "courtName": "구례테니스장",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 구례군 구례읍 택지길 56"
+  },
+  {
+    "city": "구례군",
+    "courtName": "성지테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 구례군 마산면 사도리 879"
+  },
+  {
+    "city": "고흥군",
+    "courtName": "고흥군민회관테니스장",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 고흥군 고흥읍 남계리 246-4"
+  },
+  {
+    "city": "고흥군",
+    "courtName": "녹동테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 고흥군 도양읍 우주항공로 229"
+  },
+  {
+    "city": "고흥군",
+    "courtName": "고흥생활체육공원테니스장",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 고흥군 고흥읍 고흥로 1892-67"
+  },
+  {
+    "city": "보성군",
+    "courtName": "보성테니스장",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 보성군 보성읍 용문리 175"
+  },
+  {
+    "city": "화순군",
+    "courtName": "화순공설운동장테니스장",
+    "courtEA": 10,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 화순군 화순읍 학포로 2698"
+  },
+  {
+    "city": "장흥군",
+    "courtName": "장흥문화예술회관테니스장",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 장흥군 장흥읍 남외리 2-9"
+  },
+  {
+    "city": "강진군",
+    "courtName": "강진종합운동장테니스장",
+    "courtEA": 8,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 강진군 군동면 호계리 730-3"
+  },
+  {
+    "city": "해남군",
+    "courtName": "우슬테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 해남군 해남읍 해남로 72"
+  },
+  {
+    "city": "영암군",
+    "courtName": "삼호테니스장(대불종합체육공원)",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 영암군 삼호읍 대불주거9로 27"
+  },
+  {
+    "city": "영암군",
+    "courtName": "대불산단테니스장(마골자연공원)",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 영암군 삼호읍 대불산단6로 269"
+  },
+  {
+    "city": "영암군",
+    "courtName": "영암종합스포츠타운테니스장",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.yeongam.go.kr/home/ok/rent/yeongam_multi",
+    "address": "전남 영암군 영암읍 낭주로 202-3"
+  },
+  {
+    "city": "영암군",
+    "courtName": "영암현대테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 영암군 삼호읍 대불로 93"
+  },
+  {
+    "city": "무안군",
+    "courtName": "청계테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 무안군 청계면 도림리 788"
+  },
+  {
+    "city": "무안군",
+    "courtName": "무안스포츠파크테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 무안군 현경면 공항로 345"
+  },
+  {
+    "city": "함평군",
+    "courtName": "구룡테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.hampyeong.go.kr/contentsView.do?pageId=www129",
+    "address": "전남 함평군 함평읍 내대화길 77"
+  },
+  {
+    "city": "영광군",
+    "courtName": "영광스포티움테니스장(실내)",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.yeonggwang.go.kr/sportium?site=headquarter_new&mn=9227",
+    "address": "전남 영광군 영광읍 월현로 170"
+  },
+  {
+    "city": "영광군",
+    "courtName": "영광스포티움테니스장(실외)",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.yeonggwang.go.kr/sportium?site=headquarter_new&mn=9227",
+    "address": "전남 영광군 영광읍 월현로 170"
+  },
+  {
+    "city": "장성군",
+    "courtName": "워라밸돔경기장",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.jangseong.go.kr/home/culture/dome/dome_facility",
+    "address": "전남 장성군 장성읍 문화로 110"
+  },
+  {
+    "city": "장성군",
+    "courtName": "삼계테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.jangseong.go.kr/home/culture/library/library_03",
+    "address": "전남 장성군 삼계면 주산리 744-2"
+  },
+  {
+    "city": "완도군",
+    "courtName": "완도테니스장",
+    "courtEA": 12,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 완도군 완도읍 가용리 63"
+  },
+  {
+    "city": "진도군",
+    "courtName": "가마골테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 진도군 진도읍 동문길 69"
+  },
+  {
+    "city": "진도군",
+    "courtName": "진도테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 진도군 진도읍 동외리 155"
+  },
+  {
+    "city": "신안군",
+    "courtName": "신안테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "전남 신안군 압해읍 복룡로 120"
+  }
+]

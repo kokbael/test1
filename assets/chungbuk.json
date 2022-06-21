@@ -1,0 +1,254 @@
+[
+  {
+    "city": "청주시",
+    "courtName": "청주국제테니스장",
+    "courtEA": 18,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://crs.cjsisul.or.kr/pReserve/res51001_list.do?menu_id=C02",
+    "address": "충북 청주시 상당구 호미로 242"
+  },
+  {
+    "city": "청주시",
+    "courtName": "청원공설테니스장(오창중앙공원)",
+    "courtEA": 9,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충북 청주시 청원구 오창읍 오창대로 197"
+  },
+  {
+    "city": "청주시",
+    "courtName": "강내생활체육공원테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충북 청주시 흥덕구 강내면 석화사인길 13-51"
+  },
+  {
+    "city": "충주시",
+    "courtName": "탄금테니스장",
+    "courtEA": 23,
+    "contact": "",
+    "chargeInfo": "실내코트 1면2시간 평일 8,000원\n실내코트 1면2시간 공휴일 12,000원\n실외코트 1면2시간 주간 평일 4,000원\n실외코트 1면2시간 조기 공휴일 6,000원\n실외코트 1면2시간 야간 평일 6,000원\n실외코트 1면2시간 야간 공휴일 9,000원",
+    "reservation": "",
+    "address": "충북 충주시 낙수당2길 8"
+  },
+  {
+    "city": "충주시",
+    "courtName": "환경체육센터(충주시클린에너지파크테니스장)",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충북 충주시 대소원면 성종두담길 21"
+  },
+  {
+    "city": "충주시",
+    "courtName": "서충주생활체육공원테니스장",
+    "courtEA": 1,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충북 충주시 주덕읍 기업도시3로 150"
+  },
+  {
+    "city": "제천시",
+    "courtName": "제천테니스장(제천축구센터)",
+    "courtEA": 12,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://jcfmc.jecheon.go.kr/theme/jcfmc/html/center/13.php",
+    "address": "충북 제천시 신동 565"
+  },
+  {
+    "city": "제천시",
+    "courtName": "고암체육공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충북 제천시 고암동 1135"
+  },
+  {
+    "city": "제천시",
+    "courtName": "신백체육공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충북 제천시 관전로 54"
+  },
+  {
+    "city": "제천시",
+    "courtName": "하소체육공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충북 제천시 하소동 271"
+  },
+  {
+    "city": "보은군",
+    "courtName": "보은군공설운동장테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충북 보은군 보은읍 이평리 산7-4"
+  },
+  {
+    "city": "옥천군",
+    "courtName": "옥천공설테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충북 옥천군 옥천읍 관성로1길 16"
+  },
+  {
+    "city": "옥천군",
+    "courtName": "옥천읍테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충북 옥천군 옥천읍 동부로 15"
+  },
+  {
+    "city": "옥천군",
+    "courtName": "옥천중앙공원테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충북 옥천군 옥천읍 서대공원길 33"
+  },
+  {
+    "city": "영동군",
+    "courtName": "영동실내테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.yd21.go.kr/kr/html/sub05/05100203.html",
+    "address": "충북 영동군 영동읍 영동황간로 123"
+  },
+  {
+    "city": "영동군",
+    "courtName": "영동테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.yd21.go.kr/kr/html/sub05/05100209.html",
+    "address": "충북 영동군 영동읍 영동황간로 123"
+  },
+  {
+    "city": "증평군",
+    "courtName": "증평테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충북 증평군 증평읍 송산리 210"
+  },
+  {
+    "city": "증평군",
+    "courtName": "반탄테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충북 증평군 증평읍 연탄리 225-2"
+  },
+  {
+    "city": "진천군",
+    "courtName": "진전종합스포츠타운테니스장(실내)",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충북 진천군 진천읍 신정리 828"
+  },
+  {
+    "city": "진천군",
+    "courtName": "진전종합스포츠타운테니스장(실외)",
+    "courtEA": 5,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충북 진천군 진천읍 신정리 828"
+  },
+  {
+    "city": "진천군",
+    "courtName": "진천역사테마공원테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충북 진천군 진천읍 건송리1001-2"
+  },
+  {
+    "city": "진천군",
+    "courtName": "광혜원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충북 진천군 광혜원면 광혜원리 669-8"
+  },
+  {
+    "city": "음성군",
+    "courtName": "음성종합운동장테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충북 음성군 음성읍 설성로 47"
+  },
+  {
+    "city": "음성군",
+    "courtName": "금왕공설운동장테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충북 음성군 금왕읍 무극로 370"
+  },
+  {
+    "city": "음성군",
+    "courtName": "삼성생활체육공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충북 음성군 삼성면 양덕리 393-7"
+  },
+  {
+    "city": "음성군",
+    "courtName": "대소생활체육공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충북 음성군 대소면 대성로 43"
+  },
+  {
+    "city": "음성군",
+    "courtName": "감곡생활체육공원테니스장",
+    "courtEA": 2,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충북 음성군 감곡면 오향리 311-1"
+  },
+  {
+    "city": "단양군",
+    "courtName": "단양테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "충북 단양군 단양읍 상진로 31"
+  }
+]

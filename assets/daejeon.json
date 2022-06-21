@@ -1,0 +1,74 @@
+[
+  {
+    "city": "동구",
+    "courtName": "세천체육공원테니스장",
+    "courtEA": 7,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "https://www.eshare.go.kr/UserPortal/Upv/UprResrcGym/index.do?rsrc_no=BI23P4739744",
+    "address": "대전 동구 세천동 74-30"
+  },
+  {
+    "city": "서구",
+    "courtName": "오량실내테니스장",
+    "courtEA": 3,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "대전 서구 유등로 135"
+  },
+  {
+    "city": "서구",
+    "courtName": "서구국민체육센터테니스장(정림테니스장)",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "대전 서구 정림서로 181"
+  },
+  {
+    "city": "서구",
+    "courtName": "은평공원테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "대전 서구 월평동 313"
+  },
+  {
+    "city": "서구",
+    "courtName": "관저테니스장",
+    "courtEA": 9,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "대전 서구 구봉산북로 121"
+  },
+  {
+    "city": "유성구",
+    "courtName": "송강체육관테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "대전 유성구 대덕대로 1173"
+  },
+  {
+    "city": "대덕구",
+    "courtName": "송촌체육공원테니스장",
+    "courtEA": 6,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "http://www.scdaedeok.or.kr/arena_booking.html",
+    "address": "대전 대덕구 송촌동 60-7"
+  },
+  {
+    "city": "대덕구",
+    "courtName": "을미기공원테니스장",
+    "courtEA": 4,
+    "contact": "",
+    "chargeInfo": "",
+    "reservation": "",
+    "address": "대전 대덕구 신일동 1682-8"
+  }
+]
