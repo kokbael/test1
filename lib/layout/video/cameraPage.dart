@@ -1,6 +1,9 @@
+import 'dart:io';
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:test1/layout/video/video.dart';
+import 'package:gallery_saver/gallery_saver.dart';
+import 'package:image_picker/image_picker.dart';
+import 'playVideo.dart';
 
 class CameraPage extends StatefulWidget {
   const CameraPage({Key? key}) : super(key: key);
@@ -10,6 +13,7 @@ class CameraPage extends StatefulWidget {
 }
 
 class _CameraPageState extends State<CameraPage> {
+  File? _pickedVideo;
   bool _isLoading = true;
   bool _isRecording = false;
   late CameraController _cameraController;
@@ -18,7 +22,7 @@ class _CameraPageState extends State<CameraPage> {
   @override
   void initState() {
     super.initState();
-    _cameraLensDirection = CameraLensDirection.front;
+    _cameraLensDirection = CameraLensDirection.back;
     _initCamera();
   }
 
@@ -30,9 +34,15 @@ class _CameraPageState extends State<CameraPage> {
 
   _initCamera() async {
     final cameras = await availableCameras();
-    final front = cameras
-        .firstWhere((camera) => camera.lensDirection == _cameraLensDirection);
-    _cameraController = CameraController(front, ResolutionPreset.max);
+    if (_cameraLensDirection == CameraLensDirection.front) {
+      final front = cameras
+          .firstWhere((camera) => camera.lensDirection == _cameraLensDirection);
+      _cameraController = CameraController(front, ResolutionPreset.max);
+    } else {
+      final back = cameras
+          .firstWhere((camera) => camera.lensDirection == _cameraLensDirection);
+      _cameraController = CameraController(back, ResolutionPreset.max);
+    }
     await _cameraController.initialize();
     setState(() => _isLoading = false);
   }
@@ -41,16 +51,32 @@ class _CameraPageState extends State<CameraPage> {
     if (_isRecording) {
       final file = await _cameraController.stopVideoRecording();
       setState(() => _isRecording = false);
-      final route = MaterialPageRoute(
-        fullscreenDialog: true,
-        builder: (_) => VideoPage(filePath: file.path),
-      );
-      Navigator.push(context, route);
+      try {
+        GallerySaver.saveVideo(file.path);
+        ScaffoldMessenger.of(context)
+            .showSnackBar(SnackBar(content: Text('동영상이 저장되었습니다.')));
+      } catch (e) {
+        print(e);
+      }
     } else {
       await _cameraController.prepareForVideoRecording();
       await _cameraController.startVideoRecording();
       setState(() => _isRecording = true);
     }
+  }
+
+  Future<void> _galPickImage() async {
+    final imagePicker = ImagePicker();
+    final pickedVideoFile = await imagePicker.pickVideo(
+      source: ImageSource.gallery,
+    );
+    setState(() {
+      if (pickedVideoFile != null) {
+        setState(() {
+          _pickedVideo = File(pickedVideoFile.path);
+        });
+      }
+    });
   }
 
   @override
@@ -80,10 +106,27 @@ class _CameraPageState extends State<CameraPage> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              SizedBox(
-                width: 40,
-                height: 40,
-              ),
+              !_isRecording
+                  ? InkWell(
+                      borderRadius: BorderRadius.circular(20),
+                      onTap: () async {
+                        await _galPickImage();
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    PlayVideo(filePath: _pickedVideo!.path)));
+                      },
+                      child: Icon(
+                        Icons.photo,
+                        size: 40,
+                        color: Colors.white,
+                      ),
+                    )
+                  : SizedBox(
+                      width: 40,
+                      height: 40,
+                    ),
               FloatingActionButton(
                 backgroundColor: Colors.red,
                 child: Icon(_isRecording ? Icons.stop : Icons.circle),

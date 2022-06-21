@@ -11,7 +11,7 @@ import 'package:test1/layout/myDialog.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:test1/layout/noyd/userInfo.dart';
 import 'package:test1/layout/sliverLayout.dart';
-import 'package:test1/layout/video/camera.dart';
+import 'package:test1/layout/video/cameraPage.dart';
 import 'package:test1/layout/ydCreate.dart';
 import 'package:test1/layout/ydList.dart';
 import 'package:test1/layout/video/videoExam.dart';
